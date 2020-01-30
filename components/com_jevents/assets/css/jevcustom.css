@@ -1,0 +1,9 @@
+/* 
+    Document   : jevcustom
+    Created on : 22-Apr-2013, 14:12:51
+    Author     : Tony Partridge - GWE Systems Ltd
+    Description: To allow customisation of CSS Strings where they can never be lost.
+    Purpose of the stylesheet follows.
+*/
+a.cal_titlelink:link, a.cal_titlelink:visited, a.cal_titlelink:hover{font-size:13px;font-weight:normal;line-height:1}
+
