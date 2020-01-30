@@ -1,0 +1,25 @@
+<h1>Отзывы</h1>
+<p>За время существования <strong>SDG Trade</strong> мы обучили более 700 трейдеров. Одни из них вышли на стабильный заработок и живут за счет трейдинга. Другие - успешно торгуют в нашей команде. Для клиентов, которые интересуются торговлей на фондовых биржах США и выбирают для себя подходящую программу обучения может быть интересен опыт тех, кто уже сотрудничал с нами.</p>
+<p>В данном разделе мы собрали отзывы клиентов, которые уже воспользовались нашими услугами.</p>
+<p style="text-align: center;"><a href="https://www.facebook.com/pg/trade.sdg/reviews/" target="_blank" rel="noopener noreferrer"><img src="images/r8-new2.jpg" width="547" height="292" caption="false" /></a></p>
+<p style="text-align: center;"><a href="https://www.facebook.com/pg/trade.sdg/reviews/" target="_blank" rel="noopener noreferrer"><img src="images/r7-new.jpg" width="547" height="253" caption="false" /></a></p>
+<p style="text-align: center;"><a href="https://www.facebook.com/pg/trade.sdg/reviews/" target="_blank" rel="noopener noreferrer"><img src="images/r3-new.jpg" width="547" height="116" caption="false" /></a></p>
+<p style="text-align: center;"><a href="https://www.facebook.com/pg/trade.sdg/reviews/" target="_blank" rel="noopener noreferrer"><img src="images/r1-new.jpg" width="547" height="232" caption="false" /></a></p>
+<p style="text-align: center;"><a href="https://www.facebook.com/pg/trade.sdg/reviews/" target="_blank" rel="noopener noreferrer"><img src="images/r2-new.jpg" width="547" height="232" caption="false" /></a></p>
+<p style="text-align: center;"><a href="https://www.facebook.com/pg/trade.sdg/reviews/" target="_blank" rel="noopener noreferrer"><img src="images/r6-new.jpg" width="547" height="303" caption="false" /></a></p>
+<p style="text-align: center;"><a href="https://www.facebook.com/pg/trade.sdg/reviews/" target="_blank" rel="noopener noreferrer"><img src="images/r5-new.jpg" width="547" height="210" caption="false" /></a></p>
+<p style="text-align: center;"><a title="Узнать подробнее о программе" href="https://www.facebook.com/pg/trade.sdg/reviews/?ref=page_internal" rel="alternate noopener noreferrer" target="_blank" onclick="dataLayer.push({'event': 'buttonsCOM'});"><button class="btn btn-large btn-success" type="button">Смотреть все отзывы</button></a></p>
+<p> </p>
+<form class="contact_form">
+<p><textarea name="message" cols="66" rows="9" required=""></textarea></p>
+<p><button class="btn btn-large btn-success" name="submit" type="submit">Оставить отзыв</button></p>
+</form>
+<h2>Отзывы участников годовой обучающей программы "Трансформация 365"</h2>
+<p style="text-align: center;"><iframe width="360" height="200" src="//www.youtube.com/embed/0onLhJTIK0w" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h2>Отзывы участников наших обучающих программ</h2>
+<p style="text-align: center;"><iframe width="360" height="200" src="https://www.youtube.com/embed/50JYMHzKnbk" frameborder="0" allowfullscreen="allowfullscreen"></iframe> <iframe width="360" height="200" src="https://www.youtube.com/embed/LCeHy62AdKs" frameborder="0" allowfullscreen="allowfullscreen"></iframe><iframe width="360" height="200" src="https://www.youtube.com/embed/Th5Xw8J-cig" frameborder="0" allowfullscreen="allowfullscreen"></iframe> <iframe width="360" height="200" src="https://www.youtube.com/embed/Z2UZrWEOpPI" frameborder="0" allowfullscreen="allowfullscreen"></iframe><iframe width="360" height="200" src="https://www.youtube.com/embed/qt5mAYV7JCU" frameborder="0" allowfullscreen="allowfullscreen"></iframe> <iframe width="360" height="200" src="https://www.youtube.com/embed/U9VhhgwfETA" frameborder="0" allowfullscreen="allowfullscreen"></iframe><iframe width="360" height="200" src="https://www.youtube.com/embed/EL8uglMiiJs" frameborder="0" allowfullscreen="allowfullscreen"></iframe> <iframe width="360" height="200" src="https://www.youtube.com/embed/SYLNFjnWZXk" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h2>Отзывы участников проекта SDG Prop и трейдеров SDG Trade</h2>
+<p style="text-align: center;"><iframe width="360" height="200" src="https://www.youtube.com/embed/-dvPbrcI9Rg" frameborder="0" allowfullscreen="allowfullscreen"></iframe> <iframe width="360" height="200" src="https://www.youtube.com/embed/wTEj-YWYtbc" frameborder="0" allowfullscreen="allowfullscreen"></iframe><iframe width="360" height="200" src="https://www.youtube.com/embed/jrD8AyX_hXU" frameborder="0" allowfullscreen="allowfullscreen"></iframe> <iframe width="360" height="200" src="https://www.youtube.com/embed/-IgT_mJ9eow" frameborder="0" allowfullscreen="allowfullscreen"></iframe> <iframe width="360" height="200" src="https://www.youtube.com/embed/M0OSMWdQqA8" frameborder="0" allowfullscreen="allowfullscreen"></iframe>     </p>
+<p></p>
+<!--.p-->
+<p></p>
