@@ -1,0 +1,25 @@
+<manifest alg="2" build="2015.0.0.309" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="edu.com" resolutions="1x" timestamp="1458132188753">
+  <folder name="css">
+    <file name="site_global.css" crc="4052507572"/>
+    <file name="index.css" crc="89659987" ref="index"/>
+    <file name="less2.css" crc="4280924850" ref="less2"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4255413929" ref="index:less2"/>
+    <file name="museutils.js" crc="183364071" ref="index:less2"/>
+    <file name="webpro.js" crc="3803554875" ref="index:less2"/>
+    <file name="musewpslideshow.js" crc="242596657" ref="index:less2"/>
+    <file name="jquery.museoverlay.js" crc="493285861" ref="index:less2"/>
+    <file name="touchswipe.js" crc="4038331989" ref="index:less2"/>
+    <file name="jquery.watch.js" crc="71412426" ref="index:less2"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4004268962" ref="less2"/>
+  </folder>
+  <folder name="images">
+    <file name="question-pattern.jpg" crc="137836767" ref="index"/>
+    <file name="logo.png" crc="3786689811" seo="true" ref="index:less2"/>
+    <file name="u491-4.png" crc="481214399" ref="index"/>
+    <file name="cartoon-dark.jpg" crc="3926426882" ref="less2"/>
+  </folder>
+  <file name="index.html" crc="264736880" seo="true" mt="1458132115094" redirect="true"/>
+  <file name="less2.html" crc="122101410" seo="true" mt="1454934708115" redirect="true"/>
+</manifest>

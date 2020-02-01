@@ -1,0 +1,4 @@
+AuthUserFile /usr/www/users/sdgctr//newsite/st10//.htpasswd
+AuthName "Realm"
+AuthType Basic
+require valid-user

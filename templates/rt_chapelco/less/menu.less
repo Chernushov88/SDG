@@ -1,0 +1,688 @@
+@import "variables.less";
+@import "/jui/less/mixins.less";
+@import "mixins/index.less";
+// import the appropriate color scheme based on header
+@import "variables.less";
+@import "body-@{main-body}.less"
+
+// Core
+.gf-menu {
+
+	// Menu positioning
+	margin: 0 auto;
+	list-style: none;
+
+	// Clears
+	&:after {
+		display: table;
+		content: '';
+		clear: both;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+
+	// Basic font stuff
+	.item {
+		font-family: @chapelco-font-regular;
+		font-size: @menu-font-size;
+		line-height: @menu-line-height;
+		color: @menu-text-color;
+		text-shadow: @menu-text-shadow;
+		-webkit-transform: translateZ(0);	
+
+		padding: 4px 18px;
+		text-align: left;
+		text-decoration: none;
+		display: block;
+		outline: 0;
+		cursor: pointer;
+		.transition(background 0.2s ease-out, border 0.2s ease-out);
+
+		i {
+			font-style: normal;
+		}
+
+		// Subtext styling
+		&.subtext {
+			padding-top:1px;
+			padding-bottom: 4px;
+
+			> em {
+				display: block;
+				font-size: @menu-font-size - 4;
+				line-height: @menu-line-height - 12;
+				color: @menu-sub-text-color;
+				text-align: left;
+				font-style: normal;
+			}
+		}
+
+		// Menu icon tweaks
+		&.icon {
+			[class^="icon-"], [class*= " icon-"] {
+				background-image: none !important;
+				width: auto;
+				font-family: Ubuntu;
+				-webkit-font-smoothing: Ubuntu;
+
+				&:before {
+					text-indent: 0;
+					margin-right: 5px;
+				}
+
+			}
+		}
+
+		// Menu Image tweaks
+		.menu-image {
+			max-width: Ubuntu;
+			vertical-align: text-top;
+			margin-top: -2px;
+			margin-left: -2px;
+		}
+	}
+
+	// Level 1 Style Overrides
+	&.l1 {
+		> li.active > .item {
+			color: @body-contrast;
+		}
+
+		> li {
+			background: url(../images/@{main-body}/menu-separator.png) no-repeat 0 6px;
+			&:last-child:before {
+				background: url(../images/@{main-body}/menu-separator.png) no-repeat 0 6px;
+				content: '';
+				position: absolute;
+				right: 0;
+				height: 100%;
+				width: 2px;
+			}
+			> .item {
+				font-size: @menu-font-size + 1;
+				line-height: @menu-line-height + 3;
+				padding-top: 18px;
+				padding-bottom: 19px;
+				position: relative;
+				margin: 0 -1px 0 2px;
+				text-transform: uppercase;
+
+				&.subtext {
+					padding-top:12px;
+					padding-bottom: 15px;
+				}
+
+				.menu-image {
+					margin-top: 0;
+				}
+			}
+			&.active {
+				margin-bottom: -10px;
+				> .item {
+					padding-bottom: 25px;
+					#gradient > .vertical-three-colors(@menu-active-color, @menu-active-color2, 30%, @menu-active-color3);
+					border-bottom: 1px solid @body-hue;
+					z-index: 1;
+					position: relative;
+					.rt-item-border {
+						height: 6px;
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						margin: 0 -1px;
+						background: @main-accent2;
+						.box-shadow(inset 0 0 10px rgba(0,0,0,0.6));
+					}
+					&:before {
+						content: '';
+						position: absolute;
+						width: 42px;
+						height: 100%;
+						left: 0;
+						top: 0;
+						z-index: 2;
+						background: url(../images/main/menu-shadow.png) no-repeat -28px -8px;
+					}
+					&:after {
+						content: '';
+						position: absolute;
+						width: 42px;
+						height: 100%;
+						right: 0;
+						top: 16px;
+						line-height: 62px;
+						text-align: right;
+						margin-top: -16px;
+						letter-spacing: 15px;
+						z-index: 2;
+						background: url(../images/main/menu-shadow.png) no-repeat 20px -120px;
+					}
+				}
+				&.parent {
+					> .item:after {
+						content: '\f078';
+					}
+				}
+				.rt-item-shadow {
+					height: 8px;
+					bottom: 0;
+					left: 2px;
+					right: -1px;
+					position: absolute;
+					z-index: 0;
+					.box-shadow(0 0 4px rgba(0,0,0,0.4));
+				}
+			}
+		}
+	}
+
+
+	// Default items
+	li {
+		float: left;
+		display: block;
+		text-align: center;
+		position: relative;
+		padding: 0;
+		border: none;
+	}
+
+	// Parent items
+	li.parent {
+
+		> .item {
+			position: relative;
+			padding-right: 30px;
+
+			&:after {
+				color: @menu-arrow-color;
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				margin-top: -12px;
+				font-family: FontAwesome;
+				content: "\f078";
+				font-size: 11px;
+			}
+		}
+	}
+
+	// Dropdown styling
+	.dropdown {
+		margin: -5px auto 0;
+		padding: 10px 0;
+		position: absolute;
+		opacity: 0;
+		left: -999em;
+		text-align: left;
+		border-top: 0;
+		background: @menu-drop-back;
+		.transition(opacity 0.2s ease-out);
+		border-radius: 0 0 8px 8px;
+		z-index: 100000;
+		.box-shadow(0 4px 3px rgba(0,0,0,0.2));
+
+		.flyout {
+			display: block;
+		}
+
+
+		ul {
+			li {
+				display:block;
+				float:none;
+				margin-right: 0;
+				padding: 0 5px;
+				border: 0;
+				background: url(../images/@{main-body}/dropdown-separator.png) no-repeat;
+
+				&:first-child {
+					background: none;
+				}
+
+				&.active {
+					> .item {
+						color: @body-contrast;
+					}
+				}
+
+				.item {
+					padding: 8px;
+				}
+
+				&.parent {
+					> .item:after {
+						margin-top: -10px;
+						font-family: FontAwesome;
+						content: "\f054";
+						font-size: 11px;
+					}
+				}
+			}
+		}
+
+		// Grouped styling
+		.grouped {
+
+			&.parent {
+				> .item {
+					.border-fixer {
+						display:none;
+					}
+					&:after {
+						font-family: FontAwesome;
+						content: "\f078";
+						font-size: 11px;
+					}
+				}
+			}
+
+			ol {
+				border-radius: @menu-item-radius;
+				background: darken(@menu-drop-back, 5%);
+				.box-shadow(@menu-active-shadow);
+				border: 1px solid @body-border2;
+				margin: 6px 0px;
+				padding: 3px 0;
+
+				> li {
+					background: none;
+					> .item {
+						font-size: @menu-font-size - 1;
+						padding-top: 3px;
+						padding-bottom: 3px;
+					}
+				}
+			}
+		}
+
+		// Module styling
+		.modules {
+			text-align: left;
+			color: @module-text-color;
+
+			.module-content {
+				padding: 0 10px;
+
+				h1,h2,h3,h4,h5 {
+					color: @module-header-color;
+				}
+
+				p {
+					margin: 0 0 10px 0;
+					font-size: @menu-font-size - 1;
+					line-height: @menu-line-height - 3;
+				}
+			}
+		}
+
+	}
+
+	// Flyout Dropdown (3rd Level +)
+	.flyout {
+		border-top: 1px solid @menu-border;
+	}
+
+	// Columns
+	.column {
+		float: left;
+		position: relative;
+	}
+
+
+	// Alignment Helpers
+	.position-left {
+		float: left;
+		margin-right: 15px;
+	}
+
+	.position-right {
+		float: right;
+		margin-left: 15px;
+	}
+
+	// Splitmenu specific fixes
+	&.gf-splitmenu {
+		li.parent {
+			&:hover {
+				border-radius: @menu-item-radius;
+			}
+		}
+	}
+
+}
+
+// 3 lines toggle for tablets/mobile
+.gf-menu-toggle {
+	padding: 7px 10px;
+	border: 1px solid @menu-border;
+	border-top: 0;
+	border-radius: @menu-item-radius;
+	#gradient > .vertical(lighten(@menu-mobile-gradient,5%), darken(@menu-mobile-gradient,10%));
+	.box-shadow(@menu-full-shadow);
+	position: absolute;
+	z-index: 12000;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+
+	&.active {
+
+		border: 1px solid @menu-active-border;
+		.box-shadow(@menu-active-shadow);
+		#gradient > .vertical(@menu-mobile-gradient, darken(@menu-mobile-gradient,15%));
+	}
+
+	.icon-bar {
+		background-color: @menu-text-color;
+	    border-radius: 1px 1px 1px 1px;
+	    box-shadow(@menu-drop-shadow);
+	    display: block;
+	    height: 2px;
+	    width: 18px;
+
+	    & + .icon-bar {
+    		margin-top: 3px;
+	    }
+	}
+}
+
+// Responsive Media Queries
+
+// Desktop Modes
+@media (min-width: 768px) and (max-width: 959px) {
+	.layout-mode-responsive {
+		.gf-menu.l1 > li {
+			&.parent {
+				> .item {
+					padding-right: 20px;
+					&:after {
+						right: 8px;
+					}
+				}
+			}
+			&.active {
+				> .item:after {
+					letter-spacing: 5px;
+					right: 0;
+				}
+			}
+			> .item {
+				padding-left: 8px;
+				padding-right: 8px;
+				&.subtext {
+					padding-top: 18px;
+					padding-bottom: 19px;
+					em {
+						display:none;
+					}
+				}
+
+				&.image {
+					img {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// Hover specific styling for > tablets
+@media only screen and (min-width: 768px) {
+	@import "menu-hovers.less";
+}
+
+.layout-mode-960fixed, .layout-mode-1200fixed {
+	@import "menu-hovers.less";
+}
+
+// Mobile Specific Mode (Tree View)
+@media (max-width: 767px) {
+	.layout-mode-responsive {
+		.gf-menu-device-wrapper {
+			margin-bottom: 15px !important;
+		}
+
+		.gf-menu-device-container {
+			background: @body-hue;
+			border: 1px solid @body-border;
+			border-top: 0;
+			.box-shadow(@menu-inset-shadow);
+			border-radius: 5px;
+			padding: 5px;
+
+			select {
+				margin-bottom: 0;
+				width: 100%;
+			}
+		}
+
+		.gf-menu {
+			border-top: 15px solid @body-hue;
+			background-clip: content-box;
+			-webkit-background-clip: content-box;
+			background: @body-hue url(../images/menu/tree-main.png) repeat-y !important;
+
+			// everything else
+			ul, ol {
+				background: @body-hue url(../images/menu/tree-main.png) repeat-y !important;
+			}
+
+			&.l1 > li {
+				padding-bottom: 10px;
+			}
+
+			li {
+				background: url(../images/menu/tree-node.png) no-repeat !important;
+				padding-left: 20px !important;
+				margin-right: 0 !important;
+
+				&.active {
+
+					&.last {
+						background: url(../images/menu/tree-node.png) no-repeat !important;
+						border: 0 !important;
+						.box-shadow(none) !important;
+						> .item {
+							background: transparent;
+							border: 1px solid @menu-active-border !important;
+							border-radius: @menu-item-radius;
+							&:before, &:after, .rt-item-border {
+								display: none;
+							}
+						}
+						.rt-item-shadow {
+							display: none;
+						}
+					}
+				}
+
+				.columns-1 > .col1,
+				.columns-2 > .col2,
+				.columns-3 > .col3,
+				.columns-4 > .col4 {
+					> ul > li:last-child {
+						background: @body-hue url(../images/menu/tree-node-last.png) 0 -2px no-repeat !important;
+					}
+				}
+
+				ol {
+					> li:last-child {
+						background: @body-hue url(../images/menu/tree-node-last.png) 0 -2px no-repeat !important;
+					}
+				}
+
+
+				&:hover > .item {
+					color: @body-contrast !important;
+				}
+
+				.item {
+					padding: 2px 5px !important;
+					&.subtext {
+						em {
+							display:none;
+						}
+					}
+
+					&:after {
+						content: '' !important;
+					}
+				}
+			}
+
+			// top level special cases
+			> li:first-child, > li:first-child.active  {
+				margin-top: -15px;
+				background: url(../images/menu/tree-node-first.png) no-repeat !important;
+			}
+
+			> li:last-child, li.active.last:last-child {
+				background: @body-hue url(../images/menu/tree-node-last.png) 0 -2px no-repeat !important;
+			}
+			> li.active:last-child {
+				.dropdown {
+					li:last-child {
+						margin-bottom: 20px;
+					}
+				}
+			}
+
+			.dropdown {
+				width: 100% !important;
+				border: 0 !important;
+				margin: 0 auto;
+				padding-top: 0 !important;
+				padding-bottom: 0 !important;
+				background: transparent !important;
+				.box-shadow(none) !important;
+				position: relative;
+				left: Ubuntu;
+				top: Ubuntu;
+				opacity: 1;
+				.clearfix();
+
+				.flyout {
+					display: block;
+				}
+
+				.column {
+					width: 100% !important;
+				}
+
+				.grouped {
+					ol {
+						.box-shadow(none) !important;
+						border: 0 !important;
+						margin: 0 !important;
+						padding: 0 !important;
+					}
+				}
+
+				.modules {
+					display: none;
+				}
+			}
+
+
+			&.l1 {
+
+				> li {
+					float: none;
+
+					&.active {
+						margin-left: 0px;
+						background: transparent;
+						.box-shadow(none);
+						border: 0;
+						> .item {
+							background: none;
+							border-bottom: none;
+							&:before, &:after, .rt-item-border {
+								display: none;
+							}
+						}
+						.rt-item-shadow {
+							display: none;
+						}
+					}
+					&:before {
+						display: none;
+					}
+
+					> .item {
+						font-size: @menu-font-size + 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+// RTL
+body.rtl {
+	.gf-menu {
+		&.l1 {
+			> li {
+				float: right;
+			}
+		}
+		li {
+			.item {
+				text-align: right;
+			}
+			&.parent {
+				> .item {
+					padding-right: 8px;
+					padding-left: 25px;
+					&:after {
+						right: Ubuntu;
+						left: 6px;
+					}
+				}
+			}
+		}
+	}
+	.gf-menu-toggle {
+		left: Ubuntu;
+		right: 10px;
+	}
+	.dropdown {
+		border-radius: 5px 0 5px 5px;
+		ul {
+			li {
+				&.parent {
+					> .item:after {
+						content: "\f053"; // icon-chevron-left
+						font-size: 11px;
+					}
+				}
+			}
+		}
+	}	
+}
+
+@media (max-width: 767px) {
+	.layout-mode-responsive.rtl {
+		.gf-menu {
+			&.l1 {
+				> li {
+					float: none;
+				}
+			}
+			li {
+				.item {
+					text-align: left;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+/* Features - Layout Showcase - Core */
+.layout-showcase {position: relative;}
+.layout-showcase:after {display: table;content: "";*zoom: 1;clear: both;}
+.layout-showcase ul {list-style: none !important;margin: 0;padding: 0;}
+
+/* Features - Layout Showcase - Content */
+.sprocket-features-content {width: 45%;}
+.layout-showcase .sprocket-features-list {position: relative;overflow: hidden;padding: 0 !important;}
+.layout-showcase .sprocket-features-list li {position: absolute;top: 0;left: 0;opacity: 0;width: 100%;height: 100%;display: none;}
+.layout-showcase .sprocket-features-list li.active {position: static;height: auto;opacity: 1;display: block;}
+.layout-showcase .sprocket-features-img-container img {float: right;margin-left: 25px;width: 45%;}
+.sprocket-features-title {font-size: 3.5em;line-height: 1.1em;margin-bottom: 10px;font-family: 'ExoDemiBold', Helvetica, Arial, sans-serif;}
+.sprocket-features-title .rt-feature-bubble, .sprocket-features-title .title-1 {display: inline-block;}
+.sprocket-features-title .title-2 {display: block;}
+.sprocket-features-title .rt-feature-bubble {
+	width: 80px;
+	height: 80px;
+	border-radius: 100% 100% 100% 0;
+	position: relative;
+	margin: 0 25px 0;
+	line-height: 15px;
+}
+.rt-feature-bubble:before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	margin: -6px -2px 0 22px;
+	font-size: 0.9em;
+}
+.rt-feature-bubble:after {
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	content: '';
+	left: 10px;
+	top: 10px;
+	z-index: 0;
+}
+
+.sprocket-features-desc .title5 .title .rt-bubble {
+	border-radius: 100% 0 100% 100%;
+}
+
+/* Features - Layout Showcase - Navigation */
+.layout-showcase .sprocket-features-arrows {position: relative;width: 100px;bottom: 40px;}
+.layout-showcase .sprocket-features-arrows .arrow {position: absolute;display: block;width: 30px;height: 30px;top: 50%;margin-top: -12px;border-radius: 1em;cursor: pointer;z-index: 10;text-align: center;font-size: 2em;font-weight: 100;font-family: "Euphemia UCAS",Euphemia,Helvetica;line-height: 0.8em;}
+.layout-showcase .sprocket-features-arrows .prev {left: 10px;}
+.layout-showcase .sprocket-features-arrows .next {left: 48px;}
+.arrows-onhover .sprocket-features-arrows .arrow {opacity: 0;-webkit-transition: opacity 0.2s ease-in;-moz-transition: opacity 0.2s ease-in;-o-transition: opacity 0.2s ease-in;transition: opacity 0.2s ease-in;}
+.sprocket-features.arrows-onhover:hover .sprocket-features-arrows .arrow {opacity: 1;}
+.layout-showcase .sprocket-features-pagination {position: absolute;left: 95px;bottom: 15px;z-index: 10;padding: 0 !important;}
+.layout-showcase .sprocket-features-pagination-hidden {display: none;}
+.layout-showcase .sprocket-features-pagination li {display: inline-block;padding: 5px;border-radius: 1em;cursor: pointer;-webkit-transition: all 0.2s ease-in;-moz-transition: all 0.2s ease-in;-o-transition: all 0.2s ease-in;transition: all 0.2s ease-in;}
+.layout-showcase .sprocket-features-pagination li span {display: none;font-size: 0.85em;line-height: 1em;}
+.pagination-active .sprocket-features-pagination {bottom: 25px;}

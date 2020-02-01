@@ -1,0 +1,44 @@
+Ссылка на виджет - https://sdg-trade.info/pl/lite/widget/editor?id=132690 (не откроется, т.к нет доступа к геткурсу)
+
+Коды вставки
+Для HTTPS - используйте этот код, если сайт, на котором размещен виджет, использует https
+<script id="15c89b4f989cfc30ecdb9acb15fd7d9178cf2845" src="https://sdg-trade.info/pl/lite/widget/script?id=132690"></script>
+
+
+Для HTTP - используйте этот код, если сайт, на котором размещен виджет, НЕ использует https
+<script id="15c89b4f989cfc30ecdb9acb15fd7d9178cf2845" src="http://sdg-trade.info/pl/lite/widget/script?id=132690"></script>
+
+
+html-код формы для HTTPS
+
+<form id="ltForm4276559"  action="https://sdg-trade.info/pl/lite/block-public/process-html?id=417321468" method="post" data-open-new-window="0"><input type="hidden" name="formParams[setted_offer_id]" ><br>
+<input type="text" maxlength="60"  placeholder="Введите ваше имя" name="formParams[full_name]" value=""><br>
+<input type="text" maxlength="60"  placeholder="Введите ваш эл. адрес" name="formParams[email]" value="" ><br>
+<input type="text" maxlength="60"  placeholder="Введите ваш телефон" name="formParams[phone]" value=""><br>
+<input name="formParams[userCustomFields][33656]"  type="hidden" ><br>
+<button type="submit"
+		id="button3625443"
+		
+		style="color: ; background-color: ; " onclick="if(window['btnprs5dc2d73486c50']){return false;}window['btnprs5dc2d73486c50']=true;setTimeout(function(){window['btnprs5dc2d73486c50']=false},6000);return true;">
+	Получить руководство на e-mail</button><br>
+<input name="formParams[userCustomFields][157562]"  type="hidden" ><br>
+<input type="hidden" id="1326905dc2d7347d023" name="__gc__internal__form__helper" class="__gc__internal__form__helper" value="">
+<input type="hidden" id="1326905dc2d7347d023ref" name="__gc__internal__form__helper_ref" class="__gc__internal__form__helper_ref" value="">
+<input type="hidden" name="requestTime" value="1573050164">
+<input type="hidden" name="requestSimpleSign" value="b206b6de2348f0abe308977c7e836055">
+<input type="hidden" name="isHtmlWidget" value="1"/></form><span id="gccounterImgContainer"></span><script>
+	window.onload = function(){
+		let loc = document.getElementById("1326905dc2d7347d023");
+		loc.value = window.location.href;
+		let ref = document.getElementById("1326905dc2d7347d023ref");
+		ref.value = document.referrer;
+	}
+</script>
+<script async defer>
+	window.onload = function(){
+		let statUrl = "https://sdg-trade.info/stat/counter?ref=" + encodeURIComponent(document.referrer)
+			+ "&loc=" + encodeURIComponent(document.location.href);
+		document.getElementById('gccounterImgContainer').innerHTML
+			= "<img width=1 height=1 style='display:none' id='gccounterImg' src='" + statUrl + "'/>";
+	}
+</script>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>Content - Easy Open Graph</name>
+	<author>E-max</author>
+	<creationDate>Sep 2015</creationDate>
+	<copyright>Copyright (C) 2008 - 2015 e-max.it. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl.html GPLv3</license>
+	<authorEmail>webmaster@e-max.it</authorEmail>
+	<authorUrl>http://www.e-max.it</authorUrl>
+	<version>1.1.4</version>
+	<description>PLG_CONTENT_EASYOPENGRAPH_DESCRIPTION</description>
+	<files>
+		<filename plugin="easyopengraph">easyopengraph.php</filename>
+		<folder>assets</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="de-DE">language/de-DE/de-DE.plg_content_easyopengraph.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_content_easyopengraph.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_easyopengraph.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_easyopengraph.sys.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.plg_content_easyopengraph.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.plg_content_easyopengraph.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="easyopengraphusestatictitle" type="radio" default="0" label="PLG_CONTENT_EASYOPENGRAPH_USESTATICTITLE" description="PLG_CONTENT_EASYOPENGRAPH_USESTATICTITLEDESC">
+					<option value="1">PLG_CONTENT_EASYOPENGRAPH_YES</option>
+					<option value="0">PLG_CONTENT_EASYOPENGRAPH_NO</option>
+				</field>
+				<field name="easyopengraphtitle" default="E-max" type="text" label="PLG_CONTENT_EASYOPENGRAPH_TITLE" description="PLG_CONTENT_EASYOPENGRAPH_TITLEDESC" />
+				<field name="easyopengraphtype" type="list" default="article" label="PLG_CONTENT_EASYOPENGRAPH_TYPE" description="PLG_CONTENT_EASYOPENGRAPH_TYPEDESC">
+					<option value="article">PLG_CONTENT_EASYOPENGRAPH_TYPE_ARTICLE</option>
+					<option value="blog">PLG_CONTENT_EASYOPENGRAPH_TYPE_BLOG</option>
+					<option value="website">PLG_CONTENT_EASYOPENGRAPH_TYPE_WEBSITE</option>
+					<option value="activity">PLG_CONTENT_EASYOPENGRAPH_TYPE_ACTIVITY</option>
+					<option value="sport">PLG_CONTENT_EASYOPENGRAPH_TYPE_SPORT</option>
+					<option value="bar">PLG_CONTENT_EASYOPENGRAPH_TYPE_BAR</option>
+					<option value="company">PLG_CONTENT_EASYOPENGRAPH_TYPE_COMPANY</option>
+					<option value="cafe">PLG_CONTENT_EASYOPENGRAPH_TYPE_CAFE</option>
+					<option value="hotel">PLG_CONTENT_EASYOPENGRAPH_TYPE_HOTEL</option>
+					<option value="restaurant">PLG_CONTENT_EASYOPENGRAPH_TYPE_RESTAURANT</option>
+					<option value="cause">PLG_CONTENT_EASYOPENGRAPH_TYPE_CAUSE</option>
+					<option value="sports_league">PLG_CONTENT_EASYOPENGRAPH_TYPE_SPORTS_LEAGUE</option>
+					<option value="sports_team">PLG_CONTENT_EASYOPENGRAPH_TYPE_SPORTS_TEAM</option>
+					<option value="band">PLG_CONTENT_EASYOPENGRAPH_TYPE_BAND</option>
+					<option value="government">PLG_CONTENT_EASYOPENGRAPH_TYPE_GOVERNEMENT</option>
+					<option value="non_profit">PLG_CONTENT_EASYOPENGRAPH_TYPE_NON_PROFIT</option>
+					<option value="school">PLG_CONTENT_EASYOPENGRAPH_TYPE_SCHOOL</option>
+					<option value="university">PLG_CONTENT_EASYOPENGRAPH_TYPE_UNIVERSITY</option>
+					<option value="actor">PLG_CONTENT_EASYOPENGRAPH_TYPE_ACTOR</option>
+					<option value="athlete">PLG_CONTENT_EASYOPENGRAPH_TYPE_ATHLETE</option>
+					<option value="author">PLG_CONTENT_EASYOPENGRAPH_TYPE_AUTHOR</option>
+					<option value="director">PLG_CONTENT_EASYOPENGRAPH_TYPE_DIRECTOR</option>
+					<option value="musician">PLG_CONTENT_EASYOPENGRAPH_TYPE_MUSICIAN</option>
+					<option value="politician">PLG_CONTENT_EASYOPENGRAPH_TYPE_POLITICIAN</option>
+					<option value="public_figure">PLG_CONTENT_EASYOPENGRAPH_TYPE_PUBLIC_FIGURE</option>
+					<option value="city">PLG_CONTENT_EASYOPENGRAPH_TYPE_CITY</option>
+					<option value="country">PLG_CONTENT_EASYOPENGRAPH_TYPE_COUNTRY</option>
+					<option value="landmark">PLG_CONTENT_EASYOPENGRAPH_TYPE_LANDMARK</option>
+					<option value="state_province">PLG_CONTENT_EASYOPENGRAPH_TYPE_STATE_PROVINCE</option>
+					<option value="album">PLG_CONTENT_EASYOPENGRAPH_TYPE_ALBUM</option>
+					<option value="book">PLG_CONTENT_EASYOPENGRAPH_TYPE_BOOK</option>
+					<option value="drink">PLG_CONTENT_EASYOPENGRAPH_TYPE_DRINK</option>
+					<option value="food">PLG_CONTENT_EASYOPENGRAPH_TYPE_FOOD</option>
+					<option value="game">PLG_CONTENT_EASYOPENGRAPH_TYPE_GAME</option>
+					<option value="product">PLG_CONTENT_EASYOPENGRAPH_TYPE_PRODUCT</option>
+					<option value="song">PLG_CONTENT_EASYOPENGRAPH_TYPE_SONG</option>
+					<option value="movie">PLG_CONTENT_EASYOPENGRAPH_TYPE_MOVIE</option>
+					<option value="tv_show">PLG_CONTENT_EASYOPENGRAPH_TYPE_TV_SHOW</option>
+				</field>
+				<field name="easyopengraphusestaticurl" type="radio" default="0" label="PLG_CONTENT_EASYOPENGRAPH_USESTATICURL" description="PLG_CONTENT_EASYOPENGRAPH_USESTATICURLDESC">
+					<option value="1">PLG_CONTENT_EASYOPENGRAPH_YES</option>
+					<option value="0">PLG_CONTENT_EASYOPENGRAPH_NO</option>
+				</field>
+				<field name="easyopengraphstaticurl" default="http://www.e-max.it" type="text" label="PLG_CONTENT_EASYOPENGRAPH_STATICURL" description="PLG_CONTENT_EASYOPENGRAPH_STATICURLDESC" />
+				<field name="easyopengraphdynimage" type="radio" default="1" label="PLG_CONTENT_EASYOPENGRAPH_DYNIMAGE" description="PLG_CONTENT_EASYOPENGRAPH_DYNIMAGEDESC">	
+					<option value="0">PLG_CONTENT_EASYOPENGRAPH_NO</option>
+					<option value="1">PLG_CONTENT_EASYOPENGRAPH_YES_INTRO</option>
+					<option value="2">PLG_CONTENT_EASYOPENGRAPH_YES_FULL</option>
+					<option value="3">PLG_CONTENT_EASYOPENGRAPH_YES_INTROIMAGE</option>
+					<option value="4">PLG_CONTENT_EASYOPENGRAPH_YES_FULLTEXTIMAGE</option>
+				</field>
+				<field name="easyopengraphimage" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_IMAGE" description="PLG_CONTENT_EASYOPENGRAPH_IMAGEDESC" />
+				<field name="spacer1" type="spacer" class="text" label="PLG_CONTENT_EASYOPENGRAPH_OPTIONAL_PROPERTIES"/>
+				<field name="easyopengraphsitename" default="E-max" type="text" label="PLG_CONTENT_EASYOPENGRAPH_SITENAME" description="PLG_CONTENT_EASYOPENGRAPH_SITENAMEDESC" />
+				<field name="easyopengraphusestaticdesc" type="radio" default="0" label="PLG_CONTENT_EASYOPENGRAPH_USESTATICDESC" description="PLG_CONTENT_EASYOPENGRAPH_USESTATICDESCDESC">
+					<option value="1">PLG_CONTENT_EASYOPENGRAPH_YES</option>
+					<option value="0">PLG_CONTENT_EASYOPENGRAPH_NO</option>
+				</field>
+				<field name="easyopengraphdesc" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_DESC" description="PLG_CONTENT_EASYOPENGRAPH_DESCDESC" />
+				<field name="spacer2" type="spacer" class="text" label="PLG_CONTENT_EASYOPENGRAPH_SPECIFYING_LOCATION"/>
+				<field name="easyopengraphlatitude" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_LATITUDE" description="PLG_CONTENT_EASYOPENGRAPH_LATITUDEDESC" />
+				<field name="easyopengraphlongitude" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_LONGITUDE" description="PLG_CONTENT_EASYOPENGRAPH_LONGITUDEDESC" />
+				<field name="easyopengraphaddress" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_ADDRESS" description="PLG_CONTENT_EASYOPENGRAPH_ADDRESSDESC" />
+				<field name="easyopengraphlocality" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_LOCALITY" description="PLG_CONTENT_EASYOPENGRAPH_LOCALITYDESC" />
+				<field name="easyopengraphregion" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_REGION" description="PLG_CONTENT_EASYOPENGRAPH_REGIONDESC" />
+				<field name="easyopengraphpostal" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_POSTAL" description="PLG_CONTENT_EASYOPENGRAPH_POSTALDESC" />
+				<field name="easyopengraphcountry" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_COUNTRY" description="PLG_CONTENT_EASYOPENGRAPH_COUNTRYDESC" />
+				<field name="spacer3" type="spacer" class="text" label="PLG_CONTENT_EASYOPENGRAPH_SPECIFYING_CONTACT"/>
+				<field name="easyopengraphemail" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_EMAIL" description="PLG_CONTENT_EASYOPENGRAPH_EMAILDESC" />
+				<field name="easyopengraphphone" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_PHONE" description="PLG_CONTENT_EASYOPENGRAPH_PHONEDESC" />
+				<field name="easyopengraphfax" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_FAX" description="PLG_CONTENT_EASYOPENGRAPH_FAXDESC" />
+				<field name="spacer4" type="spacer" class="text" label="PLG_CONTENT_EASYOPENGRAPH_FACEBOOK_ADMINS_ID"/>
+				<field name="easyopengraphauthor" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_AUTHOR" description="PLG_CONTENT_EASYOPENGRAPH_AUTHORDESC" />
+				<field name="easyopengraphpublisher" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_PUBLISHER" description="PLG_CONTENT_EASYOPENGRAPH_PUBLISHERDESC" />
+				<field name="easyopengraphadmin" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_ADMIN" description="PLG_CONTENT_EASYOPENGRAPH_ADMINDESC" />
+				<field name="easyopengraphappid" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_APPID" description="PLG_CONTENT_EASYOPENGRAPH_APPIDDESC" />
+				<field name="spacer5" type="spacer" class="text" label="PLG_CONTENT_EASYOPENGRAPH_VIDEO_DATA"/>
+				<field name="easyopengraphdynvideo" type="radio" default="0" label="PLG_CONTENT_EASYOPENGRAPH_DYNVIDEO" description="PLG_CONTENT_EASYOPENGRAPH_DYNVIDEODESC">
+					<option value="1">PLG_CONTENT_EASYOPENGRAPH_YES</option>
+					<option value="0">PLG_CONTENT_EASYOPENGRAPH_NO</option>
+				</field>
+				<field name="easyopengraphvideoyoutube" type="radio" default="0" label="PLG_CONTENT_EASYOPENGRAPH_VIDEOYOUTUBE" description="PLG_CONTENT_EASYOPENGRAPH_VIDEOYOUTUBEDESC">
+					<option value="1">PLG_CONTENT_EASYOPENGRAPH_YES</option>
+					<option value="0">PLG_CONTENT_EASYOPENGRAPH_NO</option>
+				</field>
+				<field name="easyopengraphvideo" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_VIDEO" description="PLG_CONTENT_EASYOPENGRAPH_VIDEODESC" />
+				<field name="easyopengraphvideowidth" default="640" type="text" label="PLG_CONTENT_EASYOPENGRAPH_VIDEOWIDTH" description="PLG_CONTENT_EASYOPENGRAPH_VIDEOWIDTHDESC" />
+				<field name="easyopengraphvideoheight" default="385" type="text" label="PLG_CONTENT_EASYOPENGRAPH_VIDEOHEIGHT" description="PLG_CONTENT_EASYOPENGRAPH_VIDEOHEIGHTDESC" />
+				<field name="spacer6" type="spacer" class="text" label="PLG_CONTENT_EASYOPENGRAPH_AUDIO_DATA"/>
+				<field name="easyopengraphdynaudio" type="radio" default="0" label="PLG_CONTENT_EASYOPENGRAPH_DYNAUDIO" description="PLG_CONTENT_EASYOPENGRAPH_DYNAUDIODESC">
+					<option value="1">PLG_CONTENT_EASYOPENGRAPH_YES</option>
+					<option value="0">PLG_CONTENT_EASYOPENGRAPH_NO</option>
+				</field>
+				<field name="easyopengraphaudio" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_AUDIO" description="PLG_CONTENT_EASYOPENGRAPH_AUDIODESC" />
+				<field name="easyopengraphaudiotitle" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_AUDIOTITLE" description="PLG_CONTENT_EASYOPENGRAPH_AUDIOTITLEDESC" />
+				<field name="easyopengraphaudioartist" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_AUDIOARTIST" description="PLG_CONTENT_EASYOPENGRAPH_AUDIOARTISTDESC" />
+				<field name="easyopengraphaudioalbum" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_AUDIOALBUM" description="PLG_CONTENT_EASYOPENGRAPH_AUDIOALBUMDESC" />
+				<field name="spacer7" type="spacer" class="text" label="PLG_CONTENT_EASYOPENGRAPH_PRODUCT_DATA"/>
+				<field name="easyopengraphupc" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_UPC" description="PLG_CONTENT_EASYOPENGRAPH_UPCDESC" />
+				<field name="easyopengraphisbn" default="" type="text" label="PLG_CONTENT_EASYOPENGRAPH_ISBN" description="PLG_CONTENT_EASYOPENGRAPH_ISBNDESC" />
+				<field name="easyopengraphcredits" type="radio" default="0" label="PLG_CONTENT_EASYOPENGRAPH_CREDITS" description="PLG_CONTENT_EASYOPENGRAPH_CREDITS_DESC">
+					<option value="0">PLG_CONTENT_EASYOPENGRAPH_CREDITS_HIDE</option>
+					<option value="1">PLG_CONTENT_EASYOPENGRAPH_CREDITS_SHOW</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="collection">http://updates.e-max.it/joomla/updates.xml</server>
+	</updateservers>
+</extension>

@@ -1,0 +1,38 @@
+/**
+* @version   $Id: master-ie9.css 8001 2013-03-01 04:25:02Z josh $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+.readon, .rt-block {
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important;
+}
+.pagination ul li a, .logo-type-chapelco .rt-logo-bubble {filter: none;}
+
+ul.menu li.active.current > a:before, ul.menu li.active.current > .item:before, ul.menu li.active.current > .separator:before,
+ul.menu #current.active > a:before, ul.menu #current.active > .item:before, ul.menu #current.active > .separator:before {font-size: 15px;}
+
+.button, .readon, .readmore, button.validate, #member-profile a, #member-registration a, .formelm-buttons button, #gantry-totop, .btn-primary, #k2Container .k2ReadMore, #k2Container #submitCommentButton, #gantry-resetsettings, .sprocket-mosaic-loadmore, .button:hover, .readon:hover, .readmore:hover, button.validate:hover, #member-profile a:hover, #member-registration a:hover, .formelm-buttons button:hover, #gantry-totop:hover, .btn-primary:hover, #k2Container .k2ReadMore:hover, #k2Container #submitCommentButton:hover, #gantry-resetsettings:hover {filter: none;}
+.btn.disabled:hover, .btn.disabled.btn-primary:hover {box-shadow: none;}
+
+/* Navigation */
+.gf-menu.l1 > li.active .rt-item-shadow {z-index: -1;}
+.dropdown {zoom: 1;}
+.gf-menu.l1 > li.active > .item {zoom: 1;}
+
+/* Header */
+#rt-header {filter: none;}
+
+/* Module Variations */
+.rt-bubble, .rt-bubble2 {filter: none !important;}
+.rt-block[class^="icon-"]:before, .rt-block[class*=" icon-"]:before {font-size: 0.7em;left: 22px;}
+
+/* RokSprocket - Features - Showcase */
+.sprocket-features-arrows .arrow, .sprocket-features-arrows .arrow:hover, .rt-feature-bubble {filter: none;}
+
+/* RokSprocket - Mosaic */
+.sprocket-mosaic .sprocket-mosaic-filter li, .sprocket-mosaic .sprocket-mosaic-order li, .sprocket-mosaic .sprocket-mosaic-filter li:hover, .sprocket-mosaic .sprocket-mosaic-order li:hover, .sprocket-mosaic .sprocket-mosaic-filter li.active, .sprocket-mosaic .sprocket-mosaic-order li.active {filter: none;}
+
+/* Social Icons */
+.rt-social-buttons .social-button {filter: none;}

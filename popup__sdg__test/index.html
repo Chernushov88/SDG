@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link
+        href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900'
+        rel='stylesheet'>
+    <style>
+        #online-intensive .modal-dialog {
+            margin: auto !important;
+            padding-top: 180px;
+        }
+
+        .freeStudy__popup {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 5px;
+            background-color: #26287a;
+            margin: auto;
+        }
+
+        #online-intensive .modal-header {
+            position: absolute;
+            border: none;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .freeStudy__popup .modal-content {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .freeStudy-image {
+            margin-top: -130px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #online-intensive .btn-white {
+            padding: none !important;
+            color: #fff;
+            font-size: 25px;
+        }
+
+        #online-intensive .btn-white span:focus {
+            outline: none;
+        }
+
+        #online-intensive.modal {
+            display: flex !important;
+        }
+
+        .fade:not(.show) {
+            opacity: 1;
+        }
+
+        .freeStudy__popup .modal-content {
+            background-color: transparent;
+        }
+
+        .freeStudy-title {
+            font-size: 40px;
+            color: rgb(255, 255, 0);
+            font-weight: bold;
+            line-height: 0.95;
+            text-align: center;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .freeStudy-description {
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .freeStudy-list__item {
+            color: #cbd3f1;
+            font-size: 12px;
+            list-style: none;
+            position: relative;
+            line-height: 22px;
+        }
+
+        .freeStudy-list__item:before {
+            position: absolute;
+            content: "✔";
+            color: #cbd3f1;
+            left: -20px;
+            top: 0;
+            font-family: none;
+        }
+
+        #online-intensive .modal-body {
+            padding-top: 20px;
+        }
+
+        #online-intensive .modal-body a:hover,
+        #online-intensive .modal-body a:focus {
+            text-decoration: none;
+            outline: none;
+            box-shadow: none;
+        }
+
+        #online-intensive .modal-body button:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        #online-intensive input {
+            margin: 10px auto 10px auto;
+            max-width: 225px;
+        }
+
+        #online-intensive input::placeholder {
+            color: #acacac;
+            font-weight: bold;
+        }
+
+        #online-intensive .f-btn-red {
+            background-color: #ff0000;
+            max-width: 225px;
+            margin: auto;
+            color: #fff;
+            font-weight: bold;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .online-intensive-text {
+            color: #fff;
+            font-size: 10px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+
+        #online-intensive button:focus {
+            outline: none !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="online-intensive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content freeStudy__popup">
+                <img src="top_sdg.png" class="freeStudy-image" alt="">
+                <div class="modal-header">
+                    <button type="submit" class="close btn-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="freeStudy-title">
+                        Бесплатно
+                    </div>
+                    <div class="freeStudy-description">
+                        онлайн-интенсив по трейдингу
+                    </div>
+                    <ul class="freeStudy-list">
+                        <li class="freeStudy-list__item"> разновидности торговых стратегий</li>
+                        <li class="freeStudy-list__item"> примеры ситуаций на графиках</li>
+                        <li class="freeStudy-list__item"> особенности психологии трейдинга</li>
+                        <li class="freeStudy-list__item"> практические домашние задания</li>
+                    </ul>
+                    <!-- <form action="https://sdg-tradecom.getcourse.ru/pl/lite/block-public/process-html?id=350376977"
+                        method="post">
+                        <input type="hidden" name="formParams[setted_offer_id]">
+                        <input type="text" maxlength="60" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]+$" required=""
+                            class="form-control" placeholder="Имя" name="formParams[full_name]" value="">
+                        <input type="email" maxlength="60" class="form-control" placeholder="Email"
+                            name="formParams[email]" value="" required="">
+                        <input type="tel" maxlength="60" class="form-control" placeholder="Телефон"
+                            name="formParams[phone]" value="" minlength="11">
+                        <input name="formParams[userCustomFields][33656]" type="hidden"
+                            value="SRC: modal/online-intensive |">
+                        <input name="formParams[userCustomFields][157562]" data-id="client-id" type="hidden" value=""> -->
+                    <a href="https://sdg-trade.info/online-intensive-trading?src=popup" target="blank"><button
+                            onclick="dataLayer.push({'event': 'buttonsCOM'});" type="submit"
+                            class="f-btn f-btn-red btn">Принять участие</button></a>
+                    <!-- <input type="hidden" name="__gc__internal__form__helper" class="__gc__internal__form__helper"
+                            value="https://sdg-trade.com">
+                        <input type="hidden" name="requestTime" value="">
+                        <input type="hidden" name="requestSimpleSign" value="">
+                    </form> -->
+                    <p class="online-intensive-text">738 участников уже зарегистрировались</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

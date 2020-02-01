@@ -1,0 +1,625 @@
+/**
+* @version   $Id: demo-styles.less 9148 2013-04-05 14:58:17Z arifin $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2013 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+// General Demo Image
+.rt-image {
+	position: relative;
+	img {
+		max-width: 100%;
+		height: auto;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	}
+}
+
+// Demo RokSprocket Features
+.fp-roksprocket-features {
+	// Demo Layout Tweak
+	&.rt-block {
+		margin: -20px 0 -1px 0;
+		padding: 0 15px;
+	}
+	.sprocket-features-title {
+		padding-left: 90px;
+	}
+	.sprocket-features-content {
+		width: 50%;
+		padding-top: 20px;
+	}
+	.layout-showcase .sprocket-features-container {
+		height: 450px;
+	}
+	.layout-showcase .sprocket-features-img-container {
+		position: absolute;
+		right: 0;
+		img {
+			width: 660px;
+			height: 450px;
+			margin: 0;
+			background-repeat: no-repeat;
+			background-size: 100%;			
+		}
+	}
+	.layout-showcase .sprocket-features-arrows {
+		left: 78px;
+	}
+	.layout-showcase .sprocket-features-pagination {
+		left: 180px;
+	}
+	
+	// RocketLauncher
+	&.fp-roksprocket-features-rl {
+		[class*="contentstyle-preset"] & {
+			.sprocket-features-index-1,
+			.sprocket-features-index-2 { 
+				img {
+					background-image: none;
+				}
+			}
+		}
+	}
+	
+	// Images Set
+	.contentstyle-preset1 & {
+		.sprocket-features-index-1 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/cup.png);
+		}
+		.sprocket-features-index-2 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/catalogue.png);
+		}	
+	}
+	.contentstyle-preset2 & {
+		.sprocket-features-index-1 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/perspective.png);
+		}
+		.sprocket-features-index-2 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/paper.png);
+		}	
+	}
+	.contentstyle-preset3 & {
+		.sprocket-features-index-1 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/note.png);
+		}
+		.sprocket-features-index-2 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/banner.png);
+		}	
+	}
+	.contentstyle-preset4 & {
+		.sprocket-features-index-1 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/soda.png);
+		}
+		.sprocket-features-index-2 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/catalogue.png);
+		}	
+	}
+	.contentstyle-preset5 & {
+		.sprocket-features-index-1 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/catalogue.png);
+		}
+		.sprocket-features-index-2 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/perspective.png);
+		}	
+	}
+	.contentstyle-preset6 & {
+		.sprocket-features-index-1 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/paper.png);
+		}
+		.sprocket-features-index-2 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/soda.png);
+		}	
+	}
+	.contentstyle-preset7 & {
+		.sprocket-features-index-1 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/banner.png);
+		}
+		.sprocket-features-index-2 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/catalogue.png);
+		}	
+	}
+	.contentstyle-preset8 & {
+		.sprocket-features-index-1 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/soda.png);
+		}
+		.sprocket-features-index-2 img {
+			background-image: url(../../../images/rocketlauncher/frontpage/roksprocket-features/cup.png);
+		}	
+	}
+			
+	// Content
+	.feature-promo2 {
+		color: @main-accent;
+		font-size: 1.7em;
+		line-height: 1.2em;
+		margin: 0 0 15px 0;
+		padding-left: 90px;
+	}
+	.feature-promo3 {
+		font-size: 1.6em;
+		font-weight: bold;
+		line-height: 1em;
+		margin-top: 5px;
+	}
+	.title5 {
+		margin-left: -10px;		
+	}
+}
+
+// RokAjaxSearch
+body {
+	.fp-search.rt-block {
+		margin-right: 30px;
+	}
+}
+	
+// Demo RokSprocket Lists
+.fp-roksprocketlists .sprocket-lists-nav {height: 50px;}
+
+// Bottom Popular Image
+.main-body-light .fp-img-dark, .main-body-dark .fp-img-light {
+	display: none;
+}
+
+// Demo Specific
+.promo2 {
+	color: @main-accent;
+	font-size: 3em;
+	line-height: 2em;
+}
+.promo3 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+.mar13-home .items-leading {
+	margin-bottom: 0;
+}
+.fp-featured-title {
+	margin: 0;
+	padding: 0;
+	.module-title {
+		margin-bottom: 6px;
+	}
+	&:before {
+		left: 9px !important;
+		top: 6px !important;
+	}
+}
+.fp-featured-tag {
+	margin: 0 0 15px 45px;
+}
+#rt-utility {
+	.fp-mosaic {
+		.sprocket-mosaic .sprocket-mosaic-container {
+			margin-bottom: 30px;
+		}
+		.sprocket-mosaic-loadmore {
+			position: absolute;
+			left: 50%;
+			margin-top: 9px;
+			margin-left: -141px;
+			margin-bottom: 0;
+		}
+	}
+}
+.fp-maintop {
+	&.rt-block {
+		padding-top: 30px;
+		padding-bottom: 25px;
+	}
+	.gantry-width-spacer {
+		margin-top: 0;
+	}
+	a {
+		color: @white;
+		&:hover {
+			color: @main-accent;
+			text-decoration: underline;
+		}
+	}
+}
+.title {
+	.rt-bubble.rt-big-bubble {
+		width: 70px;
+		height: 70px;
+		margin-top: 5px;
+		&:before {
+			top: 9px;
+			left: 1px;
+			padding: 20px 16px;
+			font-size: 38px;
+		}
+	}
+}
+.horiztitle {
+	.module-title, .module-content {
+		display: inline-block;
+	}
+	.module-title {
+		width: 30%;
+	}
+	.module-content {
+		width: 66%;
+	}	
+}
+.fp-popular {
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.rt-text-1 {
+	font-size: @base-font-size - 2;
+}
+.rt-text-2 {
+	font-weight: bold;
+	color: @black;
+	.contentstyle-preset2 &, .contentstyle-preset6 &, .contentstyle-preset7 & {
+		color: @grey;
+	}
+}
+
+
+// Demo Module Layout
+.rt-mbsb-table {
+	.rt-sb-table-col {
+		height: 38px;
+		vertical-align: middle;
+	}
+	.rt-mb-table-col {
+		height: 75px;
+		vertical-align: middle;
+	}
+}
+
+// Standard Inline Structural Adjustments
+body {
+	.fp-search.rt-block {
+		padding-top: 5px !important;
+	}
+	.rt-center {
+		text-align: center;
+	}
+	.rt-noborder {
+		border: 0 !important;
+		box-shadow: none !important;
+	}
+	.rt-floatleft {
+		float: left;
+		margin-right: 15px;
+		margin-left: 0;
+	}
+	.rt-floatright {
+		float: right;
+		margin-left: 15px;
+		margin-right: 0;
+	}
+	.normalfont, .normalfont li {
+		font-size: 100% !important;
+		line-height: Ubuntu !important;
+	}
+	.boldfont {
+		font-weight: bold !important;
+	}
+	.noitalic {
+		font-style: normal !important;
+	}
+	.nobold, .nobold a, .nobold li {
+		font-weight: normal !important;
+	}
+	.rt-displayinline {
+		display: inline !important;
+	}
+	.nomarginall, .rt-block.nomarginall, ul.nomarginall, li.nomarginall {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+	.nopaddingall, .rt-block.nopaddingall, ul.nopaddingall, li.nopaddingall {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	.nomargintop, .rt-block.nomargintop, ul.nomargintop, li.nomargintop {
+		margin-top: 0 !important;
+	}
+	.nomarginbottom, .rt-block.nomarginbottom, ul.nomarginbottom, li.nomarginbottom {
+		margin-bottom: 0 !important;
+	}
+	.nomarginleft, .rt-block.nomarginleft, ul.nomarginleft, li.nomarginleft {
+		margin-left: 0 !important;
+	}
+	.nomarginright, .rt-block.nomarginright, ul.nomarginright, li.nomarginright {
+		margin-right: 0 !important;
+	}
+	.nopaddingtop, .rt-block.nopaddingtop, ul.nopaddingtop, li.nopaddingtop {
+		padding-top: 0 !important;
+	}
+	.nopaddingbottom, .rt-block.nopaddingbottom, ul.nopaddingbottom, li.nopaddingbottom {
+		padding-bottom: 0 !important;
+	}
+	.nopaddingleft, .rt-block.nopaddingleft, ul.nopaddingleft, li.nopaddingleft {
+		padding-left: 0 !important;
+	}
+	.nopaddingright, .rt-block.nopaddingright, ul.nopaddingright, li.nopaddingright {
+		padding-right: 0 !important;
+	}
+	.smallmarginbottom {
+		margin-bottom: 5px !important;
+	}
+	.smallmargintop {
+		margin-top: 5px !important;
+	}
+	.smallmarginleft {
+		margin-left: 5px !important;
+	}
+	.smallmarginright {
+		margin-right: 5px !important;
+	}
+	.smallmarginall {
+		margin: 5px !important;
+	}	
+	.medmarginbottom {
+		margin-bottom: 10px !important;
+	}
+	.medmargintop {
+		margin-top: 10px !important;
+	}
+	.medmarginleft {
+		margin-left: 10px !important;
+	}
+	.medmarginright {
+		margin-right: 10px !important;
+	}
+	.medmarginall {
+		margin: 10px !important;
+	}
+	.largemarginbottom {
+		margin-bottom: 15px !important;
+	}
+	.largemargintop {
+		margin-top: 15px !important;
+	}
+	.largemarginleft {
+		margin-left: 15px !important;
+	}
+	.largemarginright {
+		margin-right: 15px !important;
+	}
+	.largemarginall {
+		margin: 15px !important;
+	}
+	.smallpaddingbottom {
+		padding-bottom: 5px !important;
+	}
+	.smallpaddingtop {
+		padding-top: 5px !important;
+	}
+	.smallpaddingleft {
+		padding-left: 5px !important;
+	}
+	.smallpaddingright {
+		padding-right: 5px !important;
+	}
+	.smallpaddingall {
+		padding: 5px !important;
+	}
+	.medpaddingbottom {
+		padding-bottom: 10px !important;
+	}
+	.medpaddingtop {
+		padding-top: 10px !important;
+	}
+	.medpaddingleft {
+		padding-left: 10px !important;
+	}
+	.medpaddingright {
+		padding-right: 10px !important;
+	}
+	.medpaddingall {
+		padding: 10px !important;
+	}
+	.largepaddingbottom {
+		padding-bottom: 15px !important;
+	}
+	.largepaddingtop {
+		padding-top: 15px !important;
+	}
+	.largepaddingleft {
+		padding-left: 15px !important;
+	}
+	.largepaddingright {
+		padding-right: 15px !important;
+	}
+	.largepaddingall {
+		padding: 15px !important;
+	}
+	.subsmallmarginbottom {
+		margin-bottom: -5px !important;
+	}
+	.subsmallmargintop {
+		margin-top: -5px !important;
+	}
+	.subsmallmarginleft {
+		margin-left: -5px !important;
+	}
+	.subsmallmarginright {
+		margin-right: -5px !important;
+	}
+	.subsmallmarginall {
+		margin: -5px !important;
+	}	
+	.submedmarginbottom {
+		margin-bottom: -10px !important;
+	}
+	.submedmargintop {
+		margin-top: -10px !important;
+	}
+	.submedmarginleft {
+		margin-left: -10px !important;
+	}
+	.submedmarginright {
+		margin-right: -10px !important;
+	}
+	.submedmarginall {
+		margin: -10px !important;
+	}
+	.sublargemarginbottom {
+		margin-bottom: -15px !important;
+	}
+	.sublargemargintop {
+		margin-top: -15px !important;
+	}
+	.sublargemarginleft {
+		margin-left: -15px !important;
+	}
+	.sublargemarginright {
+		margin-right: -15px !important;
+	}
+	.sublargemarginall {
+		margin: -15px !important;
+	}	
+	.rt-relative {
+		position: relative;
+	}
+	[class^="custom"] {  
+		&.largepaddingright, 
+		&.largepaddingleft, 
+		&.largepaddingtop, 
+		&.largepaddingbottom, 
+		&.largepaddingall,
+		&.medpaddingright, 
+		&.medpaddingleft, 
+		&.medpaddingtop, 
+		&.medpaddingbottom,
+		&.medpaddingall, 
+		&.smallpaddingright, 
+		&.smallpaddingleft, 
+		&.smallpaddingtop, 
+		&.smallpaddingbottom, 
+		&.smallpaddingall,
+		&.largemarginright, 
+		&.largemarginleft, 
+		&.largemargintop, 
+		&.largemarginbottom,
+		&.largemarginall,
+		&.medmarginright, 
+		&.medmarginleft, 
+		&.medmargintop, 
+		&.medmarginbottom, 
+		&.medmarginall,
+		&.smallmarginright, 
+		&.smallmarginleft, 
+		&.smallmargintop, 
+		&.smallmarginbottom,
+		&.smallmarginall,		
+		&.sublargemarginright, 
+		&.sublargemarginleft, 
+		&.sublargemargintop, 
+		&.sublargemarginbottom,
+		&.sublargemarginall,
+		&.submedmarginright, 
+		&.submedmarginleft, 
+		&.submedmargintop, 
+		&.submedmarginbottom, 
+		&.submedmarginall,
+		&.subsmallmarginright, 
+		&.subsmallmarginleft, 
+		&.subsmallmargintop, 
+		&.subsmallmarginbottom,
+		&.subsmallmarginall {
+			padding: 0 0 0 0 !important;margin: 0 0 0 0 !important;
+		}                
+		&.rt-floatleft, &.rt-floatright {
+			float: none;
+			margin: 0 0 0 0 !important;
+		}                   
+	}
+}    
+
+// RTL Stuff
+body.rtl {
+	.rt-floatleft {
+		float: right;
+		margin-right: 0;
+		margin-left: 15px;
+	}
+	.rt-floatright {
+		float: left;
+		margin-left: 0;
+		margin-right: 15px;
+	}
+	.nomarginleft, .rt-block.nomarginleft, ul.nomarginleft, li.nomarginleft {
+		margin-right: 0;
+	}
+	.nomarginright, .rt-block.nomarginright, ul.nomarginright, li.nomarginright {
+		margin-left: 0;
+	}
+	.nopaddingleft, .rt-block.nopaddingleft, ul.nopaddingleft, li.nopaddingleft {
+		padding-right: 0;
+	}
+	.nopaddingright, .rt-block.nopaddingright, ul.nopaddingright, li.nopaddingright {
+		padding-left: 0;
+	}
+	.smallmarginleft {
+		margin-right: 5px;
+	}
+	.smallmarginright {
+		margin-left: 5px;
+	}
+	.medmarginleft {
+		margin-right: 10px;
+	}
+	.medmarginright {
+		margin-left: 10px;
+	}
+	.largemarginleft {
+		margin-right: 15px;
+	}
+	.largemarginright {
+		margin-left: 15px;
+	}
+	.smallpaddingleft {
+		padding-right: 5px;
+	}
+	.smallpaddingright {
+		padding-left: 5px;
+	}
+	.medpaddingleft {
+		padding-right: 10px;
+	}
+	.medpaddingright {
+		padding-left: 10px;
+	}
+	.largepaddingleft {
+		padding-right: 15px;
+	}
+	.largepaddingright {
+		padding-left: 15px;
+	}
+    .subsmallmarginleft {
+		margin-right: -5px;
+	}
+	.subsmallmarginright {
+		margin-left: -5px;
+	}
+	.submedmarginleft {
+		margin-right: -10px;
+	}
+	.submedmarginright {
+		margin-left: -10px;
+	}
+	.sublargemarginleft {
+		margin-right: -15px;
+	}
+	.sublargemarginright {
+		margin-left: -15px;
+	}
+	.rt-demo-block {
+		float: right;
+	}
+}

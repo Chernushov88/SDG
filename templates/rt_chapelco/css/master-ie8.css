@@ -1,0 +1,98 @@
+/**
+* @version   $Id: master-ie8.css 10545 2013-05-21 14:09:46Z kat $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/* Core */
+.pagination ul li a {filter: none;}
+
+/* Navigation */
+.gf-menu.l1 > li.active .rt-item-shadow {z-index: -1;}
+.dropdown {zoom: 1;}
+.gf-menu.l1 > li.active > .item {zoom: 1;}
+
+.btn.disabled:hover, .btn.disabled.btn-primary:hover {filter: alpha(opacity=65);zoom: 1;}
+
+/* Header */
+#rt-header {filter: none;}
+
+/* Module Variations */
+.box1:after, body .sprocket-lists:after, body .sprocket-tabs:after, .box1 .module-surround:after {display: none;}
+.title .rt-bubble.rt-big-bubble:before {font-size: 0.9em;}
+.title2.rt-block:before {zoom: 1 !important;z-index: 999999999 !important;display: block;}
+
+/* RokSprocket - Mosaic */
+.sprocket-mosaic-hovercontent {filter: alpha(opacity=0);}
+.sprocket-mosaic-item:hover .sprocket-mosaic-hovercontent {filter: alpha(opacity=100);}
+.sprocket-mosaic .sprocket-mosaic-container > li:after {display: none;}
+
+/* RokSprocket - Features */
+.rt-feature-bubble:before {text-align: center;margin-left: 8px;}
+.fp-roksprocket-features .sprocket-features-img-container {width: 100%;}
+.title .rt-bubble.rt-big-bubble:before {font-size: 38px;}
+
+/* RokSprocket - Lists */
+.sprocket-lists .indicator span {top: -2px;left: 12px;}
+.sprocket-lists .active .indicator span {top: -2px;left: 12px;}
+
+/* Social Icons */
+.rt-social-buttons .social-button {filter: none;}
+
+/* Grid Layout */
+body .rt-container {width: 960px;}
+.rt-container .rt-grid-1 {width: 80px;}
+.rt-container .rt-grid-2 {width: 160px;}
+.rt-container .rt-grid-3 {width: 240px;}
+.rt-container .rt-grid-4 {width: 320px;}
+.rt-container .rt-grid-5 {width: 400px;}
+.rt-container .rt-grid-6 {width: 480px;}
+.rt-container .rt-grid-7 {width: 560px;}
+.rt-container .rt-grid-8 {width: 640px;}
+.rt-container .rt-grid-9 {width: 720px;}
+.rt-container .rt-grid-10 {width: 800px;}
+.rt-container .rt-grid-11 {width: 880px;}
+.rt-container .rt-grid-12 {width: 960px;}
+
+.rt-container .rt-push-1 {left: 80px;}
+.rt-container .rt-push-2 {left: 160px;}
+.rt-container .rt-push-3 {left: 240px;}
+.rt-container .rt-push-4 {left: 320px;}
+.rt-container .rt-push-5 {left: 400px;}
+.rt-container .rt-push-6 {left: 480px;}
+.rt-container .rt-push-7 {left: 560px;}
+.rt-container .rt-push-8 {left: 640px;}
+.rt-container .rt-push-9 {left: 720px;}
+.rt-container .rt-push-10 {left: 800px;}
+.rt-container .rt-push-11 {left: 880px;}
+
+.rt-container .rt-pull-1 {left: -80px;}
+.rt-container .rt-pull-2 {left: -160px;}
+.rt-container .rt-pull-3 {left: -240px;}
+.rt-container .rt-pull-4 {left: -320px;}
+.rt-container .rt-pull-5 {left: -400px;}
+.rt-container .rt-pull-6 {left: -480px;}
+.rt-container .rt-pull-7 {left: -560px;}
+.rt-container .rt-pull-8 {left: -640px;}
+.rt-container .rt-pull-9 {left: -720px;}
+.rt-container .rt-pull-10 {left: -800px;}
+.rt-container .rt-pull-11 {left: -880px;}
+
+.rt-container .rt-prefix-1 {padding-left: 80px;}
+.rt-container .rt-prefix-2 {padding-left: 160px;}
+.rt-container .rt-prefix-3 {padding-left: 240px;}
+.rt-container .rt-prefix-4 {padding-left: 320px;}
+.rt-container .rt-prefix-5 {padding-left: 400px;}
+.rt-container .rt-prefix-6 {padding-left: 480px;}
+.rt-container .rt-prefix-7 {padding-left: 560px;}
+.rt-container .rt-prefix-8 {padding-left: 640px;}
+.rt-container .rt-prefix-9 {padding-left: 720px;}
+.rt-container .rt-prefix-10 {padding-left: 800px;}
+.rt-container .rt-prefix-11 {padding-left: 880px;}
+
+/* Font size wackiness in IE8 */
+.promo p {
+	font-size: 1.3em !important;
+	line-height: 1.5em !important;
+}

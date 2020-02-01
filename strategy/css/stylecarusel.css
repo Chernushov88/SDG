@@ -1,0 +1,31 @@
+.caruseltext .carousel-inner{border-top:2px solid #e5e5e5;height:100%;}
+.caruseltext .animated > p{margin:10px;}
+.caruseltext .circle-images{overflow:hidden;border-radius:100px;display:inline-block;text-align:center;float:left;-webkit-shape-outside:circle();shape-outside:circle();margin:20px;}
+.caruseltext .circle-images img{width:100px;height:100px;}
+.caruseltext .carousel h2{font-size:60px;}
+.caruseltext .carousel p{padding:10px 0 0;margin:0;text-align:left;font-size:13px}
+.caruseltext .carousel .fill{width:100%;height:100%;background-position:center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;opacity:0.6;}
+.caruseltext .carousel .comments{margin:0 20px;font-style:italic;}
+.caruseltext > div{border:2px solid #e5e5e5;}
+@media screen and (min-width:768px){.caruseltext .carousel-caption{right:0;left:0;position:relative;padding:0;bottom:0;min-height:332px;}}
+.caruseltext .carousel-inner{height:100%;}
+.caruseltext .carousel-inner>.item.active{height:100%;}
+.caruseltext .carousel-caption{text-shadow:none;right:0;left:0;position:relative;padding:0;bottom:0;min-height:332px;}
+.caruseltext .carousel-control.right,.caruseltext .carousel-control.left{background:none;font-size:32px;position:relative;display:inline-block;height:30px;width:30px;text-shadow:none;color:rgba(0,0,0,0.4)}
+.caruseltext .carousel-control.right span,.caruseltext .carousel-control.left span{margin:0;left:0;top:0;display:block;width:30px;height:36px;font-size:32px;}
+.caruseltext .carousel-control{color:#000;}
+.caruseltext .carousel-indicators li{border:2px solid rgba(0,0,0,0.3);height:12px;width:12px}
+.caruseltext .carousel-indicators .active{background:#28ABE3;margin:1px;border:none;}
+.carousel-indicators{position:relative;bottom:0;left:0;display:inline-block;margin:0;margin-top:10px;}
+.caruseltext .carousel .btn-transparent{background:transparent;color:#fff;border:2px solid #fff;}
+.caruseltext .carousel .btn-transparent:hover{background-color:#fff;}
+.caruseltext .carousel .btn-rounded{border-radius:70px;}
+.caruseltext .carousel .btn-large{padding:11px 45px;font-size:18px;}
+.caruseltext .carousel .animated{-webkit-animation-duration:1.0s;animation-duration:1.0s;-webkit-animation-duration:height}
+@-webkit-keyframes fadeInRight{from{opacity:0;-webkit-transform:translate3d(100px, 0, 0);transform:translate3d(100px, 0, 0);}
+to{opacity:1;-webkit-transform:none;transform:none;}
+}
+@keyframes fadeInRight{from{opacity:0;-webkit-transform:translate3d(100px, 0, 0);transform:translate3d(100px, 0, 0);}
+to{opacity:1;-webkit-transform:none;transform:none;}
+}
+.caruseltext .carousel .fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight;}

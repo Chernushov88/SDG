@@ -1,0 +1,61 @@
+div.related-items-title {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 0 0.5em 0;
+	clear:both;
+}
+
+ul.related-items {
+	padding: 0;
+	margin: 0;
+}
+
+ul.related-items li.related-item {
+	padding: 0;
+	background: none;
+	margin: 0 0 0.25em;
+	list-style: none;
+}
+
+ul.related-items li.related-item>a {
+	height: 16px;
+	line-height: 16px;
+	float: left;
+	padding: 0;
+	margin: 0 0.5em 0 0;
+	font-size: 12px;
+	margin: 0 0.5em 0 0;
+}
+
+ul.related-items li.related-item>a.related-item-image-link {
+	text-decoration: none;
+}
+
+ul.related-items li.related-item>a img {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+ul.related-items li.related-item>a span {
+	padding: 0;
+	margin: 0;
+}
+
+ul.related-items li.related-item>a span.related-item-date {
+	color: #666;
+}
+
+/*clearfix*/
+ul.related-items li.related-item:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+ul.related-items li.related-item {
+	display: block;
+}

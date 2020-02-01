@@ -1,0 +1,103 @@
+// Essentials -----------------
+@white:						#ffffff;
+@black: 					#000000;
+@light-grey:				#cccccc;
+@grey:                      #C7C7C7;
+@dark-grey:                 #3C3D3F;
+@grey2:                     #F5F5F5;
+@grey3:                     #E2E2E2;
+@orange:                    #f89406;
+
+@base-font-size:			14px;
+@base-line-height:		    20px;
+
+@body-text-dark:            @black;
+@body-title-dark:           @black;
+
+// Main Top --------------------
+@maintop-background:		#f0f0f0;
+
+// Form Feedbacks --------------
+@warning-text:             #c09853;
+@warning-background:       #fcf8e3;
+@warning-border:           darken(spin(@warning-background, -10), 3%);
+
+@error-text:               #b94a48;
+@error-background:         #f2dede;
+@error-border:             darken(spin(@error-background, -10), 3%);
+
+@success-text:             #468847;
+@success-background:       #dff0d8;
+@success-border:           darken(spin(@success-background, -10), 5%);
+
+@info-text:                #3a87ad;
+@info-background:          #d9edf7;
+@info-border:              darken(spin(@info-background, -10), 7%);
+
+// Buttons
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBorder:                         #ccc;
+
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
+
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
+
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
+
+@btnInverseBackground:              #444;
+@btnInverseBackgroundHighlight:     @dark-grey;
+
+// Fonts
+@font-face {
+    font-family: 'ExoRegular';
+    src: url('../fonts/exo-regular-webfont.eot');
+    src: url('../fonts/exo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/exo-regular-webfont.woff') format('woff'),
+         url('../fonts/exo-regular-webfont.ttf') format('truetype'),
+         url('../fonts/exo-regular-webfont.svg#ExoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ExoDemiBold';
+    src: url('../fonts/exo-DemiBold-webfont.eot');
+    src: url('../fonts/exo-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/exo-DemiBold-webfont.woff') format('woff'),
+         url('../fonts/exo-DemiBold-webfont.ttf') format('truetype'),
+         url('../fonts/exo-DemiBold-webfont.svg#ExoDemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@chapelco-font-regular:    'ExoRegular', Helvetica, Arial, sans-serif;
+@mono-font-family:        Menlo, Monaco, Consolas, "Courier New", monospace;
+
+// Base Menu variables
+@menu-font-size:		13px;
+@menu-line-height:	21px;
+@menu-item-radius:	4px;
+
+// Horizontal forms & lists
+// -------------------------
+@horizontal-component-offset:       160px;
+
+// Menu
+@menu-sub-text-color:		darken(@menu-text-color, 10%);
+@menu-arrow-color:		darken(@menu-text-color, 20%);
+@menu-mobile-gradient:	darken(@menu-drop-back,10%);
+@menu-border: 			rgba(0,0,0,0.2);
+@menu-drop-shadow:		0px 2px 2px rgba(0,0,0,0.2);
+@menu-inset-shadow:		~"inset 0px 1px 0px rgba(0,0,0,0.1), inset 0px 2px 0px rgba(0,0,0,0.1)";
+@menu-full-shadow:		~"inset 0px 1px 0px rgba(0,0,0,0.1), inset 0px 2px 0px rgba(0,0,0,0.1), 0px 1px 1px rgba(0,0,0,0.2)";
+@menu-active-border:		#555555;
+@menu-active-shadow:		~"0 0 4px rgba(0, 0, 0, 0.1) inset";
+@module-header-color:		lighten(@menu-text-color, 10%);
+@module-text-color:		darken(@menu-text-color, 10%);
+

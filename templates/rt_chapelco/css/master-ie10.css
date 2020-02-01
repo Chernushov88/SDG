@@ -1,0 +1,10 @@
+/**
+* @version   $Id: master-ie10.css 9150 2013-04-05 15:06:59Z arifin $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+.title1.rt-block.rt-block[class^="icon-"]:before, .title1.rt-block.rt-block[class*=" icon-"]:before, .title2.rt-block.rt-block[class^="icon-"]:before, .title2.rt-block.rt-block[class*=" icon-"]:before {
+	font-size: 18px;
+}

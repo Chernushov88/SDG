@@ -1,0 +1,165 @@
+@import "variables.less";
+@import "/jui/less/mixins.less";
+@import "mixins/index.less";
+// import the appropriate color scheme based on header
+@import "variables.less";
+
+.gf-menu {
+	// Bottom border fixer
+	&.l1 > li {
+		&:hover {
+			.rt-menu-border {
+				background: @main-accent;
+				border-bottom: 1px solid darken(@main-accent, 12%);
+				border-left: 1px solid darken(@main-accent, 15%);
+				border-right: 1px solid darken(@main-accent, 15%);
+				height: 5px;
+				position: absolute;
+				left: 1px;
+				right: -2px;
+			}
+			&:last-child {
+				.rt-menu-border {
+					right: 0;
+				}
+			}
+			&.active {
+				.rt-menu-border {
+					display: none;
+				}
+			}
+		}
+	}
+
+	// Default items
+	li {
+		&:hover, &.active:hover {
+			border-top: 0;
+
+			> .dropdown {
+				left: 2px;
+				top: auto;
+				opacity: 1;
+			}
+		}
+
+		&:hover > .item {
+			color: @main-accent !important;
+		}
+	}
+
+	// Parent items
+	li.parent.active {
+		&:hover {
+			.dropdown {
+				margin-top: -15px;
+			}
+		}
+	}
+
+	// Dropdown styling
+	.dropdown {
+		ul {
+			li {
+				&:hover {
+					border: 0;
+					.box-shadow(none);
+
+					> .item {
+						.border-radius(@menu-item-radius);
+						border-top: 0;
+
+						// Right border fixer
+						.border-fixer {
+							display:block;
+							position: absolute;
+							height: 100%;
+							width: 2px;
+							right:-1px;
+							.box-shadow(@menu-inset-shadow);
+							top: 0px;
+							background: @menu-drop-back;
+							z-index:1001;
+						}
+					}
+				}
+
+				&.parent {
+					&:hover {
+						> .item {
+							.border-radius(@menu-item-radius 0 0 @menu-item-radius);
+						}
+					}
+				}
+			}
+		}
+
+		// Grouped styling
+		.grouped {
+			&.parent {
+				&:hover {
+					> .item {
+						.border-radius(@menu-item-radius);
+					}
+				}
+			}
+		}
+
+		// Module styling
+		.modules {
+			&:hover, ul li:hover {
+				padding-top: 0 !important;
+			}
+		}
+	}
+
+	// Flyout dropdowns (3rd Level +)
+	.dropdown li:hover > .flyout {
+		left: 100%;
+		top: 1px;
+		margin-left: -6px;
+		border-top: 0;
+		.border-radius(5px);
+	}
+}
+
+// RTL
+body.rtl {
+	li {
+		&:hover, &.active:hover {
+			> .dropdown {
+				left: Ubuntu;
+				right: -1px;
+			}
+		}
+	}
+	.dropdown {
+		ul {
+			li {
+				&:hover {
+					> .flyout {
+						left: Ubuntu;
+						right: 100%;
+						.border-radius(5px 0 5px 5px);
+						margin-left: auto;
+						margin-right: -6px;
+					}
+					> .item {
+						// Left border fixer
+						.border-fixer {
+							right: Ubuntu;
+							left: -1px;
+						}
+					}
+				}
+				&.parent {
+					&:hover {
+						> .item {
+							.border-radius(0 @menu-item-radius @menu-item-radius 0);
+						}
+					}
+				}
+			}
+		}
+	}
+}

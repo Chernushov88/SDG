@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="ru">
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description"
+        content="Примените наиболее подходящую для вас торговую стратегию и сделайте ваш трейдинг прибыльнее уже на протяжении курса">
+
+    <meta name="author" content="">
+
+    <title>Формализованные стратегии в трейдинге для прибыльной торговли на биржах США</title>
+    <!-- Mobile Specific Meta
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/modernizr.js"></script>
+    <!-- <link rel='stylesheet prefetch' href='css/aminate-min.css'> -->
+    <!-- Themefisher Icon font -->
+    <link rel="canonical" href="http://sdg-trade.com/strategy/">
+    <link rel="stylesheet" href="plugins/themefisher-font/style.css">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive-tabs.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-price-table.css">
+    <link rel="stylesheet" href="css/stylecarusel.css">
+    <!-- <link rel="stylesheet" href="css/videocarousel.css"> -->
+    <!-- Colors -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue"> -->
+    <script>
+        dataLayer = [];
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PS2B68K');
+    </script>
+
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NZ4ZWC3');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body id="body">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0"
+        style="position:absolute">
+        <symbol id="icon-play-btn" viewBox="0 0 70 70">
+            <path
+                d="M35.656.318c-19.305 0-35 15.695-35 35 0 19.306 15.695 35 35 35s35-15.694 35-35c0-19.305-15.695-35-35-35zM46.93 37.087L30.424 48.066c-1.4.957-3.316-.074-3.316-1.769V24.34c0-1.694 1.916-2.726 3.316-1.768L46.93 33.55c1.252.81 1.252 2.726 0 3.537z">
+            </path>
+        </symbol>
+    </svg>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PS2B68K" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NZ4ZWC3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <div id="preloader">
+        <div class='preloader'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <header class="navigation navbar navbar-fixed-top sticky-header">
+        <div class="container">
+            <div class="navbar-header scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="#body">
+
+                    <picture>
+                        <source type="image/webp" srcset="images/logo.webp">
+                        <source type="image/png" srcset="images/logo.png">
+                        <img class="logo-default" src="images/logo.png" alt="logo" />
+                    </picture>
+                    <picture>
+                        <source type="image/webp" srcset="images/logo-white.webp">
+                        <source type="image/png" srcset="images/logo-white.png">
+                        <img class="logo-white" src="images/logo-white.png" alt="logo" />
+                    </picture>
+
+                </a>
+            </div>
+
+            <nav class="collapse navbar-collapse navbar-right">
+                <ul id="nav" class="nav navbar-nav menu scroll">
+                    <li>
+                        <a data-scroll href="#about">О курсе</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#pochemu">Почему мы</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#kupit">Стоимость</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#skills">Автор</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#review">Отзывы</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#contact">Вопросы</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <section class="hero-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h1>ФОРМАЛИЗОВАННЫЕ
+                            СТРАТЕГИИ</h1>
+                        <p>Примените наиболее подходящую для вас торговую стратегию и сделайте ваш трейдинг прибыльнее
+                            уже на протяжении курса.
+                        </p>
+                        <ul class="list-inline scroll">
+                            <li>
+                                <a data-scroll href="#about" class="btn btn-main navbar-nav">О курсе</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h2>О Курсе</h2>
+                    <div class="border"></div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <picture>
+                        <source type="image/webp" srcset="images/about-us.webp">
+                        <source type="image/png" srcset="images/about-us.png">
+                        <img src="images/about-us.png" class="img-responsive images_block" alt="">
+                    </picture>
+                </div>
+                <div class="col-md-8">
+                    <p class="big-text">Курс подойдет для тех трейдеров, которые имеют определенные знания по рынкам
+                        США, но не имеют четкого плана действия в случае:</p>
+                    <div class="row text-center">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="service-item">
+                                <i class="tf-ion-ios-alarm-outline"></i>
+                                <p class="paragraf-big">Отчетного периода</p>
+                                <p class="paragraf-small">(активные движения)</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="service-item">
+                                <i class="tf-ion-ios-briefcase-outline"></i>
+                                <p class="paragraf-big">Межотчетного периода</p>
+                                <p class="paragraf-small"> (малоподвижный рынок)</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="service-item">
+                                <i class="tf-ion-ios-email-outline"></i>
+                                <p class="paragraf-big">День больших продаж</p>
+                                <p class="paragraf-small">(все падает, а я не знаю, какие акции взять в short)</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="service-item">
+                                <i class="tf-ion-ios-locked-outline"></i>
+                                <p class="paragraf-big">День больших покупок</p>
+                                <p class="paragraf-small">(все растет, а я не знаю, какие акции купить)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p class="big-text">Если вы устали сидеть один на один со своими проблемами и ошибками, которые
+                        регулярно повторяются, то этот курс именно для вас.</p>
+
+                    <div class="row text-center">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="service-item">
+                                <i class="tf-ion-ios-email"></i>
+                                <p class="paragraf-big no-bold">Уже свыше 10 лет мы активно занимаемся подготовкой и
+                                    обучением трейдеров работе на фондовом рынке США.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="service-item">
+                                <i class="tf-ion-ios-eye-outline"></i>
+                                <p class="paragraf-big no-bold">Мы даем знания из личного опыта ведущих трейдеров
+                                    компании, которые подтверждены положительными результатами торговли наших учеников.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row text-center">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="call-to-action-2 section" id="author">
+        <div class="container">
+
+            <div class="title title-white text-center">
+                <h2>Подробно о курсе от автора</h2>
+                <div class="border"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="row text-center">
+                        <div class="col-md-1 col-sm-0 col-xs-0"></div>
+                        <div class="col-md-10 col-sm-12 col-xs-12 wrapper-block">
+                            <div class="col-md-6 col-sm-5 col-xs-12" style="text-align:left;">
+                                <p class="title title-white text-center"
+                                    style="font-size:28px;font-weight:700;line-height: 1.23;font-family: Roboto,sans-serif;">
+                                    Цель данного<br> курса</p>
+<<<<<<< HEAD
+                                <p class="big-text no-bold">
+                                    Получение <span class="color-blue">рабочих стратегий</span></p>
+=======
+                                <p style="font-size:18px;line-height: 1.5;font-family: Catamaran,sans-serif; margin:0; ">Получение <span class="color-blue">рабочих стратегий</span></p>
+>>>>>>> ca2312ddea1f8e3e3e087f5ea7f0b5bf5d61f869
+                                <ul>
+                                    <li>под разные периоды</li>
+                                    <li>разные депозиты</li>
+                                    <li>разные дневные стоп-лоссы (но не менее 45$)</li>
+                                </ul>
+                                <p class="big-text no-bold">Трейдер <span class="color-blue">получает четкую схему
+                                        действий</span> под каждую из стратегий.</p>
+                                <p class="big-text no-bold">В данном курсе
+                                    <span class="color-blue">мы готовы дать максимум практических знаний</span>, которые
+                                    будет необходимо адаптировать под вашу стратегию.</p>
+                                <p class="big-text no-bold">
+                                    <span class="color-blue">Заставить работать вашу стратегию</span> лучше можете
+                                    только вы — как это сделать, мы расскажем вам в данном курсе.</p>
+
+
+                            </div>
+                            <div class="col-md-1 col-sm-1 col-xs-12">
+                                <div class="line-border"></div>
+                            </div>
+                            <div class="col-md-5 col-sm-5 col-xs-12 text-left">
+                                <div>
+                                    <!-- <script id="33927a30f0061fa4acfbbb0082ab6841679fea8b"
+                                        src="https://sdg-tradecom.getcourse.ru/pl/lite/widget/script?id=16329"></script> -->
+                                    <div class="modal-body get">
+                                        <p class="get__lesson">Получить доступ к 1 уроку бесплатно.</p>
+                                        <form
+                                            action="https://sdg-tradecom.getcourse.ru/pl/lite/block-public/process-html?id=3442637"
+                                            method="post">
+                                            <input type="hidden" name="formParams[setted_offer_id]">
+                                            <input type="text" maxlength="60" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]+$"
+                                                required="" style="margin:0 0 10px 0" class="form-control"
+                                                placeholder="Введите ваше имя" name="formParams[full_name]" value="">
+                                            <input type="email" maxlength="60" class="form-control"
+                                                placeholder="Введите ваш эл. адрес" name="formParams[email]" value=""
+                                                required="">
+                                            <input type="tel" maxlength="60" class="form-control"
+                                                placeholder="Введите ваш телефон" name="formParams[phone]" value=""
+                                                minlength="11">
+                                            <input name="formParams[userCustomFields][33656]" type="hidden"
+                                                value="SRC: strategy_first_lesson |">
+                                            <input name="formParams[userCustomFields][157562]" data-id="client-id"
+                                                type="hidden" value="">
+                                            <button type="submit" class="f-btn f-btn-red btn">Получить первое
+                                                занятие</button>
+                                            <input type="hidden" name="__gc__internal__form__helper"
+                                                class="__gc__internal__form__helper"
+                                                value="http://sdg-trade.com/strategy/">
+                                            <input type="hidden" name="requestTime" value="">
+                                            <input type="hidden" name="requestSimpleSign" value="">
+                                        </form>
+                                        <!-- <div>
+                                                    <script id="d9bb128423512d2fb8df58ccc9ea407e6814bd1f"
+                                                        src="https://sdg-tradecom.getcourse.ru/pl/lite/widget/script?id=16083"></script>
+                                                </div> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-0 col-xs-0"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h2>Этот курс подойдет</h2>
+                    <div class="border"></div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12  no-padding">
+                    <div class="service-block color-bg text-center">
+                        <div class="service-icon text-center">
+                            <i class="tf-ion-ios-copy-outline"></i>
+                        </div>
+                        <p>Для тех, кто хочет формализовать свою торговую стратегию</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-2 col-sm-4 col-xs-12  no-padding">
+                    <div class="service-block text-center">
+                        <div class="service-icon text-center">
+                            <i class="tf-ion-ios-albums-outline"></i>
+                        </div>
+                        <p>Для тех, кто хочет расширить свой торговый арсенал</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-2 col-sm-4 col-xs-12  no-padding">
+                    <div class="service-block color-bg text-center">
+                        <div class="service-icon text-center">
+                            <i class="tf-ion-ios-book-outline"></i>
+                        </div>
+                        <p>Для тех, кто хочет постепенно увеличить объем в позиции</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-2 col-sm-4 col-xs-12  no-padding">
+                    <div class="service-block  text-center">
+                        <div class="service-icon text-center">
+                            <i class="tf-ion-ios-bolt"></i>
+                        </div>
+                        <p>Для тех, у кого еще нет своей торговой системы</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 col-xs-12  no-padding">
+                    <div class="service-block color-bg text-center">
+                        <div class="service-icon text-center">
+                            <i class="tf-ion-ios-download-outline"></i>
+                        </div>
+                        <p>Для тех, кто нуждается в новых работающих идеях для своей стратегии</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-2 col-sm-4 col-xs-12  no-padding">
+                    <div class="service-block text-center">
+                        <div class="service-icon text-center">
+                            <i class="tf-ion-ios-home-outline"></i>
+                        </div>
+                        <p>Для тех, кто чувствует себя неуверенно в трейдинге</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row" id="pochemu">
+
+                <div class="title text-center" style="margin-top:100px;">
+                    <h2>Почему мы</h2>
+                    <div class="border"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-2 col-xs-offset-1"></div>
+                        <div class="col-md-6 col-sm-6 col-xs-9">
+                            <div class="big_number">1.</div>
+                            <p class="why">Очень часто распространена практика преподавания голой теории. Мы же даем
+                                практику с первых занятий нашим студентам и акцентируем внимание на реальных навыках</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-0">
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-0"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-0"></div>
+                        <div class="col-md-3 col-sm-3 col-xs-2 col-xs-offset-1">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-9">
+                            <div class="big_number">2.</div>
+                            <p class="why">Большинство так называемых &quot;гуру трейдинга&quot; не показывает
+                                доходность: никто никогда не видел их реальный заработок, который зачастую в разы ниже
+                                публикующихся ими результатов</p>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-0"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-2 col-xs-offset-1"></div>
+                        <div class="col-md-6 col-sm-6 col-xs-9">
+                            <div class="big_number">3.</div>
+                            <p class="why">Некоторые &quot;гуру-трейдеры&quot; сами никогда не торговали на бирже.
+                                Ограничиваясь теоретическими знаниями, они пытаются учить реальным операциям на бирже
+                                своих студентов. Наши трейдеры ежедневно торгуют</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-0">
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-0"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-0"></div>
+                        <div class="col-md-3 col-sm-3 col-xs-2 col-xs-offset-1">
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-9">
+                            <div class="big_number">4.</div>
+                            <p class="why">Мало кто&nbsp; проводит действительно качественное комплексное обучение. У
+                                нас Вы создадите готовую стратегию, а не просто получите набор методов</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-0"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="call-to-action section" id="generic_price_table">
+        <div class="container wrapper-block">
+            <div class="row">
+                <div class="title title-white text-center">
+                    <h2 class="text-center">Программа курса</h2>
+                    <div class="border"></div>
+                </div>
+            </div>
+            <div class="row">
+                <h3 style="font-style:italic;color:#fff;margin:50px 0 0 15px;font-size:30px;">Теоретическая часть</h3>
+                <div class="col-md-12 col-sm-12 col-xs-12 tabiki">
+                    <ul class="nav nav-tabs responsive-tabs">
+                        <li class="active">
+                            <a data-toggle="tab" href="#urok1" class="text-center">1<span
+                                    class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok2">2<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok3">3<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok4">4<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok5">5<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok6">6<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok7">7<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok8">8<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok9">9<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok10">10<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok11">11<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok12">12<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok13">13<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok14">14<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok15">15<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok16">16<span class="small-text">модуль</span></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#urok17">17<span class="small-text">модуль</span></a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="urok1" class="tab-pane active">
+                            <p class="big-text">Модуль 1</p>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <ul class="description">
+                                        <li>Обзор программы курса в целом</li>
+                                        <li>Стратегия и тактика</li>
+                                        <li>Основные задачи курса</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <ul class="description">
+
+                                        <li>Почему не может быть лишь одна стратегия на все случаи жизни</li>
+                                        <li>Хороших ситуаций не может быть много</li>
+                                        <li>Термины</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <ul class="description">
+                                        <li>Адаптация стратегии</li>
+                                        <li>Конкурентное преимущество</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="urok2" class="tab-pane">
+                            <p class="big-text">Модуль 2</p>
+                            <ul class="description">
+                                <li>Индивидуальность акции</li>
+                                <li>Формы отчетности</li>
+                                <li>Рекомендации по торговле акций In Play</li>
+                                <li>Акции "преследования"</li>
+                                <li>Факторы выбора стиля</li>
+                            </ul>
+                        </div>
+                        <div id="urok3" class="tab-pane">
+                            <p class="big-text">Модуль 3</p>
+                            <ul class="description">
+                                <li>Необходимость менять мышление и подход</li>
+                                <li>Деление сессии на отрезки для разных стратегий</li>
+                            </ul>
+
+                            <p>Стратегии на лонг:</p>
+                            <ul class="description">
+                                <li>"быстрый buy - первая волна"</li>
+                            </ul>
+                        </div>
+                        <div id="urok4" class="tab-pane">
+                            <p class="big-text">Модуль 4</p>
+                            <p>Продолжение стратегий на лонг:</p>
+                            <ul class="description">
+                                <li>"быстрый buy - продолжение"</li>
+                                <li>"вечер - buy" </li>
+                            </ul>
+                        </div>
+                        <div id="urok5" class="tab-pane  ">
+                            <p class="big-text">Модуль 5</p>
+                            <ul class="description">
+                                <li>Правило SSR</li>
+                            </ul>
+                            <p>Стратегии на шорт:</p>
+                            <ul class="description">
+                                <li>"быстрый short - первое падение"</li>
+                            </ul>
+                        </div>
+                        <div id="urok6" class="tab-pane  ">
+                            <p class="big-text">Модуль 6</p>
+
+                            <p>Продолжение стратегий на short:</p>
+                            <ul class="description">
+                                <li>"short - второе падение"</li>
+                                <li>"short - после пробития low дня"</li>
+                                <li>"short - вечер"</li>
+                            </ul>
+                        </div>
+                        <div id="urok7" class="tab-pane  ">
+                            <p class="big-text">Модуль 7 <span>(практическое занятие)</span></p>
+                            <p>Выход на рынок (начало)</p>
+                            <ul class="description">
+
+                            </ul>
+                        </div>
+                        <div id="urok8" class="tab-pane  ">
+                            <p class="big-text">Модуль 8 <span>(практическое занятие)</span></p>
+                            <p>Выход на рынок (продолжение)</p>
+                            <ul class="description">
+
+                            </ul>
+                        </div>
+                        <div id="urok9" class="tab-pane  ">
+                            <p class="big-text">Модуль 9 <span>(практическое занятие)</span></p>
+                            <p>Анализ утренней практики</p>
+                            <ul class="description">
+
+                            </ul>
+                        </div>
+                        <div id="urok10" class="tab-pane  ">
+                            <p class="big-text">Модуль 10</p>
+                            <ul class="description">
+                                <li>Фонды (ETF)</li>
+                                <li>Понятие split / reverse split</li>
+                                <li>Индустрии</li>
+                            </ul>
+                        </div>
+                        <div id="urok11" class="tab-pane  ">
+                            <p class="big-text">Модуль 11</p>
+                            <ul class="description">
+                                <li>Фонды (ETF) и индустрии (продолжение) </li>
+                            </ul>
+                        </div>
+                        <div id="urok12" class="tab-pane  ">
+                            <p class="big-text">Модуль 12</p>
+                            <ul class="description">
+                                <li>Фильтра и сигналы (alerts)</li>
+                            </ul>
+                        </div>
+                        <div id="urok13" class="tab-pane  ">
+                            <p class="big-text">Модуль 13</p>
+                            <ul class="description">
+                                <li>Оценка исполнения стратегии</li>
+                            </ul>
+                        </div>
+                        <div id="urok14" class="tab-pane  ">
+                            <p class="big-text">Модуль 14 <span>(практическое занятие)</span></p>
+                            <p>Выход на рынок</p>
+                            <ul class="description">
+                            </ul>
+                        </div>
+                        <div id="urok15" class="tab-pane  ">
+                            <p class="big-text">Модуль 15 <span>(практическое занятие)</span></p>
+                            <p>Выход на рынок</p>
+                            <ul class="description">
+                            </ul>
+                        </div>
+                        <div id="urok16" class="tab-pane  ">
+                            <p class="big-text">Модуль 16 <span>(практическое занятие)</span></p>
+                            <p>Анализ утренней практики</p>
+                            <ul class="description">
+
+                            </ul>
+                        </div>
+                        <div id="urok17" class="tab-pane  ">
+                            <p class="big-text">Модуль 17</p>
+                            <ul class="description">
+                                <li>Как составить свою стратегию</li>
+                                <li>Психология сделки</li>
+                                <li>Разворотные модели</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h3 style="font-style:italic;color:#fff;margin:50px 0 0 15px;font-size:30px;">Практическая часть</h3>
+                <div class="col-md-12 col-sm-12 col-xs-12 tabiki">
+                    <ul class="nav nav-tabs responsive-tabs">
+                        <li class="active text-center tabiki-premium">
+                            <a data-toggle="tab" href="#dop1">1<span class="small-text">день</span></a>
+                        </li>
+                        <li class="text-center tabiki-premium">
+                            <a data-toggle="tab" href="#dop2">2<span class="small-text">день</span></a>
+                        </li>
+                        <li class="text-center tabiki-premium">
+                            <a data-toggle="tab" href="#dop3">3<span class="small-text">день</span></a>
+                        </li>
+                        <li class="text-center tabiki-premium">
+                            <a data-toggle="tab" href="#dop4">4<span class="small-text">день</span></a>
+                        </li>
+                        <li class="text-center tabiki-premium">
+                            <a data-toggle="tab" href="#dop5">5<span class="small-text">день</span></a>
+                        </li>
+                        <li class="text-center tabiki-premium">
+                            <a data-toggle="tab" href="#dop6">6<span class="small-text">день</span></a>
+                        </li>
+                        <li class="text-center tabiki-premium">
+                            <a data-toggle="tab" href="#dop7">7<span class="small-text">день</span></a>
+                        </li>
+                        <li class="text-center tabiki-premium last-tab">
+                            <a data-toggle="tab" href="#dop8">8<span class="small-text">день</span></a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="dop1" class="tab-pane active">
+                            <p class="big-text">1 день</p>
+                            <p class="big-text">1-ое занятие (1 час):</p>
+                            <ul class="description">
+                                <li>Стратегия планирования вашей стратегии.</li>
+                            </ul>
+                            <p class="big-text">2-ое занятие (1 час):</p>
+                            <ul class="description">
+                                <li>Пошаговый алгоритм стратегий, которого будет придерживаться ведущий.</li>
+                            </ul>
+                        </div>
+                        <div id="dop2" class="tab-pane">
+                            <p class="big-text">2 день</p>
+                            <p class="big-text">1-ое занятие (1 час):</p>
+                            <ul class="description">
+                                <li>План на день. Онлайн trading</li>
+                            </ul>
+                            <p class="big-text">2-ое занятие (1 час):</p>
+                            <ul class="description">
+                                <li>Поиск инструментов для стратегий </li>
+                            </ul>
+                        </div>
+                        <div id="dop3" class="tab-pane">
+                            <p class="big-text">3 день</p>
+                            <p class="big-text">1-ое занятие (1 час):</p>
+                            <ul class="description">
+                                <li>План на день. Онлайн trading</li>
+                            </ul>
+                            <p class="big-text">2-ое занятие (1 час):</p>
+                            <ul class="description">
+                                <li>Поиск инструментов для стратегий </li>
+                            </ul>
+                        </div>
+                        <div id="dop4" class="tab-pane">
+                            <p class="big-text">4 день (1.5-2 часа)</p>
+                            <ul class="description">
+                                <li>Как повысить эффективность своей стратегии (утро в новостных акциях)</li>
+                            </ul>
+                        </div>
+                        <div id="dop5" class="tab-pane  ">
+                            <p class="big-text">5 день (1.5-2 часа)</p>
+                            <ul class="description">
+                                <li>Эффективность вашей стратегии. Убрать лишнее</li>
+                            </ul>
+                        </div>
+                        <div id="dop6" class="tab-pane  ">
+                            <p class="big-text">6 день</p>
+                            <p class="big-text">1-ое занятие (1 час):</p>
+                            <ul class="description">
+                                <li>План на день. Онлайн trading</li>
+                            </ul>
+                            <p class="big-text">2-ое занятие (1 час):</p>
+                            <ul class="description">
+                                <li>Онлайн trading</li>
+                                <li>Итоги недели. Анализ действий за неделю</li>
+                            </ul>
+                        </div>
+                        <div id="dop7" class="tab-pane  ">
+                            <p class="big-text">7 день (1.5 часа)</p>
+                            <ul class="description">
+                                <li>Разбор сделок для формализованных стратегий.</li>
+                            </ul>
+                        </div>
+                        <div id="dop8" class="tab-pane  ">
+                            <p class="big-text">8 день (45 минут)</p>
+                            <ul class="description">
+                                <li>Индивидуальное занятие (для тех, кто не в программе "Трансформация 365")</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="kupit">
+                <div class="title title-white text-center">
+                    <h2 class="text-center">Стоимость курса</h2>
+                    <div class="border"></div>
+                </div>
+                <div class="col-md-6" id="stand">
+
+
+                    <div class="generic_content clearfix ">
+
+
+                        <div class="generic_head_price clearfix">
+
+
+                            <div class="generic_head_content clearfix paket">
+
+
+                                <div class="head_bg"></div>
+                                <div class="head_bg first-head-bg"></div>
+                                <div class="head">
+                                    <span>Курс
+                                        Формализованные стратегии
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="generic_price_tag clearfix">
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="currency">300</span>
+                                </span>
+                            </div>
+
+
+                        </div>
+
+                        <div class="generic_feature_list">
+                            <ul>
+                                <li>
+                                    <span>17</span> видео уроков + тесты</li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="generic_price_btn clearfix">
+                            <a class="btn btn-lg" data-toggle="modal" data-target="#standart">Подать заявку</a>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="generic_content allinc clearfix ">
+                        <div class="generic_head_price clearfix">
+                            <div class="generic_head_content clearfix transf">
+                                <div class="head_bg"></div>
+                                <div class="head_bg second-head-bg"></div>
+                                <div class="head">
+                                    <span>Трансформация 365</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="generic_feature_list">
+                            <ul>
+                                <li>
+<<<<<<< HEAD
+                                    <a href="http://sdg-trade.com/lp/year" target="_blank">
+                                        <span>Подробнее о программе "Трансформация 365"</span>
+                                    </a>
+                                </li>
+
+=======
+                                <a href="http://sdg-trade.com/lp/year" target="_blank">
+                                    
+                                    <span>Подробнее о программе "Трансформация 365"</span>
+                                </a>
+                                </li>
+>>>>>>> ca2312ddea1f8e3e3e087f5ea7f0b5bf5d61f869
+                                <li>
+                                    <span>1 год</span> обучения</li>
+                                <li class="allinclusive">Участие во всех обучающих программах SDG Trade на протяжении
+                                    365 дней</li>
+                            </ul>
+                        </div>
+                        <div class="generic_price_btn clearfix">
+                            <a class="btn btn-lg" href="http://sdg-trade.com/lp/year" target="_blank"
+                                onclick="dataLayer.push({'event': 'buttonsCOM'});">Узнать детали</a>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="team-skills section-sm" id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h2>Автор курса</h2>
+                    <div class="border"></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-4 col-sm-6 col-xs-12 text-center">
+
+                            <picture>
+                                <source type="image/webp" srcset="images/kolomiec.webp">
+                                <source type="image/png" srcset="images/kolomiec.png">
+                                <img src="images/kolomiec.png" alt="" style="width:100%">
+                            </picture>
+                        </div>
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <p class="big-text">Сергей Коломиец</p>
+
+                            <p class="preline-border">Торгует с 2010 года, проводит как индивидуальные занятия, так и
+                                групповые. Автор курса «Базовый курс дейтрейдинга на NYSE», спикер и куратор программы
+                                "Трансформация 365".</p>
+                            <p class="preline-border">Трейдер, который не знает, куда акция пойдет в следующую минуту,
+                                но при этом стабильно зарабатывает хорошие деньги, торгуя на биржах NYSE, NASDAQ, AMEX.
+                            </p>
+                            <p class="preline-border">Сергей считает, что проблема многих трейдеров стремление УЗНАТЬ,
+                                куда пойдет та или иная акция и на основе этого «знания» заработать состояние. На самом
+                                же деле деньги в трейдинге зарабатываются статистическим путем.<br> Мы
+                                можем потерять деньги в 7 случаях из 10, но в остальных 3 заработать сумму, которая
+                                будет значительно превышать наши потери в тех 7 случаях.</p>
+                        </div>
+                    </div>
+                    <div class="row text-center informa">
+                        <p class="big-text" style="margin-top:50px">На свои курсах Сергей дает информацию</p>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="service-item" style="margin-top: 44px">
+                                <p class="paragraf-big">Как не потерять деньги на первом этапе, когда новичку ничего не
+                                    понятно.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="service-item" style="margin-top: 22px">
+                                <p class="paragraf-big">Как определить, конкретно для себя, какие ситуации будут
+                                    работать для того или иного трейдера, в зависимости от его депозита.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="service-item">
+                                <p class="paragraf-big">Как выжимать максимум из тех дней, когда рынок открывает двери и
+                                    говорит: «Давай, бери сколько можешь». Именно за счет этих дней и приходит
+                                    положительный результат.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row recomenda">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <div class="big-text line-block text-center" style="margin-top:50px">Рекомендации от автора
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="service-item">
+                                <p style="font-style: italic;">Вне зависимости от того, торгуешь ты месяц или 4 года,
+                                    важно не допускать сильных дыр в своем депозите – это основная задача.<br><br> Взять
+                                    «свои дни», когда рынок дает такую возможность, это уже дело техники.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="service-item">
+                                <p style="font-style: italic;">Я не знаю, в какой конкретно день рынок даст мне
+                                    возможность заработать, но я знаю, что я буду делать в той или иной ситуации. То,
+                                    что я не получу во вторник, я получу в четверг либо в другой день. Ситуация под
+                                    контролем,
+                                    ведь я знаю, какие ситуации работают для меня, а вот когда конкретно я получу
+                                    прибыль от них, мне это неведомо. В худший месяц я вряд ли потеряю более 1500
+                                    долларов, а в средний положительный я заработаю в 5-7 раз выше
+                                    данной цифры.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:50px">
+                        <div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
+                            <p class="big-text text-center"> После изучения курса у вас будет выбор — работать по
+                                готовой торговой стратегии Сергея или изменить и адаптировать ее под себя</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="counter-wrapper section-sm" id="review">
+        <div class="container">
+            <div class="title text-center">
+                <h2>Отзывы учеников Сергея</h2>
+                <div class="border"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 text-center videocarousel">
+                    <div id="random_number1" class="carousel slide youtube-carousel" data-ride="carousel"
+                        data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="video-container first item active">
+                                <div class="videoWrapper videoWrapper169 js-videoWrapper">
+<<<<<<< HEAD
+                                    <iframe class="videoIframe js-videoIframe" src="javascript:" 
+                                         allowfullscreen=""
+=======
+                                    <iframe class="videoIframe js-videoIframe" src="#" style="border:0; background-color:transparent; "
+                                        allowfullscreen=""
+>>>>>>> ca2312ddea1f8e3e3e087f5ea7f0b5bf5d61f869
+                                        data-src="https://www.youtube.com/embed/M0OSMWdQqA8?autoplay=1&amp; modestbranding=1&amp;rel=0&amp;hl=sv"></iframe>
+                                    <div class="videoPoster first">
+                                        <div class="videoPoster__btn js-videoPoster">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-play-btn"></use>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <!-- <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/M0OSMWdQqA8" 
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div> -->
+
+                            </div>
+                            <div class="video-container second item">
+                                <div class="videoWrapper videoWrapper169 js-videoWrapper">
+<<<<<<< HEAD
+                                    <iframe class="videoIframe js-videoIframe" src="javascript:" 
+                                         allowfullscreen=""
+=======
+                                    <iframe class="videoIframe js-videoIframe" src="#" style="border:0; background-color:transparent; "
+                                        allowfullscreen=""
+>>>>>>> ca2312ddea1f8e3e3e087f5ea7f0b5bf5d61f869
+                                        data-src="https://www.youtube.com/embed/X6kjL4qBsoU?autoplay=1&amp; modestbranding=1&amp;rel=0&amp;hl=sv"></iframe>
+                                    <div class="videoPoster second">
+                                        <div class="videoPoster__btn js-videoPoster">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-play-btn"></use>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <!-- <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/X6kjL4qBsoU" 
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div> -->
+
+                            </div>
+                            <div class="video-container third item">
+                                <div class="videoWrapper videoWrapper169 js-videoWrapper">
+<<<<<<< HEAD
+                                    <iframe class="videoIframe js-videoIframe" src="javascript:" 
+=======
+                                    <iframe class="videoIframe js-videoIframe" src="#" style="border:0; background-color:transparent; "
+>>>>>>> ca2312ddea1f8e3e3e087f5ea7f0b5bf5d61f869
+                                         allowfullscreen=""
+                                        data-src="https://www.youtube.com/embed/-IgT_mJ9eow?autoplay=1&amp; modestbranding=1&amp;rel=0&amp;hl=sv"></iframe>
+                                    <div class="videoPoster third">
+                                        <div class="videoPoster__btn js-videoPoster">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-play-btn"></use>
+                                            </svg></div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/-IgT_mJ9eow" 
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div> -->
+
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <a class="left carousel-control" href="#random_number1" data-slide="prev">
+                                <div class="left-button">
+                                    <i class="glyphicon glyphicon-chevron-left"></i>
+                                </div>
+                            </a>
+                            <a class="right carousel-control" href="#random_number1" data-slide="next">
+                                <div class="right-button">
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 text-center caruseltext">
+                    <div id="myCarousel2" class="carousel slide">
+
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8 text-center">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel2" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel2" data-slide-to="3"></li>
+                                </ol>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <!-- Set the first background image using inline CSS below. -->
+                                <div class="carousel-caption">
+
+                                    <div class="animated fadeInRight">
+                                        <div class="otziv-chelovek">
+
+                                            <div class="circle-images">
+                                                <picture>
+                                                    <source type="image/webp" srcset="images/galina.webp">
+                                                    <source type="image/png" srcset="images/galina.jpg">
+                                                    <img src="images/galina.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <p class="big-text">Галина, г.Киев</p>
+                                        </div>
+
+                                        <p class="comments">Всем Привет ! Хочу обратиться ко всем, кто волею судьбы
+                                            оказался в этом бизнесе и к тем, кто только планирует сюда попасть. И если
+                                            вы читаете эти строки, значит имеете желание научиться зарабатывать с рынка.
+                                            Рекомендую
+                                            пройти данный курс, так как лично для меня он оказался очень полезным и
+                                            познавательным. До прохождения данного курса, я имела девятимесячный опыт
+                                            торговли и безуспешных попыток заработать. Автор курса Сергей,
+                                            профессионал своего дела и талантливый преподаватель. Если честно, то даже
+                                            не ожидала такого высокого качества обучения. В курсе преподносится огромное
+                                            количество информации в очень доступной форме и получаешь
+                                            подробнейшие ответы на любой вопрос. Так что, я довольна результатом
+                                            обучения, чего и Вам желаю.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+
+                                <div class="carousel-caption">
+                                    <div class="animated fadeInRight">
+                                        <div class="otziv-chelovek">
+                                            <div class="circle-images">
+                                                <picture>
+                                                    <source type="image/webp" srcset="images/anonim.webp">
+                                                    <source type="image/png" srcset="images/anonim.png">
+                                                    <img src="images/anonim.png" alt="">
+                                                </picture>
+                                            </div>
+                                            <p class="big-text">Артур, г.Москва</p>
+                                        </div>
+
+                                        <p class="comments">Здравствуйте, хочу сказать спасибо Сергею за предоставленный
+                                            курс.<br> Очень четко и терпеливо человек пробовал донести до аудитории свои
+                                            знания. Был бы рад прослушать его еще раз.<br> Стал понимать лучше рынок,
+                                            что делать, что искать, на что обращать внимание, в каком направлении думать
+                                            и двигаться...<br> Если хотите научиться зарабатывать на фондовой бирже сша
+                                            - то не задумывайтесь, а записывайтесь на&nbsp; этот курс
+                                            и обучайтесь.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+
+                                <div class="carousel-caption">
+                                    <div class="animated fadeInRight">
+                                        <div class="otziv-chelovek">
+                                            <div class="circle-images">
+
+                                                <picture>
+                                                    <source type="image/webp" srcset="images/katia.webp">
+                                                    <source type="image/png" srcset="images/katia.jpg">
+                                                    <img src="images/katia.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <p class="big-text">Катя, г.Одесса</p>
+
+                                        </div>
+
+                                        <p class="comments">Курс &quot;Старт на NYSE&quot;&nbsp; мне понравился, смысл
+                                            понятен общий даже для человека с нуля, как по мне, но у меня на первом
+                                            этапе проблема была в понимании сленга трейдеров :) потом уделяла этому
+                                            отдельное
+                                            время, чтоб правильно в голове все уложить). т.к. 80 или даже 90% участников
+                                            были с опытом работы на форексе, на фондовом рынке или на демо версиях, я
+                                            думаю им информация с самого начала была очень полезна и
+                                            легка в понимании. Но я думаю все таки, что можно ввести начальный урок с
+                                            объяснения азов, самой базовой части, термины, общие понятия для тех, у кого
+                                            вообще &quot;0&quot; опыта. Чтоб потом человеку легче было
+                                            в понимании более сложных моментов )) и еще (опять же таки как по мне) так
+                                            урок по платформам перенести на 2 или 3 место. А то я так его ждала, потому
+                                            что заходила в демку, и ничего не понимала :))) А так все
+                                            понравилось, интересно и познавательно, единственное жалею о том что опыта
+                                            не было, а то тоже позадовала бы вопросов, а так пока надо это все уложить в
+                                            голове :)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+
+                                <div class="carousel-caption">
+                                    <div class="animated fadeInRight">
+                                        <div class="otziv-chelovek">
+                                            <div class="circle-images">
+
+                                                <picture>
+                                                    <source type="image/webp" srcset="images/evgen.webp">
+                                                    <source type="image/png" srcset="images/evgen.jpg">
+                                                    <img src="images/evgen.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <p class="big-text">Евгений, г.Харьков</p>
+                                        </div>
+                                        <p class="comments">Привлекло то что Сергей опытный и самое главное практикующий
+                                            трейдер с приличным стажем, который стабильно зарабатывает. Решился на
+                                            участие в тренинге, потому что знаю точно что обучаться нужно у опытных
+                                            людей т.к.
+                                            самому пробиваться очень сложно. Да и тому же за такую цену грех не пройти
+                                            такой тренинг.<br>Сомневался в том, что это очередной парень, коих в сети и
+                                            так хватает, который будет бить в грудь и говорить что он
+                                            профессиональный трейдер и что он все знает и все может. Но по прохождению
+                                            курса мои сомнения развеялись. Помогло преодолеть сомненния лишь одно -
+                                            понимание того что вложенные деньги в свое обучение и развитие
+                                            вернутся в многократном размере.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <p class="big-text text-center" style="margin: 70px 0 30px">Успейте записаться по наилучшей цене!</p>
+            <div class="list-inline text-center scroll">
+                <a data-scroll="" href="#kupit" class="btn btn-main">Подать заявку</a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="pricing-table" id="pricing">
+        <div class="container">
+            <div class="row">
+
+                <div class="title title-white text-center">
+                    <h2>Наши гарантии</h2>
+                    <div class="border"></div>
+                </div>
+                <div class="col-md-offset-2 col-md-4 col-sm-6 col-xs-12 text-center">
+
+                    <picture>
+                        <source type="image/webp" srcset="images/guaranted.webp">
+                        <source type="image/png" srcset="images/guaranted.png">
+                        <img src="images/guaranted.png" alt="">
+                    </picture>
+                </div>
+                <div class=" col-md-5 col-sm-6 col-xs-12">
+                    <p class="big-text title-white no-bold">
+                        Гарантируем ли мы, что курс «ФОРМАЛИЗОВАННЫЕ СТРАТЕГИИ» принесет Вам пользу?</p>
+                    <p>Да! Мы настолько уверены, что курс&nbsp; «ФОРМАЛИЗОВАННЫЕ СТРАТЕГИИ» будет полезен&nbsp; Вам,
+                        если Вы только интересуетесь торговлей на американском фондовом рынке&nbsp; или уже имеете
+                        определенный опыт торговли, что даем ГАРАНТИЮ:</p>
+                    <p>Если вдруг по какой-либо причине на протяжении первых двух занятий Вы поймете, что этот курс не
+                        для Вас, просто напишите нам об этом, и мы вернем Вам деньги.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h2>Наиболее популярные вопросы</h2>
+                    <div class="border"></div>
+                </div>
+                <div class="b-content_faq_tabs" data-faq>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5">
+                            <ul class="b-content_faq_tabs_switcher" data-faq-switcher>
+                                <li>
+                                    <a href="#question_01" class="current">&mdash;&nbsp;Стратегии из интернета не
+                                        работают!</a>
+                                </li>
+                                <li>
+                                    <a href="#question_02">&mdash;&nbsp;Я уже обучался, но все равно теряю</a>
+                                </li>
+                                <li>
+                                    <a href="#question_03">&mdash;&nbsp;Зачем Сергею обучать, если он и так
+                                        зарабатывает?</a>
+                                </li>
+                                <li>
+                                    <a href="#question_04">&mdash;&nbsp;Как я могу оплатить и будет ли запись
+                                        занятий?</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-7">
+                            <div class="b-content_faq_tabs_answer" id="question_01" data-faq-item>
+                                <p>Сергей Коломиец, как и все трейдеры SDG Trade, не раз показывал свою онлайн-торговлю.
+                                    Мы не показываем только лишь положительные дни и не погружаем вас в иллюзию, что вы
+                                    всегда будете зарабатывать. Настоящим трейдерам не
+                                    стыдно показывать свои убытки, так как, придерживаясь своих торговых стратегий, они
+                                    всегда в итоге перекроют минусовые дни положительными днями. Положительная
+                                    статистика Сергея Коломийца – за месяц, квартал, год – показывает,
+                                    что его стратегии и подходы работают и с их помощью можно заработать. Именно этим
+                                    стратегиям он Вас обучит.</p>
+                            </div>
+                            <div class="b-content_faq_tabs_answer" id="question_02" data-faq-item>
+                                <p>Важен не столько факт обучения, а у кого именно Вы обучались - у реального практика
+                                    или же у гуру &quot;инфобизнеса&quot;. Большинство «гуру» не торгуют, а их обучение
+                                    – это сплошная теория из книжек. Сергей же – практикующий
+                                    трейдер, который зарабатывает на фондовом рынке. Поэтому его стратегии действительно
+                                    рабочие и актуальные.</p>
+                            </div>
+                            <div class="b-content_faq_tabs_answer" id="question_03" data-faq-item>
+                                <p>Сергей является частью нашей компании и участвует в наших общих задачах. Наша
+                                    компания зарабатывает лишь на успешных трейдерах - т.е. тех, кто торгует много,
+                                    долго, большими объемами, а это возможно лишь в случае успешности
+                                    трейдера на рынке. Наша прибыль генерируется благодаря сгенерированной трейдерами
+                                    брокерской комиссии. Нам никогда не было и не будет выгодно, чтобы клиенты «сливали»
+                                    свой депозит и, разочарованные, покидали этот бизнес.
+                                    Наша задача – обучить клиентов, чтобы они могли зарабатывать, и долгое время быть с
+                                    нами вместе. Но, так как трейдинг – это бизнес, а не меценатство, то курс платный.
+                                    Однако цена за данный курс однозначно в разы меньше
+                                    его истинной ценности. При правильном подходе вы сможете «отбить» свои инвестиции в
+                                    обучение за 1-2 трейда.</p>
+                            </div>
+                            <div class="b-content_faq_tabs_answer" id="question_04" data-faq-item>
+                                <p>Оплатить курс можно следующими способами:
+                                    <br /> 1)банковский SWIFT-перевод
+                                    <br /> 2)моментальная оплата в Личном кабинете на нашем сайте
+                                    <br /> 3)Оплата через другие платежные системы по согласованию с менеджером<br>Все
+                                    участники смогут получить запись всех занятий, чтобы была возможность впоследствии
+                                    пересмотреть и заметить какие-то новые моменты.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <p class="big-text text-center" style="margin:30px 0">Если вы не нашли ответ на свой вопрос, Вы легко
+                    можете задать его нам и получить быстрый ответ</p>
+                <div class="list-inline text-center">
+                    <a class="btn btn-main" data-toggle="modal" data-target="#zadatvopros">Задать вопрос</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer id="footer" class="bg-one">
+
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 socials">
+                    <p></p>
+                    <a href="https://www.facebook.com/trade.sdg" target="_blank">
+
+                        <picture>
+                            <source type="image/webp" srcset="images/fs.webp">
+                            <source type="image/png" srcset="images/fs.png">
+                            <img src="images/fs.png" alt="">
+                        </picture>
+                    </a>
+                    <a href="https://vk.com/clubsdg" target="_blank">
+                        <picture>
+                            <source type="image/webp" srcset="images/vk.webp">
+                            <source type="image/png" srcset="images/vk.png">
+                            <img src="images/vk.png" alt="">
+                        </picture>
+
+                    </a>
+                    <a href="https://www.youtube.com/c/sdgtrade" target="_blank">
+
+                        <picture>
+                            <source type="image/webp" srcset="images/you.webp">
+                            <source type="image/png" srcset="images/you.png">
+                            <img src="images/you.png" alt="">
+                        </picture>
+                    </a>
+                    <a href="https://twitter.com/SDGTRADE" target="_blank">
+
+                        <picture>
+                            <source type="image/webp" srcset="images/tw.webp">
+                            <source type="image/png" srcset="images/tw.png">
+                            <img src="images/tw.png" alt="">
+                        </picture>
+                    </a>
+                    <a href="https://telegram.me/sdgtrade" target="_blank">
+                        <picture>
+                            <source type="image/webp" srcset="images/tel.webp">
+                            <source type="image/png" srcset="images/tel.png">
+                            <img src="images/tel.png" alt="">
+                        </picture>
+
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 socials">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <p class="b-footer_phone" style="display:inline-block;text-align:center;margin-top: 7px;"><a
+                                    href="http://sdg-trade.com/confidence.html">Политика конфиденциальности</a></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <p class="b-footer_phone" style="display:inline-block;text-align:center;"><a
+                                    href="http://sdg-trade.com/polzovatelskoe_soglashenie.html">Публичная оферта</a>
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <p class="b-footer_phone" style="display:inline-block;text-align:center;">Email:<a
+                                    href="mailto:info@sdg-trade.com"> info@sdg-trade.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="row">
+                        <p></p>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <i class="glyphicon glyphicon-phone ua"></i>
+                            <span class="b-footer_phone">+38 (044) 338-75-53</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <i class="glyphicon glyphicon-phone rus"></i>
+                            <span class="b-footer_phone">+7 (499) 350-73-98</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <p>Торговля на фондовых биржах и обучение возможно для лиц, достигших 18+ лет. Данный ресурс носит
+                        информационный характер. Перед началом торговли убедитесь, что вы имеете необходимые знания и
+                        осознаете возможные риски. Ваша информация
+                        не будет передана третьим лицам.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- <div class="modal fade" id="start" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title text-center" id="myModalLabel">Акционный пакет «Быстрый старт»</h4>
+
+                </div>
+                <div class="modal-body">
+                    <p>Оставьте заявку и в течение дня с Вами свяжется наш специалист и ответит на все вопросы.</p>
+                    <div>
+                        <script id="22424ec13559ffb604ebf36ae088b8c01f07647d"
+                            src="https://sdg-tradecom.getcourse.ru/pl/lite/widget/script?id=16081"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+<<<<<<< HEAD
+    <div class="modal fade" id="standart" tabindex="-1" role="dialog"  aria-hidden="true">
+=======
+    <div class="modal fade" id="standart" tabindex="-1" role="dialog" aria-label="basicModal" aria-hidden="true">
+>>>>>>> ca2312ddea1f8e3e3e087f5ea7f0b5bf5d61f869
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title text-center" id="myModalLabel">Пакет «Стандарт»</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Оставьте заявку и в течение дня с Вами свяжется наш специалист и ответит на все вопросы.</p>
+                    <form action="https://sdg-tradecom.getcourse.ru/pl/lite/block-public/process-html?id=3146576"
+                        method="post">
+                        <input type="hidden" name="formParams[setted_offer_id]">
+                        <input type="text" maxlength="60" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]+$" required=""
+                            style="margin:0 0 10px 0" class="form-control" placeholder="Введите ваше имя"
+                            name="formParams[full_name]" value="">
+                        <input type="email" maxlength="60" class="form-control" placeholder="Введите ваш эл. адрес"
+                            name="formParams[email]" value="" required="">
+                        <input type="tel" maxlength="60" class="form-control" placeholder="Введите ваш телефон"
+                            name="formParams[phone]" value="" minlength="11">
+                        <input name="formParams[userCustomFields][33656]" type="hidden" value="SRC: strategy |">
+                        <input name="formParams[userCustomFields][157562]" data-id="client-id" type="hidden" value="">
+                        <button type="submit" class="f-btn f-btn-red btn">Подать заявку</button>
+                        <input type="hidden" name="__gc__internal__form__helper" class="__gc__internal__form__helper"
+                            value="http://sdg-trade.com/strategy/">
+                        <input type="hidden" name="requestTime" value="">
+                        <input type="hidden" name="requestSimpleSign" value="">
+                    </form>
+                    <!-- <div>
+                        <script id="d9bb128423512d2fb8df58ccc9ea407e6814bd1f"
+                            src="https://sdg-tradecom.getcourse.ru/pl/lite/widget/script?id=16083"></script>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="modal fade" id="premium" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title text-center" id="myModalLabel">Пакет «Премиум»</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Оставьте заявку и в течение дня с Вами свяжется наш специалист и ответит на все вопросы.</p>
+                    <div>
+                        <script id="805d24dbb24a544960b9009fbf084c41029ae17b"
+                            src="https://sdg-tradecom.getcourse.ru/pl/lite/widget/script?id=16085"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="modal fade" id="transforma" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title text-center" id="myModalLabel">Программа «Трансформация 365»</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Оставьте заявку и в течение дня с Вами свяжется наш специалист и ответит на все вопросы.</p>
+                    <div>
+                        <script id="8faa47f5cb9af2f3c44662e3065b38b02dcb38f8"
+                            src="https://sdg-trade.info/pl/lite/widget/script?id=59741"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+<<<<<<< HEAD
+    <div class="modal fade" id="zadatvopros" tabindex="-1" role="dialog" 
+=======
+    <div class="modal fade" id="zadatvopros" tabindex="-1" role="dialog" aria-label="basicModal"
+>>>>>>> ca2312ddea1f8e3e3e087f5ea7f0b5bf5d61f869
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-body">
+                    <div>
+                        <script src="js/forma-sviazi.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            let gcInternal = document.querySelectorAll(".__gc__internal__form__helper");
+            gcInternal.forEach(element => {
+                element.value = window.location.href;
+            });
+
+
+            function getCookie(name) {
+                let matches = document.cookie.match(new RegExp(
+                    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+                ));
+                return matches ? decodeURIComponent(matches[1]) : undefined;
+            }
+            let yml;
+            let cid;
+            if (getCookie('_ym_uid')) {
+                yml = getCookie('_ym_uid');
+                yml = `YM - ${yml}`;
+            }
+
+            if (getCookie('_ga')) {
+                let cidLong = getCookie('_ga');
+                let tmp = cidLong.split('.');
+                cid = tmp[2] + '.' + tmp[3];
+                cid = `GA - ${cid}`;
+            }
+
+            cid ? cid : cid = '';
+            yml ? yml : yml = '';
+            let clientIDinput = document.querySelectorAll('[data-id="client-id"]') ? document
+                .querySelectorAll('[data-id="client-id"]') : false;
+            if (clientIDinput) {
+                clientIDinput.forEach((e) => {
+                    e ? e.value = `${cid}${cid && yml ? ' | ' : ''}${yml}` : '';
+                });
+            }
+
+            let form = document.querySelectorAll('form');
+
+            form.forEach((element) => {
+                element.addEventListener("submit", (e) => {
+                    e.preventDefault();
+                    dataLayer.push({
+                        'event': "formsend"
+                    })
+                    element.submit();
+                }, true);
+            });
+
+            $('.carousel').carousel({
+                interval: 25000
+            })
+            $('.card-header[data-toggle="collapse"]').click(function () {
+
+                $(this).find('.open-icon').toggleClass('active');
+            });
+            $('.modal').on('show.bs.modal', function () {
+                $('.modal').not($(this)).each(function () {
+                    $('body').toggleClass('modal-open');
+                    $(this).modal('hide');
+                });
+
+            });
+        })
+
+    </script>
+    <script>
+        function videoPlay($wrapper) {
+            var $iframe = $wrapper.find(".js-videoIframe");
+            var $video = $wrapper.find(".js-videoSource");
+            var src = $iframe.data("src");
+
+            // hide poster
+            setTimeout(function () {
+                $wrapper.addClass("videoWrapperActive");
+            }, 1000);
+            $video.length > 0 ? $video[0].play() : false;
+            $iframe.attr("src", src);
+        }
+
+        $(document).on("click", ".js-videoPoster", function (ev) {
+            ev.preventDefault();
+
+            var $poster = $(this);
+
+            var $wrapper = $poster.closest(".js-videoWrapper");
+
+            videoPlay($wrapper);
+        });
+
+        // stop the targeted/all videos (and re-instate the poster frames)
+
+        function videoStop($wrapper) {
+            // if we're stopping all videos on page
+
+            if (!$wrapper) {
+                var $wrapper = $(".js-videoWrapper");
+
+                var $iframe = $(".js-videoIframe");
+
+                // if we're stopping a particular video
+            } else {
+                var $iframe = $wrapper.find(".js-videoIframe");
+            }
+
+            // reveal poster
+
+            $wrapper.removeClass("videoWrapperActive");
+
+            // remove youtube link, stopping the video from playing in the background
+
+            $iframe.attr("src", "");
+        }</script>
+
+    <script>
+        $('.responsive-tabs').responsiveTabs({
+            accordionOn: ['xs', 'sm']
+        });
+    </script>
+</body>
+
+</html>

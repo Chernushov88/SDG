@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html class="nojs html" lang="ru-RU">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2017.0.2.363"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musepolyfill.bgsize.js", "jquery.watch.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "musewpdisclosure.js", "jquery.scrolleffects.js", "require.js", "mobile.css"], "outOfDate":[]};
+</script>
+  
+  <link rel="shortcut icon" href="images/mobile-favicon.ico?crc=157111874"/>
+<title>Курс обучения трейдингу "Формализованные стратегии"</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=385726206"/>
+  <link rel="stylesheet" type="text/css" href="css/mobile.css?crc=4044474658" id="pagesheet"/>
+  <!-- IE-only CSS -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_mobile.css?crc=312655401"/>
+  <![endif]-->
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script src="https://webfonts.creativecloud.com/ubuntu-condensed:n4:all;ubuntu-mono:n4:all;pt-sans:n7,n4:all;ubuntu:n4,n7,i4,i7,n5,n3:all;pt-sans-narrow:n4:all;bad-script:n4:all.js" type="text/javascript"></script>
+    <!--custom head HTML-->
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-61250395-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+  <!--HTML Widget code-->
+  
+<style>
+body {
+-webkit-user-select: none !important;
+-webkit-touch-callout: none !important;
+    }
+</style>
+<style type="text/css">#u13613.size_fluid_width_height iframe { position:absolute; left:0; top:0; }</style>
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=rPbqNZoK4kkwSwh52yfx4qzmYeUsQMU6Itku0z6XjmvPbPLQ4PNP2A4y52icDmpdncoEVqLr1q/c1WEmhbCgM5m3kWwzZbPBw3cn6o3G9E*5W21HCP12HuOsChNmbguU/IfghLDxTCJ4JsX0A/EEm9U6iSgmZ8QzQbrjgLq61g0-&pixel_id=1000000492';</script>
+ </head>
+ <body>
+
+  <div class="clearfix" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="pu10318"><!-- group -->
+     <div class="browser_width" id="u10318-bw">
+      <div id="u10318"><!-- simple frame --></div>
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U10320-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+     <a class="nonblock nontext anim_swing clearfix" id="u10320-4" href="mobile.html#about" data-href="anchor:U9647:U10082" data-muse-uid="U10320" data-muse-type="txt_frame"><!-- content --><p class="Menu_Button" id="u10320-2">О КУРСЕ</p></a>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U10308-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+     <div class="pointer_cursor clearfix" id="u10308-5" data-muse-uid="U10308" data-muse-type="txt_frame"><!-- content -->
+      <a class="block anim_swing" href="mobile.html#about" data-href="anchor:U9647:U10082"><!-- Block link tag --></a>
+      <p class="Menu_Button" id="u10308-3"><span id="u10308">​</span><span class="actAsInlineDiv normal_text" id="u10309"><!-- content --><a class="nonblock nontext actAsDiv clip_frame excludeFromNormalFlow" id="u10310" href="http://sdg-trade.com" data-muse-uid="U10310" data-muse-type="img_frame"><!-- image --><img id="u10310_img" src="images/logo%20(1).png?crc=3786689811" alt="" width="142" height="68" data-muse-src="images/logo%20(1).png?crc=3786689811"/></a></span><span></span></p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U10314-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+     <a class="nonblock nontext anim_swing clearfix" id="u10314-4" href="mobile.html#author" data-href="anchor:U9647:U13500" data-muse-uid="U10314" data-muse-type="txt_frame"><!-- content --><p class="Menu_Button" id="u10314-2">КТО АВТОР</p></a>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U10315-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+     <div class="clearfix" id="u10315-4" data-muse-uid="U10315" data-muse-type="txt_frame"><!-- content -->
+      <p class="Menu_Button" id="u10315-2">СТОИМОСТЬ</p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U10322-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+     <div class="clearfix" id="u10322-4" data-muse-uid="U10322" data-muse-type="txt_frame"><!-- content -->
+      <p class="Menu_Button" id="u10322-2">ОТЗЫВЫ</p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U10321-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+     <a class="nonblock nontext anim_swing clearfix" id="u10321-4" href="mobile.html#about" data-href="anchor:U9647:U10082" data-muse-uid="U10321" data-muse-type="txt_frame"><!-- content --><p class="Menu_Button" id="u10321-2">ПРОГРАММА</p></a>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U10312-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+     <div class="clearfix" id="u10312-4" data-muse-uid="U10312" data-muse-type="txt_frame"><!-- content -->
+      <p class="Menu_Button" id="u10312-2">ЗАПИСАТЬСЯ</p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U10323-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+     <div class="clearfix" id="u10323-4" data-muse-uid="U10323" data-muse-type="txt_frame"><!-- content -->
+      <p class="Menu_Button" id="u10323-2">ГАРАНТИИ</p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U10313-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+     <div class="clearfix" id="u10313-4" data-muse-uid="U10313" data-muse-type="txt_frame"><!-- content -->
+      <p class="Menu_Button" id="u10313-2">ВОПРОСЫ</p>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <div class="clearfix colelem" id="pu10128"><!-- group -->
+     <div class="browser_width grpelem" id="u10128-bw">
+      <div class="museBGSize" id="u10128"><!-- column -->
+       <div class="clearfix" id="u10128_align_to_page">
+        <div class="clearfix colelem" id="pu10465-6"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U10465-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="heading1 Animazione clearfix grpelem" id="u10465-6" data-muse-uid="U10465" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <h1>ФОРМАЛИЗОВАННЫЕ</h1>
+          <h1>СТРАТЕГИИ</h1>
+         </div>
+         <!-- /m_editable -->
+         <div class="size_fixed grpelem" id="u10174"><!-- custom html -->
+          
+
+<body oncontextmenu="return false">
+
+
+         </div>
+        </div>
+        <div class="colelem" id="u10158"><!-- custom html -->
+         <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37025190 = new Ya.Metrika({ id:37025190, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <!-- /Yandex.Metrika counter -->
+        </div>
+        <!-- m_editable region-id="editable-static-tag-U10228-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="heading1 Animazione clearfix colelem" id="u10228-4" data-muse-uid="U10228" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <h1>Примените наиболее подходящую для вас торговую стратегию&nbsp; и сделайте ваш трейдинг прибыльнее уже на протяжении курса.</h1>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U10081-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+        <div class="rounded-corners clearfix colelem" id="u10081-4" data-muse-uid="U10081" data-muse-type="txt_frame"><!-- content -->
+         <p id="u10081-2">ПРИНЯТЬ УЧАСТИЕ</p>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U13492-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="clearfix colelem" id="u13492-4" data-muse-uid="U13492" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p>НАЧАЛО УЖЕ 10 АПРЕЛЯ</p>
+        </div>
+        <!-- /m_editable -->
+       </div>
+      </div>
+     </div>
+     <a class="anchor_item grpelem" id="top"></a>
+    </div>
+    <a class="anchor_item colelem" id="about"></a>
+    <!-- m_editable region-id="editable-static-tag-U13503-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+    <div class="Title_Large clearfix colelem" id="u13503-4" data-muse-uid="U13503" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+     <h2>О КУРСЕ</h2>
+    </div>
+    <!-- /m_editable -->
+    <!-- m_editable region-id="editable-static-tag-U13859-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+    <div class="clearfix colelem" id="u13859-24" data-muse-uid="U13859" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+     <p id="u13859-2">Данная программа создана трейдерами для трейдеров.</p>
+     <p id="u13859-3">&nbsp;</p>
+     <p id="u13859-5">Для тех трейдеров, кто имеет определенные знания по рынкам США, но не имеет четкого плана действий на случай:</p>
+     <p id="u13859-6">&nbsp;</p>
+     <ul class="list0 nls-None" id="u13859-9">
+      <li id="u13859-8">отчетного периода (активные движения)</li>
+     </ul>
+     <ul class="list0 nls-None" id="u13859-12">
+      <li id="u13859-11">межотчетного периода (малоподвижный рынок)</li>
+     </ul>
+     <ul class="list0 nls-None" id="u13859-15">
+      <li id="u13859-14">день больших покупок (все растет, а я не знаю какие акции купить)</li>
+     </ul>
+     <ul class="list0 nls-None" id="u13859-18">
+      <li id="u13859-17">день больших продаж (все падает, а я не знаю какие акция взять в short)</li>
+     </ul>
+     <p id="u13859-19">&nbsp;</p>
+     <p id="u13859-21">Также, если вы устали сидеть один на один со своими проблемами и ошибками, которые регулярно повторяются, то этот курс именно для вас. Уже свыше 10 лет мы активно занимаемся подготовкой и обучением трейдеров работе на фондовом рынке США . Мы даем знания из личного опыта ведущих трейдеров компании, которые подтверждены положительными результатами торговли наших учеников.</p>
+     <p id="u13859-22">&nbsp;</p>
+    </div>
+    <!-- /m_editable -->
+    <!-- m_editable region-id="editable-static-tag-U13564-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+    <div class="clearfix colelem" id="u13564-5" data-muse-uid="U13564" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+     <p id="u13564-2">ЭТОТ КУРС ПОДОЙДЕТ:</p>
+     <p>&nbsp;</p>
+    </div>
+    <!-- /m_editable -->
+    <div class="clearfix colelem" id="pu13511"><!-- group -->
+     <!-- m_editable region-id="editable-static-tag-U13511-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="clip_frame grpelem" id="u13511" data-muse-uid="U13511" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13511_img" src="images/bl5-img3.png?crc=431613087" alt="" width="47" height="36" data-muse-src="images/bl5-img3.png?crc=431613087"/>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13517-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="clip_frame grpelem" id="u13517" data-muse-uid="U13517" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13517_img" src="images/bl5-img1.png?crc=3974221745" alt="" width="47" height="36" data-muse-src="images/bl5-img1.png?crc=3974221745"/>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13523-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="clip_frame grpelem" id="u13523" data-muse-uid="U13523" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13523_img" src="images/bl5-img2.png?crc=303569764" alt="" width="47" height="36" data-muse-src="images/bl5-img2.png?crc=303569764"/>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <div class="clearfix colelem" id="pu13507"><!-- group -->
+     <div class="rounded-corners clearfix grpelem" id="u13507"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U13509-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix grpelem" id="u13509-4" data-muse-uid="U13509" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>для тех, кто хочет четко формализовать свою стратегию</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <div class="rounded-corners clearfix grpelem" id="u13515"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U13516-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix grpelem" id="u13516-4" data-muse-uid="U13516" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>для тех, кто хочет расширить свой торговый арсенал</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <div class="rounded-corners clearfix grpelem" id="u13519"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U13521-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix grpelem" id="u13521-4" data-muse-uid="U13521" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>для тех, кто хочет постепенно увеличить объем в позиции</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu13513"><!-- group -->
+     <!-- m_editable region-id="editable-static-tag-U13513-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="clip_frame grpelem" id="u13513" data-muse-uid="U13513" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13513_img" src="images/bl5-img3.png?crc=431613087" alt="" width="47" height="36" data-muse-src="images/bl5-img3.png?crc=431613087"/>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13525-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="clip_frame grpelem" id="u13525" data-muse-uid="U13525" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13525_img" src="images/bl5-img2.png?crc=303569764" alt="" width="47" height="36" data-muse-src="images/bl5-img2.png?crc=303569764"/>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13862-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="clip_frame grpelem" id="u13862" data-muse-uid="U13862" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13862_img" src="images/bl5-img1.png?crc=3974221745" alt="" width="47" height="36" data-muse-src="images/bl5-img1.png?crc=3974221745"/>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <div class="clearfix colelem" id="pu13508"><!-- group -->
+     <div class="rounded-corners clearfix grpelem" id="u13508"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U13510-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix grpelem" id="u13510-4" data-muse-uid="U13510" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>&nbsp;у кого еще нет своей торговой системы</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <div class="rounded-corners clearfix grpelem" id="u13520"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U13522-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix grpelem" id="u13522-4" data-muse-uid="U13522" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>&nbsp;&nbsp;&nbsp; кто нуждается в новых работающих идеях для своей торговой стратегии.</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <div class="rounded-corners clearfix grpelem" id="u13860"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U13861-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix grpelem" id="u13861-4" data-muse-uid="U13861" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>кто чувствует себя неуверенно в трейдинге</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu13502-7"><!-- group -->
+     <!-- m_editable region-id="editable-static-tag-U13502-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="clearfix grpelem" id="u13502-7" data-muse-uid="U13502" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p>&nbsp;</p>
+      <p>В данном курсе мы готовы дать <span id="u13502-3">максимум практических знаний</span>, которые будет необходимо адаптировать под вашу стратегию. Заставить работать вашу стратегию лучше в вашей ситуации можете только вы — как это сделать, мы&nbsp; расскажем в данном курсе.</p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13749-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="clip_frame grpelem" id="u13749" data-muse-uid="U13749" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13749_img" src="images/trading%20soft.png?crc=422986357" alt="" width="271" height="311" data-muse-src="images/trading%20soft.png?crc=422986357"/>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <div class="browser_width colelem" id="u13611-bw">
+     <div id="u13611"><!-- column -->
+      <div class="clearfix" id="u13611_align_to_page">
+       <!-- m_editable region-id="editable-static-tag-U13612-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix colelem" id="u13612-7" data-muse-uid="U13612" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p id="u13612-5"><span id="u13612-3">КРАТКО О ЦЕЛЯХ КУРСА<br/></span><span id="u13612-4">(длительность видео менее 2х минут)</span></p>
+       </div>
+       <!-- /m_editable -->
+       <div class="size_fixed colelem" id="u13613"><!-- custom html -->
+         
+<iframe class="actAsDiv" style="width:100%;height:100%;" src="//www.youtube.com/embed/Hxdrt2XbnfQ?autoplay=0&loop=1&playlist=Hxdrt2XbnfQ&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=3&wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- m_editable region-id="editable-static-tag-U13614-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+    <div class="Title_Large clearfix colelem" id="u13614-4" data-muse-uid="U13614" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+     <h1>ПОЧЕМУ ИМЕННО МЫ</h1>
+    </div>
+    <!-- /m_editable -->
+    <div class="clearfix colelem" id="pu13645"><!-- group -->
+     <!-- m_editable region-id="editable-static-tag-U13645-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="rounded-corners clip_frame grpelem" id="u13645" data-muse-uid="U13645" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13645_img" src="images/icon02.png?crc=317013859" alt="" width="100" height="100" data-muse-src="images/icon02.png?crc=317013859"/>
+     </div>
+     <!-- /m_editable -->
+     <div class="rounded-corners clearfix grpelem" id="u13753"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U13757-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="Text_Body_Light clearfix grpelem" id="u13757-4" data-muse-uid="U13757" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>Очень часто распространена практика преподавания голой теории. Мы же даем практику с первых занятий наших студентам и акцентируем внимание на реальных навыках.</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U13647-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="rounded-corners clip_frame grpelem" id="u13647" data-muse-uid="U13647" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13647_img" src="images/benefit-2.png?crc=4163502994" alt="" width="100" height="100" data-muse-src="images/benefit-2.png?crc=4163502994"/>
+     </div>
+     <!-- /m_editable -->
+     <div class="rounded-corners clearfix grpelem" id="u13754"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U13760-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="Text_Body_Light clearfix grpelem" id="u13760-4" data-muse-uid="U13760" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>Большинство, так называемых, &quot;гуру трейдинга&quot; не показывает доходность: никто никогда не видел их реальный заработок, который, зачастую, в разы ниже публикующихся ими результатов.</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu13649"><!-- group -->
+     <!-- m_editable region-id="editable-static-tag-U13649-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="rounded-corners clip_frame grpelem" id="u13649" data-muse-uid="U13649" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13649_img" src="images/q4_4.png?crc=3928769726" alt="" width="100" height="100" data-muse-src="images/q4_4.png?crc=3928769726"/>
+     </div>
+     <!-- /m_editable -->
+     <div class="rounded-corners clearfix grpelem" id="u13756"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U13758-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="Text_Body_Light clearfix grpelem" id="u13758-4" data-muse-uid="U13758" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>Некоторые &quot;гуру-трейдеры&quot; сами никогда не торговали на бирже. Ограничиваясь теоретическими знаниями, они пытаются учить реальным операциям на бирже своих студентов. Наши трейдеры ежедневно торгуют</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U13651-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="rounded-corners clip_frame grpelem" id="u13651" data-muse-uid="U13651" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13651_img" src="images/q2_6.png?crc=4036813384" alt="" width="100" height="100" data-muse-src="images/q2_6.png?crc=4036813384"/>
+     </div>
+     <!-- /m_editable -->
+     <div class="rounded-corners clearfix grpelem" id="u13755"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U13759-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="Text_Body_Light clearfix grpelem" id="u13759-4" data-muse-uid="U13759" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>Мало кто&nbsp; проводит действительно качественное комплексное обучение. У нас Вы создадите готовую стратегию, а не просто получите набор методов.</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu13495"><!-- group -->
+     <div class="browser_width grpelem" id="u13495-bw">
+      <div class="museBGSize" id="u13495"><!-- column -->
+       <div class="clearfix" id="u13495_align_to_page">
+        <div class="clearfix colelem" id="pprogramm"><!-- group -->
+         <a class="anchor_item grpelem" id="programm"></a>
+         <!-- m_editable region-id="editable-static-tag-U13496-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Title_Large clearfix grpelem" id="u13496-4" data-muse-uid="U13496" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <h2>ПРОГРАММА КУРСА</h2>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="rounded-corners clearfix colelem" id="u13853"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13854-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="clearfix grpelem" id="u13854-18" data-muse-uid="U13854" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13854-2"><span id="u13854">Цель данного курса: получение рабочих стратегий под разные периоды, разные депозиты, разные дневные стоп-лоссы (но не менее 45$). Трейдер получает четкую схему действий под каждую из стратегий.</span></p>
+          <p id="u13854-3">&nbsp;</p>
+          <p id="u13854-7">Курс проводится <span id="u13854-5">в живом онлайн-формате</span> через специальный сервис для организации вебинаров. Возможны 2 пакета участия:</p>
+          <ul class="list0 nls-None" id="u13854-11">
+           <li class="Text_Body_Light" id="u13854-10"><span id="u13854-8">СТАНДАРТ</span> из 9 дней (11 занятий)</li>
+          </ul>
+          <ul class="list0 nls-None" id="u13854-15">
+           <li class="Text_Body_Light" id="u13854-14"><span id="u13854-12">ПРЕМИУМ</span> из 16 дней (26 занятий)</li>
+          </ul>
+          <p class="Text_Body_Light" id="u13854-16">&nbsp;</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <!-- m_editable region-id="editable-static-tag-U13498-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="Title_Large clearfix colelem" id="u13498-5" data-muse-uid="U13498" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <h2 id="u13498-3"><span id="u13498">СТАНДАРТ </span><span id="u13498-2">(9 дней занятий)</span></h2>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U13499-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="Title_Large clearfix colelem" id="u13499-6" data-muse-uid="U13499" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <h2>ПРЕМИУМ</h2>
+         <h2 id="u13499-4"><span id="u13499-3">(16 дней включая 2 индивидуальных занятия)</span></h2>
+        </div>
+        <!-- /m_editable -->
+        <a class="anchor_item colelem" id="price"></a>
+       </div>
+      </div>
+     </div>
+     <div class="PamphletWidget clearfix grpelem" id="pamphletu13653"><!-- none box -->
+      <div class="ThumbGroup clearfix grpelem" id="u13709"><!-- none box -->
+       <div class="popup_anchor" id="pu13726popup">
+        <div class="popup_element Thumb clearfix" id="pu13726"><!-- group -->
+         <div class="popup_anchor" id="u13726popup">
+          <div class="popup_element rounded-corners clearfix" id="u13726"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13727-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13727-4" data-muse-uid="U13727" data-muse-type="txt_frame"><!-- content -->
+            <p>День 1</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13712popup">
+        <div class="popup_element Thumb clearfix" id="pu13712"><!-- group -->
+         <div class="popup_anchor" id="u13712popup">
+          <div class="popup_element rounded-corners clearfix" id="u13712"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13713-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13713-4" data-muse-uid="U13713" data-muse-type="txt_frame"><!-- content -->
+            <p>День 2</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13724popup">
+        <div class="popup_element Thumb clearfix" id="pu13724"><!-- group -->
+         <div class="popup_anchor" id="u13724popup">
+          <div class="popup_element rounded-corners clearfix" id="u13724"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13725-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13725-4" data-muse-uid="U13725" data-muse-type="txt_frame"><!-- content -->
+            <p>День 6</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13740popup">
+        <div class="popup_element Thumb clearfix" id="pu13740"><!-- group -->
+         <div class="popup_anchor" id="u13740popup">
+          <div class="popup_element rounded-corners clearfix" id="u13740"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13741-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13741-4" data-muse-uid="U13741" data-muse-type="txt_frame"><!-- content -->
+            <p>День 7</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13716popup">
+        <div class="popup_element Thumb clearfix" id="pu13716"><!-- group -->
+         <div class="popup_anchor" id="u13716popup">
+          <div class="popup_element rounded-corners clearfix" id="u13716"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13717-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13717-4" data-muse-uid="U13717" data-muse-type="txt_frame"><!-- content -->
+            <p>День 3</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13730popup">
+        <div class="popup_element Thumb clearfix" id="pu13730"><!-- group -->
+         <div class="popup_anchor" id="u13730popup">
+          <div class="popup_element rounded-corners clearfix" id="u13730"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13731-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13731-4" data-muse-uid="U13731" data-muse-type="txt_frame"><!-- content -->
+            <p>День 4</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13722popup">
+        <div class="popup_element Thumb clearfix" id="pu13722"><!-- group -->
+         <div class="popup_anchor" id="u13722popup">
+          <div class="popup_element rounded-corners clearfix" id="u13722"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13723-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13723-4" data-muse-uid="U13723" data-muse-type="txt_frame"><!-- content -->
+            <p>День 5</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13720popup">
+        <div class="popup_element Thumb clearfix" id="pu13720"><!-- group -->
+         <div class="popup_anchor" id="u13720popup">
+          <div class="popup_element rounded-corners clearfix" id="u13720"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13721-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13721-4" data-muse-uid="U13721" data-muse-type="txt_frame"><!-- content -->
+            <p>День 8</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13714popup">
+        <div class="popup_element Thumb clearfix" id="pu13714"><!-- group -->
+         <div class="popup_anchor" id="u13714popup">
+          <div class="popup_element rounded-corners clearfix" id="u13714"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13715-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13715-4" data-muse-uid="U13715" data-muse-type="txt_frame"><!-- content -->
+            <p>День 9</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13732popup">
+        <div class="popup_element Thumb clearfix" id="pu13732"><!-- group -->
+         <div class="popup_anchor" id="u13732popup">
+          <div class="popup_element rounded-corners clearfix" id="u13732"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13733-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13733-4" data-muse-uid="U13733" data-muse-type="txt_frame"><!-- content -->
+            <p>День 10</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13736popup">
+        <div class="popup_element Thumb clearfix" id="pu13736"><!-- group -->
+         <div class="popup_anchor" id="u13736popup">
+          <div class="popup_element rounded-corners clearfix" id="u13736"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13737-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13737-4" data-muse-uid="U13737" data-muse-type="txt_frame"><!-- content -->
+            <p>День 11</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13734popup">
+        <div class="popup_element Thumb clearfix" id="pu13734"><!-- group -->
+         <div class="popup_anchor" id="u13734popup">
+          <div class="popup_element rounded-corners clearfix" id="u13734"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13735-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13735-4" data-muse-uid="U13735" data-muse-type="txt_frame"><!-- content -->
+            <p>День 12</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13728popup">
+        <div class="popup_element Thumb clearfix" id="pu13728"><!-- group -->
+         <div class="popup_anchor" id="u13728popup">
+          <div class="popup_element rounded-corners clearfix" id="u13728"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13729-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13729-4" data-muse-uid="U13729" data-muse-type="txt_frame"><!-- content -->
+            <p>День 13</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13710popup">
+        <div class="popup_element Thumb clearfix" id="pu13710"><!-- group -->
+         <div class="popup_anchor" id="u13710popup">
+          <div class="popup_element rounded-corners clearfix" id="u13710"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13711-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13711-4" data-muse-uid="U13711" data-muse-type="txt_frame"><!-- content -->
+            <p>День 14</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13718popup">
+        <div class="popup_element Thumb clearfix" id="pu13718"><!-- group -->
+         <div class="popup_anchor" id="u13718popup">
+          <div class="popup_element rounded-corners clearfix" id="u13718"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13719-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13719-4" data-muse-uid="U13719" data-muse-type="txt_frame"><!-- content -->
+            <p>День 15</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="pu13738popup">
+        <div class="popup_element Thumb clearfix" id="pu13738"><!-- group -->
+         <div class="popup_anchor" id="u13738popup">
+          <div class="popup_element rounded-corners clearfix" id="u13738"><!-- group -->
+           <!-- m_editable region-id="editable-static-tag-U13739-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" -->
+           <div class="clearfix grpelem" id="u13739-4" data-muse-uid="U13739" data-muse-type="txt_frame"><!-- content -->
+            <p>День 16</p>
+           </div>
+           <!-- /m_editable -->
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="popup_anchor" id="u13660popup">
+       <div class="ContainerGroup clearfix" id="u13660"><!-- stack box -->
+        <div class="Container rounded-corners clearfix grpelem" id="u13688"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13690-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13690-6" data-muse-uid="U13690" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 1</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13689-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13689-10" data-muse-uid="U13689" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13689">&nbsp;</p>
+          <p id="u13689-2">&nbsp;</p>
+          <p id="u13689-4">10 апреля (понедельник) - 12:00 NY</p>
+          <p id="u13689-6">Значение силы рынка, при планировании потенциала своих сделок. Факторы выбора своего стиля торговли. Индивидуальность акции. «Преследование».</p>
+          <p id="u13689-7">&nbsp;</p>
+          <p id="u13689-8">&nbsp;</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13685"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13687-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13687-6" data-muse-uid="U13687" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 2</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13686-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13686-10" data-muse-uid="U13686" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13686">&nbsp;</p>
+          <p id="u13686-2">&nbsp;</p>
+          <p id="u13686-4">11 апреля (вторник) - 12:00 NY</p>
+          <p id="u13686-6">Стратегии при сильном рынке. Отбор необходимых акций. Оценка потенциала и формирование приоритета.</p>
+          <p id="u13686-7">&nbsp;</p>
+          <p id="u13686-8">&nbsp;</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13694"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13696-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13696-6" data-muse-uid="U13696" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 6</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13695-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13695-12" data-muse-uid="U13695" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13695">&nbsp;</p>
+          <p id="u13695-2">&nbsp;</p>
+          <p id="u13695-4">18 апреля (вторник)</p>
+          <p id="u13695-6">Фильтра и Allerts (сигналы) Таблица-анализ.</p>
+          <p id="u13695-8">&nbsp;Оценка исполнения стратегии.</p>
+          <p id="u13695-9">&nbsp;</p>
+          <p id="u13695-10">&nbsp;</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13703"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13705-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13705-6" data-muse-uid="U13705" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 7</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13704-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13704-11" data-muse-uid="U13704" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13704">&nbsp;</p>
+          <p id="u13704-3">19 апреля (среда) - 9:10-10:40 NY</p>
+          <p id="u13704-5">Практика. Совместный выход на рынок. Поиск ситуаций, которые отвечают нашим стратегиям.&nbsp; Сбор необходимой информации на будущие действия.</p>
+          <p id="u13704-7">12:00 NY</p>
+          <p id="u13704-9">Анализ практического занятия. Подбор акций под наши стратегии.</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13670"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13672-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13672-6" data-muse-uid="U13672" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 3</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13671-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13671-10" data-muse-uid="U13671" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13671">&nbsp;</p>
+          <p id="u13671-2">&nbsp;</p>
+          <p id="u13671-4">12 апреля (среда) -12:00 NY</p>
+          <p id="u13671-6">Стратегии при слабом рынке. Отбор необходимых акций. Оценка потенциала и формирование приоритета.</p>
+          <p id="u13671-7">&nbsp;</p>
+          <p id="u13671-8">&nbsp;</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13667"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13669-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13669-6" data-muse-uid="U13669" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 4</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13668-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13668-11" data-muse-uid="U13668" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13668">&nbsp;</p>
+          <p id="u13668-3">13 апреля (четверг) - 9:10-10:40 NY</p>
+          <p id="u13668-5">Практика. Совместный выход на рынок. Поиск ситуаций, которые отвечают нашим стратегиям.&nbsp; Сбор необходимой информации на будущие действия.</p>
+          <p id="u13668-7">12:00 NY</p>
+          <p id="u13668-9">Анализ практического занятия. Подбор акций под наши стратегии.</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13664"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13666-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13666-6" data-muse-uid="U13666" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 5</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13665-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13665-10" data-muse-uid="U13665" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13665">&nbsp;</p>
+          <p id="u13665-2">&nbsp;</p>
+          <p id="u13665-4">14 апреля&nbsp; (пятница) - 11:00 NY или12:00 NY</p>
+          <p id="u13665-6">Работа с фондами (ETF). Список акций, которые исторически двигаются в унисон (особенности, исключение).</p>
+          <p id="u13665-7">&nbsp;</p>
+          <p id="u13665-8">&nbsp;</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13679"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13680-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13680-6" data-muse-uid="U13680" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 8</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13681-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13681-12" data-muse-uid="U13681" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13681">&nbsp;</p>
+          <p id="u13681-2">&nbsp;</p>
+          <p id="u13681-4">20 апреля&nbsp; (четверг) -12:00 NY</p>
+          <p id="u13681-6">Как составить свою стратегию. На что опираться?</p>
+          <p id="u13681-8">Психология сделки. Не навязывай акции свое мнение.</p>
+          <p id="u13681-10">+ Вопросы участников группы</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13661"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13662-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13662-6" data-muse-uid="U13662" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 9</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13663-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13663-10" data-muse-uid="U13663" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13663">&nbsp;</p>
+          <p id="u13663-2">&nbsp;</p>
+          <p id="u13663-4">(22.05.2017)</p>
+          <p id="u13663-6">Разбор сделок участников группы.</p>
+          <p id="u13663-7">&nbsp;</p>
+          <p id="u13663-8">&nbsp;</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13682"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13684-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13684-6" data-muse-uid="U13684" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 10</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13683-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13683-14" data-muse-uid="U13683" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13683">&nbsp;</p>
+          <p id="u13683-2">&nbsp;</p>
+          <p id="u13683-4">24 апреля -07:30 - 09:00 NY</p>
+          <p id="u13683-6">Анализ предстоящей недели. План на день</p>
+          <p id="u13683-8">12:15 - 13:15 NY</p>
+          <p id="u13683-10">Просмотр фильтров, поиск инструментов для стратегий</p>
+          <p id="u13683-11">&nbsp;</p>
+          <p id="u13683-12">&nbsp;</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13706"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13708-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13708-6" data-muse-uid="U13708" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 11</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13707-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13707-11" data-muse-uid="U13707" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13707">&nbsp;</p>
+          <p id="u13707-3">25&nbsp; апреля - 09:00 - 10:15&nbsp; NY</p>
+          <p id="u13707-5">План на день. Online-trading. Поиск инструмантов для стратегий</p>
+          <p id="u13707-7">12:30 - 13:15&nbsp; Просмотр фильтров, поиск инструментов на вечер</p>
+          <p id="u13707-9">14:00 - 15:00&nbsp; online-trading</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13673"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13674-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13674-6" data-muse-uid="U13674" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 12</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13675-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13675-12" data-muse-uid="U13675" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13675">&nbsp;</p>
+          <p id="u13675-3">26 апреля 10:15 - 11:15</p>
+          <p id="u13675-5">План на день. Online-trading. Поиск инструмантов для стратегий</p>
+          <p id="u13675-7">12:30 - 13:15&nbsp; Просмотр фильтров, поиск инструментов на вечер</p>
+          <p id="u13675-9">14:00 - 15:00&nbsp; online-trading</p>
+          <p id="u13675-10">&nbsp;</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13697"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13699-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13699-6" data-muse-uid="U13699" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 13</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13698-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13698-12" data-muse-uid="U13698" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13698">&nbsp;</p>
+          <p id="u13698-3">27 апреля 09:00 - 10:15&nbsp; П</p>
+          <p id="u13698-5">лан на день. Online-trading. Поиск инструмантов для стратегий</p>
+          <p id="u13698-7">12:30 - 13:15&nbsp; Просмотр фильтров, поиск инструментов на вечер</p>
+          <p id="u13698-9">14:00 - 15:00&nbsp; online-trading</p>
+          <p id="u13698-10">&nbsp;</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13676"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13677-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13677-6" data-muse-uid="U13677" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 14</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13678-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13678-11" data-muse-uid="U13678" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13678">&nbsp;</p>
+          <p id="u13678-3">28 апреля - 09:00-10:15&nbsp; NY</p>
+          <p id="u13678-5">План на день. Online-trading</p>
+          <p id="u13678-7">11:00-12:30&nbsp; Итог недели. Анализ действий за неделю.</p>
+          <p id="u13678-8">&nbsp;</p>
+          <p id="u13678-9">&nbsp;</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13700"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13701-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13701-6" data-muse-uid="U13701" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 15</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13702-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13702-6" data-muse-uid="U13702" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>Индивидуальный урок (предварительно согласовываем время и тема). Время 12:00 или 01:00 NY длительность урока 45 минут</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+        <div class="Container invi rounded-corners clearfix grpelem" id="u13691"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13693-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Name-info clearfix grpelem" id="u13693-6" data-muse-uid="U13693" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>День 15</p>
+         </div>
+         <!-- /m_editable -->
+         <!-- m_editable region-id="editable-static-tag-U13692-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="Text_Body_Light clearfix grpelem" id="u13692-6" data-muse-uid="U13692" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>Индивидуальный урок (предварительно согласовываем время и тема). Время 12:00 или 01:00 NY длительность урока 45 минут</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width grpelem" id="u13864-bw">
+      <div id="u13864"><!-- simple frame --></div>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="ppu13761"><!-- group -->
+     <div class="clearfix grpelem" id="pu13761"><!-- group -->
+      <div class="clearfix grpelem" id="u13761"><!-- group -->
+       <div class="grpelem" id="u13762"><!-- simple frame --></div>
+      </div>
+      <div class="PamphletWidget clearfix widget_invisible grpelem" id="pamphletu13807"><!-- none box -->
+       <div class="ThumbGroup clearfix grpelem" id="u13814"><!-- none box -->
+        <div class="popup_anchor" id="u13815popup">
+         <div class="Thumb popup_element clearfix" id="u13815"><!-- group -->
+          <!-- m_editable region-id="editable-static-tag-U13816-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" -->
+          <div class="gradient rounded-corners ts----------2 clearfix grpelem" id="u13816-4" data-muse-uid="U13816" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+           <p id="u13816-2">Записаться</p>
+          </div>
+          <!-- /m_editable -->
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="u13817popup">
+        <div class="ContainerGroup rgba-background clearfix" id="u13817"><!-- stack box -->
+         <div class="Container rounded-corners clearfix grpelem" id="u13818"><!-- column -->
+          <!-- m_editable region-id="editable-static-tag-U13819-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+          <div class="clearfix colelem" id="u13819-5" data-muse-uid="U13819" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+           <p><span id="u13819">О</span>СТАВЬТЕ ЗАЯВКУ</p>
+          </div>
+          <!-- /m_editable -->
+          <form class="form-grp clearfix colelem" id="widgetu13820" method="post" enctype="multipart/form-data" action="scripts/form-u13820.php"><!-- none box -->
+           <div class="fld-grp clearfix grpelem" id="widgetu13824" data-required="true"><!-- none box -->
+            <!-- m_editable region-id="editable-static-tag-U13827-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+            <label class="fld-label actAsDiv ts------51 clearfix grpelem" id="u13827-4" data-muse-uid="U13827" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" for="widgetu13824_input"><!-- content --><span class="actAsPara">Имя (обязательно)</span></label>
+            <!-- /m_editable -->
+            <span class="fld-input NoWrap actAsDiv rounded-corners ts------51 clearfix grpelem" id="u13825-3"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu13824_input" name="custom_U13824" tabindex="1"/></span>
+           </div>
+           <div class="fld-grp clearfix grpelem" id="widgetu13828" data-required="true" data-type="email"><!-- none box -->
+            <!-- m_editable region-id="editable-static-tag-U13831-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+            <label class="fld-label actAsDiv ts------51 clearfix grpelem" id="u13831-5" data-muse-uid="U13831" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" for="widgetu13828_input"><!-- content --><span class="actAsPara">Эл. почта <span id="u13831-2">(обязательно)</span></span></label>
+            <!-- /m_editable -->
+            <span class="fld-input NoWrap actAsDiv rounded-corners ts------51 clearfix grpelem" id="u13829-3"><!-- content --><input class="wrapped-input" type="email" spellcheck="false" id="widgetu13828_input" name="Email" tabindex="2"/></span>
+           </div>
+           <!-- m_editable region-id="editable-static-tag-U13821-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+           <div class="clearfix grpelem" id="u13821-4" data-muse-uid="U13821" data-muse-type="txt_frame"><!-- content -->
+            <p>Отправка формы…</p>
+           </div>
+           <!-- /m_editable -->
+           <!-- m_editable region-id="editable-static-tag-U13822-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+           <div class="ts------5 clearfix grpelem" id="u13822-4" data-muse-uid="U13822" data-muse-type="txt_frame"><!-- content -->
+            <p>На сервере произошла ошибка.</p>
+           </div>
+           <!-- /m_editable -->
+           <!-- m_editable region-id="editable-static-tag-U13823-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+           <div class="clearfix grpelem" id="u13823-4" data-muse-uid="U13823" data-muse-type="txt_frame"><!-- content -->
+            <p>Форма получена.</p>
+           </div>
+           <!-- /m_editable -->
+           <!-- m_editable region-id="editable-static-tag-U13832-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+           <button class="submit-btn NoWrap rounded-corners ts------5 clearfix grpelem" id="u13832-4" data-muse-uid="U13832" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" type="submit" value="Отправить заявку" tabindex="4"><!-- content -->
+            <div style="margin-top:-18px;height:18px;">
+             <p>Отправить заявку</p>
+            </div>
+           </button>
+           <!-- /m_editable -->
+           <div class="fld-grp clearfix grpelem" id="widgetu13833" data-required="true"><!-- none box -->
+            <!-- m_editable region-id="editable-static-tag-U13836-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+            <label class="fld-label actAsDiv ts------51 clearfix grpelem" id="u13836-4" data-muse-uid="U13836" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" for="widgetu13833_input"><!-- content --><span class="actAsPara">Телефон (обязательно)</span></label>
+            <!-- /m_editable -->
+            <span class="fld-input NoWrap actAsDiv rounded-corners ts------51 clearfix grpelem" id="u13835-3"><!-- content --><input class="wrapped-input" type="tel" spellcheck="false" id="widgetu13833_input" name="custom_U13833" tabindex="3"/></span>
+           </div>
+          </form>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="clearfix grpelem" id="u13839"><!-- group -->
+       <div class="clearfix grpelem" id="u13847"><!-- group -->
+        <div class="grpelem" id="u13848" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.4695,M12=-0.8829,M21=0.8829,M22=0.4695,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-7" data-mu-ie-matrix-dy="-7"><!-- simple frame --></div>
+        <div class="grpelem" id="u13849" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.891,M12=-0.454,M21=0.454,M22=0.891,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-7" data-mu-ie-matrix-dy="-7"><!-- simple frame --></div>
+       </div>
+       <div class="shadow grpelem" id="u13846"><!-- simple frame --></div>
+       <div class="clearfix grpelem" id="u13840"><!-- group -->
+        <div class="clearfix grpelem" id="u13841"><!-- group -->
+         <div class="shadow grpelem" id="u13844" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.4695,M12=-0.8829,M21=0.8829,M22=0.4695,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-7" data-mu-ie-matrix-dy="-7"><!-- simple frame --></div>
+         <div class="shadow grpelem" id="u13843" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.891,M12=-0.454,M21=0.454,M22=0.891,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-7" data-mu-ie-matrix-dy="-7"><!-- simple frame --></div>
+         <div class="grpelem" id="u13842" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.4695,M12=-0.8829,M21=0.8829,M22=0.4695,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-7" data-mu-ie-matrix-dy="-7"><!-- simple frame --></div>
+        </div>
+        <div class="grpelem" id="u13845"><!-- simple frame --></div>
+       </div>
+      </div>
+      <!-- m_editable region-id="editable-static-tag-U13850-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="ts----------2 clearfix grpelem" id="u13850-4" data-muse-uid="U13850" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p id="u13850-2"><span id="u13850">450$</span></p>
+      </div>
+      <!-- /m_editable -->
+      <div class="grpelem" id="u13851"><!-- simple frame --></div>
+      <!-- m_editable region-id="editable-static-tag-U13852-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="ts----------2 clearfix grpelem" id="u13852-4" data-muse-uid="U13852" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>Стоимость участия для тех, кто проходил другие курсы SDG Trade действует скидка 50$</p>
+      </div>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U13866-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix grpelem" id="u13866-4" data-muse-uid="U13866" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>ПРЕМИУМ</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <div class="shadow clearfix grpelem" id="u13763"><!-- group -->
+      <div class="clearfix grpelem" id="u13764"><!-- group -->
+       <div class="clearfix grpelem" id="u13771"><!-- group -->
+        <div class="grpelem" id="u13772" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.4695,M12=-0.8829,M21=0.8829,M22=0.4695,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-7" data-mu-ie-matrix-dy="-7"><!-- simple frame --></div>
+        <div class="grpelem" id="u13773" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.891,M12=-0.454,M21=0.454,M22=0.891,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-7" data-mu-ie-matrix-dy="-7"><!-- simple frame --></div>
+       </div>
+       <div class="shadow grpelem" id="u13774"><!-- simple frame --></div>
+       <div class="clearfix grpelem" id="u13765"><!-- group -->
+        <div class="clearfix grpelem" id="u13766"><!-- group -->
+         <div class="shadow grpelem" id="u13768" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.4695,M12=-0.8829,M21=0.8829,M22=0.4695,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-7" data-mu-ie-matrix-dy="-7"><!-- simple frame --></div>
+         <div class="shadow grpelem" id="u13767" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.891,M12=-0.454,M21=0.454,M22=0.891,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-7" data-mu-ie-matrix-dy="-7"><!-- simple frame --></div>
+         <div class="grpelem" id="u13769" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.4695,M12=-0.8829,M21=0.8829,M22=0.4695,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-7" data-mu-ie-matrix-dy="-7"><!-- simple frame --></div>
+        </div>
+        <div class="grpelem" id="u13770"><!-- simple frame --></div>
+       </div>
+      </div>
+      <!-- m_editable region-id="editable-static-tag-U13775-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="ts----------2 clearfix grpelem" id="u13775-4" data-muse-uid="U13775" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p id="u13775-2"><span id="u13775">200$</span></p>
+      </div>
+      <!-- /m_editable -->
+      <div class="grpelem" id="u13776"><!-- simple frame --></div>
+      <!-- m_editable region-id="editable-static-tag-U13837-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="ts----------2 clearfix grpelem" id="u13837-4" data-muse-uid="U13837" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>Стоимость участия&nbsp; для тех, кто проходил другие курсы SDG Trade действует скидка 50$</p>
+      </div>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U13865-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="clearfix grpelem" id="u13865-4" data-muse-uid="U13865" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>СТАНДАРТ</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <div class="PamphletWidget clearfix widget_invisible grpelem" id="pamphletu13777"><!-- none box -->
+      <div class="ThumbGroup clearfix grpelem" id="u13804"><!-- none box -->
+       <div class="popup_anchor" id="u13805popup">
+        <div class="Thumb popup_element clearfix" id="u13805"><!-- group -->
+         <!-- m_editable region-id="editable-static-tag-U13806-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" -->
+         <div class="shadow rounded-corners ts----------2 clearfix grpelem" id="u13806-4" data-muse-uid="U13806" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p id="u13806-2">Записаться</p>
+         </div>
+         <!-- /m_editable -->
+        </div>
+       </div>
+      </div>
+      <div class="popup_anchor" id="u13783popup">
+       <div class="ContainerGroup rgba-background clearfix" id="u13783"><!-- stack box -->
+        <div class="Container rounded-corners clearfix grpelem" id="u13784"><!-- column -->
+         <!-- m_editable region-id="editable-static-tag-U13785-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+         <div class="clearfix colelem" id="u13785-5" data-muse-uid="U13785" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+          <p><span id="u13785">О</span>СТАВЬТЕ ЗАЯВКУ</p>
+         </div>
+         <!-- /m_editable -->
+         <form class="form-grp clearfix colelem" id="widgetu13786" method="post" enctype="multipart/form-data" action="scripts/form-u13786.php"><!-- none box -->
+          <div class="fld-grp clearfix grpelem" id="widgetu13794" data-required="true"><!-- none box -->
+           <!-- m_editable region-id="editable-static-tag-U13796-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+           <label class="fld-label actAsDiv ts------51 clearfix grpelem" id="u13796-4" data-muse-uid="U13796" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" for="widgetu13794_input"><!-- content --><span class="actAsPara">Имя (обязательно)</span></label>
+           <!-- /m_editable -->
+           <span class="fld-input NoWrap actAsDiv rounded-corners ts------51 clearfix grpelem" id="u13797-3"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu13794_input" name="custom_U13794" tabindex="5"/></span>
+          </div>
+          <div class="fld-grp clearfix grpelem" id="widgetu13799" data-required="true" data-type="email"><!-- none box -->
+           <!-- m_editable region-id="editable-static-tag-U13800-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+           <label class="fld-label actAsDiv ts------51 clearfix grpelem" id="u13800-5" data-muse-uid="U13800" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" for="widgetu13799_input"><!-- content --><span class="actAsPara">Эл. почта <span id="u13800-2">(обязательно)</span></span></label>
+           <!-- /m_editable -->
+           <span class="fld-input NoWrap actAsDiv rounded-corners ts------51 clearfix grpelem" id="u13801-3"><!-- content --><input class="wrapped-input" type="email" spellcheck="false" id="widgetu13799_input" name="Email" tabindex="6"/></span>
+          </div>
+          <!-- m_editable region-id="editable-static-tag-U13787-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+          <div class="clearfix grpelem" id="u13787-4" data-muse-uid="U13787" data-muse-type="txt_frame"><!-- content -->
+           <p>Отправка формы…</p>
+          </div>
+          <!-- /m_editable -->
+          <!-- m_editable region-id="editable-static-tag-U13798-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+          <div class="ts------5 clearfix grpelem" id="u13798-4" data-muse-uid="U13798" data-muse-type="txt_frame"><!-- content -->
+           <p>На сервере произошла ошибка.</p>
+          </div>
+          <!-- /m_editable -->
+          <!-- m_editable region-id="editable-static-tag-U13788-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+          <div class="clearfix grpelem" id="u13788-4" data-muse-uid="U13788" data-muse-type="txt_frame"><!-- content -->
+           <p>Форма получена.</p>
+          </div>
+          <!-- /m_editable -->
+          <!-- m_editable region-id="editable-static-tag-U13789-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+          <button class="submit-btn NoWrap rounded-corners ts------5 clearfix grpelem" id="u13789-4" data-muse-uid="U13789" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" type="submit" value="Отправить заявку" tabindex="8"><!-- content -->
+           <div style="margin-top:-18px;height:18px;">
+            <p>Отправить заявку</p>
+           </div>
+          </button>
+          <!-- /m_editable -->
+          <div class="fld-grp clearfix grpelem" id="widgetu13790" data-required="true"><!-- none box -->
+           <!-- m_editable region-id="editable-static-tag-U13792-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+           <label class="fld-label actAsDiv ts------51 clearfix grpelem" id="u13792-4" data-muse-uid="U13792" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc" for="widgetu13790_input"><!-- content --><span class="actAsPara">Телефон (обязательно)</span></label>
+           <!-- /m_editable -->
+           <span class="fld-input NoWrap actAsDiv rounded-corners ts------51 clearfix grpelem" id="u13791-3"><!-- content --><input class="wrapped-input" type="tel" spellcheck="false" id="widgetu13790_input" name="custom_U13790" tabindex="7"/></span>
+          </div>
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <a class="anchor_item colelem" id="author"></a>
+    <!-- m_editable region-id="editable-static-tag-U13497-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+    <div class="Title_Large clearfix colelem" id="u13497-4" data-muse-uid="U13497" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+     <h2>КТО АВТОР КУРСА</h2>
+    </div>
+    <!-- /m_editable -->
+    <div class="clearfix colelem" id="pu13751"><!-- group -->
+     <!-- m_editable region-id="editable-static-tag-U13751-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="rounded-corners clip_frame grpelem" id="u13751" data-muse-uid="U13751" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13751_img" src="images/skolomiets.jpg?crc=425551626" alt="" width="200" height="200" data-muse-src="images/skolomiets.jpg?crc=425551626"/>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13742-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="Text_Body_Light clearfix grpelem" id="u13742-9" data-muse-uid="U13742" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p id="u13742-2">Сергей Коломиец</p>
+      <p id="u13742-4">Торгует с 2010 года, проводит как индивидуальные занятия, так и групповые. Автор курса «Базовый курс дейтрейдинга на NYSE», куратор проекта SDG-Prop.</p>
+      <p id="u13742-5">&nbsp;</p>
+      <p id="u13742-7">Трейдер, который не знает, куда акция пойдет в следующую минуту, но при этом стабильно зарабатывает хорошие деньги, торгуя на биржах NYSE, NASDAQ, AMEX.</p>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <div class="clearfix colelem" id="pu13743-4"><!-- group -->
+     <!-- m_editable region-id="editable-static-tag-U13743-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="Text_Body_Light clearfix grpelem" id="u13743-4" data-muse-uid="U13743" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p>Сергей считает, что проблема многих трейдеров стремление УЗНАТЬ, куда пойдет та или иная акция. И на основе этого «знания» заработать состояние.&nbsp; На самом же деле деньги в&nbsp; трейдинге зарабатываются статистическим путем. Мы можем потерять деньги в 7 случаях из 10, но в остальных 3 заработать сумму, которая будет значительно превышать наши потери в тех 7 случаях.</p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13744-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="Text_Body_Light clearfix grpelem" id="u13744-13" data-muse-uid="U13744" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p id="u13744-2">На свои курсах Сергей дает информацию:</p>
+      <p id="u13744-3">&nbsp;</p>
+      <p id="u13744-5">1. Как не потерять деньги на первом этапе, когда новичку ничего непонятно.</p>
+      <p id="u13744-6">&nbsp;</p>
+      <p id="u13744-8">2. Определить, конкретно для себя, какие ситуации будут работать для того или иного трейдера, в зависимости от его депозита.</p>
+      <p id="u13744-9">&nbsp;</p>
+      <p id="u13744-11">3. Выжимать максимум из тех дней, когда рынок открывает двери и говорит: «Давай, бери сколько можешь». Именно за счет этих дней и приходи положительный месячный, квартальный, годовой результат.</p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13745-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="clip_frame grpelem" id="u13745" data-muse-uid="U13745" data-muse-type="img_frame" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.9903,M12=-0.1392,M21=0.1392,M22=0.9903,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-27" data-mu-ie-matrix-dy="-28"><!-- image -->
+      <img class="block" id="u13745_img" src="images/blank-sticky-note-hi.png?crc=410053932" alt="" width="431" height="417" data-muse-src="images/blank-sticky-note-hi.png?crc=410053932"/>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13747-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="Text_Body_Light clearfix grpelem" id="u13747-4" data-muse-uid="U13747" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p>&quot;Очень важно не терять много. В независимости от того, торгуешь ты месяц или 4 года, важно не допускать сильных дыр в своем депозите – это основная задача. Взять «свои дни», когда рынок дает такую возможность, это уже дело техники&quot;</p>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <!-- m_editable region-id="editable-static-tag-U13748-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+    <div class="Text_Body_Light clearfix colelem" id="u13748-4" data-muse-uid="U13748" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+     <p>&quot;Я не знаю в какой конкретно день рынок даст мне возможность заработать, но я знаю, что я буду делать в той или иной ситуации. То, что я не получу во вторник, я получу в четверг либо в другой день. Ситуация под контролем, ведь я знаю, какие ситуации работают для меня, а когда конкретно я получу прибыль от них, мне это неведомо.В худший месяц я вряд ли потеряю более 1500 долларов, а в средний положительный, я заработаю в 5-7 раз выше данной цифры&quot;</p>
+    </div>
+    <!-- /m_editable -->
+    <div class="clearfix colelem" id="porder"><!-- group -->
+     <a class="anchor_item grpelem" id="order"></a>
+     <!-- m_editable region-id="editable-static-tag-U13504-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="Title_Large clearfix grpelem" id="u13504-4" data-muse-uid="U13504" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <h2>После изучения курса у вас будет выбор — работать по готовой торговой стратегии Сергея или изменить и адаптировать ее под себя</h2>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <div class="clearfix colelem" id="pu13616"><!-- group -->
+     <div class="browser_width grpelem" id="u13616-bw">
+      <div id="u13616"><!-- group -->
+       <div class="clearfix" id="u13616_align_to_page">
+        <!-- m_editable region-id="editable-static-tag-U13638-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="Title_Large clearfix grpelem" id="u13638-4" data-muse-uid="U13638" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <h2>ПРИНЯТЬ&nbsp; УЧАСТИЕ</h2>
+        </div>
+        <!-- /m_editable -->
+       </div>
+      </div>
+     </div>
+     <form class="form-grp clearfix grpelem" id="widgetu13617" method="post" enctype="multipart/form-data" action="scripts/form-u13617.php"><!-- none box -->
+      <div class="fld-grp clearfix grpelem" id="widgetu13618" data-required="true"><!-- none box -->
+       <!-- m_editable region-id="editable-static-tag-U13621-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+       <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u13621-4" data-muse-uid="U13621" data-muse-type="txt_frame" for="widgetu13618_input"><!-- content --><span class="actAsPara">ВАШЕ ИМЯ</span></label>
+       <!-- /m_editable -->
+       <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u13619-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu13618_input" name="custom_U13618" tabindex="9"/><label class="wrapped-input fld-prompt" id="widgetu13618_prompt" for="widgetu13618_input"><span class="actAsPara">Иван</span></label></span>
+      </div>
+      <div class="fld-grp clearfix grpelem" id="widgetu13622" data-required="true" data-type="email"><!-- none box -->
+       <!-- m_editable region-id="editable-static-tag-U13624-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+       <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u13624-4" data-muse-uid="U13624" data-muse-type="txt_frame" for="widgetu13622_input"><!-- content --><span class="actAsPara">EMAIL</span></label>
+       <!-- /m_editable -->
+       <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u13623-4"><!-- content --><input class="wrapped-input" type="email" spellcheck="false" id="widgetu13622_input" name="Email" tabindex="10"/><label class="wrapped-input fld-prompt" id="widgetu13622_prompt" for="widgetu13622_input"><span class="actAsPara">ivan@mail.ru</span></label></span>
+      </div>
+      <!-- m_editable region-id="editable-static-tag-U13631-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+      <div class="clearfix grpelem" id="u13631-4" data-muse-uid="U13631" data-muse-type="txt_frame"><!-- content -->
+       <p>Submitting Form...</p>
+      </div>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U13626-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+      <div class="clearfix grpelem" id="u13626-4" data-muse-uid="U13626" data-muse-type="txt_frame"><!-- content -->
+       <p>The server encountered an error.</p>
+      </div>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U13632-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+      <div class="clearfix grpelem" id="u13632-6" data-muse-uid="U13632" data-muse-type="txt_frame"><!-- content -->
+       <p>Спасибо! Ваша заявка принята!</p>
+       <p>в ближайшее время с вами свяжется менеджер компании.</p>
+      </div>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U13637-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+      <button class="submit-btn NoWrap rounded-corners clearfix grpelem" id="u13637-4" data-muse-uid="U13637" data-muse-type="txt_frame" type="submit" value="ЗАПИСАТЬСЯ" tabindex="13"><!-- content -->
+       <div style="margin-top:-15px;height:15px;">
+        <p>ЗАПИСАТЬСЯ</p>
+       </div>
+      </button>
+      <!-- /m_editable -->
+      <div class="fld-grp clearfix grpelem" id="widgetu13633" data-required="false"><!-- none box -->
+       <span class="fld-textarea actAsDiv rounded-corners clearfix grpelem" id="u13634-4"><!-- content --><textarea class="wrapped-input" id="widgetu13633_input" name="custom_U13633" tabindex="12"></textarea><label class="wrapped-input fld-prompt" id="widgetu13633_prompt" for="widgetu13633_input"><span class="actAsPara">ваш комментарий</span></label></span>
+      </div>
+      <div class="fld-grp clearfix grpelem" id="widgetu13627" data-required="true"><!-- none box -->
+       <!-- m_editable region-id="editable-static-tag-U13629-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link" -->
+       <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u13629-4" data-muse-uid="U13629" data-muse-type="txt_frame" for="widgetu13627_input"><!-- content --><span class="actAsPara">ТЕЛЕФОН</span></label>
+       <!-- /m_editable -->
+       <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u13628-4"><!-- content --><input class="wrapped-input" type="tel" spellcheck="false" id="widgetu13627_input" name="custom_U13627" tabindex="11"/><label class="wrapped-input fld-prompt" id="widgetu13627_prompt" for="widgetu13627_input"><span class="actAsPara">+370212545698</span></label></span>
+      </div>
+     </form>
+    </div>
+    <div class="clearfix colelem" id="pfeedback"><!-- group -->
+     <a class="anchor_item grpelem" id="feedback"></a>
+     <!-- m_editable region-id="editable-static-tag-U13506-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="Title_Large clearfix grpelem" id="u13506-4" data-muse-uid="U13506" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <h2>ОТЗЫВЫ УЧЕНИКОВ СЕРГЕЯ</h2>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <div class="clearfix colelem" id="pu13597"><!-- group -->
+     <div class="size_fixed grpelem" id="u13597"><!-- custom html -->
+      
+<iframe class="actAsDiv" width="300" height="200" src="//www.youtube.com/embed/-IgT_mJ9eow?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1&wmode=transparent&rel=1" frameborder="0" allowfullscreen></iframe>
+
+     </div>
+     <div class="size_fixed grpelem" id="u13596"><!-- custom html -->
+      
+<iframe class="actAsDiv" width="300" height="200" src="//www.youtube.com/embed/X6kjL4qBsoU?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1&wmode=transparent&rel=1" frameborder="0" allowfullscreen></iframe>
+
+     </div>
+     <div class="size_fixed grpelem" id="u13598"><!-- custom html -->
+      
+<iframe class="actAsDiv" width="300" height="200" src="//www.youtube.com/embed/M0OSMWdQqA8?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1&wmode=transparent&rel=1" frameborder="0" allowfullscreen></iframe>
+
+     </div>
+    </div>
+    <div class="SlideShowWidget clearfix colelem" id="slideshowu13565"><!-- none box -->
+     <div class="popup_anchor" id="u13568popup">
+      <div class="SlideShowContentPanel clearfix" id="u13568"><!-- stack box -->
+       <!-- m_editable region-id="editable-static-tag-U13573-BP_infinity" template="mobile.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+       <div class="SSSlide rounded-corners clip_frame clearfix grpelem" id="u13573" data-muse-uid="U13573" data-muse-type="img_frame"><!-- image -->
+        <img class="ImageInclude position_content" id="u13573_img" data-src="images/user_anonymous_yellow_disabled.png?crc=4187331968" src="images/blank.gif?crc=4208392903" alt="" data-width="165" data-height="165" data-muse-src="images/user_anonymous_yellow_disabled.png?crc=4187331968"/>
+       </div>
+       <!-- /m_editable -->
+       <!-- m_editable region-id="editable-static-tag-U13571-BP_infinity" template="mobile.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+       <div class="SSSlide invi rounded-corners clip_frame clearfix grpelem" id="u13571" data-muse-uid="U13571" data-muse-type="img_frame"><!-- image -->
+        <img class="ImageInclude position_content" id="u13571_img" data-src="images/%d0%b3%d0%b0%d0%bb%d0%b8%d0%bd%d0%b0.jpg?crc=4143760486" src="images/blank.gif?crc=4208392903" alt="" data-width="165" data-height="192" data-muse-src="images/%d0%b3%d0%b0%d0%bb%d0%b8%d0%bd%d0%b0.jpg?crc=4143760486"/>
+       </div>
+       <!-- /m_editable -->
+       <!-- m_editable region-id="editable-static-tag-U13569-BP_infinity" template="mobile.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+       <div class="SSSlide invi rounded-corners clip_frame clearfix grpelem" id="u13569" data-muse-uid="U13569" data-muse-type="img_frame"><!-- image -->
+        <img class="ImageInclude position_content" id="u13569_img" data-src="images/f9o5ai36e9ef60dd3a11.jpg?crc=158745446" src="images/blank.gif?crc=4208392903" alt="" data-width="165" data-height="163" data-muse-src="images/f9o5ai36e9ef60dd3a11.jpg?crc=158745446"/>
+       </div>
+       <!-- /m_editable -->
+       <!-- m_editable region-id="editable-static-tag-U13575-BP_infinity" template="mobile.html" data-type="image" data-ice-options="srcAttr=data-src" -->
+       <div class="SSSlide invi rounded-corners clip_frame grpelem" id="u13575" data-muse-uid="U13575" data-muse-type="img_frame"><!-- image -->
+        <img class="block ImageInclude" id="u13575_img" data-src="images/ekaterina_otziv-crop-u13575.jpg?crc=186869608" src="images/blank.gif?crc=4208392903" alt="" data-width="165" data-height="156" data-muse-src="images/ekaterina_otziv-crop-u13575.jpg?crc=186869608"/>
+       </div>
+       <!-- /m_editable -->
+      </div>
+     </div>
+     <div class="popup_anchor" id="u13589popup">
+      <div class="SlideShowCaptionPanel clearfix" id="u13589"><!-- stack box -->
+       <!-- m_editable region-id="editable-static-tag-U13590-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="SSSlideCaption rounded-corners clearfix grpelem" id="u13590-9" data-muse-uid="U13590" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p>Привлекло то что Сергей опытный и самое главное практикующий трейдер с приличным стажем, который стабильно зарабатывает. Решился на участие в тренинге потому-что знаю точно что обучаться нужно у опытных людей т.к. самому пробиваться очень сложно.Да и тому же за такую цену грех не пройти такой тренинг.</p>
+        <p>Сомневался в том, что это очередной парень, коих в сети и так хватает, который будет бить в грудь и говорить что он профессиональный трейдер и что он все знает и все может. Но по прохождению курса мои сомнения развеялись. Помогло преодолеть сомненния помогло лишь одно-понимание того что вложеные деньги в свое обучение и развитие вернутся в многократном размере.</p>
+        <p>&nbsp;</p>
+        <p>Евгений</p>
+       </div>
+       <!-- /m_editable -->
+       <!-- m_editable region-id="editable-static-tag-U13593-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="SSSlideCaption invi rounded-corners clearfix grpelem" id="u13593-11" data-muse-uid="U13593" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p>Всем Привет ! Хочу обратиться ко всем, кто волею судьбы оказался в этом бизнесе и к тем, кто только планирует сюда попасть. И если вы читаете эти строки, значит имеете желание научиться зарабатывать с рынка. Рекомендую пройти данный курс, так как лично для меня он оказался очень полезным и познавательным. До прохождения данного курса, я имела девятимесячный опыт торговли и безуспешных попыток заработать. Автор курса Сергей, профессионал своего дела и талантливый преподаватель. Если честно, то даже не ожидала такого высокого качества обучения. В курсе преподносится огромное количество информации в очень доступной форме и получаешь подробнейшие ответы на любой вопрос. Так что, я довольна результатом обучения, чего и Вам желаю.</p>
+        <p>&nbsp;</p>
+        <p>Искренне, С наилучшими пожеланиями</p>
+        <p>Галина</p>
+        <p>&nbsp;</p>
+       </div>
+       <!-- /m_editable -->
+       <!-- m_editable region-id="editable-static-tag-U13591-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="SSSlideCaption invi rounded-corners clearfix grpelem" id="u13591-14" data-muse-uid="U13591" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p>Здравствуйте, хочу сказать спасибо Сергею за предоставленный курс.</p>
+        <p>Очень четко и терпеливо человек пробовал донести до аудитории свои знания. Был бы рад прослушать его еще раз.</p>
+        <p>Стал понимать лучше рынок, что делать, что искать, на что обращать внимание, в каком направлении думать и двигаться...</p>
+        <p>Если хотите научиться зарабатывать на фондовой бирже сша то не задумывайтесь, а записывайтесь на&nbsp; этот курс и обучайтесь.</p>
+        <p>&nbsp;</p>
+        <p>Артур</p>
+        <p id="u13591-12">&nbsp;</p>
+       </div>
+       <!-- /m_editable -->
+       <!-- m_editable region-id="editable-static-tag-U13592-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="SSSlideCaption invi rounded-corners clearfix grpelem" id="u13592-7" data-muse-uid="U13592" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p>Курс &quot;Старт на NYSE&quot;&nbsp; мне понравился, смысл понятен общий даже для человека с нуля, как по мне, но у меня на первом этапе проблема была в понимании сленга трейдеров :) потом уделяла этому отдельное время,чтоб правильно в голове все уложить). т.к. 80 или даже 90% участников были с опытом работы на форексе, на фондовом рынке или на демо версиях, я думаю им информация с самого начала была очень полезна и легка в понимании. Но я думаю все таки, что можно ввести начальный урок с обьяснения азов, самой базовой части, термины, общие понятия для тех, у кого вообще &quot;0&quot; опыта. Чтоб потом человеку легче было в понимании более сложных моментов )) и еще (опять же таки как по мне) так урок по платформам перенести на 2 или 3 место. А то я так его ждала, потому что заходила в демку, и ничего не понимала :))) А так все понравилось, интересно и познавательно, единственное жалею о том что опыта не было, а то тоже позадовала бы вопросов, а так пока надо это все уложить в голове :)</p>
+        <p>&nbsp;</p>
+        <p>Катя</p>
+       </div>
+       <!-- /m_editable -->
+      </div>
+     </div>
+     <div class="popup_anchor" id="u13594-4popup">
+      <!-- m_editable region-id="editable-static-tag-U13594-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" -->
+      <div class="SSPreviousButton clearfix" id="u13594-4" data-muse-uid="U13594" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>&lt;</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <div class="popup_anchor" id="u13595-4popup">
+      <!-- m_editable region-id="editable-static-tag-U13595-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" -->
+      <div class="SSNextButton clearfix" id="u13595-4" data-muse-uid="U13595" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p>&gt;</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+    </div>
+    <!-- m_editable region-id="editable-static-tag-U13858-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+    <div class="clearfix colelem" id="u13858-6" data-muse-uid="U13858" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+     <p id="u13858-2">Успейте записаться по наилучшей цене!</p>
+     <p id="u13858-4">НАЧАЛО УЖЕ 10 АПРЕЛЯ</p>
+    </div>
+    <!-- /m_editable -->
+    <!-- m_editable region-id="editable-static-tag-U13855-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+    <a class="nonblock nontext anim_swing rounded-corners clearfix colelem" id="u13855-4" href="mobile.html#order" data-href="anchor:U9647:U13640" data-muse-uid="U13855" data-muse-type="txt_frame"><!-- content --><p id="u13855-2">ПРИСОЕДИНИТЬСЯ</p></a>
+    <!-- /m_editable -->
+    <a class="anchor_item colelem" id="warranty"></a>
+    <div class="browser_width colelem" id="u13639-bw">
+     <div class="museBGSize" id="u13639"><!-- column -->
+      <div class="clearfix" id="u13639_align_to_page">
+       <!-- m_editable region-id="editable-static-tag-U13641-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="Title_Large clearfix colelem" id="u13641-4" data-muse-uid="U13641" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <h2>НАШИ ГАРАНТИИ</h2>
+       </div>
+       <!-- /m_editable -->
+       <div class="clearfix colelem" id="pu13643"><!-- group -->
+        <!-- m_editable region-id="editable-static-tag-U13643-BP_infinity" template="mobile.html" data-type="image" -->
+        <div class="clip_frame grpelem" id="u13643" data-muse-uid="U13643" data-muse-type="img_frame"><!-- image -->
+         <img class="block" id="u13643_img" src="images/hosting-guarantee.png?crc=3969545489" alt="" width="348" height="281" data-muse-src="images/hosting-guarantee.png?crc=3969545489"/>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U13642-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="clearfix grpelem" id="u13642-8" data-muse-uid="U13642" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <h2 id="u13642-2">Гарантируем ли мы, что курс «ФОРМАЛИЗОВАННЫЕ СТРАТЕГИИ» принесет Вам пользу?</h2>
+         <h2 id="u13642-3">&nbsp;</h2>
+         <p id="u13642-5">Да! Мы настолько уверены, что курс&nbsp; «ФОРМАЛИЗОВАННЫЕ СТРАТЕГИИ» будет полезен&nbsp; Вам, если Вы только интересуетесь торговлей на американском фондовом рынке&nbsp; или уже имеете определенный опыт торговли, что даем ГАРАНТИЮ: Если вдруг по какой-либо причине на протяжении первых двух занятий Вы поймете, что этот курс не для Вас, просто напишите нам об этом, и мы вернем Вам деньги.</p>
+         <p id="u13642-6">&nbsp;</p>
+        </div>
+        <!-- /m_editable -->
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- m_editable region-id="editable-static-tag-U13601-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+    <div class="clearfix colelem" id="u13601-7" data-muse-uid="U13601" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+     <p id="u13601-2">P.S. Количество мест в группе действительно ограничено (иначе пострадало бы качество обучения ), а одна только мысль «я еще подумаю» пока никого не сделала богатым.</p>
+     <p id="u13601-3">&nbsp;</p>
+     <p id="u13601-5">Действуйте!</p>
+    </div>
+    <!-- /m_editable -->
+    <div class="clearfix colelem" id="pfaq"><!-- group -->
+     <a class="anchor_item grpelem" id="faq"></a>
+     <!-- m_editable region-id="editable-static-tag-U13505-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="Title_Large clearfix grpelem" id="u13505-4" data-muse-uid="U13505" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <h2>НАИБОЛЕЕ ПОПУЛЯРНЫЕ ВОПРОСЫ</h2>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <div class="clearfix colelem" id="paccordionu13527"><!-- group -->
+     <div class="accordion_wrapper grpelem" id="accordionu13527wrapper"><!-- vertical box -->
+      <ul class="AccordionWidget clearfix" id="accordionu13527"><!-- column -->
+       <li class="AccordionPanel clearfix colelem" id="u13528"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U13533-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" --><div class="AccordionPanelTab clearfix colelem" id="u13533-5" data-muse-uid="U13533" data-muse-type="txt_frame"><!-- content --><ul class="list0 nls-None" id="u13533-3"><li id="u13533-2"><span class="Titles_Pages" id="u13533">Стратегии из интернета не работают!</span></li></ul></div><!-- /m_editable --><div class="AccordionPanelContent clearfix colelem" id="u13529"><!-- group --><!-- m_editable region-id="editable-static-tag-U13531-BP_infinity" template="mobile.html" data-type="image" --><div class="clip_frame grpelem" id="u13531" data-muse-uid="U13531" data-muse-type="img_frame"><!-- image --><img class="block" id="u13531_img" src="images/klass.png?crc=3880379145" alt="" width="32" height="32" data-muse-src="images/klass.png?crc=3880379145"/></div><!-- /m_editable --><!-- m_editable region-id="editable-static-tag-U13530-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><div class="Animazione2 clearfix grpelem" id="u13530-4" data-muse-uid="U13530" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p>Сергей Коломиец, как и все трейдеры SDG Trade, не раз показывал свою онлайн-торговлю. Мы не показываем только лишь положительные дни и не погружаем вас в иллюзию, что вы всегда будете зарабатывать. Настоящим трейдерам не стыдно показывать свои убытки, так как, придерживаясь своих торговых статегий, они всегда в итоге перекроют минусовые дни положительными днями. Положительная статистика Сергея Коломийца – за месяц, квартал, год – показывает, что его стратегии и подходы работают и с их помощью можно заработать. Именно этим стратегиям он Вас обучит.</p></div><!-- /m_editable --></div></li>
+       <li class="AccordionPanel clearfix colelem" id="u13546"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U13551-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" --><div class="AccordionPanelTab museBGSize AccordionImages shadow clearfix colelem" id="u13551-5" data-muse-uid="U13551" data-muse-type="txt_frame"><!-- content --><ul class="list0 nls-None" id="u13551-3"><li id="u13551-2"><span class="Titles_Pages" id="u13551">Я уже обучался, но все равно теряю</span></li></ul></div><!-- /m_editable --><div class="AccordionPanelContent disn clearfix colelem" id="u13547"><!-- group --><!-- m_editable region-id="editable-static-tag-U13549-BP_infinity" template="mobile.html" data-type="image" --><div class="clip_frame grpelem" id="u13549" data-muse-uid="U13549" data-muse-type="img_frame"><!-- image --><img class="block" id="u13549_img" src="images/klass.png?crc=3880379145" alt="" width="32" height="32" data-muse-src="images/klass.png?crc=3880379145"/></div><!-- /m_editable --><!-- m_editable region-id="editable-static-tag-U13548-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><div class="clearfix grpelem" id="u13548-4" data-muse-uid="U13548" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p>Важен не столько факт обучения, а у кого именно Вы обучались - у реального практика или же у гуру &quot;инфобизнеса&quot;. Большинство «гуру» не торгуют, а их обучение – это сплошная теория из книжек. Сергей же – практикующий трейдер, который зарабатывает на фондовом рынке. Поэтому его стратегии действительно рабочие и актуальные.</p></div><!-- /m_editable --></div></li>
+       <li class="AccordionPanel clearfix colelem" id="u13558"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U13563-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" --><div class="AccordionPanelTab AccordionImages shadow clearfix colelem" id="u13563-5" data-muse-uid="U13563" data-muse-type="txt_frame"><!-- content --><ul class="list0 nls-None" id="u13563-3"><li id="u13563-2"><span class="Titles_Pages" id="u13563">Зачем Сергею обучать, если он и так зарабатывает?</span></li></ul></div><!-- /m_editable --><div class="AccordionPanelContent disn clearfix colelem" id="u13559"><!-- group --><!-- m_editable region-id="editable-static-tag-U13560-BP_infinity" template="mobile.html" data-type="image" --><div class="clip_frame grpelem" id="u13560" data-muse-uid="U13560" data-muse-type="img_frame"><!-- image --><img class="block" id="u13560_img" src="images/klass.png?crc=3880379145" alt="" width="32" height="32" data-muse-src="images/klass.png?crc=3880379145"/></div><!-- /m_editable --><!-- m_editable region-id="editable-static-tag-U13562-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><div class="clearfix grpelem" id="u13562-4" data-muse-uid="U13562" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p>Сергей является частью нашей компании и участвует в наших общих задачах. Наша компания зарабатывает лишь на успешных трейдерах - т.е. тех, кто торгует много, долго, большими объемами, а это возможно лишь в случае успешности трейдера на рынке. Наша прибыль генерируется благодаря сгенерированной трейдерами брокерской комиссии. Нам никогда не было и не будет выгодно, чтобы клиенты «сливали» свой депозит и, разочарованные, покидали этот бизнес. Наша задача – обучить клиентов, чтобы они могли зарабатывать и долгое время быть с нами вместе. Но, так как трейдинг – это бизнес, а не меценатство, то курс платный. Однако цена за данный курс однозначно в разы меньше его истинной ценности. При правильном подходе вы сможете «отбить» свои инвестиции в обучение за 1-2 трейда.</p></div><!-- /m_editable --></div></li>
+       <li class="AccordionPanel clearfix colelem" id="u13534"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U13535-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" --><div class="AccordionPanelTab AccordionImages shadow clearfix colelem" id="u13535-5" data-muse-uid="U13535" data-muse-type="txt_frame"><!-- content --><ul class="list0 nls-None" id="u13535-3"><li id="u13535-2"><span class="Titles_Pages" id="u13535">Я не верю в онлайн-обучение</span></li></ul></div><!-- /m_editable --><div class="AccordionPanelContent disn clearfix colelem" id="u13536"><!-- group --><!-- m_editable region-id="editable-static-tag-U13538-BP_infinity" template="mobile.html" data-type="image" --><div class="clip_frame grpelem" id="u13538" data-muse-uid="U13538" data-muse-type="img_frame"><!-- image --><img class="block" id="u13538_img" src="images/klass.png?crc=3880379145" alt="" width="32" height="32" data-muse-src="images/klass.png?crc=3880379145"/></div><!-- /m_editable --><!-- m_editable region-id="editable-static-tag-U13537-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><div class="clearfix grpelem" id="u13537-4" data-muse-uid="U13537" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p>Занятия проходят в онлайн-режиме. На сегодняшний день Интернет дает нам всем замечательную возможность обучаться через онлайн-вебинар, благодаря чему можно не тратить драгоценное время на перемещение по городу, и нет необходимости жить в одном городе и даже в одной стране. Вы, конечно, можете пройти и индивидуальное обучение у нашего преподавателя. Вот только стоить оно будет в разы дороже.</p></div><!-- /m_editable --></div></li>
+       <li class="AccordionPanel clearfix colelem" id="u13540"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U13545-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" --><div class="AccordionPanelTab clearfix colelem" id="u13545-5" data-muse-uid="U13545" data-muse-type="txt_frame"><!-- content --><ul class="list0 nls-None" id="u13545-3"><li id="u13545-2"><span class="Titles_Pages" id="u13545">А что, если я не разберусь?</span></li></ul></div><!-- /m_editable --><div class="AccordionPanelContent disn clearfix colelem" id="u13541"><!-- group --><!-- m_editable region-id="editable-static-tag-U13542-BP_infinity" template="mobile.html" data-type="image" --><div class="clip_frame grpelem" id="u13542" data-muse-uid="U13542" data-muse-type="img_frame"><!-- image --><img class="block" id="u13542_img" src="images/klass.png?crc=3880379145" alt="" width="32" height="32" data-muse-src="images/klass.png?crc=3880379145"/></div><!-- /m_editable --><!-- m_editable region-id="editable-static-tag-U13544-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><div class="clearfix grpelem" id="u13544-4" data-muse-uid="U13544" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p>В курсе будет всё очень подробно рассказано — специально для тех, кто только начинает. Если у вас останутся неразрешенные вопросы, вы всегда можете вынести их на обсуждение в нашем закрытом чате трейдеров или задать вопрос Сергею лично.</p></div><!-- /m_editable --></div></li>
+       <li class="AccordionPanel clearfix colelem" id="u13552"><!-- vertical box --><!-- m_editable region-id="editable-static-tag-U13553-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" --><div class="AccordionPanelTab clearfix colelem" id="u13553-5" data-muse-uid="U13553" data-muse-type="txt_frame"><!-- content --><ul class="list0 nls-None" id="u13553-3"><li id="u13553-2"><span class="Titles_Pages" id="u13553">Как я могу оплатить и будет ли запись занятий?</span></li></ul></div><!-- /m_editable --><div class="AccordionPanelContent disn clearfix colelem" id="u13554"><!-- group --><!-- m_editable region-id="editable-static-tag-U13556-BP_infinity" template="mobile.html" data-type="image" --><div class="clip_frame grpelem" id="u13556" data-muse-uid="U13556" data-muse-type="img_frame"><!-- image --><img class="block" id="u13556_img" src="images/klass.png?crc=3880379145" alt="" width="32" height="32" data-muse-src="images/klass.png?crc=3880379145"/></div><!-- /m_editable --><!-- m_editable region-id="editable-static-tag-U13555-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><div class="clearfix grpelem" id="u13555-13" data-muse-uid="U13555" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p>Оплатить курс можно следующими способами:</p><p>1) моментальная оплата в Личном кабинете на нашем сайте</p><p>2) WebMoney</p><p>3) банковский SWIFT-перевод</p><p><span id="u13555-9">Все участники смогут получить запись всех занятий, чтобы была возможность впоследствии пересмотреть и заметить какие-то новые моменты.</span></p><p>&nbsp;</p></div><!-- /m_editable --></div></li>
+      </ul>
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U13606-BP_infinity" template="mobile.html" data-type="image" -->
+     <div class="clip_frame grpelem" id="u13606" data-muse-uid="U13606" data-muse-type="img_frame"><!-- image -->
+      <img class="block" id="u13606_img" src="images/hand.png?crc=446131518" alt="" width="48" height="53" data-muse-src="images/hand.png?crc=446131518"/>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <div class="clearfix colelem" id="pu14659"><!-- group -->
+     <div class="browser_width grpelem" id="u14659-bw">
+      <div class="museBGSize" id="u14659"><!-- simple frame --></div>
+     </div>
+     <div class="browser_width grpelem" id="u14660-bw">
+      <div id="u14660"><!-- simple frame --></div>
+     </div>
+     <div class="browser_width grpelem" id="u14661-bw">
+      <div id="u14661"><!-- simple frame --></div>
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U14662-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+     <a class="nonblock nontext anim_swing rounded-corners clearfix grpelem" id="u14662-4" href="mobile.html#order" data-href="anchor:U9647:U13640" data-muse-uid="U14662" data-muse-type="txt_frame"><!-- content --><p id="u14662-2">ПРИНЯТЬ УЧАСТИЕ</p></a>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U14663-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="clearfix grpelem" id="u14663-4" data-muse-uid="U14663" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p>Спешите, начало программы уже 10 апреля.</p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U14664-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" data-ice-editable="link" -->
+     <a class="nonblock nontext anim_swing clearfix grpelem" id="u14664-4" href="mobile.html#top" data-href="anchor:U9647:U10317" data-muse-uid="U14664" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p>ВВЕРХ</p></a>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U14665-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" data-ice-editable="link" -->
+     <a class="nonblock nontext clearfix grpelem" id="u14665-4" href="http://www.sdg-trade.com/confidence.html" target="_blank" data-muse-uid="U14665" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p>Политика конфиденциальности</p></a>
+     <!-- /m_editable -->
+    </div>
+    <div class="browser_width colelem" id="u14688-bw">
+     <div id="u14688"><!-- simple frame --></div>
+    </div>
+    <div class="clearfix colelem" id="pu13600"><!-- group -->
+     <div class="browser_width grpelem" id="u13600-bw">
+      <div class="museBGSize" id="u13600"><!-- simple frame --></div>
+     </div>
+     <div class="browser_width grpelem" id="u13602-bw">
+      <div id="u13602"><!-- simple frame --></div>
+     </div>
+     <div class="browser_width grpelem" id="u13603-bw">
+      <div id="u13603"><!-- simple frame --></div>
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U13604-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable" data-ice-editable="link" -->
+     <a class="nonblock nontext anim_swing rounded-corners clearfix grpelem" id="u13604-4" href="mobile.html#order" data-href="anchor:U9647:U13640" data-muse-uid="U13604" data-muse-type="txt_frame"><!-- content --><p id="u13604-2">ПРИНЯТЬ УЧАСТИЕ</p></a>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13605-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="clearfix grpelem" id="u13605-4" data-muse-uid="U13605" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p>Спешите, начало программы уже в июле.</p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13610-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" data-ice-editable="link" -->
+     <a class="nonblock nontext anim_swing clearfix grpelem" id="u13610-4" href="mobile.html#top" data-href="anchor:U9647:U10317" data-muse-uid="U13610" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p>ВВЕРХ</p></a>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U13615-BP_infinity" template="mobile.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" data-ice-editable="link" -->
+     <a class="nonblock nontext clearfix grpelem" id="u13615-4" href="http://www.sdg-trade.com/confidence.html" target="_blank" data-muse-uid="U13615" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p>Политика конфиденциальности</p></a>
+     <!-- /m_editable -->
+    </div>
+   </div>
+  </div>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
+l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Некоторые файлы на сервере могут отсутствовать или быть некорректными. Очистите кэш-память браузера и повторите попытку. Если проблему не удается устранить, свяжитесь с разработчиками сайта.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?setTimeout(function(){g(!0)},5E3):g()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musepolyfill.bgsize","jquery.watch","webpro","musewpslideshow","jquery.museoverlay","touchswipe","musewpdisclosure","jquery.scrolleffects"],function(d){var $ = d;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.initWidget('#pamphletu13653', ['#bp_infinity'], function(elem) { return new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu13653 */
+Muse.Utils.initWidget('#widgetu13820', ['#bp_infinity'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu13820 */
+Muse.Utils.initWidget('#pamphletu13807', ['#bp_infinity'], function(elem) { return new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:false,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu13807 */
+Muse.Utils.initWidget('#widgetu13786', ['#bp_infinity'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu13786 */
+Muse.Utils.initWidget('#pamphletu13777', ['#bp_infinity'], function(elem) { return new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:false,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu13777 */
+Muse.Utils.initWidget('#widgetu13617', ['#bp_infinity'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu13617 */
+Muse.Utils.initWidget('#slideshowu13565', ['#bp_infinity'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:8000,slideLinkStopsSlideShow:false,transitionStyle:'vertical',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:800,enableSwipe:true,elastic:'off',resumeAutoplay:false,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu13565 */
+Muse.Utils.initWidget('#accordionu13527', ['#bp_infinity'], function(elem) { return new WebPro.Widget.Accordion(elem, {canCloseAll:true,defaultIndex:0}); });/* #accordionu13527 */
+$('#u10128').registerBackgroundPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,0]},{"speed":[0,0],"in":[0,Infinity]}]);/* scroll effect */
+$('#u13495').registerBackgroundPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,2749]},{"speed":[0,0],"in":[2749,Infinity]}]);/* scroll effect */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=4234670167" type="text/javascript" async data-main="scripts/museconfig.js?crc=4152223963" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+   </body>
+</html>
