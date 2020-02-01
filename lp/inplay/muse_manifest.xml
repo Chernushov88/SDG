@@ -1,0 +1,81 @@
+<manifest alg="2" build="2017.0.2.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="sdg-trade.com/bazoviy" resolutions="1x" timestamp="1487927579831">
+  <folder name="css">
+    <file name="site_global.css" crc="4212257138"/>
+    <file name="thanks.css" crc="4249032763" ref="thanks"/>
+    <file name="iefonts_thanks.css" crc="138476052" ref="thanks"/>
+    <file name="index.css" crc="3990769499" ref="index"/>
+    <file name="iefonts_index.css" crc="530371780" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:thanks"/>
+    <file name="museutils.js" crc="4232573551" ref="index:thanks"/>
+    <file name="whatinput.js" crc="86476730" ref="index:thanks"/>
+    <file name="museconfig.js" crc="4152223963" ref="index:thanks"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3880853905" ref="index:thanks"/>
+    <file name="jquery.watch.js" crc="3844535323" ref="index:thanks"/>
+    <file name="webpro.js" crc="3770351119" ref="index:thanks"/>
+    <file name="musewpslideshow.js" crc="4244742588" ref="index:thanks"/>
+    <file name="jquery.museoverlay.js" crc="432750910" ref="index:thanks"/>
+    <file name="touchswipe.js" crc="3912873526" ref="index:thanks"/>
+    <file name="form_check.php" crc="3841221102" ref="index"/>
+    <file name="form_throttle.php" crc="4048049783" ref="index"/>
+    <file name="form_process.php" crc="3899230280" ref="index"/>
+    <file name="form-u6934.php" crc="4257940050" ref="index"/>
+    <file name="form-u7139.php" crc="28796981" ref="index"/>
+    <file name="require.js" crc="4234670167" ref="index:thanks"/>
+  </folder>
+  <folder name="images">
+    <file name="базовый-курс-дейтрейдинга-на-nyse-favicon.ico" crc="487042476" ref="index"/>
+    <file name="logo.png" crc="3786689811" seo="true" ref="index:thanks">
+      <caption webpage="index" alt=""/>
+      <caption webpage="thanks" alt=""/>
+    </file>
+    <file name="nasdaq11-1920x1080.jpg" crc="3998829975" ref="index:thanks">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="11-u1850-fr.png" crc="400549448" ref="index:thanks"/>
+    <file name="stockgraphic-icon.png" crc="3955037759" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index:thanks"/>
+    <file name="image_large.jpg" crc="446822233" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="live-trading-bootcamp.jpg" crc="56044780" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="bg21111.jpg" crc="4135912071" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="arrow-1.png" crc="376892312" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="live-trading-pic.png" crc="4254336561" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="kolomiets.jpg" crc="4024586875" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank-sticky-note-hi.png" crc="410053932" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="quotes2-1920x1200.jpg" crc="210057189" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="50.png" crc="3923463172" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="reliability-bg.jpg" crc="4127507501" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="hosting-guarantee.png" crc="3969545489" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide-1 (1).jpg" crc="164377431" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="thanks-favicon.ico" crc="487042476" ref="thanks"/>
+  </folder>
+  <file name="index.html" crc="513304066" seo="true" mt="1487926898967" redirect="true"/>
+  <file name="thanks.html" crc="169665761" seo="true" mt="1471271818007" redirect="true"/>
+</manifest>

@@ -1,0 +1,66 @@
+<manifest alg="2" build="2015.1.1.343" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="https://www.sdg-trade.com" resolutions="1x" timestamp="1482757423132">
+  <folder name="css">
+    <file name="site_global.css" crc="463779133"/>
+    <file name="index.css" crc="140954949" ref="index"/>
+    <file name="iefonts_index.css" crc="4181329968" ref="index"/>
+    <file name="ok.css" crc="474718492" ref="ok"/>
+    <file name="iefonts_ok.css" crc="3887410733" ref="ok"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="484278746" ref="index:ok"/>
+    <file name="museutils.js" crc="531812214" ref="index:ok"/>
+    <file name="whatinput.js" crc="84559013" ref="index:ok"/>
+    <file name="jquery.watch.js" crc="3866665977" ref="index:ok"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="120190942" ref="index:ok"/>
+    <file name="pie.js" crc="3827607177" ref="index:ok"/>
+    <file name="webpro.js" crc="4156477058" ref="index"/>
+    <file name="form_check.php" crc="373582055" ref="index"/>
+    <file name="form_throttle.php" crc="211381018" ref="index"/>
+    <file name="form_process.php" crc="6354943" ref="index"/>
+    <file name="form-u734.php" crc="4227812228" ref="index"/>
+    <file name="musewpslideshow.js" crc="4058618124" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="3810062583" ref="index"/>
+    <file name="touchswipe.js" crc="4174436727" ref="index"/>
+    <file name="form-u901.php" crc="3982927779" ref="index"/>
+    <file name="musewpdisclosure.js" crc="3974494556" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="homesection_about.jpg" crc="4173218155" ref="index:ok"/>
+    <file name="dot hatch.png" crc="224740808" ref="index:ok"/>
+    <file name="bg5.jpg" crc="247931990" ref="index"/>
+    <file name="icons.png" crc="203811560" seo="true" ref="index"/>
+    <file name="ferrari-1.jpg" crc="4056909687" ref="index"/>
+    <file name="oles.jpg" crc="165270523" seo="true" ref="index"/>
+    <file name="вставленное изображение 164x203-crop-u599.png" crc="4033671996" ref="index"/>
+    <file name="вставленное изображение 164x203-crop-u615.png" crc="4033671996" ref="index"/>
+    <file name="вставленное изображение 164x203-crop-u628.png" crc="4033671996" ref="index"/>
+    <file name="вставленное изображение 164x203-crop-u642.png" crc="4033671996" ref="index"/>
+    <file name="вставленное изображение 164x203-crop-u654.png" crc="4033671996" ref="index"/>
+    <file name="вставленное изображение 164x203-crop-u667.png" crc="4033671996" ref="index"/>
+    <file name="вставленное изображение 164x203-crop-u681.png" crc="4033671996" ref="index"/>
+    <file name="вставленное изображение 164x203-crop-u693.png" crc="4033671996" ref="index"/>
+    <file name="вставленное изображение 164x203-crop-u710.png" crc="4033671996" ref="index"/>
+    <file name="form 8 icons timers-u751.png" crc="304441128" ref="index"/>
+    <file name="form 8 icons mail-u759.png" crc="81508369" ref="index"/>
+    <file name="form 8 icons people-u762.png" crc="4078357121" ref="index"/>
+    <file name="form 8 icons phone-u754.png" crc="366497113" ref="index"/>
+    <file name="u741-17.png" crc="405919175" ref="index"/>
+    <file name="u741-17-r.png" crc="433067853" ref="index"/>
+    <file name="u741-17-m.png" crc="433067853" ref="index"/>
+    <file name="u741-17-fs.png" crc="405919175" ref="index"/>
+    <file name="form 8 icons timers-u927.png" crc="304441128" ref="index"/>
+    <file name="form 8 icons mail-u918.png" crc="81508369" ref="index"/>
+    <file name="form 8 icons people-u920.png" crc="4078357121" ref="index"/>
+    <file name="form 8 icons phone-u899.png" crc="366497113" ref="index"/>
+    <file name="u912-17.png" crc="405919175" ref="index"/>
+    <file name="u912-17-r.png" crc="433067853" ref="index"/>
+    <file name="u912-17-m.png" crc="433067853" ref="index"/>
+    <file name="u912-17-fs.png" crc="405919175" ref="index"/>
+    <file name="money-back-guarantee.png" crc="151473237" seo="true" ref="index"/>
+    <file name="warp_shadow_strong.png" crc="224476799" seo="true" ref="index"/>
+    <file name="klass.png" crc="3880379145" seo="true" ref="index"/>
+    <file name="p01.jpg" crc="502888489" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4287777242" seo="true" mt="1482757324956" redirect="true"/>
+  <file name="ok.html" crc="20172163" seo="true" mt="1478258725711" redirect="true"/>
+</manifest>

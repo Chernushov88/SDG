@@ -1,0 +1,242 @@
+.image {
+    min-height: 530px!important;
+    position: relative;
+    padding: 0!important;
+}
+
+.podlozka-image {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, .4);
+}
+
+.podlozka-image p {
+    color: #fff;
+    padding: 20px;
+    letter-spacing: 0.8px
+}
+.slide1 img{    border-radius: 7px;background: #fff;}
+ul.display-4-book {
+    padding-left: 1.3rem;
+}
+
+.wrapper.slide1 {
+    background: url(../img/main.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper.slide1:before {
+    content: "";
+    background: #000;
+    opacity: 0.7;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+
+
+.btn-new:hover:after,
+.btn-new:focus:after,
+.btn-new:active:after {
+    opacity: 1;
+    width: 75%;
+}
+
+.btn-new {
+    z-index: 2;
+    color: #fff;
+}
+
+.btn-new:hover,
+.btn-new:focus,
+.btn-new:active {
+    color: #007bff!important;
+}
+
+.btn-new:after {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    width: 0;
+    height: 600%;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.btn {
+    position: relative;
+    font-weight: 500;
+    border-width: 2px;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin: .4rem .8rem;
+    white-space: normal;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 1rem 3rem;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+.text-center {
+    z-index: 1;
+}
+
+.header-text {
+    padding: 12rem 0;
+}
+
+#slide2 h2 {
+    margin-bottom: 20px;
+}
+
+.wrapper.slide3 {
+    background: #141a2a;
+    position: relative;
+}
+
+.display-3-big {
+    color: #4faedd;
+}
+
+.slide1 .display-3-big {
+    font-size: 2.8rem;
+}
+
+.slide1 h2 {
+    font-family: "RobotoBook"
+}
+
+.image:before {
+    content: "";
+    background: #000;
+    opacity: 0.5;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+p.display-4-heavy {
+    color: #2d85d2;
+}
+
+.who-are-we .image {
+    background: url(../img/our.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+
+.h-100 div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.what-do-you-stud .image {
+    background: url(../img/2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.who-we-find .image {
+    background: url(../img/3.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.our-wish .image {
+    background: url(../img/4.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.what-do-you-do .image {
+    background: url(../img/5.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.prof .image {
+    background: url(../img/6.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#myModal {
+    padding: 0!important
+}
+
+.what-we-offer .image {
+    background: url(../img/7.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.input-group {
+    padding: 10px 0;
+}
+
+.mail-status {
+    font-family: "RobotoBook";
+    font-size: 1.1rem;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+@media (max-width: 1100px) {
+    .display-3-big {
+        font-size: 2rem!important;
+    }
+    .display-3-small {
+        font-size: 1.8rem!important
+    }
+    .display-3-heavy {
+        font-size: 1.9rem!important;
+    }
+}
+
+@media (max-width: 775px) {
+    .display-3-big {
+        font-size: 1.6rem!important;
+    }
+    .display-3-heavy {
+        font-size: 1.7rem!important;
+    }
+    .display-3-small {
+        font-size: 1.4rem!important
+    }
+}
+
+@media (max-width: 455px) {
+    .display-3-big {
+        font-size: 1.6rem!important;
+    }
+    .display-3-heavy {
+        font-size: 1.7rem!important;
+    }
+    .display-3-small {
+        font-size: 1.2rem!important
+    }
+    button {
+        font-size: 1.2rem!important;
+    }
+}

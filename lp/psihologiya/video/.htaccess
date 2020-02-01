@@ -1,0 +1,4 @@
+AuthUserFile /usr/www/users/sdgctr//newsite/lp/psihologiya/video//.htpasswd
+AuthName "video protection"
+AuthType Basic
+require valid-user

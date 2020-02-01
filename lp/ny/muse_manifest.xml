@@ -1,0 +1,45 @@
+<manifest alg="2" build="2015.2.1.352" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="ny.com" resolutions="1x" timestamp="1482506862088">
+  <folder name="css">
+    <file name="site_global.css" crc="3916556066"/>
+    <file name="index.css" crc="3982876550" ref="index"/>
+    <file name="iefonts_index.css" crc="306367102" ref="index"/>
+    <file name="ok.css" crc="3777043709" ref="ok"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="index:ok"/>
+    <file name="museutils.js" crc="3851988764" ref="index:ok"/>
+    <file name="whatinput.js" crc="86476730" ref="index:ok"/>
+    <file name="museconfig.js" crc="4242129463" ref="index:ok"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="index:ok"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="index:ok"/>
+    <file name="pie.js" crc="3831537696" ref="index:ok"/>
+    <file name="webpro.js" crc="4067903014" ref="index"/>
+    <file name="musewpslideshow.js" crc="4265225696" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="4075157096" ref="index"/>
+    <file name="touchswipe.js" crc="474750357" ref="index"/>
+    <file name="require.js" crc="4108833657" ref="index:ok"/>
+  </folder>
+  <folder name="images">
+    <file name="header-small.png" crc="152821657" ref="index:ok"/>
+    <file name="u243-4.png" crc="212064340" ref="index"/>
+    <file name="header-bottom-1.png" crc="4082963405" ref="index:ok"/>
+    <file name="header-bottom-2.png" crc="4229124005" ref="index:ok"/>
+    <file name="box-1-ico2.png" crc="280610409" seo="true" ref="index"/>
+    <file name="box-1-ico3.png" crc="483286288" seo="true" ref="index"/>
+    <file name="box-1-ico4.png" crc="4091830021" seo="true" ref="index"/>
+    <file name="box-1-ico1.png" crc="4244631679" seo="true" ref="index"/>
+    <file name="graph.jpg" crc="497785044" seo="true" ref="index"/>
+    <file name="box-2-decor.png" crc="3911300374" ref="index"/>
+    <file name="santa.png" crc="57223521" seo="true" ref="index"/>
+    <file name="deer.png" crc="4170337777" seo="true" ref="index"/>
+    <file name="footer-border.jpg" crc="234373128" ref="index"/>
+    <file name="fb2.png" crc="4056514409" seo="true" ref="index"/>
+    <file name="fotolia_86378319_subscription_monthly_xxl-1-850x530.jpg" crc="4138039694" seo="true" ref="index"/>
+    <file name="close-icon.png" crc="268691130" ref="index"/>
+    <file name="fb1.png" crc="196399661" seo="true" ref="index"/>
+    <file name="footer.jpg" crc="3898754971" ref="index"/>
+    <file name="u739-4.png" crc="330595335" ref="ok"/>
+  </folder>
+  <file name="index.html" crc="3904257407" seo="true" mt="1482506858719" redirect="true"/>
+  <file name="ok.html" crc="58240044" seo="true" mt="1482506607382" redirect="true"/>
+</manifest>

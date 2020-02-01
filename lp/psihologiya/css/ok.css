@@ -1,0 +1,257 @@
+.version.ok /* version checker */
+{
+	color: #00001C;
+	background-color: #4BA11C;
+}
+
+#page
+{
+	z-index: 1;
+	min-height: 900px;
+	background-image: none;
+	border-width: 0px;
+	border-color: #000000;
+	background-color: transparent;
+	width: 100%;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	margin-bottom: -32px;
+	width: 100%;
+}
+
+#u1448
+{
+	z-index: 3;
+	height: 62px;
+	background-color: #000000;
+}
+
+.js body
+{
+	visibility: hidden;
+}
+
+.js body.initialized
+{
+	visibility: visible;
+}
+
+#u1448-bw
+{
+	z-index: 3;
+	height: 62px;
+}
+
+#pu1445
+{
+	width: 100%;
+}
+
+#u1445
+{
+	z-index: 2;
+	height: 858px;
+	background: transparent url("../images/homesection_about.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#u1445-bw
+{
+	z-index: 2;
+	height: 858px;
+}
+
+#u1520
+{
+	z-index: 5;
+	height: 858px;
+	background-color: #000000;
+	opacity: 0.34;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=34)";
+	filter: alpha(opacity=34);
+}
+
+#u1520-bw
+{
+	z-index: 5;
+	height: 858px;
+}
+
+#u1593
+{
+	z-index: 6;
+	min-height: 858px;
+	border-color: #000000;
+	background: transparent url("../images/dot%20hatch.png") repeat left top;
+}
+
+#u1593_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	max-width: 960px;
+	padding-top: 89px;
+	padding-bottom: 46px;
+}
+
+#u1530-7
+{
+	z-index: 7;
+	min-height: 267px;
+	background-color: transparent;
+	color: #FBB03B;
+	text-align: center;
+	font-family: ubuntu, sans-serif;
+	font-weight: 700;
+	position: relative;
+	width: 95.84%;
+	left: 2.09%;
+}
+
+#u1530-2
+{
+	font-size: 72px;
+	line-height: 86px;
+}
+
+#u1530-3,#u1530-5
+{
+	font-size: 30px;
+	line-height: 36px;
+}
+
+#pu1762
+{
+	top: -5px;
+	margin-bottom: -5px;
+	position: relative;
+	width: 100%;
+}
+
+#u1762
+{
+	z-index: 20;
+	min-height: 100px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 89px;
+	width: 20.84%;
+	left: 4.17%;
+}
+
+#pu1758
+{
+	margin-right: -10000px;
+	width: 56.05%;
+	margin-left: 26.98%;
+}
+
+#u1758
+{
+	z-index: 19;
+	min-height: 100px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	width: 37.18%;
+	margin-left: 62.83%;
+}
+
+#u1573
+{
+	z-index: 14;
+	background-color: #F2BC16;
+	border-radius: 5px;
+	padding-bottom: 15px;
+	position: relative;
+	width: 74.17%;
+}
+
+#u1567-4
+{
+	z-index: 15;
+	min-height: 33px;
+	background-color: transparent;
+	line-height: 24px;
+	font-size: 20px;
+	text-align: center;
+	font-family: ubuntu, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 13px;
+	width: 100%;
+}
+
+#pu1815
+{
+	margin-top: 18px;
+	position: relative;
+	width: 100%;
+}
+
+#u1815
+{
+	z-index: 22;
+	min-height: 251px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	width: 56.05%;
+}
+
+#u1814
+{
+	z-index: 21;
+	min-height: 224px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	width: 41.67%;
+	left: 56.25%;
+}
+
+#u1593-bw
+{
+	z-index: 6;
+	min-height: 858px;
+}
+
+#u1730
+{
+	z-index: 4;
+	height: 94px;
+	background-color: #000000;
+}
+
+#u1730-bw
+{
+	z-index: 4;
+	height: 94px;
+}
+
+#muse_css_mq,.html
+{
+	background-color: #FFFFFF;
+}
+
+body
+{
+	position: relative;
+	min-width: 320px;
+}
+

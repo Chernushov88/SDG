@@ -1,0 +1,76 @@
+/* ----------------------- Default ----------------------- */
+input[type="checkbox"], input[type="radio"] { display: -moz-inline-box; display: inline-block; *display: inline; zoom: 1; position: relative; vertical-align: top; margin: 3px 7px 0 0; }
+
+/* ----------------------- Settings ----------------------- */
+.checker span, .radio span, .uploader, .uploader span.action, .button, .button span { background-image:url('../../img/forms/controls.png'); background-repeat: no-repeat; }
+.selector, .checker, .button, .radio, .uploader { display: -moz-inline-box; display: inline-block; *display: inline; zoom: 1; vertical-align: middle; }
+.selector:focus, .checker:focus, .button:focus, .radio:focus, .uploader:focus { outline: 0; }
+.selector, .selector *, .radio, .radio *, .checker, .checker *, .uploader, .uploader *, .button, .button * { margin:0; padding:0; }
+
+.b-form_orange .checker span, .b-form_orange .radio span { background-image:url('../../img/forms/controls_orange.png'); background-repeat: no-repeat; }
+
+/* ----------------------- Selector ----------------------- */
+.selector { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.selector select { position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; width: 100%; opacity: 0; filter: alpha(opacity=0); -moz-opacity: 0; border: none; background: none; }
+
+/* ----------------------- Checkboxes ----------------------- */
+.checker { display: inline-block; *display: inline; zoom: 1; display: -moz-inline-box; position: relative; vertical-align: middle; margin: 0 7px 0 0; }
+.checker, .checker span, .checker input  { width: 15px; height: 15px; }
+.checker span { display: -moz-inline-box; display: inline-block; *display: inline; zoom: 1; text-align: center; background-position: 0 0; }
+.checker input { display: -moz-inline-box; display: inline-block; *display: inline; zoom: 1; margin: 0; opacity: 0; filter: alpha(opacity=0); -moz-opacity: 0; border: none; background: none; }
+
+.checker span.checked { background-position: -15px 0; }
+
+label:hover .checker span,
+label:hover .checker.active span,
+.checker.hover span,
+.checker.hover.active span { background-position: -30px 0; }
+
+label:hover .checker span.checked,
+label:hover .checker.active span.checked,
+.checker.hover span.checked,
+.checker.hover.active span.checked { background-position: -45px 0; }
+
+.checker.disabled span { background-position: -60px 0 !important; }
+.checker.disabled span.checked { background-position: -75px 0!important; }
+
+.checker.active { }
+
+.checker.focus span.checked,
+.checker.focus.active span.checked { }
+
+.checker.focus span,
+.checker.focus.active span { }
+
+.g-error .checker span { background-position: -90px 0; }
+
+/* ----------------------- Radio-buttons ----------------------- */
+.radio { display: inline-block; *display: inline; zoom: 1; display: -moz-inline-box; position: relative; vertical-align: middle; margin: 0 7px 0 0; }
+.radio, .radio span, .radio input { width: 15px; height: 15px; }
+.radio span { display: -moz-inline-box; display: inline-block; *display: inline; zoom:1; text-align: center; background-position: 0 -15px; }
+.radio input { display: -moz-inline-box; display: inline-block; *display: inline; zoom: 1; margin: 0; text-align: center; opacity:0; filter:alpha(opacity=0); -moz-opacity:0; border:none; background:none;  }
+
+.radio span.checked { background-position: -15px -15px; }
+
+label:hover .radio span,
+label:hover .radio.active span,
+.radio.hover span,
+.radio.hover.active span { background-position: -30px -15px; }
+
+label:hover .radio span.checked,
+label:hover .radio.active span.checked,
+.radio.hover span.checked,
+.radio.hover.active span.checked { background-position: -45px -15px; }
+
+.radio.disabled span { background-position: -60px -15px !important; }
+.radio.disabled span.checked { background-position: -75px -15px !important; }
+
+.radio.active {  }
+
+.radio.focus span,
+.radio.focus.active span {  }
+
+.radio.focus span.checked,
+.radio.focus.active span.checked {  }
+
+.g-error .radio span { background-position: -90px -15px; }

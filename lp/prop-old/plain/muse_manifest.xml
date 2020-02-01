@@ -1,0 +1,61 @@
+<manifest alg="2" build="2017.0.2.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="sff.ru" resolutions="1x" timestamp="1487868998421">
+  <folder name="css">
+    <file name="site_global.css" crc="3846577845"/>
+    <file name="index.css" crc="4084636679" ref="index"/>
+    <file name="iefonts_index.css" crc="354342802" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="4232573551" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4152223963" ref="index"/>
+    <file name="jquery.watch.js" crc="3844535323" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3880853905" ref="index"/>
+    <file name="webpro.js" crc="3770351119" ref="index"/>
+    <file name="musewpdisclosure.js" crc="347705465" ref="index"/>
+    <file name="form_check.php" crc="3841221102" ref="index"/>
+    <file name="form_throttle.php" crc="4048049783" ref="index"/>
+    <file name="form_process.php" crc="3899230280" ref="index"/>
+    <file name="form-u759.php" crc="3915957285" ref="index"/>
+    <file name="musewpslideshow.js" crc="4244742588" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="432750910" ref="index"/>
+    <file name="touchswipe.js" crc="3912873526" ref="index"/>
+    <file name="form-u920.php" crc="4151500162" ref="index"/>
+    <file name="require.js" crc="4234670167" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="372243049_0.jpg" crc="4132174859" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="15094404_218188301926820_8172867879513148956_n.jpg" crc="471332987" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="center_ar.png" crc="31933284" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="clip2net_170213183924.jpg" crc="4178102267" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="bg-clubs.jpg" crc="27821681" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pora.jpg" crc="306718914" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="form 8 icons timers-u755.png" crc="304441128" ref="index"/>
+    <file name="form 8 icons mail-u753.png" crc="81508369" ref="index"/>
+    <file name="form 8 icons people-u757.png" crc="4078357121" ref="index"/>
+    <file name="form 8 icons phone-u748.png" crc="366497113" ref="index"/>
+    <file name="form 8 icons timers-u937.png" crc="304441128" ref="index"/>
+    <file name="form 8 icons mail-u939.png" crc="81508369" ref="index"/>
+    <file name="form 8 icons people-u913.png" crc="4078357121" ref="index"/>
+    <file name="form 8 icons phone-u941.png" crc="366497113" ref="index"/>
+    <file name="money-back-guarantee.png" crc="151473237" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="analytics_header.jpg" crc="4294945274" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="4094693680" seo="true" mt="1487868931164" redirect="true"/>
+</manifest>

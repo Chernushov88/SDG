@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "RobotoBold";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/GalaxiePolarisBold.eot);
+    src: url(../fonts/GalaxiePolarisBoldd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/GalaxiePolarisBold.woff) format("woff"), url(../fonts/GalaxiePolarisBold.ttf) format("truetype"), url(../fonts/GalaxiePolarisBold.svg#GalaxiePolarisBold) format("svg")
+}
+
+@font-face {
+    font-family: "RobotoBoldItalic";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/GalaxiePolarisBoldItalic.eot);
+    src: url(../fonts/GalaxiePolarisBoldItalicd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/GalaxiePolarisBoldItalic.woff) format("woff"), url(../fonts/GalaxiePolarisBoldItalic.ttf) format("truetype"), url(../fonts/GalaxiePolarisBoldItalic.svg#GalaxiePolarisBoldItalic) format("svg")
+}
+
+@font-face {
+    font-family: "RobotoBook";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/GalaxiePolarisBook.eot);
+    src: url(../fonts/GalaxiePolarisBookd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/GalaxiePolarisBook.woff) format("woff"), url(../fonts/GalaxiePolarisBook.ttf) format("truetype"), url(../fonts/GalaxiePolarisBook.svg#GalaxiePolarisBook) format("svg")
+}
+
+@font-face {
+    font-family: "RobotoHeavy";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/GalaxiePolarisHeavy.eot);
+    src: url(../fonts/GalaxiePolarisHeavyd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/GalaxiePolarisHeavy.woff) format("woff"), url(../fonts/GalaxiePolarisHeavy.ttf) format("truetype"), url(../fonts/GalaxiePolarisHeavy.svg#GalaxiePolarisHeavy) format("svg")
+}
+
+@font-face {
+    font-family: "RobotoHeavyItalic";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/GalaxiePolarisHeavyItalic.eot);
+    src: url(../fonts/GalaxiePolarisHeavyItalicd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/GalaxiePolarisHeavyItalic.woff) format("woff"), url(../fonts/GalaxiePolarisHeavyItalic.ttf) format("truetype"), url(../fonts/GalaxiePolarisHeavyItalic.svg#GalaxiePolarisHeavyItalic) format("svg")
+}
+
+@font-face {
+    font-family: "RobotoLight";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/GalaxiePolarisLight.eot);
+    src: url(../fonts/GalaxiePolarisLightd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/GalaxiePolarisLight.woff) format("woff"), url(../fonts/GalaxiePolarisLight.ttf) format("truetype"), url(../fonts/GalaxiePolarisLight.svg#GalaxiePolarisLight) format("svg")
+}
+
+@font-face {
+    font-family: "RobotoLightItalic";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/GalaxiePolarisLightItalic.eot);
+    src: url(../fonts/GalaxiePolarisLightItalicd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/GalaxiePolarisLightItalic.woff) format("woff"), url(../fonts/GalaxiePolarisLightItalic.ttf) format("truetype"), url(../fonts/GalaxiePolarisLightItalic.svg#GalaxiePolarisLightItalic) format("svg")
+}
+
+@font-face {
+    font-family: "RobotoMedium";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/GalaxiePolarisMedium.eot);
+    src: url(../fonts/GalaxiePolarisMediumd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/GalaxiePolarisMedium.woff) format("woff"), url(../fonts/GalaxiePolarisMedium.ttf) format("truetype"), url(../fonts/GalaxiePolarisMedium.svg#GalaxiePolarisMedium) format("svg")
+}
+
+@font-face {
+    font-family: "RobotoMediumItalic";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/GalaxiePolarisMediumItalic.eot);
+    src: url(../fonts/GalaxiePolarisMediumItalicd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/GalaxiePolarisMediumItalic.woff) format("woff"), url(../fonts/GalaxiePolarisMediumItalic.ttf) format("truetype"), url(../fonts/GalaxiePolarisMediumItalic.svg#GalaxiePolarisMediumItalic) format("svg")
+}
+
+@font-face {
+    font-family: "OpenSansBold";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/OpenSansBold/OpenSansBold.eot);
+    src: url(../fonts/OpenSansBold/OpenSansBoldd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/OpenSansBold/OpenSansBold.woff) format("woff"), url(../fonts/OpenSansBold/OpenSansBold.ttf) format("truetype"), url(../fonts/OpenSansBold/OpenSansBold.html#OpenSansBold) format("svg")
+}
+
+@font-face {
+    font-family: "OpenSansRegular";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/OpenSansRegular/OpenSansRegular.eot);
+    src: url(../fonts/OpenSansRegular/OpenSansRegulard41d.eot?#iefix) format("embedded-opentype"), url(../fonts/OpenSansRegular/OpenSansRegular.woff) format("woff"), url(../fonts/OpenSansRegular/OpenSansRegular.ttf) format("truetype"), url(../fonts/OpenSansRegular/OpenSansRegular.html#OpenSansRegular) format("svg")
+}
+
+@font-face {
+    font-family: "OpenSansSemiBold";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/OpenSansSemiBold/OpenSansSemiBold.eot);
+    src: url(../fonts/OpenSansSemiBold/OpenSansSemiBoldd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/OpenSansSemiBold/OpenSansSemiBold.woff) format("woff"), url(../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf) format("truetype"), url(../fonts/OpenSansSemiBold/OpenSansSemiBold.html#OpenSansSemiBold) format("svg")
+}
+
+.display-1-heavy {
+    font-family: "RobotoHeavy";
+    font-size: 4.25rem;
+    letter-spacing: 0.3px
+}
+
+.display-1-big {
+    font-family: "RobotoHeavy";
+    font-size: 6.8rem;
+    letter-spacing: 0.3px
+}
+
+.display-1-small {
+    font-family: "RobotoHeavy";
+    font-size: 3.9rem;
+    letter-spacing: 0.3px
+}
+
+.display-2-heavy {
+    font-family: "RobotoHeavy";
+    font-size: 3.5rem;
+    letter-spacing: 0.3px
+
+}
+
+.display-2-small {
+    font-family: "RobotoHeavy";
+    font-size: 3rem;
+    letter-spacing: 0.3px
+}
+
+.display-2-big {
+    font-family: "RobotoHeavy";
+    font-size: 3.7rem;
+    letter-spacing: 0.3px
+}
+
+.display-3-heavy {
+    font-family: "RobotoHeavy";
+    font-size: 2.3rem;
+    letter-spacing: 0.3px
+}
+
+.display-3-big {
+    font-family: "RobotoHeavy";
+    font-size: 2.6rem;
+    letter-spacing: 0.3px
+}
+
+.display-3-small {
+    font-family: "RobotoMedium";
+    font-size: 2.0rem!important;
+    letter-spacing: 0.3px;
+}
+
+.display-4-heavy {
+    font-family: "Robotomedium";
+    font-size: 1.1rem;
+}
+
+.display-4-book {
+    font-family: "RobotoBook";
+    font-size: 1.1rem;
+}
+
+.display-4-big {
+    font-family: "RobotoHeavy";
+    font-size: 1.6rem;
+}
+
+.display-4-small {
+    font-family: "RobotoHeavy";
+    font-size: 0.8rem;
+}
+
+.display-4-small-book {
+    font-family: "RobotoBook";
+    font-size: 0.8rem;
+}

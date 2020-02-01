@@ -1,0 +1,41 @@
+<manifest alg="2" build="2015.1.1.343" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="master.ru" resolutions="1x" timestamp="1460637497766">
+  <folder name="css">
+    <file name="site_global.css" crc="190982241"/>
+    <file name="question.css" crc="3932248063" ref="question"/>
+    <file name="thanks.css" crc="3917047490" ref="thanks"/>
+    <file name="iefonts_thanks.css" crc="4048229560" ref="thanks"/>
+    <file name="index.css" crc="3921408843" ref="index"/>
+    <file name="iefonts_index.css" crc="165144810" ref="index"/>
+    <file name="confidence.css" crc="233944222" ref="confidence"/>
+    <file name="iefonts_confidence.css" crc="426353789" ref="confidence"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="484278746" ref="index:thanks:confidence:question"/>
+    <file name="museutils.js" crc="531812214" ref="index:thanks:confidence:question"/>
+    <file name="whatinput.js" crc="84559013" ref="index:thanks:confidence:question"/>
+    <file name="jquery.watch.js" crc="3866665977" ref="index:thanks:confidence:question"/>
+    <file name="pie.js" crc="3827607177" ref="index:thanks:confidence:question"/>
+  </folder>
+  <folder name="images">
+    <file name="1111.jpg" crc="4148250454" ref="index"/>
+    <file name="arrow.png" crc="372355650" seo="true" ref="index"/>
+    <file name="break-b.png" crc="334855243" seo="true" ref="index"/>
+    <file name="kolomiets.jpg" crc="4024586875" seo="true" ref="index"/>
+    <file name="alex.jpg" crc="3829664035" seo="true" ref="index"/>
+    <file name="foto.jpg" crc="171910148" seo="true" ref="index"/>
+    <file name="depositphotos_51418319-computer-chart-flat-icon.jpg" crc="369557211" seo="true" ref="index"/>
+    <file name="q4_4.png" crc="3928769726" seo="true" ref="index"/>
+    <file name="q2_6.png" crc="4036813384" seo="true" ref="index"/>
+    <file name="pack_7_35.png" crc="4215115342" seo="true" ref="index"/>
+    <file name="warren-buffett.jpg" crc="27393042" seo="true" ref="index"/>
+    <file name="stockgraphic-icon.png" crc="4169471602" seo="true" ref="index"/>
+    <file name="logo (1).png" crc="3786689811" seo="true" ref="index"/>
+    <file name="bg3914fca7d31b.png" crc="327778066" ref="thanks:confidence:question"/>
+    <file name="logo.png" crc="3968458768" seo="true" ref="thanks:confidence:question"/>
+    <file name="head.jpg" crc="3780947825" seo="true" ref="thanks:confidence:question"/>
+  </folder>
+  <file name="index.html" crc="219913802" seo="true" mt="1460637123461" redirect="true"/>
+  <file name="thanks.html" crc="3867448487" seo="true" mt="1460126988578" redirect="true"/>
+  <file name="confidence.html" crc="320950079" seo="true" mt="1460126988497" redirect="true"/>
+  <file name="question.html" crc="401885920" seo="true" mt="1460126988417" redirect="true"/>
+</manifest>

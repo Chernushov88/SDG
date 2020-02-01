@@ -1,0 +1,274 @@
+/* Computer */
+.grid_1 { width: 6.5%; } 
+.grid_2 { width: 15%; } 
+.grid_3 { width: 23.5%; } 
+.grid_4 { width: 32%; } 
+.grid_5 { width: 40.5%; }
+.grid_6 { width: 49%; } 
+.grid_7 { width: 57.5%; } 
+.grid_8 { width: 66%; } 
+.grid_9 { width: 74.5%; } 
+.grid_10 { width: 83%; } 
+.grid_11 { width: 91.5%; } 
+.grid_12 { width: 100%; } 
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	margin: 0 20px 20px 0;
+	float: left;
+	display: block;
+}
+
+.alpha			{margin-left:0;}
+.omega			{margin-right:0;}
+.gallery-list 	{margin:0 -25px 0 0;padding:0;}
+
+.container{
+	width: 1000px;
+	max-width: 1000px;
+	margin: auto;
+	
+}
+
+
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{position:relative;z-index:99;clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {#slide6 .uroki{padding: 15px;}}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+	#slide6 img{margin-top: -4px;}
+	.smotret-block{display: none;}
+	#slide2 h4{font-size: 20px;}
+	.icons img{height: 60px;}
+	#slide6 .uroki{padding: 20px;}
+	#slide6 .day{font-size: 19px;line-height: 1;}
+	#slide6 .grid_7 img{top: -9px;
+		height: 120px;
+		width: 120px;
+		position: absolute;
+		right: -100px!important;
+		opacity: 0.9;}
+	#slide1 h1 {font-size: 75px;line-height: 75px;}
+	#slide1 h2 {font-size: 30px;line-height: 40px;font-weight: 400;}
+	.padding_slide1 {padding:100px 0 100px;}
+	.numbers_footer .menu_contacts{margin: 0 10px;}
+	.menu_contacts{margin: 3px 10px;}
+	.gallery-list {margin-left:117px;}
+	
+	#slide3 p, #slide5 p, #slide7 p {font-size:48px;line-height:45px;}
+	
+	.serv_block p {padding:81px 0 20px;}
+	
+	.foot_block_intouch li {margin-right:12px;}
+
+/* ___________ SERV_BLOCK __________ */
+	
+	
+/* __________ //SERV_BLOCK _________ */
+
+/* _____________ menu ______________ */
+	.navigation li {margin-left:20px;}
+/* ____________ //menu _____________ */
+	
+	.container { width: 724px; }
+	.container .alpha        { margin-left: 0; margin-right: 5px; }
+	.container .omega        { margin-right: 0; }
+	.container .respond_pad {padding-right:20px;}
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		margin: 0 10px 20px 0;
+		float: left;
+		display: block;
+	}	
+}
+
+@media only screen and (max-width: 766px) {
+	#slide6 .grid_7 img{display: none;}
+	.smotret-block{display: none;}
+	.menu {height:116px;}
+	
+	img.about_img {float:none;margin:0 0 10px 0;}
+
+	.navigation li span {display:none;}
+	
+	#slide6 .effect_2 {display:none;}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 766px) {
+	#slide6 .grid_5{margin: 0!important;}
+	.frame-block{margin-left: -40px;}
+	.smotret-block{display: none;}
+	.numbers{float: none;}
+	#slide6 h2{font-size: 41px;
+		line-height: 1;}
+	#slide6 .grid_6{margin-left: 50px;
+		width: 360px;}
+		#slide6 .grid_4{margin-left: 50px;
+			width: 360px;}
+	.numbers_footer{left: 0;margin-top:5px;}
+	.numbers_footer .menu_contacts .rus_number{margin-left: 110px;}
+	.menu_contacts h4{line-height: 20px;font-size: 21px;font-weight: 400; margin: 0;}
+	.menu_contacts .rus_number{margin-left: 80px;}
+	.menu_contacts{float: left; margin: 0;}
+	.menu {height:116px;position:fixed;}
+	#undefined-sticky-wrapper {height:0 !important;}
+	
+	#logo {text-align:center;}
+	
+	.padding_slide1 {padding:188px 0 100px;}
+	.mac_block img {display:none;}
+	#slide6 h2 {font-size: 32px;line-height: 42px;}
+	#slide1 h2 {font-size: 32px;line-height: 42px;}
+	#slide1 h1 {font-size: 84px;line-height: 90px;}
+	
+	h1 {margin-top:30px;font-size:60px;}
+	
+	.gallery-list .grid_3 {margin-left:94px;}
+	
+	#slide3 p, #slide7 p {font-size:30px;line-height:30px;}
+		
+
+/* ___________ SERV_BLOCK __________ */
+	.serv_block p {padding-bottom:20px;}
+/* __________ //SERV_BLOCK _________ */
+
+/* _____________ menu ______________ */
+	#nav {margin:0;}
+	.navigation li {padding:8px 0 7px;}
+	ul.navigation {float:none;margin:0;}
+/* ____________ //menu _____________ */	
+
+	.container { width: 420px; }
+	
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {width:420px;text-align: center;}
+	#slide6 .grid_4{text-align: left;}
+	#slide6 .grid_6{text-align: left;}
+	#slide6 .uroki{padding:10px;}
+	.fright{float:none;}
+	.fleft{float:none;}
+	
+}
+
+@media screen and (max-width : 479px) {	
+	.btn{width: 300px;}
+	.smotret-block{display: none;}
+	#slide6 .grid-mobil{width: 290px;
+		
+		margin-left: 20px;}
+		.numbers_footer{left: calc(50% - 90px);margin-top: 10px;}
+		#slide6 .grid-mobil{width: 270px;
+			margin-left: 20px;}
+	.price{font-size: 34px;
+		display: block;}
+		.nomobil{display:none;}
+	.numbers{float: none;}
+	.menu_contacts h4{line-height: 20px;font-size: 25px;font-weight: 400; margin: 0;}
+	.menu_contacts{float: none; margin: 0;display:block;}
+	.menu {height:135px;position:fixed;}
+	#logo {text-align:center;}
+	.padding_slide1 {padding:155px 0 30px;}
+	#slide6 .grid_4{text-align: left;}
+	#slide6 .grid_6{text-align: left;}
+	#slide6 .grid_5{margin: 0!important;}
+	#slide6 .uroki{padding:10px;}
+	#slide6 h2{font-size: 45px!important;line-height: 1;}
+	#undefined-sticky-wrapper {height:0 !important;}
+	
+	#logo {text-align:center;}
+	
+	.padding_slide1 {padding:188px 0 60px;}
+	.mac_block img {display:none;}
+
+	.filtr_bg {font-size:14px;}
+	#slide1 h1 {font-size: 50px;line-height: 60px;}
+	#slide1 h2 {font-size:24px;line-height:28px;}
+	
+	h1 {margin-top:30px;font-size:40px;}
+	h4 {font-size:24px;}
+	
+	#slide3 p, #slide7 p {font-size:30px;line-height:30px;}	
+	
+	.gallery-list .grid_3 {margin-left:32px;}
+	
+	.serv_block p {padding:81px 0 30px;font-size:24px;}
+	
+	.contact_form input[type="text"], .contact_form textarea {width:88%;}
+	
+
+/* ___________ SERV_BLOCK __________ */
+		
+/* __________ //SERV_BLOCK _________ */
+/* _____________ menu ______________ */
+	#nav {margin:0;}
+	.navigation li {padding:15px 0 15px;margin-left:18px;font-size:15px;}
+/* ____________ //menu _____________ */	
+	.container { width: 300px; }
+
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		width:300px;    text-align: center;
+	}
+	
+	.fright{float:none;}
+	.fleft{float:none;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
