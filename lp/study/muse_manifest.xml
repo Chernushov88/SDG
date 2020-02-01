@@ -1,0 +1,78 @@
+<manifest alg="2" build="2015.0.0.309" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="prak.com" resolutions="1x" timestamp="1444992732027">
+  <folder name="css">
+    <file name="site_global.css" crc="462764695"/>
+    <file name="index.css" crc="336314292" ref="index"/>
+    <file name="iefonts_index.css" crc="413102453" ref="index"/>
+    <file name="index2.css" crc="3884074122" ref="index2"/>
+    <file name="iefonts_index2.css" crc="4040578373" ref="index2"/>
+  </folder>
+  <folder name="assets">
+    <file name="cabin.png" crc="49232320" seo="true" mt="1406124017000"/>
+    <file name="cake.png" crc="357430992" seo="true" mt="1394671898000"/>
+    <file name="circus.png" crc="405151083" seo="true" mt="1394671894000"/>
+    <file name="game.png" crc="1403075" seo="true" mt="1394671884000"/>
+    <file name="safe.png" crc="3895279664" seo="true" mt="1394671930000"/>
+    <file name="submarine.png" crc="415359293" seo="true" mt="1394671924000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4255413929" ref="index:index2"/>
+    <file name="museutils.js" crc="183364071" ref="index:index2"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4004268962" ref="index:index2"/>
+    <file name="jquery.watch.js" crc="71412426" ref="index:index2"/>
+    <file name="pie.js" crc="3827607177" ref="index:index2"/>
+    <file name="webpro.js" crc="3803554875" ref="index:index2"/>
+    <file name="musewpslideshow.js" crc="242596657" ref="index:index2"/>
+    <file name="jquery.museoverlay.js" crc="493285861" ref="index:index2"/>
+    <file name="touchswipe.js" crc="4038331989" ref="index:index2"/>
+    <file name="form_check.php" crc="277267350" ref="index:index2"/>
+    <file name="form_throttle.php" crc="3908387251" ref="index:index2"/>
+    <file name="form_process.php" crc="24249335" ref="index:index2"/>
+    <file name="form-u1885.php" crc="3927722366" ref="index2"/>
+    <file name="form-u1791.php" crc="9467327" ref="index2"/>
+    <file name="form-u2001.php" crc="4262884957" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="практический-курс-трейдинга-nyse-favicon.ico" crc="317511636" ref="index"/>
+    <file name="nout.jpg" crc="492112551" ref="index:index2"/>
+    <file name="star-u87.png" crc="256283750" ref="index"/>
+    <file name="webt-bg.jpg" crc="3952712377" ref="index:index2"/>
+    <file name="1.png" crc="3825251994" seo="true" ref="index:index2"/>
+    <file name="lenta_lite.png" crc="4232053251" seo="true" ref="index:index2"/>
+    <file name="pasted image 470x560.jpg" crc="322043710" seo="true" ref="index:index2"/>
+    <file name="bachelor.png" crc="433427143" seo="true" ref="index:index2"/>
+    <file name="copybook.png" crc="197950176" seo="true" ref="index:index2"/>
+    <file name="ptichka.png" crc="123908736" seo="true" ref="index:index2"/>
+    <file name="portmone.png" crc="4134427842" seo="true" ref="index:index2"/>
+    <file name="ekran-muzhyk.png" crc="4253680492" seo="true" ref="index:index2"/>
+    <file name="chto_vhodit.png" crc="4173879539" seo="true" ref="index:index2"/>
+    <file name="zap.jpg" crc="4107892109" seo="true" ref="index:index2"/>
+    <file name="multicolor_gaussian_blur_gradient_desktop_2560x1600_hd-wallpaper-1146148.jpg" crc="18540144" ref="index:index2"/>
+    <file name="cabin-u225-fr.jpg" crc="4060658737" ref="index:index2"/>
+    <file name="cabin.jpg" crc="3819481270" ref="index:index2"/>
+    <file name="bgslider.jpg" crc="3959084439" ref="index:index2"/>
+    <file name="test.png" crc="4280235509" seo="true" ref="index2"/>
+    <file name="lenta_dark.png" crc="3932601797" seo="true" ref="index:index2"/>
+    <file name="bg.jpg" crc="59616939" ref="index:index2"/>
+    <file name="benefits.png" crc="247569303" seo="true" ref="index:index2"/>
+    <file name="pasted image 168x168.jpg" crc="285172006" seo="true" ref="index:index2"/>
+    <file name="newtimer.png" crc="45993712" seo="true" ref="index:index2"/>
+    <file name="практический-курс-трейдинга-nyse-2-favicon.ico" crc="317511636" ref="index2"/>
+    <file name="star-u1937.png" crc="256283750" ref="index2"/>
+    <file name="u1886-17.png" crc="314356423" ref="index2"/>
+    <file name="u1886-17-r.png" crc="248081590" ref="index2"/>
+    <file name="u1886-17-m.png" crc="71355765" ref="index2"/>
+    <file name="u1886-17-fs.png" crc="3861766945" ref="index2"/>
+    <file name="u1798-17.png" crc="4248460613" ref="index2"/>
+    <file name="u1798-17-r.png" crc="3774999109" ref="index2"/>
+    <file name="u1798-17-m.png" crc="4186986730" ref="index2"/>
+    <file name="u1798-17-fs.png" crc="61522807" ref="index2"/>
+    <file name="download.png" crc="4177006354" seo="true" ref="index"/>
+    <file name="moving-demo-to-real-account.png" crc="275946614" seo="true" ref="index"/>
+    <file name="u2007-17.png" crc="4000738292" ref="index"/>
+    <file name="u2007-17-r.png" crc="3780464579" ref="index"/>
+    <file name="u2007-17-m.png" crc="357903323" ref="index"/>
+    <file name="u2007-17-fs.png" crc="3851910654" ref="index"/>
+  </folder>
+  <file name="index.html" crc="260499596" seo="true" mt="1444992653403" redirect="true"/>
+  <file name="index2.html" crc="3807133898" seo="true" mt="1423489984832" redirect="true"/>
+</manifest>

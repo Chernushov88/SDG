@@ -1,0 +1,81 @@
+form {
+    max-width: 340px;
+    margin: auto
+}
+
+.f-btn {
+    width: 100%;
+    border-radius: 3px;
+    font-size: 19px;
+    min-width: 200px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    min-height: 43px;
+    color: #fff;
+    border: 2px solid #db2300;
+    background-image: linear-gradient(-180deg, #ff5a3b 0, #db2300 100%);
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: linear 0.3s,background 0s;
+}
+
+.f-btn:hover,
+.f-btn:focus,.f-btn:active {
+    min-height: 43px;
+    color: #d72503;
+    border: 2px solid #db2300;
+    background: #d72503;
+    box-shadow: none;
+}
+
+.radius input {
+    border-radius: 3px;
+}
+
+.radius {
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.f-btn:hover:after,
+.f-btn:focus:after,
+.f-btn:active:after {
+    opacity: 1;
+    width: 75%;
+}
+
+.f-btn:after {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    width: 0;
+    height: 700%;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+input.form-control {
+    margin: 10px 0;
+    padding: 0 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    height: 43px;
+    line-height: 1.33;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    color: black;
+}

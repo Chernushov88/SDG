@@ -1,0 +1,163 @@
+<manifest alg="2" build="2017.0.2.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="sdg-trade.com/start" resolutions="1x" timestamp="1489158227163">
+  <folder name="css">
+    <file name="site_global.css" crc="3923646199"/>
+    <file name="index.css" crc="91427814" ref="index"/>
+    <file name="iefonts_index.css" crc="304705608" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="4232573551" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4152223963" ref="index"/>
+    <file name="jquery.watch.js" crc="3844535323" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3880853905" ref="index"/>
+    <file name="webpro.js" crc="3770351119" ref="index"/>
+    <file name="form_check.php" crc="3841221102" ref="index"/>
+    <file name="form_throttle.php" crc="4048049783" ref="index"/>
+    <file name="form_process.php" crc="3899230280" ref="index"/>
+    <file name="form-u1921.php" crc="4058071886" ref="index"/>
+    <file name="musewpslideshow.js" crc="4244742588" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="432750910" ref="index"/>
+    <file name="touchswipe.js" crc="3912873526" ref="index"/>
+    <file name="form-u2040.php" crc="4277827431" ref="index"/>
+    <file name="form-u2070.php" crc="156978408" ref="index"/>
+    <file name="form-u2094.php" crc="4195030713" ref="index"/>
+    <file name="form-u942.php" crc="3767323355" ref="index"/>
+    <file name="form-u1644.php" crc="331571223" ref="index"/>
+    <file name="require.js" crc="4234670167" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="курс-старт-на-nyse-favicon.ico" crc="3882877054" ref="index"/>
+    <file name="logo1.png" crc="240016778" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="nyse_exchange_sdg-tradecom.jpg" crc="3975736119" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="form13_border form-u1942.png" crc="310857436" ref="index"/>
+    <file name="form13_border form-u1938.png" crc="310857436" ref="index"/>
+    <file name="form13_border form-u1944.png" crc="310857436" ref="index"/>
+    <file name="form13_close-u1948.png" crc="4048408952" ref="index"/>
+    <file name="form13_close-u1948-r.png" crc="3771209953" ref="index"/>
+    <file name="вставленное изображение 164x203-crop-u149.png" crc="167646561" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="вставленное изображение 132x162-crop-u166.png" crc="3784004910" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="вставленное изображение 164x203-crop-u156.png" crc="167646561" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="вставленное изображение 132x162-crop-u240.png" crc="3784004910" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="вставленное изображение 164x203-crop-u161.png" crc="167646561" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="вставленное изображение 132x162-crop-u245.png" crc="3784004910" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="вставленное изображение 164x203-crop-u294.png" crc="167646561" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="вставленное изображение 132x162-crop-u339.png" crc="3784004910" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="web_gomel_fermerby_.png" crc="4199751935" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="people-icon.png" crc="3960562617" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="q3_4.png" crc="3953956887" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pack_7_35.png" crc="4215115342" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="q5_3.png" crc="522979705" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="q4_4.png" crc="3928769726" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="warp_shadow_strong.png" crc="409925398" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="123.jpg" crc="166683079" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blankribbon-left.png" crc="3958699069" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="reliability-bg.jpg" crc="4127507501" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="warp_shadow_strong342x10.png" crc="3940734868" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="form 5 close-u2034.png" crc="442877352" ref="index"/>
+    <file name="form 5 close-u2034-r.png" crc="3941920911" ref="index"/>
+    <file name="form 5 close-u2067.png" crc="442877352" ref="index"/>
+    <file name="form 5 close-u2067-r.png" crc="3941920911" ref="index"/>
+    <file name="form 5 close-u2117.png" crc="442877352" ref="index"/>
+    <file name="form 5 close-u2117-r.png" crc="3941920911" ref="index"/>
+    <file name="user_anonymous_yellow_disabled.png" crc="4187331968" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="галина.jpg" crc="4143760486" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="f9o5ai36e9ef60dd3a11.jpg" crc="158745446" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="ekaterina_otziv-crop-u881.jpg" crc="186869608" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="btf-arrow.gif" crc="274041989" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="garantiya2.png" crc="3764838204" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="arrow.png" crc="3761397354" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="check.png" crc="4089400192" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="cancel.png" crc="3923356027" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="behind-the-doors.jpg" crc="3891329170" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="form13_border form-u1641.png" crc="310857436" ref="index"/>
+    <file name="form13_border form-u1662.png" crc="310857436" ref="index"/>
+    <file name="form13_border form-u1639.png" crc="310857436" ref="index"/>
+    <file name="form13_close-u1628.png" crc="4048408952" ref="index"/>
+    <file name="form13_close-u1628-r.png" crc="3771209953" ref="index"/>
+  </folder>
+  <file name="index.html" crc="15623726" seo="true" mt="1489158096272" redirect="true"/>
+</manifest>

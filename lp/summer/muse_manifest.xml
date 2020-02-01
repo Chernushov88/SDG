@@ -1,0 +1,37 @@
+<manifest alg="2" build="2015.1.1.343" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="sdg-trade.com" resolutions="1x" timestamp="1468586098840">
+  <folder name="css">
+    <file name="site_global.css" crc="4215482661"/>
+    <file name="index.css" crc="4199351647" ref="index"/>
+    <file name="iefonts_index.css" crc="4205750364" ref="index"/>
+    <file name="success.css" crc="303179390" ref="success"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="484278746" ref="index:success"/>
+    <file name="museutils.js" crc="531812214" ref="index:success"/>
+    <file name="whatinput.js" crc="84559013" ref="index:success"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="120190942" ref="index"/>
+    <file name="jquery.watch.js" crc="3866665977" ref="index:success"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="summer-wallpaper-backgrounds-g8q.jpg" crc="3763255308" ref="index"/>
+    <file name="dot hatch.png" crc="224740808" ref="index"/>
+    <file name="sdgtrade-crop-u394.png" crc="169328325" seo="true" ref="index:success"/>
+    <file name="top_icon3.png" crc="317902898" seo="true" ref="index"/>
+    <file name="how-bg.jpg" crc="3945574456" ref="index"/>
+    <file name="sticker.png" crc="4272261044" seo="true" ref="index"/>
+    <file name="question-pattern.jpg" crc="137836767" ref="index"/>
+    <file name="foto.jpg" crc="3833346572" seo="true" ref="index"/>
+    <file name="kolomiets-ieu1930-fr.png" crc="40120950" ref="index"/>
+    <file name="kolomiets.jpg" crc="4024586875" ref="index"/>
+    <file name="ocnlvzoucpg-ieu1919-fr.png" crc="65256252" ref="index"/>
+    <file name="ocnlvzoucpg.jpg" crc="3909587859" ref="index"/>
+    <file name="sushko-ieu1940-fr.png" crc="4199681062" ref="index"/>
+    <file name="sushko.jpg" crc="3846300289" ref="index"/>
+    <file name="alex-ieu1950-fr.png" crc="4262755300" ref="index"/>
+    <file name="alex.jpg" crc="3829664035" ref="index"/>
+    <file name="1344899.jpg" crc="133219732" ref="success"/>
+  </folder>
+  <file name="index.html" crc="4159028082" seo="true" mt="1468586070737" redirect="true"/>
+  <file name="success.html" crc="4133962750" seo="true" mt="1467900646135" redirect="true"/>
+</manifest>

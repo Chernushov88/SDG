@@ -1,0 +1,20 @@
+
+RewriteCond %{HTTP_USER_AGENT} (?i:midp|samsung|nokia|j2me|avant|docomo|novarra|palmos|palmsource|opwv|chtml|pda|mmp|blackberry|mib|symbian|wireless|nokia|hand|mobi|phone|cdm|upb|audio|SIE|SEC|samsung|HTC|mot-|mitsu|sagem|sony|alcatel|lg|eric|vx|NEC|philips|mmm|xx|panasonic|sharp|wap|sch|rover|pocket|benq|java|pt|pg|vox|amoi|bird|compal|kg|voda|sany|kdd|dbt|sendo|sgh|gradi|jb|dddi|moto|iphone|android)
+RewriteRule ^([^mobile]*?)page/?$ https://sdg-trade.com/lp/trade/mobile.html [R=301,L]
+
+RewriteCond %{HTTPS} !^on$
+RewriteRule (.*) https://sdg-trade.com/lp/swing/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^www\.sdg-trade\.com$ [NC]
+RewriteRule ^(.*)$ https://sdg-trade.com/lp/swing/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ https://sdg-trade.com/lp/swing/ [R=301,L]
+
+RewriteRule ^index.php/(.*)$ https://sdg-trade.com/lp/swing/$1 [R=permanent,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/ 
+RewriteRule ^index\.php$ https://sdg-trade.com/lp/swing/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /homepage\.html\ HTTP/ 
+RewriteRule ^homepage\.html$ https://sdg-trade.com/lp/swing/ [R=301,L]

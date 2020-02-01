@@ -1,0 +1,26 @@
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+<IfModule mod_headers.c>
+Header set Access-Control-Allow-Origin "*"
+</IfModule>
+</FilesMatch>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+RewriteCond %{HTTPS} !^on$
+RewriteRule (.*) https://sdg-trade.com/lp/trade/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^www\.sdg-trade\.com$ [NC]
+RewriteRule ^(.*)$ https://sdg-trade.com/lp/trade/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ https://sdg-trade.com/lp/trade/ [R=301,L]
+
+RewriteRule ^index.php/(.*)$ https://sdg-trade.com/lp/trade/$1 [R=permanent,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/ 
+RewriteRule ^index\.php$ https://sdg-trade.com/lp/trade/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /homepage\.html\ HTTP/ 
+RewriteRule ^homepage\.html$ https://sdg-trade.com/lp/trade/ [R=301,L]
