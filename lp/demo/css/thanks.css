@@ -1,0 +1,305 @@
+.version.thanks /* version checker */
+{
+	color: #000008;
+	background-color: #D472F6;
+}
+
+#muse_css_mq
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	min-height: 937.6000000000001px;
+	background-image: none;
+	border-width: 0px;
+	border-color: #000000;
+	background-color: transparent;
+	padding-bottom: 62.399999999999864px;
+	width: 100%;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u477
+{
+	z-index: 39;
+	background-color: transparent;
+	position: relative;
+	width: 16.15%;
+	margin-left: 41.88%;
+}
+
+#u393
+{
+	z-index: 2;
+	min-height: 505px;
+	padding-bottom: 109px;
+	background: transparent url("../images/teacher-bg.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#pu409-4
+{
+	margin-right: -10000px;
+	margin-top: 28px;
+	width: 52.09%;
+	margin-left: 2.09%;
+}
+
+#u409-4
+{
+	z-index: 5;
+	min-height: 107px;
+	background-color: transparent;
+	color: #FFFFFF;
+	line-height: 86px;
+	font-size: 72px;
+	font-family: bad-script, cursive;
+	font-weight: 400;
+	position: relative;
+	width: 100%;
+}
+
+#u762
+{
+	z-index: 41;
+	min-height: 100px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	margin-top: 35px;
+	position: relative;
+	width: 40%;
+	margin-left: 56.4%;
+}
+
+#u766
+{
+	z-index: 42;
+	min-height: 100px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	top: -7px;
+	margin-bottom: -7px;
+	position: relative;
+	width: 40%;
+	margin-left: 39%;
+}
+
+#u767
+{
+	z-index: 43;
+	min-height: 100px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	margin-top: 17px;
+	position: relative;
+	width: 40%;
+	margin-left: 17.6%;
+}
+
+#pu412
+{
+	margin-right: -10000px;
+	margin-top: 21px;
+	width: 43.75%;
+	margin-left: 54.17%;
+}
+
+#u412
+{
+	z-index: 3;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	width: 100%;
+}
+
+#u392-7
+{
+	z-index: 9;
+	min-height: 107px;
+	background-color: transparent;
+	color: #000000;
+	line-height: 36px;
+	font-size: 30px;
+	font-family: bad-script, cursive;
+	font-weight: 400;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 119px;
+	width: 80%;
+	left: 11.67%;
+}
+
+.js body
+{
+	visibility: hidden;
+}
+
+.js body.initialized
+{
+	visibility: visible;
+}
+
+#u393-bw
+{
+	z-index: 2;
+	min-height: 505px;
+	margin-top: 7px;
+}
+
+#pu416
+{
+	margin-top: 17px;
+	width: 100%;
+}
+
+#u416
+{
+	z-index: 21;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 1px;
+	width: 8.86%;
+	left: 11.57%;
+}
+
+#u390
+{
+	z-index: 23;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	width: 8.86%;
+	left: 45.53%;
+}
+
+#u394
+{
+	z-index: 25;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 1px;
+	width: 8.86%;
+	left: 79.59%;
+}
+
+#u477_img,#u412_img,#u416_img,#u390_img,#u394_img
+{
+	width: 100%;
+}
+
+#pu389-4
+{
+	margin-top: 3px;
+	width: 100%;
+}
+
+#u389-4
+{
+	z-index: 27;
+	min-height: 61px;
+	background-color: transparent;
+	line-height: 22px;
+	font-size: 18px;
+	text-align: center;
+	font-family: pt-sans-narrow, sans-serif;
+	font-weight: 400;
+	position: relative;
+	margin-right: -10000px;
+	width: 20.94%;
+	left: 5.53%;
+}
+
+#u415-4
+{
+	z-index: 31;
+	min-height: 61px;
+	background-color: transparent;
+	line-height: 22px;
+	font-size: 18px;
+	text-align: center;
+	font-family: pt-sans-narrow, sans-serif;
+	font-weight: 400;
+	position: relative;
+	margin-right: -10000px;
+	width: 20.94%;
+	left: 39.48%;
+}
+
+#u410-4
+{
+	z-index: 35;
+	min-height: 61px;
+	background-color: transparent;
+	line-height: 22px;
+	font-size: 18px;
+	text-align: center;
+	font-family: pt-sans-narrow, sans-serif;
+	font-weight: 400;
+	position: relative;
+	margin-right: -10000px;
+	width: 20.94%;
+	left: 73.55%;
+}
+
+#u411
+{
+	z-index: 16;
+	min-height: 114px;
+	padding-bottom: 52px;
+	background: transparent url("../images/boardline.jpg") no-repeat left top;
+}
+
+#u393_align_to_page,#u411_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	max-width: 960px;
+}
+
+#u414-4
+{
+	z-index: 17;
+	min-height: 42px;
+	background-color: transparent;
+	color: #FFFFFF;
+	line-height: 36px;
+	font-size: 30px;
+	text-align: center;
+	font-family: lobster, serif;
+	font-weight: 400;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 72px;
+	width: 95.84%;
+	left: 2.09%;
+}
+
+#u411-bw
+{
+	z-index: 16;
+	min-height: 114px;
+}
+
+.html
+{
+	background-color: #D0D0D0;
+}
+
+body
+{
+	position: relative;
+	min-width: 320px;
+}
+

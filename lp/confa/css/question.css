@@ -1,0 +1,212 @@
+.version.question /* version checker */
+{
+	color: #0000EA;
+	background-color: #6157FF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 1088px;
+	background-image: none;
+	border-width: 0px;
+	border-color: #000000;
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	margin-top: -36px;
+	width: 0.01px;/* should not cover content below */
+}
+
+#u547
+{
+	z-index: 3;
+	min-height: 550px;
+	background: transparent url("../images/bg3914fca7d31b.png") repeat left top;
+}
+
+#u547_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 960px;
+	left: -100px;
+	padding-top: 38px;
+	padding-bottom: 24px;
+}
+
+#u544
+{
+	z-index: 4;
+	width: 155px;
+	background-color: transparent;
+	left: 100px;
+	position: relative;
+}
+
+#u544_img
+{
+	padding-right: 81px;
+}
+
+#pu537-10
+{
+	width: 0.01px;
+	left: 120px;
+	margin-top: 27px;
+	position: relative;
+}
+
+#u537-10
+{
+	z-index: 6;
+	width: 681px;
+	min-height: 254px;
+	background-color: transparent;
+	opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	line-height: 58px;
+	font-size: 48px;
+	font-family: ubuntu, sans-serif;
+	font-weight: 700;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 4px;
+}
+
+#u542
+{
+	z-index: 16;
+	width: 387px;
+	-pie-box-shadow: none;
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.06);
+	background-color: transparent;
+	border-radius: 200px;
+	position: relative;
+	margin-right: -10000px;
+	left: 553px;
+}
+
+#u542 .clip_frame
+{
+	-webkit-border-radius: 200px 200px 200px 200px;
+}
+
+.js body
+{
+	visibility: hidden;
+}
+
+.js body.initialized
+{
+	visibility: visible;
+}
+
+#u547-bw
+{
+	z-index: 3;
+	min-height: 550px;
+}
+
+#pu539-4
+{
+	width: 0.01px;
+	margin-left: 19px;
+	margin-top: 14px;
+}
+
+#u539-4
+{
+	z-index: 18;
+	width: 920px;
+	min-height: 72px;
+	background-color: transparent;
+	opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	line-height: 36px;
+	font-size: 30px;
+	text-align: center;
+	font-family: ubuntu, sans-serif;
+	font-weight: 700;
+	position: relative;
+	margin-right: -10000px;
+	left: 1px;
+}
+
+#u561-9
+{
+	z-index: 22;
+	width: 921px;
+	min-height: 72px;
+	background-color: transparent;
+	opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	font-size: 14px;
+	text-align: center;
+	font-family: ubuntu, sans-serif;
+	font-weight: 700;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 37px;
+}
+
+#u541
+{
+	z-index: 2;
+	min-height: 482px;
+	background-color: #FEB417;
+	padding-bottom: 92px;
+}
+
+#u541_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 960px;
+	left: -100px;
+	margin-bottom: -123px;
+}
+
+#u559
+{
+	z-index: 31;
+	width: 920px;
+	min-height: 325px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 157px;
+	left: 120px;
+}
+
+#u541-bw
+{
+	z-index: 2;
+	min-height: 482px;
+	margin-top: -123px;
+}
+
+#muse_css_mq,.html
+{
+	background-color: #FFFFFF;
+}
+
+body
+{
+	position: relative;
+	min-width: 960px;
+	padding-top: 36px;
+}
+

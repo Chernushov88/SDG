@@ -1,0 +1,2505 @@
+<!DOCTYPE html>
+<html class="html" lang="ru-RU">
+
+<head>
+
+    <script type="text/javascript">
+        if (typeof Muse == "undefined") window.Muse = {};
+        window.Muse.assets = {
+            "required": ["jquery-1.8.3.min.js", "museutils.js", "jquery.musepolyfill.bgsize.js", "jquery.watch.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "index.css"],
+            "outOfDate": []
+        };
+    </script>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="Прибыльный Дейтрейдинг SDG Trade" />
+    <meta name="generator" content="2015.0.0.309" />
+    <link rel="shortcut icon" href="images/%d0%bf%d1%80%d0%b8%d0%b1%d1%8b%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%b4%d0%b5%d0%b9%d1%82%d1%80%d0%b5%d0%b9%d0%b4%d0%b8%d0%bd%d0%b3-favicon.ico?117260632" />
+    <title>Прибыльный Дейтрейдинг</title>
+    <link rel="canonical" href="https://sdg-trade.com/lp/daytrading/"/>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/site_global.css?509469353" />
+    <link rel="stylesheet" type="text/css" href="css/index.css?3896313882" id="pagesheet" />
+    <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?531285818"/>
+  <![endif]-->
+    <!-- Other scripts -->
+    <script type="text/javascript">
+        document.documentElement.className += ' js';
+        var __adobewebfontsappname__ = "muse";
+    </script>
+    <!-- JS includes -->
+    <script type="text/javascript">
+        document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/lato:n4,n7:all;ubuntu-condensed:n4:all;pt-sans-narrow:n4,n7:all;open-sans:n3,i3:all;ubuntu:n3,n7,n4:all;pt-sans:n4,n7:all;droid-sans:n4:all.js" type="text/javascript">\x3C/script>');
+    </script>
+    <!--HTML Widget code-->
+
+    <style>
+        body {
+            -webkit-user-select: none !important;
+            -webkit-touch-callout: none !important;
+        }
+    </style>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        (function(e) {
+            function n(e) {
+                if (t) {
+                    console.log(e)
+                }
+            }
+
+            function s(e) {
+                var t = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+                e = e.replace(t, function(e, t, n, r) {
+                    return t + t + n + n + r + r
+                });
+                var n = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(e);
+                return n ? {
+                    r: parseInt(n[1], 16),
+                    g: parseInt(n[2], 16),
+                    b: parseInt(n[3], 16)
+                } : null
+            }
+
+            function o() {
+                return Math.floor((1 + Math.random()) * 65536).toString(16).substring(1)
+            }
+
+            function u() {
+                return o() + o() + "-" + o() + "-" + o() + "-" + o() + "-" + o() + o() + o()
+            }
+
+            function a(e) {
+                var t = e.match(/^[0-9]{4}-[0-9]{2}-[0-9]{2}\s[0-9]{1,2}:[0-9]{2}:[0-9]{2}$/);
+                if (t !== null && t.length > 0) {
+                    var n = e.split(" ");
+                    var r = n[0].split("-");
+                    var i = n[1].split(":");
+                    return new Date(r[0], r[1] - 1, r[2], i[0], i[1], i[2])
+                }
+                var s = Date.parse(e);
+                if (!isNaN(s)) return s;
+                s = Date.parse(e.replace(/-/g, "/").replace("T", " "));
+                if (!isNaN(s)) return s;
+                return new Date
+            }
+            var t = location.hash === "#debug";
+            var r = {
+                Seconds: "Minutes",
+                Minutes: "Hours",
+                Hours: "Days",
+                Days: "Years"
+            };
+            var i = {
+                Seconds: 1,
+                Minutes: 60,
+                Hours: 3600,
+                Days: 86400,
+                Years: 31536e3
+            };
+            var f = {};
+            var l = function(t, n) {
+                this.element = t;
+                this.container;
+                this.timer = null;
+                this.data = {
+                    prev_time: null,
+                    drawn_units: [],
+                    super_unit: null,
+                    text_elements: {
+                        Days: null,
+                        Hours: null,
+                        Minutes: null,
+                        Seconds: null
+                    },
+                    attributes: {
+                        canvas: null,
+                        context: null,
+                        item_size: null,
+                        line_width: null,
+                        radius: null,
+                        outer_radius: null
+                    },
+                    state: {
+                        fading: {
+                            Days: false,
+                            Hours: false,
+                            Minutes: false,
+                            Seconds: false
+                        }
+                    }
+                };
+                this.listeners = [];
+                this.config = null;
+                this.setOptions(n);
+                this.container = e("<div>");
+                this.container.addClass("time_circles");
+                this.container.appendTo(this.element);
+                this.data.attributes.canvas = e("<canvas>");
+                this.data.attributes.context = this.data.attributes.canvas[0].getContext("2d");
+                var r = this.element.offsetHeight;
+                var i = this.element.offsetWidth;
+                if (r === 0) r = e(this.element).height();
+                if (i === 0) i = e(this.element).width();
+                if (r === 0 && i > 0) r = i / this.data.drawn_units.length;
+                else if (i === 0 && r > 0) i = r * this.data.drawn_units.length;
+                this.data.attributes.canvas[0].height = r;
+                this.data.attributes.canvas[0].width = i;
+                this.data.attributes.canvas.appendTo(this.container);
+                this.data.attributes.item_size = Math.min(this.data.attributes.canvas[0].width / this.data.drawn_units.length, this.data.attributes.canvas[0].height);
+                this.data.attributes.line_width = this.data.attributes.item_size * this.config.fg_width;
+                this.data.attributes.radius = (this.data.attributes.item_size * .8 - this.data.attributes.line_width) / 2;
+                this.data.attributes.outer_radius = this.data.attributes.radius + .5 * Math.max(this.data.attributes.line_width, this.data.attributes.line_width * this.config.bg_width);
+                var s = 0;
+                for (var o in this.data.text_elements) {
+                    if (!this.config.time[o].show) continue;
+                    var u = e("<div>");
+                    u.addClass("textDiv_" + o);
+                    u.css("top", Math.round(.35 * this.data.attributes.item_size));
+                    u.css("left", Math.round(s++ * this.data.attributes.item_size));
+                    u.css("width", this.data.attributes.item_size);
+                    u.appendTo(this.container);
+                    var a = e("<h4>");
+                    a.text(this.config.time[o].text);
+                    a.css("font-size", Math.round(.07 * this.data.attributes.item_size));
+                    a.css("line-height", Math.round(.07 * this.data.attributes.item_size) + "px");
+                    a.appendTo(u);
+                    var f = e("<span>");
+                    f.css("font-size", Math.round(.21 * this.data.attributes.item_size));
+                    f.css("line-height", Math.round(.07 * this.data.attributes.item_size) + "px");
+                    f.appendTo(u);
+                    this.data.text_elements[o] = f
+                }
+                if (this.config.start) this.start()
+            };
+            l.prototype.updateArc = function() {
+                var e, t, n, r;
+                var s = this.data.prev_time;
+                var o = new Date;
+                this.data.prev_time = o;
+                if (s === null) s = o;
+                if (!this.config.count_past_zero) {
+                    if (o > this.data.attributes.ref_date) {
+                        for (var u in this.data.drawn_units) {
+                            var a = this.data.drawn_units[u];
+                            this.data.text_elements[a].text(Math.floor(h[a]));
+                            var f = u * this.data.attributes.item_size + this.data.attributes.item_size / 2;
+                            var l = this.data.attributes.item_size / 2;
+                            var c = this.config.time[a].color;
+                            this.drawArc(f, l, c, 0)
+                        }
+                        this.stop();
+                        return
+                    }
+                }
+                t = (this.data.attributes.ref_date - o) / 1e3;
+                e = Math.abs(t);
+                r = (this.data.attributes.ref_date - s) / 1e3;
+                n = Math.abs(r);
+                var h = {};
+                var p = {};
+                var d = {};
+                var v = null;
+                for (var u in this.data.drawn_units) {
+                    var m = this.data.drawn_units[u];
+                    if (v === null) v = this.data.super_unit;
+                    var g = i[v] / i[m];
+                    var y = e / i[m];
+                    var b = n / i[m];
+                    if (m !== "Days") {
+                        y = y % g;
+                        b = b % g
+                    }
+                    h[m] = y;
+                    p[m] = y / g;
+                    d[m] = b;
+                    v = m
+                }
+                var u = 0;
+                var w = null;
+                for (var u in this.data.drawn_units) {
+                    var a = this.data.drawn_units[u];
+                    this.data.text_elements[a].text(Math.floor(h[a]));
+                    var f = u * this.data.attributes.item_size + this.data.attributes.item_size / 2;
+                    var l = this.data.attributes.item_size / 2;
+                    var c = this.config.time[a].color;
+                    if (Math.floor(h[a]) !== Math.floor(d[a])) {
+                        this.notifyListeners(a, Math.floor(h[a]), Math.floor(t))
+                    }
+                    if (w !== null) {
+                        if (Math.floor(h[w]) > Math.floor(d[w])) {
+                            this.radialFade(f, l, c, 1, a);
+                            this.data.state.fading[a] = true
+                        } else if (Math.floor(h[w]) < Math.floor(d[w])) {
+                            this.radialFade(f, l, c, 0, a);
+                            this.data.state.fading[a] = true
+                        }
+                    }
+                    if (!this.data.state.fading[a]) {
+                        this.drawArc(f, l, c, p[a])
+                    }
+                    w = a;
+                    u++
+                }
+            };
+            l.prototype.drawArc = function(e, t, n, r) {
+                var i = Math.max(this.data.attributes.outer_radius, this.data.attributes.item_size / 2);
+                this.data.attributes.context.clearRect(e - i, t - i, i * 2, i * 2);
+                if (this.config.use_background) {
+                    this.data.attributes.context.beginPath();
+                    this.data.attributes.context.arc(e, t, this.data.attributes.radius, 0, 2 * Math.PI, false);
+                    this.data.attributes.context.lineWidth = this.data.attributes.line_width * this.config.bg_width;
+                    this.data.attributes.context.strokeStyle = this.config.circle_bg_color;
+                    this.data.attributes.context.stroke()
+                }
+                var s = -.5 * Math.PI;
+                var o = -.5 * Math.PI + 2 * r * Math.PI;
+                var u = false;
+                this.data.attributes.context.beginPath();
+                this.data.attributes.context.arc(e, t, this.data.attributes.radius, s, o, u);
+                this.data.attributes.context.lineWidth = this.data.attributes.line_width;
+                this.data.attributes.context.strokeStyle = n;
+                this.data.attributes.context.stroke()
+            };
+            l.prototype.radialFade = function(e, t, n, r, i) {
+                var o = s(n);
+                var u = this;
+                var a = .2 * (r === 1 ? -1 : 1);
+                var f;
+                for (f = 0; r <= 1 && r >= 0; f++) {
+                    (function() {
+                        var n = "rgba(" + o.r + ", " + o.g + ", " + o.b + ", " + Math.round(r * 10) / 10 + ")";
+                        setTimeout(function() {
+                            u.drawArc(e, t, n, 1)
+                        }, 50 * f)
+                    })();
+                    r += a
+                }
+                setTimeout(function() {
+                    u.data.state.fading[i] = false
+                }, 50 * f)
+            };
+            l.prototype.timeLeft = function() {
+                var e = new Date;
+                return (this.data.attributes.ref_date - e) / 1e3
+            };
+            l.prototype.start = function() {
+                var t = e(this.element).data("date");
+                if (typeof t === "string") {
+                    this.data.attributes.ref_date = a(t)
+                } else {
+                    var n = e(this.element).attr("data-timer");
+                    if (typeof n === "undefined") {
+                        n = e(this.element).data("timer")
+                    }
+                    if (typeof n === "string") {
+                        this.data.attributes.timer = parseFloat(n);
+                        e(this.element).removeAttr("data-timer");
+                        e(this.element).removeData("timer")
+                    } else if (typeof n === "number") {
+                        this.data.attributes.timer = n;
+                        e(this.element).removeAttr("data-timer");
+                        e(this.element).removeData("timer")
+                    } else if (typeof this.config.timer === "string") {
+                        this.data.attributes.timer = parseFloat(this.config.timer);
+                        this.config.timer = null
+                    } else if (typeof this.config.timer === "number") {
+                        this.data.attributes.timer = r.config.timer;
+                        this.config.timer = null
+                    }
+                    if (typeof this.data.attributes.timer === "number") {
+                        this.data.attributes.ref_date = (new Date).getTime() + this.data.attributes.timer * 1e3
+                    } else {
+                        this.data.attributes.ref_date = this.config.ref_date
+                    }
+                }
+                var r = this;
+                this.timer = setInterval(function() {
+                    r.updateArc()
+                }, this.config.refresh_interval * 1e3)
+            };
+            l.prototype.stop = function() {
+                if (typeof this.data.attributes.timer === "number") {
+                    this.data.attributes.timer = this.timeLeft(this)
+                }
+                clearInterval(this.timer)
+            };
+            l.prototype.destroy = function() {
+                this.stop();
+                this.container.remove();
+                e(this.element).removeData("tc-id")
+            };
+            l.prototype.setOptions = function(t) {
+                if (this.config === null) {
+                    this.default_options.ref_date = new Date;
+                    this.config = e.extend(true, {}, this.default_options)
+                }
+                e.extend(true, this.config, t);
+                this.data.super_unit = null;
+                this.data.drawn_units = [];
+                for (var n in this.config.time) {
+                    if (this.config.time[n].show) {
+                        this.data.drawn_units.push(n);
+                        if (this.data.super_unit === null) this.data.super_unit = r[n]
+                    }
+                }
+            };
+            l.prototype.addListener = function(e, t) {
+                console.log(t);
+                if (typeof e !== "function") return;
+                this.listeners.push({
+                    func: e,
+                    scope: t
+                })
+            };
+            l.prototype.notifyListeners = function(e, t, n) {
+                for (var r = 0; r < this.listeners.length; r++) {
+                    var i = this.listeners[r];
+                    i.func.apply(i.scope, [e, t, n])
+                }
+            };
+            l.prototype.default_options = {
+                ref_date: new Date,
+                start: true,
+                refresh_interval: .1,
+                count_past_zero: true,
+                circle_bg_color: "#60686F",
+                use_background: true,
+                fg_width: .1,
+                bg_width: 1.2,
+                time: {
+                    Days: {
+                        show: true,
+                        text: "Дни",
+                        color: "#FC6"
+                    },
+                    Hours: {
+                        show: true,
+                        text: "Часы",
+                        color: "#9CF"
+                    },
+                    Minutes: {
+                        show: true,
+                        text: "Минуты",
+                        color: "#BFB"
+                    },
+                    Seconds: {
+                        show: true,
+                        text: "Секунды",
+                        color: "#F99"
+                    }
+                }
+            };
+            var c = function(e, t) {
+                this.elements = e;
+                this.options = t;
+                this.foreach()
+            };
+            c.prototype.foreach = function(t) {
+                var n = this;
+                this.elements.each(function() {
+                    var r;
+                    var i = e(this).data("tc-id");
+                    if (typeof i === "undefined") {
+                        i = u();
+                        e(this).data("tc-id", i)
+                    }
+                    if (typeof f[i] === "undefined") {
+                        var s = e(this).data("options");
+                        var o = n.options;
+                        if (typeof s === "object") {
+                            o = e.extend(true, {}, n.options, s)
+                        }
+                        r = new l(this, o);
+                        f[i] = r
+                    } else {
+                        r = f[i];
+                        if (typeof n.options !== "undefined") {
+                            r.setOptions(n.options)
+                        }
+                    }
+                    if (typeof t === "function") {
+                        t(r)
+                    }
+                });
+                return this
+            };
+            c.prototype.all_instances = function() {
+                return f
+            };
+            c.prototype.start = function() {
+                this.foreach(function(e) {
+                    e.start()
+                });
+                return this
+            };
+            c.prototype.stop = function() {
+                this.foreach(function(e) {
+                    e.stop()
+                });
+                return this
+            };
+            c.prototype.addListener = function(e) {
+                var t = this;
+                this.foreach(function(n) {
+                    n.addListener(e, t.elements)
+                });
+                return this
+            };
+            c.prototype.destroy = function() {
+                this.foreach(function(e) {
+                    e.destroy()
+                });
+                return this
+            };
+            c.prototype.end = function() {
+                return this.elements
+            };
+            e.fn.TimeCircles = function(e) {
+                return new c(this, e)
+            }
+        })(jQuery)
+    </script>
+    <style type="text/css">
+        .time_circles {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .time_circles>div {
+            position: absolute;
+            text-align: center;
+        }
+        
+        .time_circles>div>h4 {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Century Gothic', Arial;
+            color: #43352f;
+        }
+        
+        .time_circles>div>span {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-family: 'Century Gothic', Arial;
+            font-size: 300%;
+            margin-top: 0.4em;
+            font-weight: bold;
+            color: #43352f;
+        }
+    </style>
+   <script>
+  dataLayer = [];
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PS2B68K');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS2B68K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="clearfix" id="page">
+        <!-- column -->
+        <div class="position_content" id="page_position_content">
+            <div class="clearfix colelem" id="pu75">
+                <!-- group -->
+                <div class="browser_width grpelem" id="u75-bw">
+                    <div class="museBGSize" id="u75">
+                        <!-- column -->
+                        <div class="clearfix" id="u75_align_to_page">
+                            <div class="position_content" id="u75_position_content">
+                                <div class="colelem" id="u1285">
+                                    <!-- custom html -->
+
+                                    <body oncontextmenu="return false">
+                                </div>
+                                <div class="colelem" id="u1283">
+                                    <!-- custom html -->
+                                </div>
+                                <div class="clearfix colelem" id="ppu1286">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="pu1286">
+                                        <!-- column -->
+                                        <div class="colelem" id="u1286">
+                                            <!-- custom html -->
+                                        </div>
+                                        <div class="colelem" id="u1294">
+                                        </div>
+                                    </div>
+                                    <div class="clearfix grpelem" id="u1096-7">
+                                        <!-- content -->
+                                        <p>МЫ НАУЧИМ ВАС <span id="u1096-2">СТАБИЛЬНО ЗАРАБАТЫВАТЬ</span></p>
+                                        <p>НА ФОНДОВОМ РЫНКЕ США</p>
+                                    </div>
+                                </div>
+                                <div class="clearfix colelem" id="ponas">
+                                    <!-- group -->
+                                    <a class="anchor_item grpelem" id="onas"></a>
+                                    <div class="clearfix grpelem" id="u152-4">
+                                        <!-- content -->
+                                        <p>ОТ&nbsp; ТРЕЙДЕРОВ SDG TRADE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix grpelem" id="u474-10">
+                    <!-- content -->
+                    <p id="u474-2">ПРИБЫЛЬНЫЙ</p>
+                    <p id="u474-5"><span id="u474-3">ДЕЙТРЕЙДИНГ</span></p>
+                    <p id="u474-8"><span id="u474-6">на</span> NYSE</p>
+                </div>
+                <div class="grpelem" id="u1268">
+                    <!-- custom html -->
+                    <script type="text/javascript" src="//perezvoni.com/files/widgets/2737-dc7da9066-da9066f51ca5-ca5cb08f88c8f2120d88-d88-0d.js" charset="UTF-8"></script>
+                </div>
+                <div class="grpelem" id="u1270">
+                    <!-- custom html -->
+                </div>
+                <div class="PamphletWidget clearfix widget_invisible grpelem" id="pamphletu1341">
+                    <!-- none box -->
+                    <div class="ThumbGroup clearfix grpelem" id="u1342">
+                        <!-- none box -->
+                        <div class="popup_anchor">
+                            <div class="Thumb popup_element" id="u1343">
+                                <!-- simple frame -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor" id="u1347popup">
+                        <div class="ContainerGroup rgba-background clearfix" id="u1347">
+                            <!-- stack box -->
+                            <div class="Container clearfix grpelem" id="u1348">
+                                <!-- group -->
+                                <div class="clearfix grpelem" id="u1349">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u1377">
+                                        <!-- group -->
+                                        <div class="rounded-corners clearfix grpelem" id="u1378">
+                                            <!-- group -->
+                                            <div class="rounded-corners grpelem" id="u1379">
+                                                <!-- simple frame -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ts------8 clearfix grpelem" id="u1376-4">
+                                        <!-- content -->
+                                        <p>Заявка на участие в курсе &quot;Прибыльный Дейтрейдинг&quot;</p>
+                                    </div>
+                                    <div class="ts------8 clearfix grpelem" id="u1352-4">
+                                        <!-- content -->
+                                        <p>Пакет базовый</p>
+                                    </div>
+                                    <img class="grpelem" id="u1350" alt="" width="22" height="22" src="images/form%208%20icons%20timers-u1350.png" />
+                                    <!-- rasterized frame -->
+                                    <img class="grpelem" id="u1355" alt="" width="16" height="12" src="images/form%208%20icons%20mail-u1355.png" />
+                                    <!-- rasterized frame -->
+                                    <img class="grpelem" id="u1353" alt="" width="14" height="15" src="images/form%208%20icons%20people-u1353.png" />
+                                    <!-- rasterized frame -->
+                                    <img class="grpelem" id="u1374" alt="" width="12" height="16" src="images/form%208%20icons%20phone-u1374.png" />
+                                    <!-- rasterized frame -->
+                                    <form class="form-grp clearfix grpelem" id="widgetu1357" method="post" enctype="multipart/form-data" action="scripts/form-u1357.php">
+                                        <!-- none box -->
+                                        <div class="fld-grp clearfix grpelem" id="widgetu1363" data-required="true">
+                                            <!-- none box -->
+                                            <label class="fld-label actAsDiv clearfix grpelem" id="u1366-3" for="widgetu1363_input"><!-- content --><span class="actAsPara">&nbsp;</span></label>
+                                            <span class="fld-input NoWrap actAsDiv rounded-corners shadow ts------8 clearfix grpelem" id="u1364-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1363_input" name="custom_U1363" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu1363_prompt" for="widgetu1363_input" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]+$" required><span class="actAsPara">Ваше имя</span></label>
+                                            </span>
+                                        </div>
+                                        <div class="fld-grp clearfix grpelem" id="widgetu1358" data-required="true" data-type="email">
+                                            <!-- none box -->
+                                            <label class="fld-label actAsDiv clearfix grpelem" id="u1359-3" for="widgetu1358_input"><!-- content --><span class="actAsPara">&nbsp;</span></label>
+                                            <span class="fld-input NoWrap actAsDiv rounded-corners shadow ts------8 clearfix grpelem" id="u1360-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1358_input" name="Email" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu1358_prompt" for="widgetu1358_input"><span class="actAsPara">Введите ваш email</span></label>
+                                            </span>
+                                        </div>
+                                        <div class="ts------8 clearfix grpelem" id="u1362-4">
+                                            <!-- content -->
+                                            <p>Отправка формы…</p>
+                                        </div>
+                                        <div class="clearfix grpelem" id="u1371-4">
+                                            <!-- content -->
+                                            <p>На сервере произошла ошибка.</p>
+                                        </div>
+                                        <div class="ts------8 clearfix grpelem" id="u1373-4">
+                                            <!-- content -->
+                                            <p>Форма получена!</p>
+                                        </div>
+                                        <input class="submit-btn NoWrap grpelem" id="u1372-17" type="submit" value="" tabindex="4" />
+                                        <!-- state-based BG images -->
+                                        <div class="fld-grp clearfix grpelem" id="widgetu1367" data-required="true">
+                                            <!-- none box -->
+                                            <label class="fld-label actAsDiv clearfix grpelem" id="u1368-3" for="widgetu1367_input"><!-- content --><span class="actAsPara">&nbsp;</span></label>
+                                            <span class="fld-input NoWrap actAsDiv rounded-corners shadow ts------8 clearfix grpelem" id="u1369-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1367_input" name="custom_U1367" tabindex="3"/><label class="wrapped-input fld-prompt" id="widgetu1367_prompt" for="widgetu1367_input"><span class="actAsPara">Введите номер телефона</span></label>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="PamphletCloseButton PamphletLightboxPart popup_element" id="u1383">
+                            <!-- state-based BG images -->
+                        </div>
+                    </div>
+                </div>
+                <div class="PamphletWidget clearfix widget_invisible grpelem" id="pamphletu1411">
+                    <!-- none box -->
+                    <div class="ThumbGroup clearfix grpelem" id="u1451">
+                        <!-- none box -->
+                        <div class="popup_anchor">
+                            <div class="Thumb popup_element" id="u1452">
+                                <!-- simple frame -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor" id="u1413popup">
+                        <div class="ContainerGroup rgba-background clearfix" id="u1413">
+                            <!-- stack box -->
+                            <div class="Container clearfix grpelem" id="u1414">
+                                <!-- group -->
+                                <div class="clearfix grpelem" id="u1415">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u1416">
+                                        <!-- group -->
+                                        <div class="rounded-corners clearfix grpelem" id="u1417">
+                                            <!-- group -->
+                                            <div class="rounded-corners grpelem" id="u1418">
+                                                <!-- simple frame -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ts------8 clearfix grpelem" id="u1445-4">
+                                        <!-- content -->
+                                        <p>Заявка на участие в курсе &quot;Прибыльный Дейтрейдинг&quot;</p>
+                                    </div>
+                                    <div class="ts------8 clearfix grpelem" id="u1423-4">
+                                        <!-- content -->
+                                        <p>Пакет platinum</p>
+                                    </div>
+                                    <img class="grpelem" id="u1424" alt="" width="22" height="22" src="images/form%208%20icons%20timers-u1424.png" />
+                                    <!-- rasterized frame -->
+                                    <img class="grpelem" id="u1443" alt="" width="16" height="12" src="images/form%208%20icons%20mail-u1443.png" />
+                                    <!-- rasterized frame -->
+                                    <img class="grpelem" id="u1419" alt="" width="14" height="15" src="images/form%208%20icons%20people-u1419.png" />
+                                    <!-- rasterized frame -->
+                                    <img class="grpelem" id="u1421" alt="" width="12" height="16" src="images/form%208%20icons%20phone-u1421.png" />
+                                    <!-- rasterized frame -->
+                                    <form class="form-grp clearfix grpelem" id="widgetu1426" method="post" enctype="multipart/form-data" action="scripts/form-u1426.php">
+                                        <!-- none box -->
+                                        <div class="fld-grp clearfix grpelem" id="widgetu1436" data-required="true">
+                                            <!-- none box -->
+                                            <label class="fld-label actAsDiv clearfix grpelem" id="u1437-3" for="widgetu1436_input"><!-- content --><span class="actAsPara">&nbsp;</span></label>
+                                            <span class="fld-input NoWrap actAsDiv rounded-corners shadow ts------8 clearfix grpelem" id="u1438-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1436_input" name="custom_U1436" tabindex="5"/><label class="wrapped-input fld-prompt" id="widgetu1436_prompt" for="widgetu1436_input" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]+$" required><span class="actAsPara">Ваше имя</span></label>
+                                            </span>
+                                        </div>
+                                        <div class="fld-grp clearfix grpelem" id="widgetu1427" data-required="true" data-type="email">
+                                            <!-- none box -->
+                                            <label class="fld-label actAsDiv clearfix grpelem" id="u1428-3" for="widgetu1427_input"><!-- content --><span class="actAsPara">&nbsp;</span></label>
+                                            <span class="fld-input NoWrap actAsDiv rounded-corners shadow ts------8 clearfix grpelem" id="u1430-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1427_input" name="Email" tabindex="6"/><label class="wrapped-input fld-prompt" id="widgetu1427_prompt" for="widgetu1427_input"><span class="actAsPara">Введите ваш email</span></label>
+                                            </span>
+                                        </div>
+                                        <div class="ts------8 clearfix grpelem" id="u1442-4">
+                                            <!-- content -->
+                                            <p>Отправка формы…</p>
+                                        </div>
+                                        <div class="clearfix grpelem" id="u1441-4">
+                                            <!-- content -->
+                                            <p>На сервере произошла ошибка.</p>
+                                        </div>
+                                        <div class="ts------8 clearfix grpelem" id="u1440-4">
+                                            <!-- content -->
+                                            <p>Форма получена!</p>
+                                        </div>
+                                        <input class="submit-btn NoWrap grpelem" id="u1435-17" type="submit" value="" tabindex="8" />
+                                        <!-- state-based BG images -->
+                                        <div class="fld-grp clearfix grpelem" id="widgetu1431" data-required="true">
+                                            <!-- none box -->
+                                            <label class="fld-label actAsDiv clearfix grpelem" id="u1434-3" for="widgetu1431_input"><!-- content --><span class="actAsPara">&nbsp;</span></label>
+                                            <span class="fld-input NoWrap actAsDiv rounded-corners shadow ts------8 clearfix grpelem" id="u1432-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1431_input" name="custom_U1431" tabindex="7"/><label class="wrapped-input fld-prompt" id="widgetu1431_prompt" for="widgetu1431_input"><span class="actAsPara">Введите номер телефона</span></label>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="PamphletCloseButton PamphletLightboxPart popup_element" id="u1412">
+                            <!-- state-based BG images -->
+                        </div>
+                    </div>
+                </div>
+                <div class="PamphletWidget clearfix widget_invisible grpelem" id="pamphletu1504">
+                    <!-- none box -->
+                    <div class="ThumbGroup clearfix grpelem" id="u1505">
+                        <!-- none box -->
+                        <div class="popup_anchor">
+                            <div class="Thumb popup_element" id="u1506">
+                                <!-- simple frame -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor" id="u1510popup">
+                        <div class="ContainerGroup rgba-background clearfix" id="u1510">
+                            <!-- stack box -->
+                            <div class="Container clearfix grpelem" id="u1511">
+                                <!-- group -->
+                                <div class="clearfix grpelem" id="u1512">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u1540">
+                                        <!-- group -->
+                                        <div class="rounded-corners clearfix grpelem" id="u1541">
+                                            <!-- group -->
+                                            <div class="rounded-corners grpelem" id="u1542">
+                                                <!-- simple frame -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ts------8 clearfix grpelem" id="u1539-6">
+                                        <!-- content -->
+                                        <p>Заявка на участие в курсе</p>
+                                        <p>&quot;Прибыльный дейтрейдинг&quot;</p>
+                                    </div>
+                                    <div class="ts------8 clearfix grpelem" id="u1515-4">
+                                        <!-- content -->
+                                        <p>Пакет VIP</p>
+                                    </div>
+                                    <img class="grpelem" id="u1513" alt="" width="22" height="22" src="images/form%208%20icons%20timers-u1513.png" />
+                                    <!-- rasterized frame -->
+                                    <img class="grpelem" id="u1518" alt="" width="16" height="12" src="images/form%208%20icons%20mail-u1518.png" />
+                                    <!-- rasterized frame -->
+                                    <img class="grpelem" id="u1516" alt="" width="14" height="15" src="images/form%208%20icons%20people-u1516.png" />
+                                    <!-- rasterized frame -->
+                                    <img class="grpelem" id="u1537" alt="" width="12" height="16" src="images/form%208%20icons%20phone-u1537.png" />
+                                    <!-- rasterized frame -->
+                                    <form class="form-grp clearfix grpelem" id="widgetu1520" method="post" enctype="multipart/form-data" action="scripts/form-u1520.php">
+                                        <!-- none box -->
+                                        <div class="fld-grp clearfix grpelem" id="widgetu1526" data-required="true">
+                                            <!-- none box -->
+                                            <label class="fld-label actAsDiv clearfix grpelem" id="u1529-3" for="widgetu1526_input"><!-- content --><span class="actAsPara">&nbsp;</span></label>
+                                            <span class="fld-input NoWrap actAsDiv rounded-corners shadow ts------8 clearfix grpelem" id="u1527-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1526_input" name="custom_U1526" tabindex="9"/><label class="wrapped-input fld-prompt" id="widgetu1526_prompt" for="widgetu1526_input" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]+$" required><span class="actAsPara">Ваше имя</span></label>
+                                            </span>
+                                        </div>
+                                        <div class="fld-grp clearfix grpelem" id="widgetu1521" data-required="true" data-type="email">
+                                            <!-- none box -->
+                                            <label class="fld-label actAsDiv clearfix grpelem" id="u1522-3" for="widgetu1521_input"><!-- content --><span class="actAsPara">&nbsp;</span></label>
+                                            <span class="fld-input NoWrap actAsDiv rounded-corners shadow ts------8 clearfix grpelem" id="u1523-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1521_input" name="Email" tabindex="10"/><label class="wrapped-input fld-prompt" id="widgetu1521_prompt" for="widgetu1521_input"><span class="actAsPara">Введите ваш email</span></label>
+                                            </span>
+                                        </div>
+                                        <div class="ts------8 clearfix grpelem" id="u1525-4">
+                                            <!-- content -->
+                                            <p>Отправка формы…</p>
+                                        </div>
+                                        <div class="clearfix grpelem" id="u1534-4">
+                                            <!-- content -->
+                                            <p>На сервере произошла ошибка.</p>
+                                        </div>
+                                        <div class="ts------8 clearfix grpelem" id="u1536-4">
+                                            <!-- content -->
+                                            <p>Форма получена!</p>
+                                        </div>
+                                        <input class="submit-btn NoWrap grpelem" id="u1535-17" type="submit" value="" tabindex="12" />
+                                        <!-- state-based BG images -->
+                                        <div class="fld-grp clearfix grpelem" id="widgetu1530" data-required="true">
+                                            <!-- none box -->
+                                            <label class="fld-label actAsDiv clearfix grpelem" id="u1531-3" for="widgetu1530_input"><!-- content --><span class="actAsPara">&nbsp;</span></label>
+                                            <span class="fld-input NoWrap actAsDiv rounded-corners shadow ts------8 clearfix grpelem" id="u1532-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1530_input" name="custom_U1530" tabindex="11"/><label class="wrapped-input fld-prompt" id="widgetu1530_prompt" for="widgetu1530_input"><span class="actAsPara">Введите номер телефона</span></label>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="PamphletCloseButton PamphletLightboxPart popup_element" id="u1546">
+                            <!-- state-based BG images -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix colelem" id="pu106">
+                <!-- group -->
+                <div class="browser_width" id="u106-bw">
+                    <div id="u106">
+                        <!-- simple frame -->
+                    </div>
+                </div>
+                <a class="nonblock nontext clip_frame" id="u213" href="http://sdg-trade.com" target="_blank">
+                    <!-- image --><img class="block" id="u213_img" src="images/sdgtrade.png" alt="" width="111" height="48" /></a>
+                <a class="nonblock nontext anim_swing clearfix" id="u107-4" href="index.html#onas">
+                    <!-- content -->
+                    <p>О НАС</p>
+                </a>
+                <a class="nonblock nontext anim_swing clearfix" id="u1084-4" href="index.html#tseli">
+                    <!-- content -->
+                    <p>ЦЕЛИ</p>
+                </a>
+                <a class="nonblock nontext anim_swing clearfix" id="u147-4" href="index.html#avtor">
+                    <!-- content -->
+                    <p>КТО АВТОР</p>
+                </a>
+                <a class="nonblock nontext anim_swing clearfix" id="u1085-4" href="index.html#program">
+                    <!-- content -->
+                    <p>ПРОГРАММА</p>
+                </a>
+                <a class="nonblock nontext anim_swing clearfix" id="u148-4" href="index.html#price">
+                    <!-- content -->
+                    <p>СТОИМОСТЬ</p>
+                </a>
+                <a class="nonblock nontext anim_swing clearfix" id="u149-4" href="index.html#otziv">
+                    <!-- content -->
+                    <p>ОТЗЫВЫ</p>
+                </a>
+                <a class="nonblock nontext anim_swing clearfix" id="u1086-4" href="index.html#garanty">
+                    <!-- content -->
+                    <p>ГАРАНТИИ</p>
+                </a>
+                <div class="clearfix" id="u1087-4">
+                    <!-- content -->
+                    <p>+7 499 918-67-61</p>
+                </div>
+                <div class="clearfix" id="u1088-4">
+                    <!-- content -->
+                    <p>+38 044 362-67-61</p>
+                </div>
+            </div>
+            <div class="browser_width colelem" id="u154-bw">
+                <div class="museBGSize" id="u154">
+                    <!-- column -->
+                    <div class="clearfix" id="u154_align_to_page">
+                        <div class="clearfix colelem" id="u163-4">
+                            <!-- content -->
+                            <p>О НАШИХ ОБУЧАЮЩИХ ПРОГРАММАХ</p>
+                        </div>
+                        <div class="clearfix colelem" id="pu161-4">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u161-4">
+                                <!-- content -->
+                                <p>Существует множество курсов обучения трейдингу, но подавляющее большинство из них – это пересказ, который делает человек, не торгующий реально на свои деньги в данный момент. Многие из данных преподавателей потерпели неудачу
+                                    как трейдеры, но нашли себя в &quot;околорыночном&quot; бизнесе. Некоторые из них когда-то зарабатывали, но потом не смогли адаптироваться к изменениям рынка и потому сейчас уже давно отошли от торговли. И лишь очень
+                                    небольшое количество трейдеров, ведущих курсы, реально торгуют.</p>
+                            </div>
+                            <div class="rounded-corners clip_frame grpelem" id="u921">
+                                <!-- image -->
+                                <img class="block" id="u921_img" src="images/0491.jpg" alt="" width="150" height="150" />
+                            </div>
+                        </div>
+                        <div class="clearfix colelem" id="pu915">
+                            <!-- group -->
+                            <div class="rounded-corners clip_frame grpelem" id="u915">
+                                <!-- image -->
+                                <img class="block" id="u915_img" src="images/earn-3.jpg" alt="" width="143" height="143" />
+                            </div>
+                            <div class="clearfix grpelem" id="u901-9">
+                                <!-- content -->
+                                <p>В нашей компании <span id="u901-2">все трейдера ежедневно торгуют</span>, рискуя собственными деньгами. И те знания, которыми они делятся, действительно ценные.</p>
+                                <p>Любой трейдер знает, что ценен лишь практический опыт, проживаемый и обогащаемый вновь и вновь каждый день. Следуя за изменениями рынка, трейдеру необходимо также постоянно меняться, иначе через некоторое время рынок перестанет
+                                    “давать ему деньги” - именно по этому мы готовы обучать тому, что действительно сейчас работает на рынке акций.</p>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="clearfix colelem" id="pu902-4">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u902-4">
+                                <!-- content -->
+                                <p>Опыт который вы получите на нашем курсе - это не только личный опыт трейдеров компании, а также включает и обобщенный опыт нашей компании, накопленный за 11 лет существования proprietary-офиса, в котором заработок трейдеров
+                                    и компании зависел и зависит лишь от успешности на рынке.</p>
+                            </div>
+                            <div class="rounded-corners clip_frame grpelem" id="u903">
+                                <!-- image -->
+                                <img class="block" id="u903_img" src="images/earn-4.jpg" alt="" width="143" height="143" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix colelem" id="ptseli">
+                <!-- group -->
+                <a class="anchor_item grpelem" id="tseli"></a>
+                <div class="clearfix grpelem" id="u476-4">
+                    <!-- content -->
+                    <p>ЦЕЛИ КУРСА</p>
+                </div>
+            </div>
+            <div class="clearfix colelem" id="pu478-14">
+                <!-- group -->
+                <div class="clearfix grpelem" id="u478-14">
+                    <!-- content -->
+                    <p>Мы докажем , что научиться зарабатывать деньги на фондовом рынке реально!</p>
+                    <p>&nbsp;</p>
+                    <p>Предупреждаем вас, что речь&nbsp; идет НЕ о Форексе, не о Российском срочном рынке, речь пойдет о американском фондовом рынке акций!</p>
+                    <p>&nbsp;</p>
+                    <p>Мы готовы провести Вас по этой дороге от нуля до ваших первых денег на рынке!</p>
+                    <p>&nbsp;</p>
+                    <p>Курс уже стартует 10 марта и его продолжительность 6 недель.</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="clip_frame grpelem" id="u485">
+                    <!-- image -->
+                    <img class="block" id="u485_img" src="images/vision-1.jpg" alt="" width="285" height="218" />
+                </div>
+            </div>
+            <div class="clearfix colelem" id="u837-4">
+                <!-- content -->
+                <p>После курса общение с нами не прекращается, мы продолжаем совместную работу в мастер-группе, общение в ней позволяет быть “в тонусе” и обогащаться как опытом других трейдеров, так и комментариями трейдеров компании, получать регулярный
+                    фидбек по вашим сделкам, а также участвовать в закрытых конференциях и встречах.</p>
+            </div>
+            <div class="clearfix colelem" id="u1063-4">
+                <!-- content -->
+                <p>Спешите, начало курса уже 10 марта!</p>
+            </div>
+            <a class="anchor_item colelem" id="avtor"></a>
+            <div class="clearfix colelem" id="pu164">
+                <!-- group -->
+                <div class="browser_width grpelem" id="u164-bw">
+                    <div class="museBGSize" id="u164">
+                        <!-- simple frame -->
+                    </div>
+                </div>
+                <div class="browser_width grpelem" id="u1145-bw">
+                    <div id="u1145">
+                        <!-- simple frame -->
+                    </div>
+                </div>
+                <div class="clearfix grpelem" id="u189-4">
+                    <!-- content -->
+                    <p>ОЛЕСЬ СРИБНЫЙ</p>
+                </div>
+                <div class="clearfix grpelem" id="u499-4">
+                    <!-- content -->
+                    <p>САЙМОН БРАГИНСКИЙ</p>
+                </div>
+                <div class="clearfix grpelem" id="u195-17">
+                    <!-- content -->
+                    <p>Трейдер-практик, тренер, организатор конференций и обучающих мероприятий.</p>
+                    <p>&nbsp;</p>
+                    <p><span id="u195-4">Убеждения.</span> Исповедует глубокий психологический подход к трейдингу. Уверен во взаимосвязи личностных качеств трейдера и результатов его труда на фондовых площадках.</p>
+                    <p>&nbsp;</p>
+                    <p><span id="u195-8">Интересы. </span>Совершенствование позиционного трейдинга, изучение циклов рынка, адаптация системы к изменениям состояний фондового рынка.</p>
+                    <p>&nbsp;</p>
+                    <p><span id="u195-12">Деятельность.</span> Разработка методологии обучающих курсов, поддержки и дальнейшего сопровождения трейдеров в период становления. Свое развитие видит в среднесрочной торговле. Изучает анализ корпоративных финансов.</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="clearfix grpelem" id="u498-17">
+                    <!-- content -->
+                    <p>Трейдер-аналитик, консультант,&nbsp; в трейдинге уже болеее 20 лет.</p>
+                    <p>&nbsp;</p>
+                    <p><span id="u498-4">Убеждения. </span>Сторонник фундаментального подхода к трейдингу и статистического арбитража.&nbsp; Убежден в важности психологической составляющей и личностных качеств трейдера.</p>
+                    <p>&nbsp;</p>
+                    <p><span id="u498-8">Интересы.</span> Психология, поведенческие финансы, шахматы, покер.</p>
+                    <p>&nbsp;</p>
+                    <p><span id="u498-12">Деятельность.</span> Управление среднесрочными портфелями, обучение трейдеров с последующим сопровождением, консультации опытных трейдеров и фондов.</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="clearfix grpelem" id="u346-19">
+                    <!-- content -->
+                    <p id="u346-2">Факты о&nbsp; Олесе Срибном:</p>
+                    <p id="u346-3">&nbsp;</p>
+                    <p id="u346-5">&nbsp;&nbsp;&nbsp; - Прочитал более 50 книг о трейдинге от самых известных трейдеров и инвестров фондового рынка США.</p>
+                    <p id="u346-7">&nbsp;&nbsp;&nbsp; - Трейдинг – основной источник прибыли Олеся уже более 8 лет.</p>
+                    <p id="u346-9">&nbsp;&nbsp;&nbsp; - На фондовых рынках США работает с июля 2007 года.</p>
+                    <p id="u346-11">&nbsp;&nbsp;&nbsp; - Обучил более 300 трейдеров компании SDG-Trade</p>
+                    <p id="u346-13">&nbsp;&nbsp;&nbsp; - Самая успешная сделка принесла ему более 5000$.</p>
+                    <p id="u346-15">&nbsp;&nbsp;&nbsp; - Самый большой объем акций за месяц - более миллиона!</p>
+                    <p id="u346-16">&nbsp;</p>
+                    <p id="u346-17">&nbsp;</p>
+                </div>
+                <div class="clearfix grpelem" id="u500-20">
+                    <!-- content -->
+                    <p id="u500-2">Факты о Саймоне Брагинском:</p>
+                    <p id="u500-3">&nbsp;</p>
+                    <p id="u500-5">-Выпускник программы MBA Колумбийсого Университета 1994 г., CFA</p>
+                    <p id="u500-7">-с 1994 по 1999г Финансовый инженер в Jacobs Levy Equity Mngmt( 4.5$млрд в управлении)</p>
+                    <p id="u500-9">-1999-2000 г Инвестиционный банкир в Hudson Sloan, вывод IPO на рынок</p>
+                    <p id="u500-11">-с 2000 г. в дневном трейдинге (Worldco, Hold Brothers, Dimention Brokers) - ни одного убыточного года</p>
+                    <p id="u500-13">-Сверхприбыльные годы 2000-2002, 2008, 2009, 2011; лучший день $30000&nbsp; (2002г).</p>
+                    <p id="u500-15">-Обучил и переучил по своей методике сотни успешных трейдеров.</p>
+                    <p id="u500-17">-Лично знаком с многими Wall Street top executives, включая Boaz Weinstein, Victor Niederhoffer, Bruce Jacobs, Alexander Knaster.</p>
+                    <p id="u500-18">&nbsp;</p>
+                </div>
+                <div class="clearfix grpelem" id="u491-4">
+                    <!-- content -->
+                    <p>&nbsp;КУРАТОРЫ КУРСА</p>
+                </div>
+                <div class="rounded-corners clip_frame grpelem" id="u492">
+                    <!-- image -->
+                    <img class="block" id="u492_img" src="images/222000.jpg" alt="" width="193" height="193" />
+                </div>
+                <a class="anchor_item grpelem" id="program"></a>
+                <div class="rounded-corners clip_frame grpelem" id="u1225">
+                    <!-- image -->
+                    <img class="block" id="u1225_img" src="images/foto.jpg" alt="" width="193" height="193" />
+                </div>
+            </div>
+            <div class="clearfix colelem" id="u513-4">
+                <!-- content -->
+                <p>ПРОГРАММА КУРСА</p>
+            </div>
+            <div class="clearfix colelem" id="u515-11">
+                <!-- content -->
+                <p id="u515-2">Мы начнем с самых важных моментов и будем интенсивно обучать вас 6 недель!</p>
+                <p id="u515-3">&nbsp;</p>
+                <p id="u515-5">Этот курс рассчитан только на практикующих трейдеров. Неважно, новичок вы или же ветеран рынка. Главное, чтобы вы уже знали все базовые вещи и имели опыт практической работы хотя бы на демо-счете.</p>
+                <p id="u515-6">&nbsp;</p>
+                <p id="u515-8">В режиме онлайн куратор курса открывает свой терминал. Смотрит графики. Совершает сделки. На примере этих реальных сделок он демонстрирует свою уникальную торговую стратегию и объясняет вам ее суть.</p>
+                <p id="u515-9">&nbsp;</p>
+            </div>
+            <div class="PamphletWidget clearfix colelem" id="pamphletu665">
+                <!-- none box -->
+                <div class="popup_anchor" id="u688popup">
+                    <div class="ContainerGroup clearfix" id="u688">
+                        <!-- stack box -->
+                        <div class="Container clearfix grpelem" id="u703">
+                            <!-- column -->
+                            <div class="clearfix colelem" id="u713-4">
+                                <!-- content -->
+                                <p>1 МОДУЛЬ: 1-2 НЕДЕЛЯ</p>
+                            </div>
+                            <div class="clearfix colelem" id="u705-21">
+                                <!-- content -->
+                                <p id="u705-2">Теория:</p>
+                                <p id="u705-4">Фундаментальный анализ и чтение новостей</p>
+                                <p id="u705-6">Чтение новостей-основные типы новостей с их интерпретацией</p>
+                                <p id="u705-8">Технический анализ, психология участников рынка</p>
+                                <p id="u705-10">Отбор ценных бумаг, точки входов</p>
+                                <p id="u705-12">Каждодневный план, ведение журнала, анализ журнала</p>
+                                <p id="u705-14">Отработка теории на практике:</p>
+                                <p id="u705-16">4 Cовместных трейдинга</p>
+                                <p id="u705-18">Анализ сделок</p>
+                                <p id="u705-19">&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u689">
+                            <!-- column -->
+                            <div class="clearfix colelem" id="u787-4">
+                                <!-- content -->
+                                <p>2 МОДУЛЬ: 3 НЕДЕЛЯ</p>
+                            </div>
+                            <div class="clearfix colelem" id="u933-18">
+                                <!-- content -->
+                                <p id="u933-2">Теория:</p>
+                                <p id="u933-4">Следы крупных участников рынка</p>
+                                <p id="u933-6">Селекция инструментов, понятие &quot;портфель&quot;, &quot;приоритет&quot;</p>
+                                <p id="u933-8">Торговые стратегии, правила, статистика</p>
+                                <p id="u933-10">Отработка теории на практике:</p>
+                                <p id="u933-12">2 Совместных трейдинга</p>
+                                <p id="u933-14">Анализ сделок, скриншот-анализ</p>
+                                <p id="u933-15">&nbsp;</p>
+                                <p id="u933-16">&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u717">
+                            <!-- column -->
+                            <div class="clearfix colelem" id="u789-4">
+                                <!-- content -->
+                                <p>3 МОДУЛЬ: 4-5 НЕДЕЛЯ</p>
+                            </div>
+                            <div class="clearfix colelem" id="u934-20">
+                                <!-- content -->
+                                <p id="u934-2">Теория:</p>
+                                <p id="u934-4">Источники поиска потенциальных инструментов</p>
+                                <p id="u934-6">Различные формы поведения институционалов</p>
+                                <p id="u934-8">Сравнительный анализ. Портфель, приоритет. Портфель гейнеры, лузеры</p>
+                                <p id="u934-10">Торговые стратегии, правила</p>
+                                <p id="u934-12">Отработка теории на практике:</p>
+                                <p id="u934-14">4 Cовместных трейдинга</p>
+                                <p id="u934-16">Анализ сделок</p>
+                                <p id="u934-17">&nbsp;</p>
+                                <p id="u934-18">&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u745">
+                            <!-- column -->
+                            <div class="clearfix colelem" id="u791-4">
+                                <!-- content -->
+                                <p>4 МОДУЛЬ: 6 НЕДЕЛЯ</p>
+                            </div>
+                            <div class="clearfix colelem" id="u935-16">
+                                <!-- content -->
+                                <p id="u935-2">Теория:</p>
+                                <p id="u935-4">Психология. Риск-менеджмент и мани-менеджмент</p>
+                                <p id="u935-6">Анализ основных индексов, зависимость акций от общего движения рынка</p>
+                                <p id="u935-8">Отработка теории на практике:</p>
+                                <p id="u935-10">2 совместных трейдинга</p>
+                                <p id="u935-12">Анализ сделок</p>
+                                <p id="u935-13">&nbsp;</p>
+                                <p id="u935-14">&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u731">
+                            <!-- column -->
+                            <div class="clearfix colelem" id="u793-4">
+                                <!-- content -->
+                                <p>5 МОДУЛЬ</p>
+                            </div>
+                            <div class="clearfix colelem" id="u936-12">
+                                <!-- content -->
+                                <p id="u936-2">После 6 недели работа продолжается в мастер-группе</p>
+                                <p id="u936-4">Совместные трейдинги</p>
+                                <p id="u936-6">Анализ сделок</p>
+                                <p id="u936-8">Брифинги перед открытием рынка</p>
+                                <p id="u936-9">&nbsp;</p>
+                                <p id="u936-10">&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ThumbGroup clearfix grpelem" id="u670">
+                    <!-- none box -->
+                    <div class="popup_anchor">
+                        <div class="Thumb popup_element clearfix" id="u680">
+                            <!-- column -->
+                            <div class="clearfix colelem" id="u682-4">
+                                <!-- content -->
+                                <p>1</p>
+                            </div>
+                            <div class="clearfix colelem" id="u681-4">
+                                <!-- content -->
+                                <p>МОДУЛЬ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="Thumb popup_element clearfix" id="u683">
+                            <!-- column -->
+                            <div class="clearfix colelem" id="u685-4">
+                                <!-- content -->
+                                <p>2</p>
+                            </div>
+                            <div class="clearfix colelem" id="u684-4">
+                                <!-- content -->
+                                <p>МОДУЛЬ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="Thumb popup_element clearfix" id="u677">
+                            <!-- column -->
+                            <div class="clearfix colelem" id="u679-4">
+                                <!-- content -->
+                                <p>3</p>
+                            </div>
+                            <div class="clearfix colelem" id="u678-4">
+                                <!-- content -->
+                                <p>МОДУЛЬ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="Thumb popup_element clearfix" id="u674">
+                            <!-- column -->
+                            <div class="clearfix colelem" id="u676-4">
+                                <!-- content -->
+                                <p>4</p>
+                            </div>
+                            <div class="clearfix colelem" id="u675-4">
+                                <!-- content -->
+                                <p>МОДУЛЬ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="Thumb popup_element clearfix" id="u671">
+                            <!-- column -->
+                            <div class="clearfix colelem" id="u672-4">
+                                <!-- content -->
+                                <p>5</p>
+                            </div>
+                            <div class="clearfix colelem" id="u673-4">
+                                <!-- content -->
+                                <p>МОДУЛЬ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clip_frame colelem" id="u1076">
+                <!-- image -->
+                <img class="block" id="u1076_img" src="images/arrow-scenario-1.png" alt="" width="50" height="75" />
+            </div>
+            <div class="clearfix colelem" id="pu1035-4">
+                <!-- group -->
+                <div class="clearfix grpelem" id="u1035-4">
+                    <!-- content -->
+                    <p>Более 20 занятий</p>
+                </div>
+                <div class="clearfix grpelem" id="u1036-4">
+                    <!-- content -->
+                    <p>Более 40 часов знаний</p>
+                </div>
+                <div class="clearfix grpelem" id="u1037-4">
+                    <!-- content -->
+                    <p>3-4 занятия в неделю</p>
+                </div>
+            </div>
+            <div class="clearfix colelem" id="u1017-6">
+                <!-- content -->
+                <p>Все занятия проходят онлайн.&nbsp; Онлайн- трейдинги проходят во время работы биржи. Средняя продолжительность занятия 1.5-2 часа. Вопросы сможете задавать в специальной комнате в чате трейдеров.</p>
+                <p><span id="u1017-3">Для закрепления навыков будут домашние задания!</span></p>
+            </div>
+            <div class="clearfix colelem" id="u522-4">
+                <!-- content -->
+                <p>Что именно вы узнаете на этом курсе:</p>
+            </div>
+            <div class="clearfix colelem" id="u1016">
+                <!-- group -->
+                <div class="clearfix grpelem" id="pu943">
+                    <!-- column -->
+                    <div class="clip_frame colelem" id="u943">
+                        <!-- image -->
+                        <img class="block" id="u943_img" src="images/1.png" alt="" width="120" height="120" />
+                    </div>
+                    <div class="clearfix colelem" id="u973-4">
+                        <!-- content -->
+                        <p>Вы научитесь безошибочно находить точку входа.</p>
+                    </div>
+                </div>
+                <div class="clearfix grpelem" id="pu949">
+                    <!-- column -->
+                    <div class="clip_frame colelem" id="u949">
+                        <!-- image -->
+                        <img class="block" id="u949_img" src="images/2.png" alt="" width="120" height="120" />
+                    </div>
+                    <div class="clearfix colelem" id="u974-4">
+                        <!-- content -->
+                        <p>Сможете прочесть любой график как открытую книгу.</p>
+                    </div>
+                </div>
+                <div class="clearfix grpelem" id="pu955">
+                    <!-- column -->
+                    <div class="clip_frame colelem" id="u955">
+                        <!-- image -->
+                        <img class="block" id="u955_img" src="images/3.png" alt="" width="120" height="120" />
+                    </div>
+                    <div class="clearfix colelem" id="u975-4">
+                        <!-- content -->
+                        <p>Научитесь прибыльному дейтрейдингу на NYSE</p>
+                    </div>
+                </div>
+                <div class="clearfix grpelem" id="pu961">
+                    <!-- column -->
+                    <div class="clip_frame colelem" id="u961">
+                        <!-- image -->
+                        <img class="block" id="u961_img" src="images/4.png" alt="" width="120" height="120" />
+                    </div>
+                    <div class="clearfix colelem" id="u976-4">
+                        <!-- content -->
+                        <p>Начнете видеть крупных игроков и действовать с ними заодно.</p>
+                    </div>
+                </div>
+                <div class="clearfix grpelem" id="pu967">
+                    <!-- column -->
+                    <div class="clip_frame colelem" id="u967">
+                        <!-- image -->
+                        <img class="block" id="u967_img" src="images/5.png" alt="" width="120" height="120" />
+                    </div>
+                    <div class="clearfix colelem" id="u977-4">
+                        <!-- content -->
+                        <p>Перестанете сливать депозит, как это делают 95% трейдеров.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix colelem" id="pu1019">
+                <!-- group -->
+                <div class="browser_width grpelem" id="u1019-bw">
+                    <div class="museBGSize" id="u1019">
+                        <!-- simple frame -->
+                    </div>
+                </div>
+                <div class="browser_width grpelem" id="u1026-bw">
+                    <div id="u1026">
+                        <!-- simple frame -->
+                    </div>
+                </div>
+                <div class="browser_width grpelem" id="u1033-bw">
+                    <div id="u1033">
+                        <!-- simple frame -->
+                    </div>
+                </div>
+                <div class="clearfix grpelem" id="u1034-13">
+                    <!-- content -->
+                    <p id="u1034-2">Сколько вы прошли курсов по трейдингу: 1, 2, 5, 10?</p>
+                    <p id="u1034-4">А сколько при этом заработали?</p>
+                    <p id="u1034-8">То-то и оно! Пора сказать стоп и <span id="u1034-6">прекратить ходить вокруг</span> да около.</p>
+                    <p id="u1034-11">Хватит постоянно учиться у трейдеров-теоретиков, пришло <span id="u1034-10">время начать ДЕЙСТВОВАТЬ!</span></p>
+                </div>
+                <a class="anchor_item grpelem" id="price"></a>
+            </div>
+            <div class="clearfix colelem" id="u546-4">
+                <!-- content -->
+                <p>СТОИМОСТЬ УЧАСТИЯ В КУРСЕ</p>
+            </div>
+            <div class="clearfix colelem" id="u1054">
+                <!-- column -->
+                <div class="clearfix colelem" id="ppu978">
+                    <!-- group -->
+                    <div class="clearfix grpelem" id="pu978">
+                        <!-- column -->
+                        <div class="rounded-corners clearfix colelem" id="u978">
+                            <!-- group -->
+                            <div class="Heading clearfix grpelem" id="u983-4">
+                                <!-- content -->
+                                <h2>БАЗОВЫЙ</h2>
+                            </div>
+                        </div>
+                        <div class="clearfix colelem" id="pu979">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u979">
+                                <!-- group -->
+                                <div class="clearfix grpelem" id="u980">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u981-4">
+                                        <!-- content -->
+                                        <p id="u981-2"><span id="u981">$</span></p>
+                                    </div>
+                                    <div class="Price clearfix grpelem" id="u982-4">
+                                        <!-- content -->
+                                        <p>549</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clip_frame grpelem" id="u984">
+                                <!-- image -->
+                                <img class="block" id="u984_img" src="images/bg.png" alt="" width="230" height="42" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix grpelem" id="pu986">
+                        <!-- column -->
+                        <div class="rounded-corners clearfix colelem" id="u986">
+                            <!-- group -->
+                            <div class="Heading clearfix grpelem" id="u991-4">
+                                <!-- content -->
+                                <h2>PLATINUM</h2>
+                            </div>
+                        </div>
+                        <div class="clearfix colelem" id="pu987">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u987">
+                                <!-- group -->
+                                <div class="clearfix grpelem" id="u988">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u989-4">
+                                        <!-- content -->
+                                        <p id="u989-2"><span id="u989">$</span></p>
+                                    </div>
+                                    <div class="Price clearfix grpelem" id="u990-4">
+                                        <!-- content -->
+                                        <p>749</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clip_frame grpelem" id="u992">
+                                <!-- image -->
+                                <img class="block" id="u992_img" src="images/bg.png" alt="" width="230" height="42" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix grpelem" id="pu994">
+                        <!-- column -->
+                        <div class="rounded-corners clearfix colelem" id="u994">
+                            <!-- group -->
+                            <div class="Heading clearfix grpelem" id="u999-4">
+                                <!-- content -->
+                                <h2>VIP</h2>
+                            </div>
+                        </div>
+                        <div class="clearfix colelem" id="pu995">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u995">
+                                <!-- group -->
+                                <div class="clearfix grpelem" id="u996">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u998-4">
+                                        <!-- content -->
+                                        <p id="u998-2"><span id="u998">$</span></p>
+                                    </div>
+                                    <div class="Price clearfix grpelem" id="u997-4">
+                                        <!-- content -->
+                                        <p>949</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clip_frame grpelem" id="u1000">
+                                <!-- image -->
+                                <img class="block" id="u1000_img" src="images/bg.png" alt="" width="230" height="42" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix colelem" id="pu1038-4">
+                    <!-- group -->
+                    <div class="clearfix grpelem" id="u1038-4">
+                        <!-- content -->
+                        <p>6 НЕДЕЛЬ ОБУЧЕНИЯ</p>
+                    </div>
+                    <div class="clearfix grpelem" id="u1043-4">
+                        <!-- content -->
+                        <p>ПАКЕТ БАЗОВЫЙ +</p>
+                    </div>
+                    <div class="clearfix grpelem" id="u1048-4">
+                        <!-- content -->
+                        <p>ПАКЕТ PLATINUM +</p>
+                    </div>
+                </div>
+                <div class="clearfix colelem" id="ppu1039-4">
+                    <!-- group -->
+                    <div class="clearfix grpelem" id="pu1039-4">
+                        <!-- column -->
+                        <div class="clearfix colelem" id="u1039-4">
+                            <!-- content -->
+                            <p>ЗАПИСЬ ЗАНЯТИЙ</p>
+                        </div>
+                        <div class="clearfix colelem" id="u1040-4">
+                            <!-- content -->
+                            <p>ОБЩЕНИЕ В ЧАТЕ</p>
+                        </div>
+                        <div class="clearfix colelem" id="u1041-4">
+                            <!-- content -->
+                            <p>РАЗБОР СДЕЛОК</p>
+                        </div>
+                        <div class="clearfix colelem" id="u1042-4">
+                            <!-- content -->
+                            <p>4 НЕДЕЛИ МАСТЕР-ГРУППЫ</p>
+                        </div>
+                    </div>
+                    <div class="clearfix grpelem" id="pu1044-4">
+                        <!-- column -->
+                        <div class="clearfix colelem" id="u1044-4">
+                            <!-- content -->
+                            <p>РАЗБОР СДЕЛОК</p>
+                        </div>
+                        <div class="clearfix colelem" id="u1045-4">
+                            <!-- content -->
+                            <p>ЛИЧНЫЙ МЕНЕДЖЕР</p>
+                        </div>
+                        <div class="clearfix colelem" id="u1047-4">
+                            <!-- content -->
+                            <p>ИНДИВИДУАЛЬНЫЕ УСЛОВИЯ НА ОТКРЫТИЕ ТОРГОВОГО СЧЕТА</p>
+                        </div>
+                    </div>
+                    <div class="clearfix grpelem" id="pu1051-4">
+                        <!-- column -->
+                        <div class="clearfix colelem" id="u1051-4">
+                            <!-- content -->
+                            <p>1 ИНДИВИДУАЛЬНОЕ ЗАНЯТИЕ</p>
+                        </div>
+                        <div class="clearfix colelem" id="u1052-4">
+                            <!-- content -->
+                            <p>ИНДИВИДУАЛЬНЫЙ РАЗБОР СДЕЛОК</p>
+                        </div>
+                        <div class="clearfix colelem" id="u1053-4">
+                            <!-- content -->
+                            <p>ТОРГОВАЯ ПЛАТФОРМА ROX БЕСПЛАТНО</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix colelem" id="pu1049-4">
+                    <!-- group -->
+                    <div class="clearfix grpelem" id="u1049-4">
+                        <!-- content -->
+                        <p>6 НЕДЕЛЬ МАСТЕР-ГРУППЫ</p>
+                    </div>
+                    <div class="clearfix grpelem" id="u1271-4">
+                        <!-- content -->
+                        <p>12 НЕДЕЛЬ МАСТЕР-ГРУППЫ</p>
+                    </div>
+                </div>
+                <div class="rounded-corners clearfix colelem" id="u1002">
+                    <!-- group -->
+                    <div class="clearfix grpelem" id="u1003">
+                        <!-- group -->
+                        <div class="rounded-corners clearfix grpelem" id="u1004-4">
+                            <!-- content -->
+                            <p id="u1004-2">ПРИОБРЕСТИ</p>
+                        </div>
+                    </div>
+                    <div class="clearfix grpelem" id="u1005">
+                        <!-- group -->
+                        <div class="rounded-corners clearfix grpelem" id="u1006-4">
+                            <!-- content -->
+                            <p id="u1006-2">ПРИОБРЕСТИ</p>
+                        </div>
+                    </div>
+                    <div class="clearfix grpelem" id="u1007">
+                        <!-- group -->
+                        <a class="nonblock nontext rounded-corners clearfix grpelem" id="u1008-4" href="http://cp.sdg-trade.com/signup.php?src=day" target="_blank">
+                            <!-- content -->
+                            <p id="u1008-2">ПРИОБРЕСТИ</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix colelem" id="pu595">
+                <!-- group -->
+                <div class="browser_width grpelem" id="u595-bw">
+                    <div id="u595">
+                        <!-- group -->
+                        <div class="clearfix" id="u595_align_to_page">
+                            <div class="clearfix grpelem" id="u602-4">
+                                <!-- content -->
+                                <p>Самое главное : после окончания курса мы вас не бросаем - мы продолжаем работать с вами и вести вас к&nbsp; успешным результатам в трейдинге.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix grpelem" id="u603-14">
+                    <!-- content -->
+                    <p>Записавшись на курс, Вы получаете:</p>
+                    <p>&nbsp;</p>
+                    <p>Самый полный курс обучения дейтрейдингу в СНГ</p>
+                    <p>&nbsp;</p>
+                    <p>+ нашу поддержку Вас до первых денег на рынке</p>
+                    <p>&nbsp;</p>
+                    <p>+ возможность зарабатывать от 100% в год на фондовом рынке США</p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <div class="clearfix colelem" id="u604-4">
+                <!-- content -->
+                <p>Или Вы можете купить за эти деньги себе, к примеру, не самый последний iPhone:</p>
+            </div>
+            <div class="clip_frame colelem" id="u607">
+                <!-- image -->
+                <img class="block" id="u607_img" src="images/iphone.jpg" alt="" width="788" height="434" />
+            </div>
+            <div class="clearfix colelem" id="pu613-10">
+                <!-- group -->
+                <div class="clearfix grpelem" id="u613-10">
+                    <!-- content -->
+                    <p id="u613-2">Но! От курса Вы получите гораздо более мощную отдачу и сможете позволить себе не только покупку смартфона, но и:</p>
+                    <p id="u613-3">&nbsp;</p>
+                    <p id="u613-4">&nbsp;</p>
+                    <p id="u613-5">&nbsp;</p>
+                    <p id="u613-6">&nbsp;</p>
+                    <p id="u613-7">&nbsp;</p>
+                    <p id="u613-8">&nbsp;</p>
+                </div>
+                <div class="clip_frame grpelem" id="u1236">
+                    <!-- image -->
+                    <img class="block" id="u1236_img" src="images/%d0%b8%d1%81%d1%82%d0%be%d1%87%d0%bd%d0%b8%d0%ba%20%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d0%b3%d0%be%20%d0%b4%d0%be%d1%85%d0%be%d0%b4%d0%b0.png" alt="" width="139"
+                        height="139" />
+                </div>
+                <div class="clip_frame grpelem" id="u1242">
+                    <!-- image -->
+                    <img class="block" id="u1242_img" src="images/%d0%b7%d0%b0%d1%80%d0%b0%d0%b1%d0%b0%d1%82%d1%8b%d0%b2%d0%b0%d1%82%d1%8c%20%d0%bf%d1%80%d1%8f%d0%bc%d0%be%20%d0%b8%d0%b7%20%d0%b4%d0%be%d0%bc%d0%b0.png" alt="" width="139" height="139" />
+                </div>
+                <div class="clearfix grpelem" id="u1254-4">
+                    <!-- content -->
+                    <p><span id="u1254">Источник дополнительного дохода для Вас и Вашей семьи.</span></p>
+                </div>
+                <div class="clearfix grpelem" id="u1256-4">
+                    <!-- content -->
+                    <p>Возможность уйти с работы, зарабатывать прямо из дома (или там, где Вам хочется) и тогда, когда Вам хочется.</p>
+                </div>
+            </div>
+            <div class="clearfix colelem" id="pu1248">
+                <!-- group -->
+                <div class="clip_frame grpelem" id="u1248">
+                    <!-- image -->
+                    <img class="block" id="u1248_img" src="images/putiwestvennik.png" alt="" width="140" height="140" />
+                </div>
+                <div class="clearfix grpelem" id="u1255-4">
+                    <!-- content -->
+                    <p>Путешествовать, покупать именно то, что Вы хотите (а не только то, что можете себе позволить)</p>
+                </div>
+                <div class="clip_frame grpelem" id="u1230">
+                    <!-- image -->
+                    <img class="block" id="u1230_img" src="images/naviki.png" alt="" width="139" height="139" />
+                </div>
+                <div class="clearfix grpelem" id="u1258-5">
+                    <!-- content -->
+                    <p>САМОЕ ГЛАВНОЕ, <span id="u1258-2">этот навык зарабатывания денег будет всегда с Вами!</span></p>
+                </div>
+            </div>
+            <form class="form-grp clearfix colelem" id="widgetu1324" method="post" enctype="multipart/form-data" action="scripts/form-u1324.php">
+                <!-- none box -->
+                <div class="fld-grp clearfix grpelem" id="widgetu1325" data-required="true">
+                    <!-- none box -->
+                    <label class="fld-label actAsDiv ts-------------------7 clearfix grpelem" id="u1326-4" for="widgetu1325_input"><!-- content --><span class="actAsPara" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]+$" required>Имя:</span></label>
+                    <span class="fld-input NoWrap actAsDiv ts-------------------7 clearfix grpelem" id="u1327-3"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1325_input" name="custom_U1325" tabindex="14"/></span>
+                </div>
+                <div class="fld-grp clearfix grpelem" id="widgetu1330" data-required="true" data-type="email">
+                    <!-- none box -->
+                    <label class="fld-label actAsDiv ts-------------------7 clearfix grpelem" id="u1332-4" for="widgetu1330_input"><!-- content --><span class="actAsPara">Электронная почта:</span></label>
+                    <span class="fld-input NoWrap actAsDiv ts-------------------7 clearfix grpelem" id="u1333-3"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1330_input" name="Email" tabindex="13"/></span>
+                </div>
+                <div class="clearfix grpelem" id="u1335-4">
+                    <!-- content -->
+                    <p>Отправка формы…</p>
+                </div>
+                <div class="clearfix grpelem" id="u1329-4">
+                    <!-- content -->
+                    <p>На сервере произошла ошибка.</p>
+                </div>
+                <div class="clearfix grpelem" id="u1336-4">
+                    <!-- content -->
+                    <p>Заявка отправлена</p>
+                </div>
+                <input class="submit-btn NoWrap grpelem" id="u1334-17" type="submit" value="" tabindex="16" />
+                <!-- state-based BG images -->
+                <div class="fld-grp clearfix grpelem" id="widgetu1337" data-required="true">
+                    <!-- none box -->
+                    <label class="fld-label actAsDiv ts-------------------7 clearfix grpelem" id="u1339-4" for="widgetu1337_input"><!-- content --><span class="actAsPara">Ваш телефон:</span></label>
+                    <span class="fld-input NoWrap actAsDiv ts-------------------7 clearfix grpelem" id="u1340-3"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1337_input" name="custom_U1337" tabindex="15"/></span>
+                </div>
+            </form>
+            <div class="clearfix colelem" id="u475-4">
+                <!-- content -->
+                <p>Узнайте как стать УСПЕШНЫМ трейдером и избежать ошибок, которые совершают 95% трейдеров!</p>
+            </div>
+            <div class="clearfix colelem" id="pu1061-12">
+                <!-- group -->
+                <div class="clearfix grpelem" id="u1061-12">
+                    <!-- content -->
+                    <p>&nbsp;</p>
+                    <p>Дорого ли это? А Вы задумайтесь,&nbsp; как всего за&nbsp; 3-4 прибыльных сделки вы сможете с легкостью отбить стоимость&nbsp; данной обучающей программы.</p>
+                    <p>&nbsp;</p>
+                    <p>Знаете ли Вы, сколько стоит&nbsp; в офлайне обучение премудростям биржевой&nbsp; торговли&nbsp; аналогичного уровня? Как минимум 1 000$ .</p>
+                    <p>&nbsp;</p>
+                    <p>При этом вряд ли кто-то в столь явной форме расскажет вам о том, как крупные игроки манипулируют толпой трейдеров, и как Вам, простому трейдеру, можно заработать, зная об этих манипуляциях.</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="clip_frame grpelem" id="u1064">
+                    <!-- image -->
+                    <img class="block" id="u1064_img" src="images/monitor_01.jpg" alt="" width="352" height="285" />
+                </div>
+            </div>
+            <div class="browser_width colelem" id="u367-bw">
+                <div id="u367">
+                    <!-- group -->
+                    <div class="clearfix" id="u367_align_to_page">
+                        <a class="anchor_item grpelem" id="otziv"></a>
+                        <div class="clearfix grpelem" id="pu887-4">
+                            <!-- column -->
+                            <div class="clearfix colelem" id="u887-4">
+                                <!-- content -->
+                                <p>КОМУ НЕ ПОДХОДИТ ЭТОТ КУРС</p>
+                            </div>
+                            <div class="clearfix colelem" id="pu894">
+                                <!-- group -->
+                                <div class="rounded-corners clip_frame grpelem" id="u894">
+                                    <!-- image -->
+                                    <img class="block" id="u894_img" src="images/warning.png" alt="" width="245" height="245" />
+                                </div>
+                                <div class="clearfix grpelem" id="u885-17">
+                                    <!-- content -->
+                                    <p id="u885-2">Если вы абсолютный новичок, у вас&nbsp; НОЛЬ базовых знаний, и вы еще ни разу не торговали даже на демо-счету. Также если для вас FOREX и фондовая биржа&nbsp; это примерно одно&nbsp; то же, то вам пока не стоит его
+                                        проходить.
+                                    </p>
+                                    <p id="u885-3">&nbsp;</p>
+                                    <p id="u885-5">Почему?</p>
+                                    <p id="u885-7">Потому что вам будет тяжело, по крайней мере сперва. В этом курсе не будет воды, элементарных&nbsp; прописных истин,а помощи в настройке терминала и других консультаций для совсем новичков в рамках курса не предусмотрено.
+                                        Только самое ценное: торговля и рабочие торговые стратегии с первого дня!</p>
+                                    <p id="u885-8">&nbsp;</p>
+                                    <p id="u885-10">Только реальная работа, которая подразумевает ежедневную систематическую работу&nbsp; поможет заработать вам реальные деньги благодаря этой программе.</p>
+                                    <p id="u885-11">&nbsp;</p>
+                                    <p id="u885-13">Также если Вас устраивает положение Ваших дел, если Вы настроены несерьезно, то даже не вздумайте вписываться в этот курс! Верующие в волшебные &quot;супертаблетки&quot; и легкие деньги нам здесь не нужны!</p>
+                                    <p id="u885-14">&nbsp;</p>
+                                    <p id="u885-15">&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix colelem" id="u1062-4">
+                <!-- content -->
+                <p>Спешите, начало курса уже 10 марта!</p>
+            </div>
+            <div class="clearfix colelem" id="u244-4">
+                <!-- content -->
+                <p>ОТЗЫВЫ УЧАСТНИКОВ&nbsp; НАШИХ ОБУЧАЮЩИХ ПРОГРАММ</p>
+            </div>
+            <div class="clearfix colelem" id="pu285">
+                <!-- group -->
+                <div class="grpelem" id="u285">
+                    <!-- custom html -->
+
+                    <iframe class="actAsDiv" width="422" height="256" src="http://www.youtube.com/embed/50JYMHzKnbk?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1&wmode=transparent&rel=1" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+                <div class="grpelem" id="u469">
+                    <!-- custom html -->
+
+                    <iframe class="actAsDiv" width="422" height="256" src="http://www.youtube.com/embed/LCeHy62AdKs?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1&wmode=transparent&rel=1" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+            </div>
+            <div class="clearfix colelem" id="pu1213">
+                <!-- group -->
+                <div class="grpelem" id="u1213">
+                    <!-- custom html -->
+
+                    <iframe class="actAsDiv" width="422" height="256" src="http://www.youtube.com/embed/Th5Xw8J-cig?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1&wmode=transparent&rel=1" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+                <div class="grpelem" id="u1287">
+                    <!-- custom html -->
+
+                    <iframe class="actAsDiv" width="422" height="256" src="http://www.youtube.com/embed/SYLNFjnWZXk?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1&wmode=transparent&rel=1" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+            </div>
+            <div class="clearfix colelem" id="u1591-6">
+                <!-- content -->
+                <p>Пришло время улучшить Ваш трейдинг уже сейчас!</p>
+                <p>Успейте записаться на курс по лучшей цене!</p>
+            </div>
+            <div class="clip_frame colelem" id="u1585">
+                <!-- image -->
+                <img class="block" id="u1585_img" src="images/pic.png" alt="" width="409" height="219" />
+            </div>
+            <div class="clip_frame colelem" id="u1183">
+                <!-- image -->
+                <img class="block" id="u1183_img" src="images/qoutes.png" alt="" width="100" height="57" />
+            </div>
+            <div class="PamphletWidget clearfix colelem" id="pamphletu1153">
+                <!-- none box -->
+                <div class="ThumbGroup clearfix grpelem" id="u1173">
+                    <!-- none box -->
+                    <div class="popup_anchor">
+                        <div class="Thumb popup_element rounded-corners" id="u1175">
+                            <!-- simple frame -->
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="Thumb popup_element rounded-corners" id="u1174">
+                            <!-- simple frame -->
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="Thumb popup_element rounded-corners" id="u1176">
+                            <!-- simple frame -->
+                        </div>
+                    </div>
+                </div>
+                <div class="popup_anchor" id="u1154popup">
+                    <div class="ContainerGroup clearfix" id="u1154">
+                        <!-- stack box -->
+                        <div class="Container clearfix grpelem" id="u1155">
+                            <!-- column -->
+                            <div class="position_content" id="u1155_position_content">
+                                <div class="review clearfix colelem" id="u1157-4">
+                                    <!-- content -->
+                                    <p>Я прошел курс по дневной торговле у Саймона Брагинского прошлой весной. В своем обучении он делает акцент на чтении новостей и понимании поведения крупных игроков на рынке. Его алгоритм по ваходу в позицию на основании
+                                        новости и реакции акции на новость очень действенен и примерно в 80% процентов случаев позволяет заработать. Единственное, что поначалу сложно - так это реагировать на большое количество акций, но Саймон в первый
+                                        месяц&nbsp; помогает найти акции с наибольшим потенциалом. Я уже увеличил заход в позицию со 100 до 200 акций и впервые за 4 года вышел на стабильный уровень доходности.Я не очень хорошо понимаю новости в силу слабого
+                                        знания английского языка и поэтому подписался на ежедневную рассылку Саймона. Это мне экономит много времени и позволяет опираться на большой опыт Саймона в анализе новостей</p>
+                                </div>
+                                <div class="clearfix colelem" id="pu1156">
+                                    <!-- group -->
+                                    <div class="grpelem" id="u1156">
+                                        <!-- simple frame -->
+                                    </div>
+                                    <div class="rounded-corners grpelem" id="u1159">
+                                        <!-- image -->
+                                    </div>
+                                    <div class="grpelem" id="u1160">
+                                        <!-- simple frame -->
+                                    </div>
+                                </div>
+                                <div class="Name clearfix colelem" id="u1158-4">
+                                    <!-- content -->
+                                    <p>Николай</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u1161">
+                            <!-- column -->
+                            <div class="review clearfix colelem" id="u1164-8">
+                                <!-- content -->
+                                <p>Зовут меня Алексей, занимаюсь второй год торговлей на фондовом рынке. Торговал только по графикам по определенным формациям, скажу честно - в убыток. На днях я прошел курс Саймона по торговле новостными бумагами. Очень
+                                    простая и эффективная стратегия, особенно рекомендую эту стратегию для тех, кто не дружит с чтением графиков, и время открытия нью-йоркской биржи приходится на позднее время по местному времени, т.к. торговля начинается
+                                    сразу с открытия рынка и занимает не более часа, а то и еще меньше.</p>
+                                <p>Опробовал я ее сначала на демо-счете, а вчера 04.11.15 на реальном счете. Первая сделка акция WCG сразу +150$ время торговли 5 минут, счет открыл 1000$, риск на день 25$.</p>
+                                <p>В общем, очень доволен курсом и результатом, при этом цена курса очень маленькая, можно сказать, что вчера половину я вернул.</p>
+                            </div>
+                            <div class="clearfix colelem" id="pu1165">
+                                <!-- group -->
+                                <div class="grpelem" id="u1165">
+                                    <!-- simple frame -->
+                                </div>
+                                <div class="rounded-corners grpelem" id="u1163">
+                                    <!-- image -->
+                                </div>
+                                <div class="grpelem" id="u1166">
+                                    <!-- simple frame -->
+                                </div>
+                            </div>
+                            <div class="Name clearfix colelem" id="u1162-4">
+                                <!-- content -->
+                                <p>Алексей</p>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u1167">
+                            <!-- column -->
+                            <div class="position_content" id="u1167_position_content">
+                                <div class="review clearfix colelem" id="u1168-11">
+                                    <!-- content -->
+                                    <p>Приличные результаты появляются уже в ходе занятий.Совсем другой взгляд на торговлю, да и на графики смотришь другими глазами.</p>
+                                    <p>Если у вас что то не получается,не зарабатываете или стоите на месте. Или как я начинаете с нуля и хотите избежать многих ошибок, пройдите курс Олеся Срибного и результат не заставит себя ждать.</p>
+                                    <p>Я рекомендую посмотреть всем, кто только начинает торговать на фондовом рынке. И тем кто заканчивал какие-либо курсы, и тем более, кто еще нигде не учился. Вы узнаете о том, какие методы действительно помогут вам не
+                                        терять ваши деньги, а сохранять и зарабатывать.</p>
+                                    <p>Это жизненно необходимые знания. С ними трейдинг на высшем уровне.</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                                <div class="clearfix colelem" id="pu1171">
+                                    <!-- group -->
+                                    <div class="grpelem" id="u1171">
+                                        <!-- simple frame -->
+                                    </div>
+                                    <div class="rounded-corners grpelem" id="u1170">
+                                        <!-- image -->
+                                    </div>
+                                    <div class="grpelem" id="u1169">
+                                        <!-- simple frame -->
+                                    </div>
+                                </div>
+                                <div class="Name clearfix colelem" id="u1172-4">
+                                    <!-- content -->
+                                    <p>Юрий</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="anchor_item colelem" id="garanty"></a>
+            <div class="clearfix colelem" id="pu808">
+                <!-- group -->
+                <div class="browser_width grpelem" id="u808-bw">
+                    <div id="u808">
+                        <!-- simple frame -->
+                    </div>
+                </div>
+                <div class="clearfix grpelem" id="u814-4">
+                    <!-- content -->
+                    <p>НАШИ ГАРАНТИИ</p>
+                </div>
+                <div class="clearfix grpelem" id="u815-4">
+                    <!-- content -->
+                    <p>Гарантируем ли мы, что «Прибыльный Дейтрейдинг на NYSE» принесет Вам пользу?</p>
+                </div>
+                <div class="clearfix grpelem" id="u816-7">
+                    <!-- content -->
+                    <p id="u816-4">Да! Мы настолько уверены, что&nbsp; «<span id="u816-2">Прибыльный Дейтрейдинг на NYSE</span>» пригодится Вам, если Вы занимаетесь торговлей на американском фондовом рынке&nbsp; или только собираетесь этим заняться, что даем ГАРАНТИЮ:
+                        если вдруг по какой-либо причине на протяжении первых двух занятий Вы поймете, что эта программа не для Вас, просто напишите нам об этом, и мы вернем Вам деньги.</p>
+                    <p id="u816-5">&nbsp;</p>
+                </div>
+                <div class="clip_frame grpelem" id="u817">
+                    <!-- image -->
+                    <img class="block" id="u817_img" src="images/garantiya2.png" alt="" width="259" height="220" />
+                </div>
+                <div class="clearfix grpelem" id="u819-4">
+                    <!-- content -->
+                    <p>Спешите, количество мест в группе ограничено, начало 10 марта!</p>
+                </div>
+                <div class="clearfix grpelem" id="u820-4">
+                    <!-- content -->
+                    <p>Начало курса через:</p>
+                </div>
+                <div class="grpelem" id="u1295">
+                    <!-- custom html -->
+
+
+                    <div id="DateCountdown1" data-date="2016-3-10 19:0:00"></div>
+
+
+
+                    <script type="text/javascript">
+                        $("#DateCountdown1").TimeCircles({
+                            time: {
+                                Days: {
+                                    show: true
+                                },
+                                Hours: {
+                                    show: true
+                                },
+                                Minutes: {
+                                    show: true
+                                },
+                                Seconds: {
+                                    show: true
+                                }
+                            }
+                        });
+                        $("#DateCountdown1").TimeCircles({
+                            count_past_zero: false
+                        });
+
+                        $("#DateCountdown1").TimeCircles({
+                            bg_width: 0.5
+                        });
+
+
+                        $("#DateCountdown1").TimeCircles({
+                            time: {
+                                Days: {
+                                    color: "#EB6841"
+                                },
+                                Hours: {
+                                    color: "#EB6841"
+                                },
+                                Minutes: {
+                                    color: "#EB6841"
+                                },
+                                Seconds: {
+                                    color: "#EB6841"
+                                }
+                            }
+                        });
+                        $("#DateCountdown1").TimeCircles({
+                            circle_bg_color: "#6A4A3C"
+                        });
+
+                        var updateTime = function() {
+                            var date = $("#date").val();
+                            var time = $("#time").val();
+                            var datetime = date + ' ' + time + ':00';
+                            $("#DateCountdown1").data('date', datetime).TimeCircles().start();
+                        }
+                        $("#date1").change(updateTime).keyup(updateTime);
+                        $("#time1").change(updateTime).keyup(updateTime);
+                    </script>
+
+
+                </div>
+                <form class="form-grp clearfix grpelem" id="widgetu1568" method="post" enctype="multipart/form-data" action="scripts/form-u1568.php">
+                    <!-- none box -->
+                    <div class="fld-grp clearfix grpelem" id="widgetu1575" data-required="true">
+                        <!-- none box -->
+                        <label class="fld-label actAsDiv ts-------------------7 clearfix grpelem" id="u1577-4" for="widgetu1575_input"><!-- content --><span class="actAsPara" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]+$" required>Имя:</span></label>
+                        <span class="fld-input NoWrap actAsDiv ts-------------------7 clearfix grpelem" id="u1576-3"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1575_input" name="custom_U1575" tabindex="18"/></span>
+                    </div>
+                    <div class="fld-grp clearfix grpelem" id="widgetu1570" data-required="true" data-type="email">
+                        <!-- none box -->
+                        <label class="fld-label actAsDiv ts-------------------7 clearfix grpelem" id="u1572-4" for="widgetu1570_input"><!-- content --><span class="actAsPara">Электронная почта:</span></label>
+                        <span class="fld-input NoWrap actAsDiv ts-------------------7 clearfix grpelem" id="u1573-3"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1570_input" name="Email" tabindex="17"/></span>
+                    </div>
+                    <div class="clearfix grpelem" id="u1569-4">
+                        <!-- content -->
+                        <p>Отправка формы…</p>
+                    </div>
+                    <div class="clearfix grpelem" id="u1584-4">
+                        <!-- content -->
+                        <p>На сервере произошла ошибка.</p>
+                    </div>
+                    <div class="clearfix grpelem" id="u1583-4">
+                        <!-- content -->
+                        <p>Заявка отправлена</p>
+                    </div>
+                    <input class="submit-btn NoWrap grpelem" id="u1574-17" type="submit" value="" tabindex="20" />
+                    <!-- state-based BG images -->
+                    <div class="fld-grp clearfix grpelem" id="widgetu1579" data-required="true">
+                        <!-- none box -->
+                        <label class="fld-label actAsDiv ts-------------------7 clearfix grpelem" id="u1580-4" for="widgetu1579_input"><!-- content --><span class="actAsPara">Ваш телефон:</span></label>
+                        <span class="fld-input NoWrap actAsDiv ts-------------------7 clearfix grpelem" id="u1582-3"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu1579_input" name="custom_U1579" tabindex="19"/></span>
+                    </div>
+                </form>
+            </div>
+            <div class="clearfix colelem" id="u410-4">
+                <!-- content -->
+                <p>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</p>
+            </div>
+            <div class="PamphletWidget clearfix colelem" id="pamphletu373">
+                <!-- none box -->
+                <div class="ThumbGroup clearfix grpelem" id="u395">
+                    <!-- none box -->
+                    <div class="popup_anchor">
+                        <div class="popup_element Thumb clearfix" id="pu404">
+                            <!-- group -->
+                            <div class="popup_anchor">
+                                <div class="popup_element clearfix" id="u404">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u405-4">
+                                        <!-- content -->
+                                        <p>Это сложно?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="popup_element Thumb clearfix" id="pu398">
+                            <!-- group -->
+                            <div class="popup_anchor">
+                                <div class="popup_element clearfix" id="u398">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u399-4">
+                                        <!-- content -->
+                                        <p>NYSE — не моя тема, мне надо что-то более «земное».</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="popup_element Thumb clearfix" id="pu406">
+                            <!-- group -->
+                            <div class="popup_anchor">
+                                <div class="popup_element clearfix" id="u406">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u407-4">
+                                        <!-- content -->
+                                        <p>Я уже посмотрел много видео и вебинаров, но толку нет.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="popup_element Thumb clearfix" id="pu400">
+                            <!-- group -->
+                            <div class="popup_anchor">
+                                <div class="popup_element clearfix" id="u400">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u401-4">
+                                        <!-- content -->
+                                        <p>Нет денег.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="popup_element Thumb clearfix" id="pu396">
+                            <!-- group -->
+                            <div class="popup_anchor">
+                                <div class="popup_element clearfix" id="u396">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u397-4">
+                                        <!-- content -->
+                                        <p>Не верю в онлайн обучение.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="popup_element Thumb clearfix" id="pu408">
+                            <!-- group -->
+                            <div class="popup_anchor">
+                                <div class="popup_element clearfix" id="u408">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u409-4">
+                                        <!-- content -->
+                                        <p>Как я могу оплатить курс?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_anchor">
+                        <div class="popup_element Thumb clearfix" id="pu402">
+                            <!-- group -->
+                            <div class="popup_anchor">
+                                <div class="popup_element clearfix" id="u402">
+                                    <!-- group -->
+                                    <div class="clearfix grpelem" id="u403-4">
+                                        <!-- content -->
+                                        <p>Будет ли предоставляться запись данного курса участникам?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup_anchor" id="u376popup">
+                    <div class="ContainerGroup clearfix" id="u376">
+                        <!-- stack box -->
+                        <div class="Container clearfix grpelem" id="u377">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u378-4">
+                                <!-- content -->
+                                <p>При взгляде человека со стороны и очень далекого от биржи — возможно. Но для человека, который ранее имел опыт торговли на FOREX или на демо-счете большая часть информации будет более чем доступна. Вы без проблем сможете
+                                    приступать к торговле, отрабатывая на практике полученные стратегии, так что премудрости работы на бирже вы гарантированно освоите, а самое главное, что данном курсе очень много практики.</p>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u381">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u382-4">
+                                <!-- content -->
+                                <p>На самом деле это точно такая же биржа, как и «РТС-ММВБ», и работать на ней не сложнее. Вот только освоив NYSE, что при правильном подходе несложно, вы сможете играючи работать на любой другой бирже. А вот обратное несколько
+                                    проблематично.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u385">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u386-4">
+                                <!-- content -->
+                                <p>Но разве ранее вам давали настолько структурированную и актуальную&nbsp; на сегодняшний день информацию о трейдинге? Разве где-то еще тренер-практик вел вас за руку по дороге к стабильно прибыльной работе на бирже? Сразу
+                                    же после прохождения курса вы будете готовы к торговле на американском фондовом рынке.</p>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u387">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u388-4">
+                                <!-- content -->
+                                <p>Нет или все-таки просто боитесь их потерять? Не бойтесь, как показывает опыт, наши ученики «отбивают» вложения в наши обучающие программы уже за первые пару недель работы. А далее только зарабатывают и зарабатывают.</p>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u379">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u380-4">
+                                <!-- content -->
+                                <p>Занятия проходят в онлайн-режиме. На сегодняшний день Интернет дает нам всем замечательную возможность взаимодействовать через онлайн-вебинар, благодаря чему можно не тратить драгоценное время на перемещение по городу,
+                                    к тому же нет необходимости жить в одном городе и даже в одной стране. Вы конечно можете пройти и индивидуальное обучение у нашего преподавателя. Вот только стоить оно будет в разы дороже.</p>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u389">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u390-11">
+                                <!-- content -->
+                                <p>Оплатить курс можно следующими способами:</p>
+                                <p>1) моментальная оплата в Личном кабинете на нашем сайте</p>
+                                <p>2) WebMoney</p>
+                                <p>3) банковский SWIFT-перевод</p>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="Container invi clearfix grpelem" id="u383">
+                            <!-- group -->
+                            <div class="clearfix grpelem" id="u384-4">
+                                <!-- content -->
+                                <p>Да, все участники смогут получить запись всех занятий, чтобы была возможность впоследствии пересмотреть и заметить какие-то новые моменты.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="verticalspacer"></div>
+            <div class="clearfix colelem" id="pu1098">
+                <!-- group -->
+                <div class="browser_width grpelem" id="u1098-bw">
+                    <div id="u1098">
+                        <!-- simple frame -->
+                    </div>
+                </div>
+                <div class="clip_frame grpelem" id="u1099">
+                    <!-- image -->
+                    <img class="block" id="u1099_img" src="images/img_foot.png" alt="" width="684" height="287" />
+                </div>
+                <a class="nonblock nontext clearfix grpelem" id="u1101-4" href="politika.html" target="_blank">
+                    <!-- content -->
+                    <p>Политика конфиденциальности</p>
+                </a>
+                <div class="clearfix grpelem" id="u1104-8">
+                    <!-- content -->
+                    <p id="u1104-2">+7 499 918-67-61</p>
+                    <p id="u1104-4">email: info@sdg-trade.com</p>
+                    <p id="u1104-5">&nbsp;</p>
+                    <p id="u1104-6">&nbsp;</p>
+                </div>
+                <a class="nonblock nontext clip_frame grpelem" id="u1259" href="http://sdg-trade.com" target="_blank">
+                    <!-- image --><img class="block" id="u1259_img" src="images/logo.png" alt="" width="126" height="60" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="preload_images">
+        <img class="preload" src="images/u1372-17-r.png" alt="" />
+        <img class="preload" src="images/u1372-17-m.png" alt="" />
+        <img class="preload" src="images/u1372-17-fs.png" alt="" />
+        <img class="preload" src="images/close%204-u1383-r.png" alt="" />
+        <img class="preload" src="images/u1435-17-r.png" alt="" />
+        <img class="preload" src="images/u1435-17-m.png" alt="" />
+        <img class="preload" src="images/u1435-17-fs.png" alt="" />
+        <img class="preload" src="images/close%204-u1412-r.png" alt="" />
+        <img class="preload" src="images/u1535-17-r.png" alt="" />
+        <img class="preload" src="images/u1535-17-m.png" alt="" />
+        <img class="preload" src="images/u1535-17-fs.png" alt="" />
+        <img class="preload" src="images/close%204-u1546-r.png" alt="" />
+        <img class="preload" src="images/u1334-17-r.png" alt="" />
+        <img class="preload" src="images/u1334-17-m.png" alt="" />
+        <img class="preload" src="images/u1334-17-fs.png" alt="" />
+        <img class="preload" src="images/u1574-17-r.png" alt="" />
+        <img class="preload" src="images/u1574-17-m.png" alt="" />
+        <img class="preload" src="images/u1574-17-fs.png" alt="" />
+    </div>
+    <!-- JS includes -->
+    <script type="text/javascript">
+        if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+    </script>
+    <script type="text/javascript">
+        window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+    </script>
+    <script src="scripts/museutils.js?183364071" type="text/javascript"></script>
+    <script src="scripts/jquery.musepolyfill.bgsize.js?4004268962" type="text/javascript"></script>
+    <script src="scripts/jquery.watch.js?71412426" type="text/javascript"></script>
+    <script src="scripts/webpro.js?3803554875" type="text/javascript"></script>
+    <script src="scripts/musewpslideshow.js?242596657" type="text/javascript"></script>
+    <script src="scripts/jquery.museoverlay.js?493285861" type="text/javascript"></script>
+    <script src="scripts/touchswipe.js?4038331989" type="text/javascript"></script>
+    <!-- Other scripts -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            try {
+                (function() {
+                    var a = {},
+                        b = function(a) {
+                            if (a.match(/^rgb/)) return a = a.replace(/\s+/g, "").match(/([\d\,]+)/gi)[0].split(","), (parseInt(a[0]) << 16) + (parseInt(a[1]) << 8) + parseInt(a[2]);
+                            if (a.match(/^\#/)) return parseInt(a.substr(1), 16);
+                            return 0
+                        };
+                    (function() {
+                        $('link[type="text/css"]').each(function() {
+                            var b = ($(this).attr("href") || "").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);
+                            b && b[1] && b[2] && (a[b[1]] = b[2])
+                        })
+                    })();
+                    (function() {
+                        $("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+                        for (var c = $(".version"), d = 0; d < Muse.assets.required.length;) {
+                            var f = Muse.assets.required[d],
+                                g = f.match(/([\w\-\.]+)\.(\w+)$/),
+                                k = g && g[1] ? g[1] : null,
+                                g = g && g[2] ? g[2] : null;
+                            switch (g.toLowerCase()) {
+                                case "css":
+                                    k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
+                                    c.addClass(k);
+                                    var g = b(c.css("color")),
+                                        h = b(c.css("background-color"));
+                                    g != 0 || h != 0 ? (Muse.assets.required.splice(d, 1), "undefined" != typeof a[f] && (g != a[f] >>> 24 || h != (a[f] & 16777215)) && Muse.assets.outOfDate.push(f)) : d++;
+                                    c.removeClass(k);
+                                    break;
+                                case "js":
+                                    k.match(/^jquery-[\d\.]+/gi) &&
+                                        typeof $ != "undefined" ? Muse.assets.required.splice(d, 1) : d++;
+                                    break;
+                                default:
+                                    throw Error("Unsupported file type: " + g);
+                            }
+                        }
+                        c.remove();
+                        if (Muse.assets.outOfDate.length || Muse.assets.required.length) c = "Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.", (d = location && location.search && location.search.match && location.search.match(/muse_debug/gi)) && Muse.assets.outOfDate.length && (c += "\nOut of date: " + Muse.assets.outOfDate.join(",")), d && Muse.assets.required.length && (c += "\nMissing: " + Muse.assets.required.join(",")), alert(c)
+                    })()
+                })();
+                /* body */
+                Muse.Utils.transformMarkupToFixBrowserProblemsPreInit(); /* body */
+                Muse.Utils.prepHyperlinks(true); /* body */
+                Muse.Utils.resizeHeight() /* resize height */
+                Muse.Utils.initWidget('#widgetu1357', function(elem) {
+                    new WebPro.Widget.Form(elem, {
+                        validationEvent: 'submit',
+                        errorStateSensitivity: 'high',
+                        fieldWrapperClass: 'fld-grp',
+                        formSubmittedClass: 'frm-sub-st',
+                        formErrorClass: 'frm-subm-err-st',
+                        formDeliveredClass: 'frm-subm-ok-st',
+                        notEmptyClass: 'non-empty-st',
+                        focusClass: 'focus-st',
+                        invalidClass: 'fld-err-st',
+                        requiredClass: 'fld-err-st',
+                        ajaxSubmit: true
+                    });
+                }); /* #widgetu1357 */
+                Muse.Utils.initWidget('#pamphletu1341', function(elem) {
+                    new WebPro.Widget.ContentSlideShow(elem, {
+                        contentLayout_runtime: 'lightbox',
+                        event: 'click',
+                        deactivationEvent: 'none',
+                        autoPlay: false,
+                        displayInterval: 3000,
+                        transitionStyle: 'fading',
+                        transitionDuration: 500,
+                        hideAllContentsFirst: false,
+                        shuffle: false,
+                        enableSwipe: true,
+                        resumeAutoplay: false,
+                        resumeAutoplayInterval: 3000,
+                        playOnce: false,
+                        autoActivate_runtime: false
+                    });
+                }); /* #pamphletu1341 */
+                Muse.Utils.initWidget('#widgetu1426', function(elem) {
+                    new WebPro.Widget.Form(elem, {
+                        validationEvent: 'submit',
+                        errorStateSensitivity: 'high',
+                        fieldWrapperClass: 'fld-grp',
+                        formSubmittedClass: 'frm-sub-st',
+                        formErrorClass: 'frm-subm-err-st',
+                        formDeliveredClass: 'frm-subm-ok-st',
+                        notEmptyClass: 'non-empty-st',
+                        focusClass: 'focus-st',
+                        invalidClass: 'fld-err-st',
+                        requiredClass: 'fld-err-st',
+                        ajaxSubmit: true
+                    });
+                }); /* #widgetu1426 */
+                Muse.Utils.initWidget('#pamphletu1411', function(elem) {
+                    new WebPro.Widget.ContentSlideShow(elem, {
+                        contentLayout_runtime: 'lightbox',
+                        event: 'click',
+                        deactivationEvent: 'none',
+                        autoPlay: false,
+                        displayInterval: 3000,
+                        transitionStyle: 'fading',
+                        transitionDuration: 500,
+                        hideAllContentsFirst: false,
+                        shuffle: false,
+                        enableSwipe: true,
+                        resumeAutoplay: false,
+                        resumeAutoplayInterval: 3000,
+                        playOnce: false,
+                        autoActivate_runtime: false
+                    });
+                }); /* #pamphletu1411 */
+                Muse.Utils.initWidget('#widgetu1520', function(elem) {
+                    new WebPro.Widget.Form(elem, {
+                        validationEvent: 'submit',
+                        errorStateSensitivity: 'high',
+                        fieldWrapperClass: 'fld-grp',
+                        formSubmittedClass: 'frm-sub-st',
+                        formErrorClass: 'frm-subm-err-st',
+                        formDeliveredClass: 'frm-subm-ok-st',
+                        notEmptyClass: 'non-empty-st',
+                        focusClass: 'focus-st',
+                        invalidClass: 'fld-err-st',
+                        requiredClass: 'fld-err-st',
+                        ajaxSubmit: true
+                    });
+                }); /* #widgetu1520 */
+                Muse.Utils.initWidget('#pamphletu1504', function(elem) {
+                    new WebPro.Widget.ContentSlideShow(elem, {
+                        contentLayout_runtime: 'lightbox',
+                        event: 'click',
+                        deactivationEvent: 'none',
+                        autoPlay: false,
+                        displayInterval: 3000,
+                        transitionStyle: 'fading',
+                        transitionDuration: 500,
+                        hideAllContentsFirst: false,
+                        shuffle: false,
+                        enableSwipe: true,
+                        resumeAutoplay: false,
+                        resumeAutoplayInterval: 3000,
+                        playOnce: false,
+                        autoActivate_runtime: false
+                    });
+                }); /* #pamphletu1504 */
+                Muse.Utils.initWidget('#pamphletu665', function(elem) {
+                    new WebPro.Widget.ContentSlideShow(elem, {
+                        contentLayout_runtime: 'stack',
+                        event: 'mouseover',
+                        deactivationEvent: '',
+                        autoPlay: false,
+                        displayInterval: 3000,
+                        transitionStyle: 'fading',
+                        transitionDuration: 500,
+                        hideAllContentsFirst: false,
+                        shuffle: false,
+                        enableSwipe: true,
+                        resumeAutoplay: true,
+                        resumeAutoplayInterval: 3000,
+                        playOnce: false,
+                        autoActivate_runtime: false
+                    });
+                }); /* #pamphletu665 */
+                Muse.Utils.initWidget('#widgetu1324', function(elem) {
+                    new WebPro.Widget.Form(elem, {
+                        validationEvent: 'submit',
+                        errorStateSensitivity: 'high',
+                        fieldWrapperClass: 'fld-grp',
+                        formSubmittedClass: 'frm-sub-st',
+                        formErrorClass: 'frm-subm-err-st',
+                        formDeliveredClass: 'frm-subm-ok-st',
+                        notEmptyClass: 'non-empty-st',
+                        focusClass: 'focus-st',
+                        invalidClass: 'fld-err-st',
+                        requiredClass: 'fld-err-st',
+                        ajaxSubmit: true
+                    });
+                }); /* #widgetu1324 */
+                Muse.Utils.initWidget('#pamphletu1153', function(elem) {
+                    new WebPro.Widget.ContentSlideShow(elem, {
+                        contentLayout_runtime: 'stack',
+                        event: 'click',
+                        deactivationEvent: 'none',
+                        autoPlay: true,
+                        displayInterval: 8000,
+                        transitionStyle: 'vertical',
+                        transitionDuration: 500,
+                        hideAllContentsFirst: false,
+                        shuffle: false,
+                        enableSwipe: true,
+                        resumeAutoplay: true,
+                        resumeAutoplayInterval: 8000,
+                        playOnce: false,
+                        autoActivate_runtime: false
+                    });
+                }); /* #pamphletu1153 */
+                Muse.Utils.initWidget('#widgetu1568', function(elem) {
+                    new WebPro.Widget.Form(elem, {
+                        validationEvent: 'submit',
+                        errorStateSensitivity: 'high',
+                        fieldWrapperClass: 'fld-grp',
+                        formSubmittedClass: 'frm-sub-st',
+                        formErrorClass: 'frm-subm-err-st',
+                        formDeliveredClass: 'frm-subm-ok-st',
+                        notEmptyClass: 'non-empty-st',
+                        focusClass: 'focus-st',
+                        invalidClass: 'fld-err-st',
+                        requiredClass: 'fld-err-st',
+                        ajaxSubmit: true
+                    });
+                }); /* #widgetu1568 */
+                Muse.Utils.initWidget('#pamphletu373', function(elem) {
+                    new WebPro.Widget.ContentSlideShow(elem, {
+                        contentLayout_runtime: 'stack',
+                        event: 'click',
+                        deactivationEvent: 'none',
+                        autoPlay: false,
+                        displayInterval: 3000,
+                        transitionStyle: 'vertical',
+                        transitionDuration: 500,
+                        hideAllContentsFirst: false,
+                        shuffle: false,
+                        enableSwipe: true,
+                        resumeAutoplay: true,
+                        resumeAutoplayInterval: 3000,
+                        playOnce: false,
+                        autoActivate_runtime: false
+                    });
+                }); /* #pamphletu373 */
+                Muse.Utils.fullPage('#page'); /* 100% height page */
+                Muse.Utils.showWidgetsWhenReady(); /* body */
+                Muse.Utils.transformMarkupToFixBrowserProblems(); /* body */
+            } catch (e) {
+                if (e && 'function' == typeof e.notify) e.notify();
+                else Muse.Assert.fail('Error calling selector function:' + e);
+            }
+        });
+    </script>
+
+    <!--HTML Widget code-->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("body").attr("oncopy", "return false");
+            $("body").attr("oncontextmenu", "return false")
+        });
+    </script>
+
+    </body>
+
+</html>

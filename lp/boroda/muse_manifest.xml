@@ -1,0 +1,35 @@
+<manifest alg="2" build="2015.1.1.343" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="boroda.com" resolutions="1x" timestamp="1475224690884">
+  <folder name="css">
+    <file name="site_global.css" crc="4215482661"/>
+    <file name="master_a-master.css" crc="352347428" ref="index:ok"/>
+    <file name="index.css" crc="3794107653" ref="index"/>
+    <file name="ok.css" crc="300919785" ref="ok"/>
+    <file name="iefonts_ok.css" crc="429066691" ref="ok"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="484278746" ref="index:ok"/>
+    <file name="museutils.js" crc="531812214" ref="index:ok"/>
+    <file name="whatinput.js" crc="84559013" ref="index:ok"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="120190942" ref="index:ok"/>
+    <file name="jquery.watch.js" crc="3866665977" ref="index:ok"/>
+    <file name="pie.js" crc="3827607177" ref="index:ok"/>
+    <file name="jquery.scrolleffects.js" crc="3975164813" ref="index:ok"/>
+  </folder>
+  <folder name="images">
+    <file name="bg_1.jpg" crc="65822265" ref="index:ok"/>
+    <file name="logo-u2354.png" crc="3940631027" ref="index"/>
+    <file name="homepage-quant-icon.png" crc="3767607442" seo="true" ref="index"/>
+    <file name="homepage-prop-icon.png" crc="3858135806" seo="true" ref="index"/>
+    <file name="homepage-cq-icon.png" crc="3778461143" seo="true" ref="index"/>
+    <file name="ocnlvzoucpg-ieu2383-fr.png" crc="296304985" ref="index"/>
+    <file name="ocnlvzoucpg.jpg" crc="4083577891" ref="index"/>
+    <file name="monitor2.png" crc="466038727" seo="true" ref="index"/>
+    <file name="icon-calendar-white.png" crc="372160838" seo="true" ref="index"/>
+    <file name="bg-market-banner.jpg" crc="4287318981" ref="index"/>
+    <file name="data-stripe.png" crc="136660373" ref="index"/>
+    <file name="heart.png" crc="117585526" seo="true" ref="index:ok"/>
+    <file name="logo-u2908.png" crc="3940631027" ref="ok"/>
+  </folder>
+  <file name="index.html" crc="141917703" seo="true" mt="1475224677630" redirect="true"/>
+  <file name="ok.html" crc="18150416" seo="true" mt="1475138174241" redirect="true"/>
+</manifest>

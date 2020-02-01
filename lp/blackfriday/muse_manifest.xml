@@ -1,0 +1,49 @@
+<manifest alg="2" build="2015.1.1.343" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="bf.com" resolutions="1x" timestamp="1480331126781">
+  <folder name="css">
+    <file name="site_global.css" crc="4053170473"/>
+    <file name="index.css" crc="527048223" ref="index"/>
+    <file name="iefonts_index.css" crc="414182490" ref="index"/>
+    <file name="ok.css" crc="165420071" ref="ok"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="484278746" ref="index:ok"/>
+    <file name="museutils.js" crc="531812214" ref="index:ok"/>
+    <file name="whatinput.js" crc="84559013" ref="index:ok"/>
+    <file name="pie.js" crc="3827607177" ref="index:ok"/>
+    <file name="webpro.js" crc="4156477058" ref="index"/>
+    <file name="form_check.php" crc="373582055" ref="index"/>
+    <file name="form_throttle.php" crc="211381018" ref="index"/>
+    <file name="form_process.php" crc="6354943" ref="index"/>
+    <file name="form-u181.php" crc="4150455080" ref="index"/>
+    <file name="musewpslideshow.js" crc="4058618124" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="3810062583" ref="index"/>
+    <file name="touchswipe.js" crc="4174436727" ref="index"/>
+    <file name="form-u342.php" crc="240789719" ref="index"/>
+    <file name="jquery.watch.js" crc="3866665977" ref="index:ok"/>
+  </folder>
+  <folder name="images">
+    <file name="dwswhitestar.png" crc="532355786" seo="true" ref="index:ok"/>
+    <file name="sdg-study-box-psihologiya.png" crc="260724058" seo="true" ref="index"/>
+    <file name="sdg-study-box-tamplate copy.png" crc="325735998" seo="true" ref="index"/>
+    <file name="sdg-stil-box-tamplate.png" crc="4157878048" seo="true" ref="index"/>
+    <file name="form 8 icons timers-u203.png" crc="304441128" ref="index"/>
+    <file name="form 8 icons mail-u178.png" crc="81508369" ref="index"/>
+    <file name="form 8 icons people-u200.png" crc="4078357121" ref="index"/>
+    <file name="form 8 icons phone-u198.png" crc="366497113" ref="index"/>
+    <file name="u191-17.png" crc="405919175" ref="index"/>
+    <file name="u191-17-r.png" crc="433067853" ref="index"/>
+    <file name="u191-17-m.png" crc="433067853" ref="index"/>
+    <file name="u191-17-fs.png" crc="405919175" ref="index"/>
+    <file name="bf.jpg" crc="129086704" seo="true" ref="index:ok"/>
+    <file name="form 8 icons timers-u369.png" crc="304441128" ref="index"/>
+    <file name="form 8 icons mail-u365.png" crc="81508369" ref="index"/>
+    <file name="form 8 icons people-u367.png" crc="4078357121" ref="index"/>
+    <file name="form 8 icons phone-u363.png" crc="366497113" ref="index"/>
+    <file name="u347-17.png" crc="405919175" ref="index"/>
+    <file name="u347-17-r.png" crc="433067853" ref="index"/>
+    <file name="u347-17-m.png" crc="433067853" ref="index"/>
+    <file name="u347-17-fs.png" crc="405919175" ref="index"/>
+  </folder>
+  <file name="index.html" crc="251265195" seo="true" mt="1480331107889" redirect="true"/>
+  <file name="ok.html" crc="343970773" seo="true" mt="1479825904604" redirect="true"/>
+</manifest>

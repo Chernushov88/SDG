@@ -1,0 +1,109 @@
+<manifest alg="2" build="2015.0.0.309" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="kurs.com" resolutions="1x" timestamp="1457540466879">
+  <folder name="css">
+    <file name="site_global.css" crc="509469353"/>
+    <file name="index.css" crc="3896313882" ref="index"/>
+    <file name="iefonts_index.css" crc="531285818" ref="index"/>
+    <file name="politika.css" crc="3788843805" ref="politika"/>
+    <file name="iefonts_politika.css" crc="486262324" ref="politika"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4255413929" ref="index:politika"/>
+    <file name="museutils.js" crc="183364071" ref="index:politika"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4004268962" ref="index"/>
+    <file name="jquery.watch.js" crc="71412426" ref="index:politika"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+    <file name="webpro.js" crc="3803554875" ref="index"/>
+    <file name="form_check.php" crc="277267350" ref="index"/>
+    <file name="form_throttle.php" crc="3908387251" ref="index"/>
+    <file name="form_process.php" crc="24249335" ref="index"/>
+    <file name="form-u1357.php" crc="4247556096" ref="index"/>
+    <file name="musewpslideshow.js" crc="242596657" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="493285861" ref="index"/>
+    <file name="touchswipe.js" crc="4038331989" ref="index"/>
+    <file name="form-u1426.php" crc="4160223530" ref="index"/>
+    <file name="form-u1520.php" crc="4169545948" ref="index"/>
+    <file name="form-u1324.php" crc="3911275306" ref="index"/>
+    <file name="form-u1568.php" crc="3955941400" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="прибыльный-дейтрейдинг-favicon.ico" crc="117260632" ref="index"/>
+    <file name="bg1121.jpg" crc="3851189214" ref="index:politika"/>
+    <file name="form 8 icons timers-u1350.png" crc="304441128" ref="index"/>
+    <file name="form 8 icons mail-u1355.png" crc="81508369" ref="index"/>
+    <file name="form 8 icons people-u1353.png" crc="4078357121" ref="index"/>
+    <file name="form 8 icons phone-u1374.png" crc="366497113" ref="index"/>
+    <file name="u1372-17.png" crc="405919175" ref="index"/>
+    <file name="u1372-17-r.png" crc="433067853" ref="index"/>
+    <file name="u1372-17-m.png" crc="433067853" ref="index"/>
+    <file name="u1372-17-fs.png" crc="405919175" ref="index"/>
+    <file name="close 4-u1383.png" crc="89384071" ref="index"/>
+    <file name="close 4-u1383-r.png" crc="4247891885" ref="index"/>
+    <file name="form 8 icons timers-u1424.png" crc="304441128" ref="index"/>
+    <file name="form 8 icons mail-u1443.png" crc="81508369" ref="index"/>
+    <file name="form 8 icons people-u1419.png" crc="4078357121" ref="index"/>
+    <file name="form 8 icons phone-u1421.png" crc="366497113" ref="index"/>
+    <file name="u1435-17.png" crc="405919175" ref="index"/>
+    <file name="u1435-17-r.png" crc="433067853" ref="index"/>
+    <file name="u1435-17-m.png" crc="433067853" ref="index"/>
+    <file name="u1435-17-fs.png" crc="405919175" ref="index"/>
+    <file name="close 4-u1412.png" crc="89384071" ref="index"/>
+    <file name="close 4-u1412-r.png" crc="4247891885" ref="index"/>
+    <file name="form 8 icons timers-u1513.png" crc="304441128" ref="index"/>
+    <file name="form 8 icons mail-u1518.png" crc="81508369" ref="index"/>
+    <file name="form 8 icons people-u1516.png" crc="4078357121" ref="index"/>
+    <file name="form 8 icons phone-u1537.png" crc="366497113" ref="index"/>
+    <file name="u1535-17.png" crc="405919175" ref="index"/>
+    <file name="u1535-17-r.png" crc="433067853" ref="index"/>
+    <file name="u1535-17-m.png" crc="433067853" ref="index"/>
+    <file name="u1535-17-fs.png" crc="405919175" ref="index"/>
+    <file name="close 4-u1546.png" crc="89384071" ref="index"/>
+    <file name="close 4-u1546-r.png" crc="4247891885" ref="index"/>
+    <file name="sdgtrade.png" crc="3837397701" seo="true" ref="index"/>
+    <file name="bg-pamm.png" crc="4098762631" ref="index"/>
+    <file name="0491.jpg" crc="269594680" seo="true" ref="index"/>
+    <file name="earn-3.jpg" crc="95383017" seo="true" ref="index"/>
+    <file name="earn-4.jpg" crc="511207818" seo="true" ref="index"/>
+    <file name="vision-1.jpg" crc="4189277873" seo="true" ref="index"/>
+    <file name="forecasts-bg.jpg" crc="245497810" ref="index"/>
+    <file name="222000.jpg" crc="363691346" seo="true" ref="index"/>
+    <file name="foto.jpg" crc="171910148" seo="true" ref="index"/>
+    <file name="arrow-scenario-1.png" crc="3838123402" seo="true" ref="index"/>
+    <file name="1.png" crc="460837878" seo="true" ref="index"/>
+    <file name="2.png" crc="4217724210" seo="true" ref="index"/>
+    <file name="3.png" crc="3778229962" seo="true" ref="index"/>
+    <file name="4.png" crc="478842422" seo="true" ref="index"/>
+    <file name="5.png" crc="122100768" seo="true" ref="index"/>
+    <file name="bg-live.jpg" crc="282639612" ref="index"/>
+    <file name="dot hatch.png" crc="224740808" ref="index"/>
+    <file name="bg.png" crc="4033137291" seo="true" ref="index"/>
+    <file name="clients-pattern.jpg" crc="3964197499" ref="index"/>
+    <file name="iphone.jpg" crc="80491396" seo="true" ref="index"/>
+    <file name="источник дополнительного дохода.png" crc="4000062665" seo="true" ref="index"/>
+    <file name="зарабатывать прямо из дома.png" crc="161486133" seo="true" ref="index"/>
+    <file name="putiwestvennik.png" crc="4265867280" seo="true" ref="index"/>
+    <file name="naviki.png" crc="3883590497" seo="true" ref="index"/>
+    <file name="u1334-17.png" crc="349698827" ref="index"/>
+    <file name="u1334-17-r.png" crc="209027139" ref="index"/>
+    <file name="u1334-17-m.png" crc="209027139" ref="index"/>
+    <file name="u1334-17-fs.png" crc="349698827" ref="index"/>
+    <file name="monitor_01.jpg" crc="3924962656" seo="true" ref="index"/>
+    <file name="backgrnd02.jpg" crc="178629919" ref="index"/>
+    <file name="warning.png" crc="3839319189" seo="true" ref="index"/>
+    <file name="pic.png" crc="386928909" seo="true" ref="index"/>
+    <file name="qoutes.png" crc="49248888" seo="true" ref="index"/>
+    <file name="no-profile-img-ieu1159-fr.png" crc="3925026441" ref="index"/>
+    <file name="no-profile-img.gif" crc="414642568" ref="index"/>
+    <file name="12143305_457512961086782_5618314539361461223_n.jpg" crc="4266169424" ref="index"/>
+    <file name="question-pattern.jpg" crc="137836767" ref="index:politika"/>
+    <file name="garantiya2.png" crc="3764838204" seo="true" ref="index"/>
+    <file name="u1574-17.png" crc="349698827" ref="index"/>
+    <file name="u1574-17-r.png" crc="209027139" ref="index"/>
+    <file name="u1574-17-m.png" crc="209027139" ref="index"/>
+    <file name="u1574-17-fs.png" crc="349698827" ref="index"/>
+    <file name="img_foot.png" crc="4009262701" seo="true" ref="index"/>
+    <file name="logo.png" crc="3786689811" seo="true" ref="index"/>
+    <file name="sdgtrade-crop-u394.png" crc="169328325" seo="true" ref="politika"/>
+  </folder>
+  <file name="index.html" crc="3995796866" seo="true" mt="1457540173411" redirect="true"/>
+  <file name="politika.html" crc="327680050" seo="true" mt="1448623249945" redirect="true"/>
+</manifest>

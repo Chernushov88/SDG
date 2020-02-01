@@ -1,0 +1,21 @@
+.video-container{position:relative;padding-bottom:56.25%;padding-top:60px;overflow:hidden;margin-bottom:-1px;margin-right:-1px;}
+.video-container iframe,
+.video-container object,
+.video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;}
+.videocarousel .carousel-control .glyphicon-chevron-left{top:35%;font-size:20px;left:5%;margin:0;}
+.videocarousel .carousel-control .glyphicon-chevron-right{top:35%;font-size:20px;left:33%;margin:0;}
+.videocarousel .carousel-inner{border:2px solid #e5e5e5;}
+.videocarousel .carousel-control.left,.videocarousel .carousel-control.right{color:#ffffff;background:none;top:50%;transform:translate(0,-50%);-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);opacity:1;height:120px;}
+.videocarousel .controls{display:none;}
+.videocarousel .carousel-control:hover{text-decoration:none;filter:alpha(opacity=60);outline:0;opacity:0.6;}
+.videocarousel .left-button{height:70px;width:35px;border-radius:0 90px 90px 0;top:50%;left:20%;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);-moz-border-radius:0 90px 90px 0;-webkit-border-radius:0 90px 90px 0;display:inline-block;position:relative;float:left;margin-left:-1px;}
+.videocarousel .right-button{height:70px;width:35px;border-radius:90px 0 0 90px;top:50%;right:20%;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);-moz-border-radius:90px 0 0 90px;-webkit-border-radius:90px 0 0 90px;display:inline-block;position:relative;float:right;margin-right:-1px;}
+.videocarousel .carousel-caption{display:none;bottom:0;font-size:12px;text-align:center;opacity:1;padding:7px 30px 7px;text-transform:uppercase;z-index:11;pointer-events:none;}
+@media screen and (min-width:768px){.videocarousel .right-button{height:120px;width:60px;border-radius:90px 0 0 90px;-moz-border-radius:90px 0 0 90px;-webkit-border-radius:90px 0 0 90px;display:inline-block;position:relative;float:right;}
+.videocarousel .left-button{height:120px;width:60px;border-radius:0 90px 90px 0;-moz-border-radius:0 90px 90px 0;-webkit-border-radius:0 90px 90px 0;display:inline-block;position:relative;float:left;}
+.videocarousel .carousel-control .glyphicon-chevron-left{top:35%;font-size:30px;left:10%;}
+.videocarousel .carousel-control .glyphicon-chevron-right{top:35%;font-size:30px;left:35%;}
+.videocarousel .carousel-caption{font-size:18px;padding:15px 20px 15px;}
+}
+@media screen and (min-width:992px){.videocarousel .carousel-caption{font-size:18px;padding:15px 20px 15px;}
+}

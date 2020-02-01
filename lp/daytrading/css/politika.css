@@ -1,0 +1,259 @@
+.version.politika /* version checker */
+{
+	color: #0000E1;
+	background-color: #D52B1D;
+}
+
+.html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 2449px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pu1121
+{
+	width: 0.01px;
+	margin-right: -10000px;
+	margin-top: -36px;
+	margin-left: -100px;
+}
+
+#u1121
+{
+	z-index: 3;
+	min-height: 644px;
+	padding-bottom: 20px;
+	background: transparent url("../images/bg1121.jpg") repeat left top;
+}
+
+#u1127
+{
+	z-index: 11;
+	width: 333px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 577px;
+	left: 414px;
+}
+
+#u1128
+{
+	z-index: 12;
+	width: 331px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #009245;
+	padding-bottom: 14px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u1129-4
+{
+	z-index: 13;
+	width: 332px;
+	min-height: 38px;
+	background-color: transparent;
+	line-height: 36px;
+	color: #FFFFFF;
+	font-size: 30px;
+	text-align: center;
+	font-family: ubuntu, sans-serif;
+	font-weight: 700;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 13px;
+	left: -1px;
+}
+
+#u1121-bw
+{
+	z-index: 3;
+	min-height: 644px;
+}
+
+#u1122
+{
+	z-index: 4;
+	height: 79px;
+	background-color: #000000;
+	opacity: 0.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+}
+
+#u1122-bw
+{
+	z-index: 4;
+	height: 79px;
+}
+
+#u1124
+{
+	z-index: 5;
+	width: 58px;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 7px;
+	left: 104px;
+}
+
+#u1126-4
+{
+	z-index: 7;
+	width: 920px;
+	min-height: 73px;
+	background-color: transparent;
+	line-height: 43px;
+	color: #000000;
+	font-size: 36px;
+	text-align: center;
+	font-family: lato, sans-serif;
+	font-weight: 400;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 79px;
+	left: 120px;
+}
+
+#u1135-4
+{
+	z-index: 17;
+	width: 94px;
+	min-height: 23px;
+	background-color: transparent;
+	color: #7F7F7F;
+	font-size: 20px;
+	line-height: 24px;
+	font-family: lato, sans-serif;
+	font-weight: 700;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 25px;
+	left: 169px;
+}
+
+#pu1289-4
+{
+	width: 0.01px;
+	padding-bottom: 45px;
+	margin-right: -10000px;
+	margin-top: -11px;
+	margin-left: 878px;
+}
+
+#u1289-4
+{
+	z-index: 107;
+	width: 139px;
+	min-height: 38px;
+	background-color: transparent;
+	color: #009245;
+	font-size: 14px;
+	text-align: center;
+	font-family: ubuntu, sans-serif;
+	font-weight: 400;
+	position: fixed;
+	top: 25px;
+	left: 50%;
+	margin-left: 398px;
+}
+
+#u1290-4
+{
+	z-index: 111;
+	width: 139px;
+	min-height: 26px;
+	background-color: transparent;
+	color: #009245;
+	font-size: 14px;
+	text-align: center;
+	font-family: ubuntu, sans-serif;
+	font-weight: 400;
+	position: fixed;
+	top: 44px;
+	left: 50%;
+	margin-left: 398px;
+}
+
+#u1120
+{
+	z-index: 2;
+	min-height: 1955px;
+	padding-bottom: 1px;
+	background: transparent url("../images/question-pattern.jpg") repeat left top;
+}
+
+#u1121_align_to_page,#u1120_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+	left: -100px;
+}
+
+#u1136-86
+{
+	z-index: 21;
+	width: 920px;
+	min-height: 679px;
+	background-color: transparent;
+	font-size: 16px;
+	line-height: 19px;
+	font-family: ubuntu, sans-serif;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 112px;
+	left: 120px;
+}
+
+#u1136-2
+{
+	font-weight: 400;
+}
+
+#u1136-3,#u1136-4,#u1136-6,#u1136-7,#u1136-9,#u1136-10,#u1136-12,#u1136-13,#u1136-15,#u1136-16,#u1136-18,#u1136-19,#u1136-21,#u1136-22,#u1136-24,#u1136-25,#u1136-27,#u1136-28,#u1136-30,#u1136-31,#u1136-33,#u1136-35,#u1136-36,#u1136-38,#u1136-40,#u1136-41,#u1136-43,#u1136-44,#u1136-46,#u1136-47,#u1136-48,#u1136-49,#u1136-51,#u1136-52,#u1136-53,#u1136-55,#u1136-56,#u1136-57,#u1136-59,#u1136-60,#u1136-61,#u1136-63,#u1136-64,#u1136-65,#u1136-67,#u1136-68,#u1136-70,#u1136-71,#u1136-73,#u1136-74,#u1136-75,#u1136-77,#u1136-78,#u1136-80,#u1136-81,#u1136-83,#u1136-84
+{
+	font-weight: 300;
+}
+
+#u1120-bw
+{
+	z-index: 2;
+	min-height: 1955px;
+	margin-bottom: -36px;
+	margin-top: 529px;
+}
+
+body
+{
+	position: relative;
+	min-width: 960px;
+	padding-top: 36px;
+	padding-bottom: 35px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+	margin-bottom: -528px;
+}
+

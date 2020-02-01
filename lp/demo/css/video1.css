@@ -1,0 +1,183 @@
+.version.video1 /* version checker */
+{
+	color: #0000F6;
+	background-color: #1C249B;
+}
+
+#muse_css_mq
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	min-height: 992.95px;
+	background-image: none;
+	border-width: 0px;
+	border-color: #000000;
+	background-color: transparent;
+	padding-top: 7px;
+	padding-bottom: 0px;
+	width: 100%;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u649
+{
+	z-index: 3;
+	background-color: transparent;
+	position: relative;
+	width: 16.15%;
+	margin-left: 41.88%;
+}
+
+#u649_img
+{
+	width: 100%;
+}
+
+#ppu758
+{
+	margin-top: 18px;
+	width: 100%;
+}
+
+#pu758
+{
+	margin-right: -10000px;
+	margin-top: 17px;
+	width: 25.11%;
+	margin-left: 2.09%;
+}
+
+#u758
+{
+	z-index: 16;
+	min-height: 100px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	width: 82.99%;
+	margin-left: 1.66%;
+}
+
+#u776
+{
+	z-index: 17;
+	min-height: 100px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	margin-top: 57px;
+	position: relative;
+	width: 82.99%;
+}
+
+#u777
+{
+	z-index: 18;
+	min-height: 100px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	margin-top: 64px;
+	position: relative;
+	width: 82.99%;
+	margin-left: 17.02%;
+}
+
+#pu665
+{
+	margin-right: -10000px;
+	width: 48.13%;
+	margin-left: 28.13%;
+}
+
+#u665
+{
+	z-index: 5;
+	min-height: 362px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	width: 100%;
+}
+
+#u682
+{
+	z-index: 15;
+	min-height: 319px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	margin-top: 28px;
+	position: relative;
+	width: 90.91%;
+}
+
+#u673-9
+{
+	z-index: 6;
+	min-height: 138px;
+	background-color: transparent;
+	color: #FFFFFF;
+	line-height: 29px;
+	font-size: 24px;
+	font-family: pt-sans-narrow, sans-serif;
+	font-weight: 700;
+	margin-top: 44px;
+	position: relative;
+	width: 90%;
+	margin-left: 5%;
+}
+
+#u673-2,#u673-3,#u673-5,#u673-6
+{
+	text-align: center;
+}
+
+#u679
+{
+	z-index: 2;
+	height: 1041px;
+	background-color: #000000;
+	opacity: 0.46;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=46)";
+	filter: alpha(opacity=46);
+}
+
+.js body
+{
+	visibility: hidden;
+}
+
+.js body.initialized
+{
+	visibility: visible;
+}
+
+#u679-bw
+{
+	z-index: 2;
+	margin-top: -979px;
+	margin-bottom: -979px;
+	height: 1041px;
+}
+
+.html
+{
+	background: #D0D0D0 url("../images/quotes2-1920x1200.jpg") no-repeat left top scroll;
+	background-size: cover;
+}
+
+body
+{
+	position: relative;
+	min-width: 320px;
+}
+
