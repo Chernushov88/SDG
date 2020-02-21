@@ -1,7 +1,9 @@
-RewriteEngine On
-RewriteBase /
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.html?\ HTTP/
-RewriteRule ^(.*)index\.html?$ https://sdg-trade.com/lp/psihologiya/$1 [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^www\.sdg-trade\.com$ [NC]
-RewriteRule ^(.*)$ https://sdg-trade.com/lp/psihologiya/$1 [R=301,L]
+<FilesMatch "\.(html|htm|js|css)$">
+FileETag None
+<ifModule mod_headers.c>
+Header unset ETag
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+</ifModule>
+</FilesMatch>

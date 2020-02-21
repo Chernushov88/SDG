@@ -3589,10 +3589,14 @@ input.form-control {
   padding: 5px;
 }
 #education li {
-  list-style: none;
+  list-style: none; 
   padding: 5px;
   color: #000;
 }
+#section_primeru .container{
+  max-width: 1020px;
+}
+
 @media (min-width: 1200px) {
   #education .container {
     width: 950px;
@@ -7208,6 +7212,21 @@ h4.media-heading {
   align-items: center;
   justify-content: center;
 }
+.videoPoster-1{
+  background-image: url(../images/brifing-sdg-1.jpg);
+}
+.videoPoster-2{
+  background-image: url(../images/razbor-sdg-2.jpg);
+}
+.videoPoster-3{
+  background-image: url(../images/analiz-sdg-3.jpg);
+}
+.videoPoster-4{
+  background-image: url(../images/strategy-sdg-4.jpg);
+}
+.videoPoster-5{
+  background-image: url(../images/online-sdg-5.jpg);
+}
 .videoPoster__btn {
   cursor: pointer;
   position: relative;
@@ -7245,9 +7264,10 @@ h4.media-heading {
 .primeru__video {
   display: flex;
   align-items: center;
-  flex-basis: 50%;
-  max-width: 50%;
+  flex-basis: 100%;
+  max-width: 100%;
   padding: 10px;
+  padding: 0 10px;
 }
 .primeru__video-block .embed-responsive {
   margin-bottom: 20px;

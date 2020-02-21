@@ -268,19 +268,16 @@
                     <span></span>
                     </div>
                     <div class="page-section__info">
-                        <p>Суть программы заключается во взращивании трейдера до профессионального уровня с последующим
-                            приглашением работать на капитал компании в торговом зале или удаленно.<br><br> Главная и
+                        <p>Цель программы: взрастить трейдера-профессионала, который сможет самостоятельно эффективно торговать на фондовых биржах США или же устроиться работать в проп-фирму.<br><br> Главная и
                             уникальная ценность программы "Трансформация
                             365" - это погружение в ежедневную работу в профессиональной среде. На протяжении всего
-                            курса, каждый рабочий день мы с вами будем работать в разных форматах. В программе принимают
-                            участие наши штатные трейдера, директор обучающего
-                            центра, риск-менеджер, кураторы программы.</p>
+                            курса, каждый рабочий день мы с вами будем работать в разных форматах. В программе принимают участие профессиональные трейдеры и инвесторы.</p>
                     </div>
 
 
                     <!-- <hr class="page-divider half"/> -->
                     <div class="row row-eq-height">
-                        <div class="col-sm-6 col-md-3 feature">
+                        <div class="col-sm-6 col-md-4 feature">
                             <div class="media" data-animation="fadeInUp" data-animation-delay="100">
                                 <div class="media-object  fa ">
                                     <picture>
@@ -296,7 +293,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3 feature">
+                        <div class="col-sm-6 col-md-4 feature">
                             <div class="media" data-animation="fadeInUp" data-animation-delay="100">
                                 <div class="media-object  fa ">
                                     <picture>
@@ -312,7 +309,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3 feature">
+                        <!--<div class="col-sm-6 col-md-4 feature">
                             <div class="media" data-animation="fadeInUp" data-animation-delay="300">
                                 <div class="media-object  fa ">
                                     <picture>
@@ -327,8 +324,8 @@
                                     <p>Возможность попасть в торговый зал к профессиональным трейдерам</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 feature">
+                        </div>-->
+                        <!--<div class="col-sm-6 col-md-3 feature">
                             <div class="media" data-animation="fadeInUp" data-animation-delay="500">
                                 <div class="media-object  fa ">
                                     <picture>
@@ -343,62 +340,8 @@
                                     <p>Капитал в управление, ограниченный только вашими возможностями</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row row-eq-height">
-                        <div class="col-sm-6 col-md-3 feature">
-                            <div class="media" data-animation="fadeInUp" data-animation-delay="300">
-                                <div class="media-object  fa ">
-                                    <picture>
-                                        <source type="image/webp" srcset="images/01.webp">
-                                        <source type="image/png" srcset="images/01.png">
-                                        <img src="images/01.png" class="img-responsive"
-                                            alt="из «home-трейдера» в профессионалы">
-                                    </picture>
-
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Возможность стать профессионалом</h4>
-                                    <p>Реальная возможность превратиться из «home-трейдера» в профессионала</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 feature">
-                            <div class="media" data-animation="fadeInUp" data-animation-delay="500">
-                                <div class="media-object  fa ">
-                                    <picture>
-                                        <source type="image/webp" srcset="images/05.webp">
-                                        <source type="image/png" srcset="images/05.png">
-                                        <img src="images/05.png" class="img-responsive"
-                                            alt="Трансформация 365 - программа обучения и взаимодействия по трейдингу">
-                                    </picture>
-
-                                </div>
-                                <div class="media-body" style="padding: 0 20px 15px;">
-                                    <h4 class="media-heading">Знание и опыт трейдеров </h4>
-                                    <p>Успешный опыт prop-трейдеров, которые более 10 лет на рынке</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 feature">
-                            <div class="media" data-animation="fadeInUp" data-animation-delay="500">
-                                <div class="media-object  fa ">
-                                    <picture>
-                                        <source type="image/webp" srcset="images/02.webp">
-                                        <source type="image/png" srcset="images/02.png">
-                                        <img src="images/02.png" class="img-responsive"
-                                            alt="Трансформация 365 - программа обучения и взаимодействия по трейдингу">
-                                    </picture>
-
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Постоянный контроль и наблюдение</h4>
-                                    <p>Жесткий риск- и мани-менеджмент</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 feature">
+                        </div>-->
+			<div class="col-sm-6 col-md-4 feature">
                             <div class="media" data-animation="fadeInUp" data-animation-delay="500">
                                 <div class="media-object  fa ">
                                     <picture>
@@ -415,6 +358,61 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row row-eq-height">
+                        <div class="col-sm-6 col-md-4 feature">
+                            <div class="media" data-animation="fadeInUp" data-animation-delay="300">
+                                <div class="media-object  fa ">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/01.webp">
+                                        <source type="image/png" srcset="images/01.png">
+                                        <img src="images/01.png" class="img-responsive"
+                                            alt="из «home-трейдера» в профессионалы">
+                                    </picture>
+
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Возможность стать профессионалом</h4>
+                                    <p>Реальная возможность превратиться из «home-трейдера» в профессионала</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 feature">
+                            <div class="media" data-animation="fadeInUp" data-animation-delay="500">
+                                <div class="media-object  fa ">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/05.webp">
+                                        <source type="image/png" srcset="images/05.png">
+                                        <img src="images/05.png" class="img-responsive"
+                                            alt="Трансформация 365 - программа обучения и взаимодействия по трейдингу">
+                                    </picture>
+
+                                </div>
+                                <div class="media-body" style="padding: 0 20px 15px;">
+                                    <h4 class="media-heading">Знание и опыт трейдеров </h4>
+                                    <p>Успешный опыт prop-трейдеров, которые более 10 лет на рынке</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 feature">
+                            <div class="media" data-animation="fadeInUp" data-animation-delay="500">
+                                <div class="media-object  fa ">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/02.webp">
+                                        <source type="image/png" srcset="images/02.png">
+                                        <img src="images/02.png" class="img-responsive"
+                                            alt="Трансформация 365 - программа обучения и взаимодействия по трейдингу">
+                                    </picture>
+
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Постоянный контроль и наблюдение</h4>
+                                    <p>Жесткий риск- и мани-менеджмент</p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -568,7 +566,7 @@
                                         data-parent="#accordion2">
                                         <div class="card-body">
                                             На этих занятиях вы сможете видеть, на какие инструменты обращают внимание
-                                            профессиональные трейдеры и зарабатывать там, где зарабатываем мы. Для
+                                            профессиональные трейдеры и зарабатывать там, где зарабатывают они. Для
                                             новичка такая работа с нами будет полезна тем, что мы с нуля научим отбирать
                                             акции и профессионально анализировать
                                             рынок. Для практикующего трейдера это будет отличная возможность сравнить
@@ -583,7 +581,7 @@
                                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         <h5 class="mb-0">
                                             <span class="">
-                                                Ежедневные "живые" занятия с трейдерами нашей команды
+                                                Ежедневные "живые" занятия с трейдерами-профессионалами
                                             </span>
                                             <i class="open-icon "><svg xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -625,7 +623,7 @@
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                         data-parent="#accordion2">
                                         <div class="card-body">
-                                            Трейдеры нашего офиса открыты для вас и всегда смогут направить в нужном
+                                            Трейдеры наставники открыты для вас и всегда смогут направить в нужном
                                             направлении, решить вопрос психологии, стратегии, да и любой возникший
                                             вопрос. Вы не будете 1 на 1 с рынком и своими проблемами.
                                         </div>
@@ -656,7 +654,7 @@
                                             у вас. Постоянная коррекция позволит выйти на стабильный заработок не путем
                                             тысяч ошибок и потерянных денег,
                                             а с помощью знаний профессионала.
-                                            <div>
+                                            <!--<div>
                                                 <video width="200" height="150" class="embed-responsive-item" controls
                                                     preload="none">
                                                     <source src="video/razbor4.mp4" type="video/mp4">
@@ -665,7 +663,7 @@
                                                     preload="none">
                                                     <source src="video/razbor5.mp4" type="video/mp4">
                                                 </video>
-                                            </div>
+                                            </div>-->
 
                                         </div>
                                     </div>
@@ -690,10 +688,7 @@
                                         data-parent="#accordion2">
                                         <div class="card-body">
                                             Часто начинающий трейдер видит начало своего пути, как вход в темный,
-                                            дремучий лес. Наши трейдеры, как проводники, «возьмут вас за руку» и
-                                            проведут от азов трейдинга до уверенной торговли. Мы трейдеров растим 14 лет
-                                            к себе в команду и знаем, как это делать
-                                            правильно.
+                                            дремучий лес. Опытные трейдеры, как проводники, «возьмут вас за руку» и проведут от азов трейдинга до уверенной торговли. Мы растим трейдеров более 10 лет, и знаем, как это делать эффективно.
                                         </div>
                                     </div>
                                 </div>
@@ -720,16 +715,16 @@
                                             Имея рабочие, актуальные стратегии и знания, как их адаптировать под
                                             изменчивый рынок – Вы будете всегда во всеоружии, а не выискать по крупицам
                                             информацию из интернета или пытаться «догнать» рынок самостоятельно.
-                                            <div> <video width="200" height="150" class="embed-responsive-item" controls
+                                            <!--<div> <video width="200" height="150" class="embed-responsive-item" controls
                                                     preload="none">
                                                     <source src="video/razbor.mp4" type="video/mp4">
                                                 </video>
-                                            </div>
+                                            </div>-->
 
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <!--<div class="card">
                                     <div class="card-header" role="tablist" id="headingSeven" data-toggle="collapse"
                                         data-target="#collapseeigth" aria-expanded="false"
                                         aria-controls="collapseeigth">
@@ -756,8 +751,8 @@
                                             и сделать трейдинг основным источником дохода.
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card">
+                                </div>-->
+                                <!--<div class="card">
                                     <div class="card-header" role="tablist" id="headingEight" data-toggle="collapse"
                                         data-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
                                         <h5 class="mb-0">
@@ -782,8 +777,8 @@
                                             копить на следующий.
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card">
+                                </div>-->
+                                <!--<div class="card">
                                     <div class="card-header" role="tablist" id="headingNine" data-toggle="collapse"
                                         data-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
                                         <h5 class="mb-0">
@@ -806,7 +801,7 @@
                                             знания у ТОП трейдеров и невероятную мотивацию к достижениям!
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                                 <div class="card">
                                     <div class="card-header" role="tablist" id="headingTen" data-toggle="collapse"
                                         data-target="#collapseeleven" aria-expanded="false"
@@ -877,16 +872,17 @@
                         <div class="col-lg-4 block_edication_item">
                             <div class="plan-education__item">
                                 <p class="education_step">3 этап</p>
-                                <p class="education_name">Совместная торговля и коррекция</p>
+                                <p class="education_name">Практика и коррекция</p>
                                 <div class="line_education"></div>
                                 <ul>
                                     <li>- Совместный анализ рынка</li>
                                     <li>- Разбор ваших сделок</li>
-                                    <li>- Коррекция от проф. трейдеров и риск-менеджера</li>
+                                    <li>- Обратная связь, коррекция и помощь наставников</li>
+				    <li>- Обмен опытом и нетворкинг</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 block_edication_item">
+                        <!--<div class="col-lg-4 block_edication_item">
                             <div class="plan-education__item">
                                 <p class="education_step">4 этап</p>
                                 <p class="education_name">Отбор SDG PROP<br></p>
@@ -896,8 +892,8 @@
                                     <li>- Наилучшие торговые условия</li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-lg-4 block_edication_item">
+                        </div>-->
+                        <!--<div class="col-lg-4 block_edication_item">
                             <div class="plan-education__item">
                                 <p class="education_step">5 этап</p>
                                 <p class="education_name">Профессиональная торговля</p>
@@ -909,7 +905,7 @@
                                     <li>- Безлимитное общение с проф. трейдерами</li>
                                 </ul>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="row_button">
                         <div class="col-lg-12">
@@ -954,20 +950,9 @@
                                         <div class="primeru__video">
                                             <div class="videoWrapper videoWrapper169 js-videoWrapper">
                                                 <iframe class="videoIframe js-videoIframe"
-                                                    data-src="https://www.youtube.com/embed/XEXYbyg17Tg?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-                                                <div class="videoPoster">
-                                                    <div class="videoPoster__btn js-videoPoster">
-                                                        <svg class="icon">
-                                                            <use xlink:href="#icon-play-btn"></use>
-                                                        </svg></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="primeru__video">
-                                            <div class="videoWrapper videoWrapper169 js-videoWrapper">
-                                                <iframe class="videoIframe js-videoIframe"
-                                                    data-src="https://www.youtube.com/embed/uqp9SLdcWFM?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-                                                <div class="videoPoster">
+                                                    data-src="https://www.youtube.com/embed/XEXYbyg17Tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                                <div class="videoPoster videoPoster-1">
                                                     <div class="videoPoster__btn js-videoPoster">
                                                         <svg class="icon">
                                                             <use xlink:href="#icon-play-btn"></use>
@@ -995,20 +980,8 @@
                                         <div class="primeru__video">
                                             <div class="videoWrapper videoWrapper169 js-videoWrapper">
                                                 <iframe class="videoIframe js-videoIframe"
-                                                    data-src="https://www.youtube.com/embed/puJnfz_zBNg?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-                                                <div class="videoPoster">
-                                                    <div class="videoPoster__btn js-videoPoster">
-                                                        <svg class="icon">
-                                                            <use xlink:href="#icon-play-btn"></use>
-                                                        </svg></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="primeru__video">
-                                            <div class="videoWrapper videoWrapper169 js-videoWrapper">
-                                                <iframe class="videoIframe js-videoIframe"
-                                                    data-src="https://www.youtube.com/embed/UxpSWpfB6TI?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-                                                <div class="videoPoster">
+                                                    data-src="https://www.youtube.com/embed/Pz8Qd1F1mTo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                                                <div class="videoPoster videoPoster-2">
                                                     <div class="videoPoster__btn js-videoPoster">
                                                         <svg class="icon">
                                                             <use xlink:href="#icon-play-btn"></use>
@@ -1027,7 +1000,7 @@
                                 <div class="programma__item-right col-md-11 col-xl-9 p-3">
                                     <div class="primeru__text-block">
                                         <p class="h3">Анализ недели</p>
-                                        <p>На этих занятиях трейдера нашей команды разбирают отработавшие стратегии и
+                                        <p>На этих занятиях трейдеры-коучи разбирают отработавшие стратегии и
                                             ситуации за неделю. Данный формат предназначен для формирования целостной
                                             картины прошедшей недели и понимая, что будет актуально в ближайшем
                                             будущем.
@@ -1037,20 +1010,8 @@
                                         <div class="primeru__video">
                                             <div class="videoWrapper videoWrapper169 js-videoWrapper">
                                                 <iframe class="videoIframe js-videoIframe"
-                                                    data-src="https://www.youtube.com/embed/5Hg791Y09BA?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-                                                <div class="videoPoster">
-                                                    <div class="videoPoster__btn js-videoPoster">
-                                                        <svg class="icon">
-                                                            <use xlink:href="#icon-play-btn"></use>
-                                                        </svg></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="primeru__video">
-                                            <div class="videoWrapper videoWrapper169 js-videoWrapper">
-                                                <iframe class="videoIframe js-videoIframe"
-                                                    data-src="https://www.youtube.com/embed/1c9socNJ4pc?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-                                                <div class="videoPoster">
+                                                    data-src="https://www.youtube.com/embed/5Hg791Y09BA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="videoPoster videoPoster-3">
                                                     <div class="videoPoster__btn js-videoPoster">
                                                         <svg class="icon">
                                                             <use xlink:href="#icon-play-btn"></use>
@@ -1079,20 +1040,8 @@
                                         <div class="primeru__video">
                                             <div class="videoWrapper videoWrapper169 js-videoWrapper">
                                                 <iframe class="videoIframe js-videoIframe"
-                                                    data-src="https://www.youtube.com/embed/F_YjiiFIl38?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-                                                <div class="videoPoster">
-                                                    <div class="videoPoster__btn js-videoPoster">
-                                                        <svg class="icon">
-                                                            <use xlink:href="#icon-play-btn"></use>
-                                                        </svg></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="primeru__video">
-                                            <div class="videoWrapper videoWrapper169 js-videoWrapper">
-                                                <iframe class="videoIframe js-videoIframe"
-                                                    data-src="https://www.youtube.com/embed/s1bIoLq5VXc?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-                                                <div class="videoPoster">
+                                                    data-src="https://www.youtube.com/embed/s1bIoLq5VXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="videoPoster videoPoster-4">
                                                     <div class="videoPoster__btn js-videoPoster">
                                                         <svg class="icon">
                                                             <use xlink:href="#icon-play-btn"></use>
@@ -1117,20 +1066,8 @@
                                         <div class="primeru__video">
                                             <div class="videoWrapper videoWrapper169 js-videoWrapper">
                                                 <iframe class="videoIframe js-videoIframe"
-                                                    data-src="https://www.youtube.com/embed/adjwl65Tyuk?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-                                                <div class="videoPoster">
-                                                    <div class="videoPoster__btn js-videoPoster">
-                                                        <svg class="icon">
-                                                            <use xlink:href="#icon-play-btn"></use>
-                                                        </svg></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="primeru__video">
-                                            <div class="videoWrapper videoWrapper169 js-videoWrapper">
-                                                <iframe class="videoIframe js-videoIframe"
-                                                    data-src="https://www.youtube.com/embed/Zmn4B_gtl-8?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-                                                <div class="videoPoster">
+                                                    data-src="https://www.youtube.com/embed/adjwl65Tyuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="videoPoster videoPoster-5">
                                                     <div class="videoPoster__btn js-videoPoster">
                                                         <svg class="icon">
                                                             <use xlink:href="#icon-play-btn"></use>
@@ -1146,7 +1083,7 @@
                 </div>
             </section>
 
-            <section class="page-section light" id="schedule">
+           <!-- <section class="page-section light" id="schedule">
                 <div class="container">
                     <?php
                     function parse($p1,$p2,$p3){
@@ -1173,8 +1110,8 @@
                     echo parse($link,$start_teg,$stop_teg);
                     ?>
                 </div>
-            </section>
-            <section class="page-section speackers" id="prop">
+            </section>-->
+            <!--<section class="page-section speackers" id="prop">
                 <div class="container">
                     <h2 class="section-title text-center" data-animation="fadeInUp" data-animation-delay="100">ОТБОР В
                         SDG PROP</h2>
@@ -1198,7 +1135,7 @@
                         </span>
                     </p>
                 </div>
-            </section>
+            </section>-->
             <section class="reviews">
                 <h2 class="section-title reviews">
                     ОТЗЫВЫ КЛИЕНТОВ
@@ -1217,8 +1154,8 @@
                                                 <a href="https://www.facebook.com/pg/trade.sdg/reviews/"
                                                     target="_blank">
                                                     <picture>
-                                                        <source type="image/webp" srcset="images/r8-new2.webp">
-                                                        <source type="image/jpg" srcset="images/r8-new2.jpg">
+                                                        <source type="image/webp" srcset="images/review-new-1-mob.jpg">
+                                                        <source type="image/jpg" srcset="images/review-new-1-mob.jpg">
                                                         <img src="images/r8-new2.jpg"
                                                             alt="Трансформация 365 - программа обучения и взаимодействия по трейдингу">
                                                     </picture>
@@ -1232,8 +1169,8 @@
                                                 <a href="https://www.facebook.com/pg/trade.sdg/reviews/"
                                                     target="_blank">
                                                     <picture>
-                                                        <source type="image/webp" srcset="images/r2-new.webp">
-                                                        <source type="image/jpg" srcset="images/r2-new.jpg">
+                                                        <source type="image/webp" srcset="images/review-new-2-mob.jpg">
+                                                        <source type="image/jpg" srcset="images/review-new-2-mob.jpg">
                                                         <img src="images/r2-new.jpg"
                                                             alt="Трансформация 365 - программа обучения и взаимодействия по трейдингу">
                                                     </picture>
@@ -1247,8 +1184,8 @@
                                                 <a href="https://www.facebook.com/pg/trade.sdg/reviews/"
                                                     target="_blank">
                                                     <picture>
-                                                        <source type="image/webp" srcset="images/r7-new.webp">
-                                                        <source type="image/jpg" srcset="images/r7-new.jpg">
+                                                        <source type="image/webp" srcset="images/review-new-3-mob.jpg">
+                                                        <source type="image/jpg" srcset="images/review-new-3-mob.jpg">
                                                         <img src="images/r7-new.jpg"
                                                             alt="Трансформация 365 - программа обучения и взаимодействия по трейдингу">
                                                     </picture>
@@ -1262,8 +1199,8 @@
                                                 <a href="https://www.facebook.com/pg/trade.sdg/reviews/"
                                                     target="_blank">
                                                     <picture>
-                                                        <source type="image/webp" srcset="images/r6-new.webp">
-                                                        <source type="image/jpg" srcset="images/r6-new.jpg">
+                                                        <source type="image/webp" srcset="images/review-new-4-mob.jpg">
+                                                        <source type="image/jpg" srcset="images/review-new-4-mob.jpg">
                                                         <img src="images/r6-new.jpg"
                                                             alt="Трансформация 365 - программа обучения и взаимодействия по трейдингу">
                                                     </picture>
@@ -1271,7 +1208,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="item">
+                                    <!--<div class="item">
                                         <div class="reviews__item">
                                             <div class="reviews__item-text">
                                                 <a href="https://www.facebook.com/pg/trade.sdg/reviews/"
@@ -1285,8 +1222,8 @@
                                                 </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
+                                    </div>-->
+                                    <!--<div class="item">
                                         <div class="reviews__item">
                                             <div class="reviews__item-text">
                                                 <a href="https://www.facebook.com/pg/trade.sdg/reviews/"
@@ -1300,8 +1237,8 @@
                                                 </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
+                                    </div>-->
+                                    <!--<div class="item">
                                         <div class="reviews__item">
                                             <div class="reviews__item-text">
                                                 <a href="https://www.facebook.com/pg/trade.sdg/reviews/"
@@ -1315,8 +1252,8 @@
                                                 </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
+                                    </div>-->
+                                    <!--<div class="item">
                                         <div class="reviews__item">
                                             <div class="reviews__item-text">
                                                 <a href="https://www.facebook.com/pg/trade.sdg/reviews/"
@@ -1330,8 +1267,8 @@
                                                 </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="item">
+                                    </div>-->
+                                    <!--<div class="item">
                                         <div class="reviews__item">
                                             <div class="reviews__item-text">
                                                 <a href="https://www.facebook.com/pg/trade.sdg/reviews/"
@@ -1345,7 +1282,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"
                                     style="transform: rotate(180deg)">
@@ -1402,22 +1339,22 @@
                                 <div class="generic_feature_list red">
                                     <ul>
                                         <li>
-                                            <span>Ежедневные групповые занятия с трейдерами нашей команды</span>
+                                            <span>Ежедневные групповые занятия с профессиональными трейдерами</span>
                                         </li>
                                         <li>
                                             <span>Индивидуальные занятия с топовыми трейдерами</span>
                                         </li>
                                         <li>
-                                            <span>Доступ в закрытый чат трейдеров</span>
+                                            <span>Доступ в закрытый чат трейдеров и наставников</span>
                                         </li>
                                         <li>
-                                            <span>Персональный куратор (трейдер нашей компании)</span>
+                                            <span>Персональный куратор (профессиональный трейдер)</span>
                                         </li>
                                         <li>
-                                            <span>Возможность попасть в SDG PROP</span>
+                                            <span>Более 200 часов практики</span>
                                         </li>
                                         <li>
-                                            <span>Максимально лояльные торговые условия</span>
+                                            <span>Бесплатное посещение всех практикумов и интенсивов</span>
                                         </li>
                                         <li>
                                             <span>Доступ к записям сессий (если вы пропустили занятия)</span>
@@ -1446,10 +1383,7 @@
                     <div class="section-title text-center">
                     <span></span>
                     </div>
-                    <p class="text-center">Главные спикеры программы - ведущие трейдеры и директор обучающего центра SDG
-                        Trade, кроме этого, в программе принимают участие риск-менеджер компании, куратор и несколько
-                        приглашенных спикеров из США.
-                    </p>
+                    <p class="text-center">Главные спикеры программы - профессиональные трейдеры и инвесторы. Также мы приглашаем для проведения кратких курсов и мастер-классов трейдеров из prop-компаний, специалистов по психологии и профессиональных инвесторов.</p>
                     <br />
                     <br />
                     <br />
@@ -1522,20 +1456,19 @@
                                                     <p class="block-text mbr-fonts-style display-7">
                                                         Трейдер-практик,тренер,организатор конференций и
                                                         обучающих мероприятий. На фондовых рынках США
-                                                        работает с 2007 года. <br /><br />Ведущий трейдер
-                                                        компании SDG Trade,занимается обучением трейдингу
+                                                        работает с 2007 года. <br /><br />Профессиональный трейдер, занимается обучением трейдингу
                                                         более 4 лет,подготовил более 620 профессиональных
                                                         трейдеров,трейдинг-основной источник прибыли Олеся
                                                         уже более 7 лет. <br />Также:
                                                     </p>
                                                     <ul>
-                                                        <li>Ведущий трейдер в компании SDG TRADE</li>
+                                                        <!--<li>Ведущий трейдер в компании SDG TRADE</li>-->
                                                         <li>
                                                             Максимальный дневной заработок 7020$ (ученика
                                                             3100$)
                                                         </li>
                                                         <li>
-                                                            Торгует в среднем более 500 0 акций в месяц
+                                                            Торгует в среднем более 100 000 акций в месяц
                                                         </li>
                                                         <li>
                                                             620 профессионально подготовленных трейдеров
@@ -1560,8 +1493,7 @@
                                                 <div>
                                                     <p class="block-text mbr-fonts-style display-7"
                                                         style="padding-top: 10px;">
-                                                        Куратор курса "Трансформация 365" и
-                                                        профессиональный трейдер SDG Trade. Торгует на
+                                                        Куратор курса "Трансформация 365" и профессиональный трейдер. Торгует на
                                                         американских фондовых биржах с 2013 года. Стиль
                                                         торговли:In play.
                                                     </p>
@@ -1597,9 +1529,8 @@
                                                 </div>
                                                 <div>
                                                     <p class="block-text mbr-fonts-style display-7">
-                                                        Директор обучающего центра SDG Trade,трейдер с
-                                                        большим стажем на рынках США,опытный
-                                                        инвестор,проводил тренинги по финансовой
+                                                        Директор обучающего центра SDG Trade, профессиональный инвестор. В прошлом - трейдер с большим стажем на рынках США, опытный
+                                                        инвестор, проводил тренинги по финансовой
                                                         грамотности и инвестициям.
                                                     </p>
                                                 </div>
@@ -1687,7 +1618,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-6" data-animation="fadeInUp"
+                                        <!--<div class="col-sm-6 col-md-6" data-animation="fadeInUp"
                                             data-animation-delay="700">
                                             <div class="thumbnail do-up no-border">
                                                 <picture>
@@ -1706,8 +1637,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6" data-animation="fadeInUp"
+                                        </div>-->
+                                        <!--<div class="col-sm-6 col-md-6" data-animation="fadeInUp"
                                             data-animation-delay="700">
                                             <div class="thumbnail do-up no-border">
                                                 <picture>
@@ -1727,7 +1658,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                             </div>
@@ -2006,9 +1937,9 @@
                                         <a href="#question_02">&mdash;&nbsp;Как будет осуществляться разбор моих
                                             сделок?</a>
                                     </li>
-                                    <li>
+                                   <!-- <li>
                                         <a href="#question_04">&mdash;&nbsp;Какая будет поддержка после окончания?</a>
-                                    </li>
+                                    </li>-->
                                     <li>
                                         <a href="#question_05">&mdash;&nbsp;Точно ли я смогу зарабатывать после
                                             прохождения курса?</a>
@@ -2042,13 +1973,7 @@
                                 </div>
 
                                 <div class="b-content_faq_tabs_answer" id="question_01" data-faq-item>
-                                    <p>Курс создан и&nbsp;читается командой лучших трейдеров компании SDG-Trade, Сергей
-                                        Коломиец, Олесь Срибный, Сергей Сушко, Алексей Ильиных и другие привлеченные
-                                        гости, которые активно торгуют и&nbsp;стабильно зарабатывают
-                                        деньги на&nbsp;рынке. Подходы этих трейдеров продемонстрировали свою
-                                        прибыльность на&nbsp;достаточно большом отрезке времени, потому компания будет
-                                        передавать их&nbsp;опыт новым трейдерам, которые также будут приносить
-                                        компании прибыль.</p>
+                                    <p>Курс создан и читается командой лучших трейдеров – это Сергей Коломиец, Олесь Срибный, Денис Воронин, Алексей Ильиных, которые активно торгуют и стабильно зарабатывают деньги на рынке. Также принимает активное участие в обучении директор обучающего центра и инвестор, Сергей Сушко. Подходы этих людей продемонстрировали свою прибыльность на большом отрезке времени, потому компания передает их опыт новым трейдерам.</p>
                                 </div>
 
                                 <div class="b-content_faq_tabs_answer" id="question_02" data-faq-item>
@@ -2059,27 +1984,15 @@
                                         потенциальности, правильному подходу к&nbsp;риску и&nbsp;другим критериям.</p>
                                 </div>
 
-                                <div class="b-content_faq_tabs_answer" id="question_04" data-faq-item>
+                                <!--<div class="b-content_faq_tabs_answer" id="question_04" data-faq-item>
                                     <p>После окончания курса ученики, показавшие хороший результат, будут торговать
                                         на&nbsp;средства компании SDG-Trade, с&nbsp;постоянной поддержкой в&nbsp;виде
                                         анализа текущего состояния рынка, разбора сделок и&nbsp;обсуждений.
                                         <br />
-                                </div>
+                                </div>-->
 
                                 <div class="b-content_faq_tabs_answer" id="question_05" data-faq-item>
-                                    <p>Вы взрослый человек и понимаете, что 100% гарантии результата дать никто не может
-                                        (а если кто-то дает 100% гарантию – задумайтесь, в чем подвох). Вы выходите на
-                                        крупнейший рынок мира, на котором конкурируете с крупными
-                                        офисами и командами, типа нашей и должны понимать, что из-за несоблюдения правил
-                                        управления рисками, азарта или других факторов можете не получить желаемый
-                                        результат. Мы растим трейдеров для нашего офиса уже 14 лет
-                                        и знаем, как это делать правильно и эффективно. Ваша задача – довериться и
-                                        делать то, что мы советуем, а не что-то свое. Тогда результат будет. Если Вы
-                                        верите в «добрую сказку», что сразу, без усердной работы, начнете
-                                        зарабатывать – это не к нам. В таком случае лучше обратиться в казино или
-                                        форекс-кухни, там и не такое пообещают. Через месяц станете миллионером со 100%
-                                        гарантией, даже делать ничего не придется! За вас все сделает
-                                        персональный аналитик.</p>
+                                    <p>Вы взрослый человек и понимаете, что 100% гарантии результата дать никто не может (а если кто-то дает 100% гарантию – задумайтесь, в чем подвох). Вы выходите на крупнейший и богатейший рынок мира, на котором конкурируете с крупными офисами и командами. Вы должны понимать, что из-за несоблюдения правил управления рисками, азарта или других факторов, зависящих от вас, можете не получить желаемый результат. Мы растим трейдеров уже более 10 лет и знаем, как это делать правильно и эффективно. Ваша задача – довериться и делать то, что мы советуем, а не что-то свое. Тогда результат будет. Если Вы верите в «добрую сказку», что сразу, без усердной работы, начнете зарабатывать – это не к нам. В таком случае лучше обратиться в казино или форекс-кухни, там и не такое пообещают. Через месяц станете миллионером со 100% гарантией, даже делать ничего не придется! За вас все сделает "персональный аналитик" и роботы :)</p>
                                 </div>
 
                                 <div class="b-content_faq_tabs_answer" id="question_07" data-faq-item>
@@ -2098,9 +2011,7 @@
                                 </div>
 
                                 <div class="b-content_faq_tabs_answer" id="question_09" data-faq-item>
-                                    <p>Да, мы планируем, что все участники смогут получить запись всех занятий, чтобы
-                                        была возможность впоследствии пересмотреть и заметить какие-то новые моменты.
-                                    </p>
+                                    <p>Да, на все время обучения у участника открыт доступ в личный кабинет, где хранятся записи всех занятий, чтобы впоследствии пересмотреть важные занятия, или наверстать пропущенное данным участником занятие.                                    </p>
                                 </div>
 
                                 <div class="b-content_faq_tabs_answer" id="question_10" data-faq-item>
@@ -2112,10 +2023,7 @@
                                 </div>
 
                                 <div class="b-content_faq_tabs_answer" id="question_11" data-faq-item>
-                                    <p>Оплатить курс можно следующими способами:
-                                        <br /> 1)банковский SWIFT-перевод
-                                        <br /> 2)моментальная оплата в Личном кабинете на нашем сайте
-                                        <br /> 3)Оплата через другие платежные системы по согласованию с менеджером</p>
+                                    <p>Проще всего оплатить участие в программе картой Visa/Mastercard.Перевод происходит мгновенно и без комиссии. Можно согласовать с менеджером и другие варианты.</p>
                                 </div>
                             </div>
 

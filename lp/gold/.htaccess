@@ -1,7 +1,10 @@
 RewriteEngine On
    #  Директива включает редиректы.
 
-
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^(.*)$ https://sdg-trade.com/obuchenie/$1 [R=301,L]
+</IfModule>
 Options +FollowSymLinks
    # Разрешает переход по символическим ссылкам.
 php_flag display_errors off

@@ -1,26 +1,9 @@
-<FilesMatch "\.(ttf|otf|eot|woff)$">
-<IfModule mod_headers.c>
-Header set Access-Control-Allow-Origin "*"
-</IfModule>
+<FilesMatch "\.(html|htm|js|css)$">
+FileETag None
+<ifModule mod_headers.c>
+Header unset ETag
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+</ifModule>
 </FilesMatch>
-
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
-
-RewriteCond %{HTTPS} !^on$
-RewriteRule (.*) http://sdg-trade.com/strategy/$1 [R,L]
-
-RewriteCond %{HTTP_HOST} ^www\.sdg-trade\.com$ [NC]
-RewriteRule ^(.*)$ http://sdg-trade.com/strategy/$1 [R=301,L]
-
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
-RewriteRule ^index\.php$ http://sdg-trade.com/strategy/ [R=301,L]
-
-RewriteRule ^index.php/(.*)$ http://sdg-trade.com/strategy/$1 [R=permanent,L]
-
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/ 
-RewriteRule ^index\.php$ http://sdg-trade.com/strategy/ [R=301,L]
-
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /homepage\.html\ HTTP/ 
-RewriteRule ^homepage\.html$ http://sdg-trade.com/strategy/ [R=301,L]
