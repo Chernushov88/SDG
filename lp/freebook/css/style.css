@@ -987,7 +987,7 @@ body #third_slide .container .main__section .left__side .right__side__border,
 body #third_slide .container .main__section .right__side .right__side__border {
   background: #d6d6d6;
   height: auto;
-  min-height: 692px;
+  min-height: 653px;
   border: 1px solid #fff;
   border-radius: 0 10px 10px 0;
 }
@@ -1638,4 +1638,7 @@ body #third_slide .container .main__section .left__side .programm {
   .modal-lg {
     max-width: 800px;
   }
+}
+.c-widget.c-widget-products-2 .widget-item[data-expanded=true] .widget-item-wrapper  .widget-item-purchase-button-add{
+  margin-bottom: 46px;
 }

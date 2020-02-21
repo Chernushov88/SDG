@@ -22,104 +22,123 @@ $gpreset = str_replace(' ','',strtolower($gantry->get('name')));
 
 
 <head>
-	<?php 
+	<?php
 	$strServer =$_SERVER['REQUEST_URI'];
 	$kalendar = "kalendar-sobyitij";
+	/*
 	if (strstr($strServer, $kalendar)){?>
 		<meta name="robots" content="noindex, nofollow" />
-	<?}?>
+	<?}*/
+	?>
+	<!-- <meta name="yandex-verification" content="9a4d54d9a35e6872" /> -->
 	<meta name="google-site-verification" content="N9lJY3vbSbrurRirxvK8h2ofFK19COnNQgqp4y7tP3M" />
 	<meta name='wmail-verification' content='c8b16f7417c0e3455248f48ef291b296' />
-<?php include 'canonical.php' ?>
+	<?php include 'canonical.php' ?>
 
-	 
-	<?php if ($gantry->get('layout-mode') == '960fixed') : ?>
-	<meta name="viewport" content="width=960px">
-	<?php elseif ($gantry->get('layout-mode') == '1200fixed') : ?>
-	<meta name="viewport" content="width=1200px">
-	<?php else : ?>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php endif; ?>
-	<?php
-		unset($this->_metaTags['name']['keywords']);
-        $gantry->displayHead();
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+		<?php if ($gantry->get('layout-mode') == '960fixed') : ?>
+		<meta name="viewport" content="width=960px">
+		<?php elseif ($gantry->get('layout-mode') == '1200fixed') : ?>
+		<meta name="viewport" content="width=1200px">
+		<?php else : ?>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<?php endif; ?>
+		<?php
+			unset($this->_metaTags['name']['keywords']);
+	        $gantry->displayHead();
 
-		$gantry->addStyle('grid-responsive.css', 5);
+			$gantry->addStyle('grid-responsive.css', 5);
 
-        $gantry->addLess('global.less', 'master.css', 8, array('main-accent'=>$gantry->get('main-accent','#519bda'), 'main-accent2'=>$gantry->get('main-accent2', '#e7714d'), 'main-body'=>$gantry->get('main-body', 'light'), 'main-showcasebg'=>$gantry->get('main-showcasebg', 'abstract')));
+	        $gantry->addLess('global.less', 'master.css', 8, array('main-accent'=>$gantry->get('main-accent','#519bda'), 'main-accent2'=>$gantry->get('main-accent2', '#e7714d'), 'main-body'=>$gantry->get('main-body', 'light'), 'main-showcasebg'=>$gantry->get('main-showcasebg', 'abstract')));
 
-        if ($gantry->browser->name == 'ie'){
-        	if ($gantry->browser->shortversion == 9){
-        		$gantry->addInlineScript("if (typeof RokMediaQueries !== 'undefined') window.addEvent('domready', function(){ RokMediaQueries._fireEvent(RokMediaQueries.getQuery()); });");
-        	}
-			if ($gantry->browser->shortversion == 8){
-				$gantry->addScript('html5shim.js');
+	        if ($gantry->browser->name == 'ie'){
+	        	if ($gantry->browser->shortversion == 9){
+	        		$gantry->addInlineScript("if (typeof RokMediaQueries !== 'undefined') window.addEvent('domready', function(){ RokMediaQueries._fireEvent(RokMediaQueries.getQuery()); });");
+	        	}
+				if ($gantry->browser->shortversion == 8){
+					$gantry->addScript('html5shim.js');
+				}
 			}
-		}
-		if ($gantry->get('layout-mode', 'responsive') == 'responsive') $gantry->addScript('rokmediaqueries.js');
-		if ($gantry->get('loadtransition')) {
-		$gantry->addScript('load-transition.js');
-		$hidden = ' class="rt-hidden"';}
+			if ($gantry->get('layout-mode', 'responsive') == 'responsive') $gantry->addScript('rokmediaqueries.js');
+			if ($gantry->get('loadtransition')) {
+			$gantry->addScript('load-transition.js');
+			$hidden = ' class="rt-hidden"';}
 
-			?>
-	<script src="/build/js/modernizr-custom.js"></script>
-	<link href="templates/rt_chapelco/css/mystyle_v1.5.css" rel="stylesheet">
-	
-	<link href="templates/rt_chapelco/css/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" href="./build/css/style.min.css">
-	<link href="templates/rt_chapelco/css/new_style_v1.1.css" rel="stylesheet">
-	<script>
-		dataLayer = [];
+				?>
+		<script src="/build/js/modernizr-custom.js"></script>
+		<link href="templates/rt_chapelco/css/mystyle_v1.7.css" rel="stylesheet">
+
+		<link href="templates/rt_chapelco/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="./build/css/style.min.css">
+		<link href="templates/rt_chapelco/css/new_style_v1.3.css" rel="stylesheet">
+		<script>
+			dataLayer = [];
+		</script>
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"url": "https://sdg-trade.com",
+		"logo": "https://sdg-trade.com/images/banners/logo.png",
+		"sameAs": [
+	         "https://www.facebook.com/trade.sdg",
+	         "https://vk.com/clubsdg",
+	         "https://www.youtube.com/c/sdgtrade",
+	         "https://twitter.com/SDGTRADE",
+	         "https://telegram.me/sdgtrade"
+	       ],
+		"contactPoint" : [
+	        {
+	            "@type" : "ContactPoint",
+	            "telephone": "+7(499) 350-73-98",
+	            "contactType": "customer service"
+	        },
+	        {
+	            "@type" : "ContactPoint",
+	            "telephone": "+7(499) 350-75-98",
+	            "contactType": "customer service"
+	        }
+
+		]
+	}
 	</script>
-
-<script type="application/ld+json">
-{
-	"@context": "https://schema.org",
-	"@type": "Organization",
-	"url": "https://sdg-trade.com",
-	"logo": "https://sdg-trade.com/images/banners/logo.png",
-	"sameAs": [
-         "https://www.facebook.com/trade.sdg",
-         "https://vk.com/clubsdg",
-         "https://www.youtube.com/c/sdgtrade",
-         "https://twitter.com/SDGTRADE",
-         "https://telegram.me/sdgtrade"
-       ],
-	"contactPoint" : [
-        {
-            "@type" : "ContactPoint",
-            "telephone": "+7(499) 350-73-98",
-            "contactType": "customer service"
-        },
-        {
-            "@type" : "ContactPoint",
-            "telephone": "+7(499) 350-75-98",
-            "contactType": "customer service"
-        }
-
-	]
-}
-</script>
 	<script src="//cdn.sendpulse.com/js/push/d1ce0b0494694053f34cc3c7d9073c9a_1.js" async></script>
 	<?php include 'shemas.php' ?>
 	<?php $this->setGenerator(''); ?>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PS2B68K');</script>
-<!-- End Google Tag Manager -->
-</head> 
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PS2B68K');</script>
+	<!-- End Google Tag Manager -->
+</head>
 
-<body <?php echo $gantry->displayBodyTag(); ?> class="body-test"  id="body_<?= JRequest::getInt('id')?>">
-<?php 
+<body <?php echo $gantry->displayBodyTag(); ?>  id="body_<?= JRequest::getInt('id')?>">
+<?php
+    // $db = &JFactory::getDBO();
+    // $id = JRequest::getString('id');
+    // $db->setQuery('SELECT #__categories.title FROM #__content, #__categories WHERE #__content.catid = #__categories.id AND #__content.id = '.$id);
+    // $category = $db->loadResult();
+    // echo $category;
+
+$app = JFactory::getApplication();
+$IDmenu = ' idMenu'. $app->getMenu()->getActive()->id;
+// echo $menu;
+
 $idPosts = JRequest::getInt('id');
 $ClassNewStyle = '';
-if ($idPosts == '893' ||  $idPosts == '895'): 
+if ($idPosts == '883' || $idPosts == '891' || $idPosts == '893' ||  $idPosts == '895' ||  $idPosts == '24' ||  $idPosts == '22' ||  $idPosts == '37' ||  $idPosts == '519' || $idPosts == "203" || $idPosts == "461"):
 	$ClassNewStyle = "body_NewStyle";
 endif ?>
-<div class="<?=$ClassNewStyle?>">
+<div class="<?=$ClassNewStyle . $IDmenu;?>" data-menu="<?= $menu;?>">
 <!-- beta-versoon -->
 <!-- beta-versoon -->
 <!-- Google Tag Manager (noscript) -->
@@ -158,6 +177,89 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<?php /** End Header **/ endif; ?>
 		</header>
 		<?php /** End Top Surround **/ endif; ?>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "description": "Apple",
+      "proName": "NASDAQ:AAPL"
+    },
+    {
+      "description": "Facebook",
+      "proName": "NASDAQ:FB"
+    },
+    {
+      "description": "Electronic Arts",
+      "proName": "NASDAQ:EA"
+    },
+    {
+      "description": "Tesla",
+      "proName": "NASDAQ:TSLA"
+    },
+    {
+      "description": "Boeing",
+      "proName": "NYSE:BA"
+    },
+    {
+      "description": "General Motors",
+      "proName": "NYSE:GM"
+    },
+    {
+      "description": "Amazon",
+      "proName": "NASDAQ:AMZN"
+    },
+    {
+      "description": "Alibaba Group",
+      "proName": "NYSE:BABA"
+    },
+    {
+      "description": "McDonald's",
+      "proName": "NYSE:MCD"
+    },
+    {
+      "description": "Microsoft",
+      "proName": "NASDAQ:MSFT"
+    },
+    {
+      "description": "S&P 500 ETF",
+      "proName": "AMEX:SPY"
+    },
+    {
+      "description": "AMD",
+      "proName": "NASDAQ:AMD"
+    },
+    {
+      "description": "Intel",
+      "proName": "NASDAQ:INTC"
+    },
+    {
+      "description": "Twitter",
+      "proName": "NYSE:TWTR"
+    },
+    {
+      "description": "Coca-Cola",
+      "proName": "NYSE:KO"
+    },
+    {
+      "description": "Nvidia",
+      "proName": "NASDAQ:NVDA"
+    },
+    {
+      "description": "Uber",
+      "proName": "NYSE:UBER"
+    }
+  ],
+  "colorTheme": "light",
+  "isTransparent": true,
+  "displayMode": "regular",
+  "locale": "ru"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
 		<?php /** Begin Drawer **/ if ($gantry->countModules('drawer')) : ?>
 		<div id="rt-drawer">
 			<div class="rt-container">
@@ -238,6 +340,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 				<?php /** End Main Bottom **/ endif; ?>
 				<?php /** Begin Extension **/ if ($gantry->countModules('extension')) : ?>
+
 				<div id="rt-extension">
 					<div class="rt-container">
 						<?php echo $gantry->displayModules('extension','standard','standard'); ?>
@@ -260,7 +363,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<footer id="rt-footer-surround">
 			<!-- lorem1 -->
 			<?php /** Begin Footer **/ if ($gantry->countModules('footer')) : ?>
-			
+
 			<div id="rt-footer">
 				<div class="rt-container">
 					<?php echo $gantry->displayModules('footer','standard','standard'); ?>
@@ -297,7 +400,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<?php /** End Analytics **/ endif; ?>
 	</div>
 <? $postId=JRequest::getInt('id');
-if (!($postId == 893) ) {?>
+if (!($idPosts == '891' || $postId == 893) ) {?>
 	<div class="study-page">
 		<div class="modal fade" id="customModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
 			tabindex="-1">
@@ -333,7 +436,7 @@ if (!($postId == 893) ) {?>
 		</div>
 	</div>
 <?}?>
-	
+
 
 
 <a class="top-link hide" href="" id="js-top">
@@ -341,7 +444,6 @@ if (!($postId == 893) ) {?>
   <span class="screen-reader-text">Back to top</span>
 </a>
 
-	<script src="https://app.getresponse.com/view_webform_v2.js?u=eQLF&webforms_id=8860202"></script>
 	<script src="templates/rt_chapelco/js/custom.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 	<script src="templates/rt_chapelco/js/jquery.min.js"></script>
@@ -405,7 +507,7 @@ if (!($postId == 893) ) {?>
 		$(document).on('click', '#videoTekaBtn', function() {
 		    var $video = $('#videoTekaIframe'),
 		        src = $video.attr('src');
-		 
+
 		    $video.attr('src', src + '&autoplay=1');
 		});
 	</script>

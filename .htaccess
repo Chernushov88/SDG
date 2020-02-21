@@ -1,5 +1,27 @@
+<RequireAll>
+Require all granted
+Require not ip 142.93.87.106
+Require not ip 119.23.211.54
+Require not ip 159.89.207.86
+Require not ip 167.172.192.43
+Require not ip 46.101.122.215
+Require not ip 159.203.93.122
+Require not ip 184.68.11.210
+Require not ip 104.248.124.93
+Require not ip 104.248.221.80
+Require not ip 108.160.132.133
+Require not ip 18.222.164.143
+Require not ip 47.94.102.174
+Require not ip 138.68.60.27
+Require not ip 139.59.67.152
+Require not ip 206.189.117.9
+Require not ip 46.101.185.245
+</RequireAll>
+
 ## Mod_rewrite in use.
 Options +FollowSymLinks
+
+ 
 RewriteEngine On
 Options -Indexes
 RewriteCond %{SERVER_PORT} !^443$ 
@@ -7,6 +29,17 @@ RewriteRule ^(.*)$ https://sdg-trade.com/$1 [R=301,L]
 
 RewriteCond %{HTTPS} off
 RewriteRule ^(abc/def|ghi)(.*)/?$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,NC,L] 
+
+
+Redirect 301 /obuchenie/besplatnoe-test https://sdg-trade.com/obuchenie/besplatnoe
+Redirect 301 /obuchenie-test/ https://sdg-trade.com/obuchenie
+Redirect 301 /test-obuchenie https://sdg-trade.com/obuchenie
+Redirect 301 /obuchenie/courses  https://sdg-trade.com/obuchenie
+Redirect 301 /obuchenie/kto-obuchaet  https://sdg-trade.com/obuchenie
+Redirect 301 /obuchenie/otzyvy  https://sdg-trade.com/obuchenie
+
+Redirect 301 /market/stati/indeksy-nasdaq  https://sdg-trade.com/market/stati/indeks-dou-dzhonsa-s-p-500-nyse-composite-i-drugie-barometry-fondovogo-rynka
+Redirect 301 /market/stati/indeksy-nyse  https://sdg-trade.com/market/stati/indeks-dou-dzhonsa-s-p-500-nyse-composite-i-drugie-barometry-fondovogo-rynka
 
 Redirect 301 /frontpage-content/top-template-of-the-year https://sdg-trade.com
 Redirect 301 /component/users/ https://sdg-trade.com
@@ -69,6 +102,17 @@ Redirect 301 /podgotovka-k-torgam/komentarii-i-analitika/usilenie-medvezhego-tre
 Redirect 301 /market/stati/forex-ili-nyse-razlichiya-i-osobennosti-etix-ryinkov-chast-2-ya https://sdg-trade.com/market/stati/forex-vs-nyse
 Redirect 301 /market/stati/forex-ili-nyse-razlichiya-i-osobennosti-etix-ryinkov-chast-1-ya https://sdg-trade.com/market/stati/forex-vs-nyse
 
+Redirect 301 /klientam/programmnoe-obespechenie https://sdg-trade.com/programmnoe-obespechenie
+Redirect 301 /klientam/online-translyatsiya/onlayn-translyatsiya https://sdg-trade.com/klientam/online-translyatsiya
+Redirect 301 /klientam/terminologiya https://sdg-trade.com/market/terminologiya
+Redirect 301 /klientam/onlajn-podderzhka https://sdg-trade.com/o-kompanii/kontakty
+
+Redirect 301 /treyding-dlya-novichkov https://sdg-trade.com/market
+Redirect 301 /torgovyie-usloviya  https://sdg-trade.com/otkryt-schet
+Redirect 301 /market-test https://sdg-trade.com/market
+Redirect 301 /market-1 https://sdg-trade.com/market
+
+Redirect 301 /stati/ https://sdg-trade.com/market/stati/
 
 RewriteCond %{HTTPS} !^on$
 RewriteRule (.*) https://sdg-trade.com/$1 [R,L]
@@ -88,11 +132,19 @@ RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /homepage\.html\ HTTP/
 RewriteRule ^homepage\.html$ https://sdg-trade.com/ [R=301,L]
 
 
-# Begin - удалить слэш в конце
+# Begin - ??????? ???? ? ?????
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} ^(.+)/$
 RewriteRule ^(.+)/$ /$1 [R=301,L]
-# End - удалить слэш в конце
+# End - ??????? ???? ? ?????
+
+#RewriteCond %{THE_REQUEST} //
+# ?????????, ??????????? ?? ???? (//) ????? ???? ???.
+#RewriteRule .* /$0 [R=301,L]
+# ????????? ??? ?????? ?????.
+
+
+
 
 ## Begin - Rewrite rules to block out some common exploits.
 # If you experience problems on your site block out the operations listed below
@@ -143,12 +195,12 @@ RewriteRule .* index.php [L]
 #
 ## End - Joomla! core SEF Section.
 
-# сжатие text, html, javascript, css, xml:
+# ?????? text, html, javascript, css, xml:
 <ifModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
 </ifModule>
 
-# Перенаправление на gzip файлы
+# ??????????????? ?? gzip ?????
 AddEncoding gzip .gz
 <FilesMatch "\.js.gz$">
 ForceType text/javascript 
@@ -173,6 +225,9 @@ RewriteCond %{HTTP:Accept-Encoding} gzip
 RewriteCond %{REQUEST_FILENAME}.gz -f
 RewriteRule (.*)\.css$ $1\.css.gz [L]
 ForceType text/css
+
+
+
 </FilesMatch>
 
 ## EXPIRES CACHING ##
