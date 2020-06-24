@@ -1,0 +1,32 @@
+<div class="b-form">
+    <form accept-charset="utf-8" action="php/callback.php" method="post" data-checkup="true" data-report="placeholder">
+
+        <h3>Задать вопрос</h3>
+
+        <div class="b-form_box">
+            <div class="b-form_field">
+                <input type="text" name="name" placeholder="Ваше имя" data-required />
+            </div>
+        </div>
+
+        <div class="b-form_box">
+            <div class="b-form_field">
+                <input type="text" name="email" placeholder="Ваш e-mail" data-required data-pattern="^[0-9a-z_.-]+@([a-z0-9_-]+\.)+[a-z]{2,}$" />
+            </div>
+        </div>
+
+        <div class="b-form_box">
+            <div class="b-form_field">
+                <textarea name="msg" placeholder="Ваш вопрос" data-required></textarea>
+            </div>
+        </div>
+		<div>test</div>
+		<input type="hidden" name="ip" value="<?php echo 'test';?>" />
+        <div class="g-align-center">
+            <input type="hidden" name="subject" value="Вопрос от посетителя" />
+		
+            <button type="submit" class="b-btn b-btn_lg b-btn_white">Отправить</button>
+        </div>
+
+    </form>
+</div>

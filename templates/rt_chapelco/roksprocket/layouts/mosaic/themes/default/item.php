@@ -20,7 +20,7 @@
 				<img src="<?php echo $item->getPrimaryImage()->getSource(); ?>" alt="" class="sprocket-mosaic-image" />
 				<?php if ($item->getPrimaryLink()) : ?>
 					<span class="sprocket-mosaic-hover"></span>
-					<span class="sprocket-mosaic-hovercontent button"><?php rc_e('READ_MORE'); ?></span>
+					<span class="sprocket-mosaic-hovercontent -button btn-simple"><?php rc_e('READ_MORE'); ?></span>
 				</a>
 				<?php endif; ?>
 			</div>

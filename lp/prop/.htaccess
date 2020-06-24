@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^(.*)$ https://sdg-trade.com/lp/year/$1 [R=301,L]
+</IfModule>

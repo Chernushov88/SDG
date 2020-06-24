@@ -1,0 +1,41 @@
+/* ----------------------- Reset ----------------------- */
+html { width: 100%; height: 100%; }
+body { width: 100%; height: 100%; margin: 0; }
+
+/* ----------------------- Reader layout ----------------------- */
+.b-reader { position: fixed; z-index: 3000; left: 0; right: 0; min-height: 100%; overflow: hidden; pointer-events: none; }
+.b-reader_box { display: none; position: relative; z-index: 1; width: 60px; height: 60px; margin-left: auto; margin-right: auto; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; pointer-events: auto; }
+
+/* ----------------------- Site scroll locker ----------------------- */
+.b-reader-on.outer-scroll body { overflow-y: scroll; }
+.b-reader-on.inner-scroll .b-reader_box_content { max-height: 100%; overflow-y: scroll; overflow-x: visible; }
+
+.b-reader-on.lock .b-reader { position: relative; }
+.b-reader-on.lock .b-reader_locker { position: fixed; left: 0; top: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; overflow: hidden; }
+
+/* ----------------------- Overlay ----------------------- */
+.b-reader_overlay { position: absolute; z-index: 0; left: 0; top: 0; right: 0; bottom: 0; background: #000; }
+
+.b-reader-on.overlay .b-reader_overlay { pointer-events: auto; }
+
+/* ----------------------- Theme ----------------------- */
+.b-reader_overlay { background: #000 url('../../img/loading.gif') center center no-repeat; }
+
+.b-reader_box { padding: 40px; background: #fff; background: rgba(255,255,255,0.95); -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+
+.b-reader_close { position: absolute; z-index: 5; right: 16px; top: 16px; width: 18px; height: 18px; background: url('../../img/close.png') center center no-repeat; cursor: pointer; pointer-events: auto; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)"; -moz-opacity: 0.75; -khtml-opacity: 0.75; opacity: 0.75; }
+.b-reader_close:hover { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; }
+
+.h-page {
+    -moz-transition: .4s -moz-filter linear;
+    -ms-transition: .4s -ms-filter linear;
+    -o-transition: .4s -o-filter linear;
+    transition: .4s -webkit-filter linear;
+}
+.b-reader-on .h-page {
+    -webkit-filter: blur(2px);
+    -ms-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px);
+}

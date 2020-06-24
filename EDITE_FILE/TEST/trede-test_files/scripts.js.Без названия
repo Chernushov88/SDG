@@ -1,0 +1,299 @@
+// JavaScript Document
+// This is the main JS file
+
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+
+
+
+var sms = 0,
+    fsgo = 0;
+
+$(document).ready(function () {
+
+
+    "use strict";
+
+    //	Parsley Form Example
+
+    //	Parsley Form Example
+
+    $('.next').on('click', function () {
+        var current = $(this).data('currentBlock'),
+            next = $(this).data('nextBlock');
+        // only validate going forward. If current group is invalid, do not go further
+        // .parsley().validate() returns validation result AND show errors
+        if (next > current) {
+            if (false === $('#basic-wizard').parsley().validate('block' + current)) {
+                return;
+            }
+        }
+        // validation was ok. We can go on next step.
+        $('.block' + current)
+            .removeClass('show')
+            .addClass('hidden');
+
+        $('.block' + next)
+            .removeClass('hidden')
+            .addClass('show');
+    });
+
+    //	Bootstrap Wizard
+
+    if ($('#rootwizard-pills').length) {
+        $('#rootwizard-pills').bootstrapWizard({
+            onTabShow: function (tab, navigation, index) {
+                var $total = navigation.find('li').length,
+                    $current = index + 1,
+                    $percent = ($current / $total) * 100;
+                $('#rootwizard-pills').find('#rootwizard-pills-progress').css({
+                    width: $percent + '%'
+                });
+            }
+
+        });
+    }
+
+    if ($('#rootwizard-navs').length) {
+        $('#rootwizard-navs').bootstrapWizard({
+            onTabShow: function (tab, navigation, index) {
+                var $total = navigation.find('li').length,
+                    $current = index + 1,
+                    $percent = ($current / $total) * 100;
+                $('#rootwizard-navs').find('#progressbar-navs').css({
+                    width: $percent + '%'
+                });
+            }
+        });
+    }
+    function getAnswer() {
+
+        var answer = '';
+        $('input:radio:checked').each(function () {
+            var questionNum = $(this).closest('.tab-pane').attr('data-question');
+            var answerNum = $(this).attr('data-answer');
+            var title = $(this).closest('.tab-pane').find('.tab-text').text();
+            var link = $(this).closest('.radio-styled').find('label').text();
+            answer +=  questionNum  + ':' + title  +"\n" + answerNum + ':' + link + "\n";
+        });
+        return answer;
+    }
+
+    if ($('#rootwizard').length) {
+        $('#rootwizard').bootstrapWizard({
+            onTabShow: function (tab, navigation, index) {
+
+                // Dynamically change percentage completion on progress bar
+                var tabCount = navigation.find('li').length,
+                    current = index + 1,
+                    percentDone = (current / tabCount) * 100;
+                $('#rootwizard').find('#progressbar').css({
+                    width: percentDone + '%'
+                });
+
+                if(current===11){
+                    $('#get_answers').val(getAnswer());
+
+                }
+                if(current===6){
+                    //alert('modal')
+                    //$('.popup').addClass('in').fadeIn(300);
+                    $('.popup1').addClass('popup1--active');
+                    $('.popup1 i').click(function(){
+                        $('.popup1').hide();
+                    });
+                    //alert('modal');
+                }
+                 if(current===7){
+                    //alert('modal')
+                    $('.popup1').removeClass('in').hide();
+                }
+                // Optional: Show Done button when on last tab;
+                // It is invisible by default.
+                $('#rootwizard').find('.last').toggle(current >= tabCount);
+
+                // Optional: Hide Next button if on last tab;
+                // otherwise it shows but is disabled
+                $('#rootwizard').find('.next').toggle(current < tabCount);
+            }
+        });
+    }
+
+
+
+    if ($('#rootwizard-2').length) {
+        $('#rootwizard-2').bootstrapWizard({
+            onTabShow: function (tab, navigation, index) {
+
+                // Dynamically change percentage completion on progress bar
+                var tabCount = navigation.find('li').length,
+                    current = index + 1;
+
+
+                // Optional: Show Done button when on last tab;
+                // It is invisible by default.
+                $('#rootwizard-2').find('.last').toggle(current >= tabCount);
+
+                // Optional: Hide Next button if on last tab;
+                // otherwise it shows but is disabled
+                $('#rootwizard-2').find('.next').toggle(current < tabCount);
+            }
+        });
+    }
+
+    $('#rootwizard, #rootwizard-2').on('show.bs.tab', function (event) {
+
+        // wizard
+        var $wizard = $(this),
+            $navEars = $('ul.nav', $wizard),
+            // current and next tab's indexes
+            tabToMoveToIdx = $navEars.children().index($(event.target).parent()) + 1,
+            tabToMoveFromIdx = $navEars.children().index($(event.relatedTarget).parent()) + 1;
+
+        if (tabToMoveToIdx > tabToMoveFromIdx) { // wee need to validate it
+
+            if (tabToMoveToIdx - tabToMoveFromIdx > 1) {
+                return false; // allow only nearest tab transitions
+            }
+
+            if (!$('form', $wizard).parsley().validate('tab-' + tabToMoveFromIdx)) {
+                $(event.relatedTarget).parent().removeClass('validated-tab');
+                return false; // stay as you are!
+            } else {
+                $(event.relatedTarget).parent().addClass('validated-tab');
+            }
+        }
+    });
+
+});
+
+
+var sms = 0, fsgo = 0;
+$(document).ready(function () {
+
+    $('#b_sms_change').click(function () {
+        $('#smsModal').modal('hide');
+        $('#sms_error').html('');
+        $('#sms_code').val('');
+        $('#formModal').modal('show');
+    });
+    $('#b_sms_ok').click(function () {
+        $('#sms_error').html('');
+        var code = $('#sms_code').val();
+        //if(code){
+        $.get('/sms.php?act=check&code=' + code, function (data) {
+            console.log(data);
+            if (data.status == 'ok') {
+                fsgo = 1;
+                // $('#smsModal').modal('hide');
+
+                $('#demo-form').attr('action', 'form-submit.php').submit();
+
+
+            } else {
+                $('#sms_error').html(data.msg);
+            }
+        }, 'json');
+        //}
+    });
+
+
+    $('#demo-form').submit(function () {
+
+        if (fsgo == 0) {
+            var p = $(this).serialize();
+            primary_save();
+            $('#form_error').html('');
+            $.post('/sms.php?act=gen', p, function (data) {
+                console.log(data);
+
+                if (data.status == 'ok') {
+                    console.log('ok');
+                    $('#sms_phone').html(data.phone);
+
+                    $('#smsModal').modal('show');
+                    $('.modal-form').hide();
+
+                } else {
+                    // $('#form_error').html(data.msg);
+                    // $('#zay').modal();
+                    // $('.modal-error').append('НЕ ВЕРНЫЙ ФОРМАТ НОМЕРА' +' '+ data.phone).css('padding','20px');;
+
+                    console.log(data, 'valid number example 9521234567')
+                }
+            }, 'json');
+
+            return false;
+        }
+    });
+
+
+    function primary_save() {
+        $.ajax({
+            type: "POST",
+            url: "/primary_save.php",
+            data: {
+                name: $('.form_name').val(),
+                email: $('.form_email').val(),
+                phone: $('.form_phone').val()
+            },
+			async: false,
+            statusCode: {
+                403: function () {
+                    alert("Что-то пошло не так, попробуйте еще раз");
+                },
+              200: function (data) {
+                    var resp = JSON.parse(data);
+                    console.log(resp);
+                    var id = $('.response_id');
+                    var hash = $('.response_hash');
+                    if (id.val().length === 0 && hash.val().length === 0) {
+                        id.val(resp.id);
+                        hash.val(resp.hash);
+                    }
+     $('#smsModal').modal();
+                }
+            },
+            error: function (e) {
+                alert("Server error - " + e);
+            }
+        });
+    }
+
+
+
+
+
+    $('.phone_btns').click(function(e) {
+        e.preventDefault();
+        $('.change-phone').toggle();
+    });
+
+    $('.ok_btns').click(function(e) {
+        e.preventDefault();
+        $('.change-phone').toggle();
+        var phone = $('.sms_phone').val();
+        $('.form_phone').val(phone);
+        $('#sms_phone').html(phone).css('color','#2860e2');
+
+        if (fsgo == 0) {
+            $.post('/sms.php?act=gen',{ phone: phone}, function (data) {
+                if (data.status == 'ok') {
+                    console.log(data.code);
+                    $('.your_phone').show();
+                    $('.error_phone').hide();
+                    $('#sms_phone').html(phone).css('color','#2860e2');
+                } else {
+                    $('.error_phone').html('НЕ ВЕРНЫЙ ФОРМАТ НОМЕРА' + ' ' + data.phone).css('color','red');
+                    $('.your_phone').hide();
+                    console.log(data, 'valid number example 9521234567')
+                }
+            }, 'json');
+
+            return false;
+        }
+    });
+
+
+
+});

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://sff.ru/index.html</loc>
+    <lastmod>2017-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://sff.ru/images/15094404_218188301926820_8172867879513148956_n.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://sff.ru/images/clip2net_170213183924.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://sff.ru/images/money-back-guarantee.png</image:loc>
+    </image:image>
+  </url>
+</urlset>

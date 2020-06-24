@@ -119,9 +119,14 @@ $gpreset = str_replace(' ','',strtolower($gantry->get('name')));
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-PS2B68K');</script>
 	<!-- End Google Tag Manager -->
+    <style>
+        /*.background,
+        .background+.container{display: none;}*/
+    </style>
 </head>
 
 <body <?php echo $gantry->displayBodyTag(); ?>  id="body_<?= JRequest::getInt('id')?>">
+
 <?php
     // $db = &JFactory::getDBO();
     // $id = JRequest::getString('id');
@@ -138,7 +143,7 @@ $ClassNewStyle = '';
 if ($idPosts == '883' || $idPosts == '891' || $idPosts == '893' ||  $idPosts == '895' ||  $idPosts == '24' ||  $idPosts == '22' ||  $idPosts == '37' ||  $idPosts == '519' || $idPosts == "203" || $idPosts == "461"):
 	$ClassNewStyle = "body_NewStyle";
 endif ?>
-<div class="<?=$ClassNewStyle . $IDmenu;?>" data-menu="<?= $menu;?>">
+<div  class="<?=$ClassNewStyle . $IDmenu;?>" data-menu="<?= $menu;?>">
 <!-- beta-versoon -->
 <!-- beta-versoon -->
 <!-- Google Tag Manager (noscript) -->
@@ -177,89 +182,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<?php /** End Header **/ endif; ?>
 		</header>
 		<?php /** End Top Surround **/ endif; ?>
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-  "symbols": [
-    {
-      "description": "Apple",
-      "proName": "NASDAQ:AAPL"
-    },
-    {
-      "description": "Facebook",
-      "proName": "NASDAQ:FB"
-    },
-    {
-      "description": "Electronic Arts",
-      "proName": "NASDAQ:EA"
-    },
-    {
-      "description": "Tesla",
-      "proName": "NASDAQ:TSLA"
-    },
-    {
-      "description": "Boeing",
-      "proName": "NYSE:BA"
-    },
-    {
-      "description": "General Motors",
-      "proName": "NYSE:GM"
-    },
-    {
-      "description": "Amazon",
-      "proName": "NASDAQ:AMZN"
-    },
-    {
-      "description": "Alibaba Group",
-      "proName": "NYSE:BABA"
-    },
-    {
-      "description": "McDonald's",
-      "proName": "NYSE:MCD"
-    },
-    {
-      "description": "Microsoft",
-      "proName": "NASDAQ:MSFT"
-    },
-    {
-      "description": "S&P 500 ETF",
-      "proName": "AMEX:SPY"
-    },
-    {
-      "description": "AMD",
-      "proName": "NASDAQ:AMD"
-    },
-    {
-      "description": "Intel",
-      "proName": "NASDAQ:INTC"
-    },
-    {
-      "description": "Twitter",
-      "proName": "NYSE:TWTR"
-    },
-    {
-      "description": "Coca-Cola",
-      "proName": "NYSE:KO"
-    },
-    {
-      "description": "Nvidia",
-      "proName": "NASDAQ:NVDA"
-    },
-    {
-      "description": "Uber",
-      "proName": "NYSE:UBER"
-    }
-  ],
-  "colorTheme": "light",
-  "isTransparent": true,
-  "displayMode": "regular",
-  "locale": "ru"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
+
 		<?php /** Begin Drawer **/ if ($gantry->countModules('drawer')) : ?>
 		<div id="rt-drawer">
 			<div class="rt-container">
@@ -512,6 +435,56 @@ if (!($idPosts == '891' || $postId == 893) ) {?>
 		});
 	</script>
 	</div>
+
+
+	<div class="hidden">
+<div class="button-menu" style="text-align: right;"><span class="icon-desktop"> Личный кабинет: </span> <a class="sppb-btn  sppb-btn-success sppb-btn-rounded sppb-btn-gradient" href="free-online-education">Регистрация</a> <a class="sppb-btn  sppb-btn-primary sppb-btn-rounded" href="https://sdg-trade.info/cms/system/login" target="_blank" rel="noopener noreferrer">Вход</a></div>
+
+		<form action="/?task=user.login" method="post" class="form-validate form-horizontal well">
+			<fieldset>
+
+			<div class="control-group">
+			<div class="control-label">
+			<label id="username-lbl" for="username" class="required">
+			Логин<span class="star">&nbsp;*</span></label>
+			</div>
+			<div class="controls">
+			<input type="text" name="username" id="username" value="" class="validate-username required" size="25" required="required" aria-required="true" autofocus="" aria-invalid="false">
+			</div>
+			</div>
+
+			<div class="control-group">
+			<div class="control-label">
+			<label id="password-lbl" for="password" class="required">
+			Пароль<span class="star">&nbsp;*</span></label>
+			</div>
+			<div class="controls">
+			<input type="password" name="password" id="password" value="" class="validate-password required" size="25" maxlength="99" required="required" aria-required="true" aria-invalid="false">	</div>
+			</div>
+			<div class="control-group">
+			<div class="control-label">
+			<label for="remember">
+			Запомнить меня						</label>
+			</div>
+			<div class="controls">
+			<input id="remember" type="checkbox" name="remember" class="inputbox" value="yes">
+			</div>
+			</div>
+			<div class="control-group">
+			<div class="controls">
+			<button type="submit" class="btn btn-primary">
+			Войти					</button>
+			</div>
+			</div>
+			<input type="hidden" name="return" value="">
+			<input type="hidden" name="50c55faa9f6faafeb6b64ca6394d2c0f" value="1">		</fieldset>
+		</form>
+
+	</div>
+
+
+
+
 </body>
 </html>
 <?php

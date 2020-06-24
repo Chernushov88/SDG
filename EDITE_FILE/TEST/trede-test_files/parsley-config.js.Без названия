@@ -1,0 +1,16 @@
+    // ========================================================================
+    //	Parsley Validator
+    // ========================================================================	
+
+    window.ParsleyConfig = {
+        errorClass: 'has-error',
+        successClass: 'has-success',
+        classHandler: function (ParsleyField) {
+            return ParsleyField.$element.parents('.form-group');
+        },
+        errorsContainer: function (ParsleyField) {
+            return ParsleyField.$element.parents('.form-group');
+        },
+        errorsWrapper: '<div class="helper-block">',
+        errorTemplate: '<div></div>',
+    };

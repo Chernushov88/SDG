@@ -1,121 +1,20 @@
-<RequireAll>
-Require all granted
-Require not ip 142.93.87.106
-Require not ip 119.23.211.54
-Require not ip 159.89.207.86
-Require not ip 167.172.192.43
-Require not ip 46.101.122.215
-Require not ip 159.203.93.122
-Require not ip 184.68.11.210
-Require not ip 104.248.124.93
-Require not ip 104.248.221.80
-Require not ip 108.160.132.133
-Require not ip 18.222.164.143
-Require not ip 47.94.102.174
-Require not ip 138.68.60.27
-Require not ip 139.59.67.152
-Require not ip 206.189.117.9
-Require not ip 46.101.185.245
-</RequireAll>
-
 ## Mod_rewrite in use.
 Options +FollowSymLinks
-
-
 RewriteEngine On
 Options -Indexes
-RewriteCond %{SERVER_PORT} !^443$
-RewriteRule ^(.*)$ https://sdg-trade.com/$1 [R=301,L]
 
 RewriteCond %{HTTPS} off
-RewriteRule ^(abc/def|ghi)(.*)/?$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,NC,L]
-
-
-Redirect 301 /obuchenie/besplatnoe-test https://sdg-trade.com/obuchenie/besplatnoe
-Redirect 301 /obuchenie-test/ https://sdg-trade.com/obuchenie
-Redirect 301 /test-obuchenie https://sdg-trade.com/obuchenie
-Redirect 301 /obuchenie/courses  https://sdg-trade.com/obuchenie
-Redirect 301 /obuchenie/kto-obuchaet  https://sdg-trade.com/obuchenie
-Redirect 301 /obuchenie/otzyvy  https://sdg-trade.com/obuchenie
-
-Redirect 301 /market/stati/indeksy-nasdaq  https://sdg-trade.com/market/stati/indeks-dou-dzhonsa-s-p-500-nyse-composite-i-drugie-barometry-fondovogo-rynka
-Redirect 301 /market/stati/indeksy-nyse  https://sdg-trade.com/market/stati/indeks-dou-dzhonsa-s-p-500-nyse-composite-i-drugie-barometry-fondovogo-rynka
+RewriteRule ^(abc/def|ghi)(.*)/?$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,NC,L] 
 
 Redirect 301 /frontpage-content/top-template-of-the-year https://sdg-trade.com
 Redirect 301 /component/users/ https://sdg-trade.com
 Redirect 301 /component/users https://sdg-trade.com
-Redirect 301 /traderday/ https://sdg-trade.com/lp/tradingday/
-Redirect 301 /m/obuchenie https://sdg-trade.com/obuchenie/
+Redirect 301 /traderday/ https://sdg-trade.com/tradingday
+Redirect 301 /m/obuchenie https://sdg-trade.com/obuchenie
 Redirect 301 /lp/ny https://sdg-trade.com
-Redirect 301 /tradingday https://sdg-trade.com/lp/tradingday/
-Redirect 301 /demo https://sdg-trade.com/lp/demo/
-Redirect 301 /demo-acc https://sdg-trade.com/lp/demo-acc/
-Redirect 301 /freebook https://sdg-trade.com/lp/freebook/
-Redirect 301 /gerchik https://sdg-trade.com/lp/gerchik/
-Redirect 301 /confa https://sdg-trade.com/lp/confa/
-Redirect 301 /start https://sdg-trade.com/lp/start/
-Redirect 301 /study https://sdg-trade.com/lp/study/
-Redirect 301 /summer https://sdg-trade.com/lp/summer/
-Redirect 301 /trade https://sdg-trade.com/lp/trade/
-Redirect 301 /lp/start https://sdg-trade.com/bazoviy/
-Redirect 301 /lp/study https://sdg-trade.com/bazoviy/
-Redirect 301 /daytrading https://sdg-trade.com/lp/trade/
-Redirect 301 /obuchenie/individualnyi-kouching/trejder-oles-sribnyj https://sdg-trade.com/individualnyi-kouching/trejder-oles-sribnyj
-Redirect 301 /obuchenie/individualnyi-kouching/sergey-kolomiets https://sdg-trade.com/individualnyi-kouching/sergey-kolomiets
-Redirect 301 /obuchenie/individualnyi-kouching https://sdg-trade.com/individualnyi-kouching
-Redirect 301 /programmnoe-obespechenie/clicker-20 https://sdg-trade.com/programmnoe-obespechenie
-Redirect 301 /market/stati/torgovaya-platforma-fusion https://sdg-trade.com/programmnoe-obespechenie/torgovaya-platforma-fusion
-Redirect 301 /vtorichnyi-rynok-cennyh-bumag https://sdg-trade.com/market/stati/chto-takoe-ipo-kompanii-ego-czeli-preimushhestva-etapyi
-Redirect 301 /klientam/chat https://sdg-trade.com/
-Redirect 301 /dilingovyi-centr-forex https://sdg-trade.com/market/stati/raznicza-mezhdu-forex-i-fondovoj-birzhej
-Redirect 301 /proprietary-trading https://sdg-trade.com/market/stati/ponyatie-prop-trejding-ili-kak-torgovat-na-kapital-kompanii
-Redirect 301 /birja-cennyh-bumag https://sdg-trade.com/market
-Redirect 301 /new-yorkskaya-fondovaya-birja https://sdg-trade.com/market/stati/nyu-jorkskaya-fondovaya-birzha
-Redirect 301 /podgotovka-k-torgam/komentarii-i-analitika/eto-ne-dezha-vyu-dlya-ekonomiki-ssha https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /obuchenie/video/konferencziya-sdg-trade-26-marta-2011 https://sdg-trade.com/obuchenie
-Redirect 301 /market/nasdaq-exchange/trading https://sdg-trade.com/market/nasdaq-exchange
-Redirect 301 /podgotovka-k-torgam/vnutrennij-chat https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /klientam/kak-stat-klientom https://sdg-trade.com/torgovyie-usloviya
-Redirect 301 /kursy-treiderov https://sdg-trade.com/obuchenie
-Redirect 301 /podgotovka-k-torgam/komentarii-i-analitika https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /market/nyse-exchange/trading https://sdg-trade.com/market/nyse-exchange
-Redirect 301 /default.htm https://sdg-trade.com
-Redirect 301 /obuchenie/individualnoe-obuchenie https://sdg-trade.com/individualnyi-kouching
-Redirect 301 /market/stati/kurs-aktivnogo-trejdera-kniga-a-gerchika https://sdg-trade.com/obuchenie
-Redirect 301 /klientam/otkryit-demo-schet https://sdg-trade.com/otkryt-schet
-Redirect 301 /o-kompanii/novosti/akcziya-skidka-25-na-fusion-openbook-v-podarok https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /o-kompanii/novosti/gerchika-17-oktyabrya https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /o-kompanii/novosti/perevod-vremeni-v-ssha https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /o-kompanii/novosti/rox-besplatno https://sdg-trade.com/programmnoe-obespechenie/torgovaya-platforma-rox
-Redirect 301 /prop https://sdg-trade.com/market/stati/ponyatie-prop-trejding-ili-kak-torgovat-na-kapital-kompanii
-Redirect 301 /o-kompanii/novosti https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /o-kompanii/novosti/brifing-4-oktyabrya https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /o-kompanii/novosti/vebinar-aleksandra-gerchika-6-noyabrya https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /podgotovka-k-torgam/komentarii-i-analitika/brifing-25-sentyabrya https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /podgotovka-k-torgam/komentarii-i-analitika/brifing-na-26-sentyabrya https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /podgotovka-k-torgam/komentarii-i-analitika/brifing-na-27-sentyabrya https://sdg-trade.com/o-kompanii/novosti-sdg-trade
-Redirect 301 /obuchenie- https://sdg-trade.com/obuchenie
-Redirect 301 /kak-stat-klientom/kak-nachat-zarabatyvat-na-fondovom-rynke-ssha] https://sdg-trade.com/kak-stat-klientom/kak-nachat-zarabatyvat-na-fondovom-rynke-ssha
-Redirect 301 /sitemap.xml https://sdg-trade.com/index.php?option=com_xmap&view=xml&tmpl=component&id=1
-Redirect 301 /podgotovka-k-torgam/komentarii-i-analitika/usilenie-medvezhego-trenda-na-fondovom-ryinke-ssha https://sdg-trade.com/market/stati/chto-nuzhno-znat-pro-obem-torgov
-
-Redirect 301 /market/stati/forex-ili-nyse-razlichiya-i-osobennosti-etix-ryinkov-chast-2-ya https://sdg-trade.com/market/stati/forex-vs-nyse
-Redirect 301 /market/stati/forex-ili-nyse-razlichiya-i-osobennosti-etix-ryinkov-chast-1-ya https://sdg-trade.com/market/stati/forex-vs-nyse
-
-Redirect 301 /klientam/programmnoe-obespechenie https://sdg-trade.com/programmnoe-obespechenie
-Redirect 301 /klientam/online-translyatsiya/onlayn-translyatsiya https://sdg-trade.com/klientam/online-translyatsiya
-Redirect 301 /klientam/terminologiya https://sdg-trade.com/market/terminologiya
-Redirect 301 /klientam/onlajn-podderzhka https://sdg-trade.com/o-kompanii/kontakty
-
-Redirect 301 /treyding-dlya-novichkov https://sdg-trade.com/market
-Redirect 301 /torgovyie-usloviya  https://sdg-trade.com/otkryt-schet
-Redirect 301 /market-test https://sdg-trade.com/market
-Redirect 301 /market-1 https://sdg-trade.com/market
-
-Redirect 301 /stati/ https://sdg-trade.com/market/stati/
-Redirect 301 /o-kompanii/novosti-sdg-trade/fusion-75 https://sdg-trade.com/programmnoe-obespechenie/torgovaya-platforma-fusion
-Redirect 301 /klientam/lichnaya-statistika https://sdg-trade.com
-Redirect 301 /lp/prop/ https://sdg-trade.com/lp/year/
+Redirect 301 /tradingday https://sdg-trade.com/lp/tradingday
+Redirect 301 /demo https://sdg-trade.com/lp/demo
+Redirect 301 /demo-acc https://sdg-trade.com/lp/demo-acc
 
 RewriteCond %{HTTPS} !^on$
 RewriteRule (.*) https://sdg-trade.com/$1 [R,L]
@@ -128,25 +27,11 @@ RewriteRule ^index\.php$ https://sdg-trade.com/ [R=301,L]
 
 RewriteRule ^index.php/(.*)$ https://sdg-trade.com/$1 [R=permanent,L]
 
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/ 
 RewriteRule ^index\.php$ https://sdg-trade.com/ [R=301,L]
 
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /homepage\.html\ HTTP/
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /homepage\.html\ HTTP/ 
 RewriteRule ^homepage\.html$ https://sdg-trade.com/ [R=301,L]
-
-
-# Begin - ??????? ???? ? ?????
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} ^(.+)/$
-RewriteRule ^(.+)/$ /$1 [R=301,L]
-# End - ??????? ???? ? ?????
-
-#RewriteCond %{THE_REQUEST} //
-# ?????????, ??????????? ?? ???? (//) ????? ???? ???.
-#RewriteRule .* /$0 [R=301,L]
-# ????????? ??? ?????? ?????.
-
-
 
 
 ## Begin - Rewrite rules to block out some common exploits.
@@ -197,56 +82,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 #
 ## End - Joomla! core SEF Section.
-
-# ?????? text, html, javascript, css, xml:
-<ifModule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
-</ifModule>
-
-# ??????????????? ?? gzip ?????
-AddEncoding gzip .gz
-<FilesMatch "\.js.gz$">
-ForceType text/javascript
-Header set Content-Encoding: gzip
-</FilesMatch>
-<FilesMatch "\.js$">
-RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} !".*Safari.*"
-RewriteCond %{HTTP:Accept-Encoding} gzip
-RewriteCond %{REQUEST_FILENAME}.gz -f
-RewriteRule (.*)\.js$ $1\.js.gz [L]
-ForceType text/javascript
-</FilesMatch>
-<FilesMatch "\.css.gz$">
-ForceType text/css
- Header set Content-Encoding: gzip
-</FilesMatch>
-<FilesMatch "\.css$">
-RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} !".*Safari.*"
-RewriteCond %{HTTP:Accept-Encoding} gzip
-RewriteCond %{REQUEST_FILENAME}.gz -f
-RewriteRule (.*)\.css$ $1\.css.gz [L]
-ForceType text/css
-
-
-
-</FilesMatch>
-
-## EXPIRES CACHING ##
-<IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType image/jpg "access 1 year"
-ExpiresByType image/jpeg "access 1 year"
-ExpiresByType image/gif "access 1 year"
-ExpiresByType image/png "access 1 year"
-ExpiresByType text/css "access 1 month"
-ExpiresByType text/html "access 1 month"
-ExpiresByType application/pdf "access 1 month"
-ExpiresByType text/x-javascript "access 1 month"
-ExpiresByType application/x-shockwave-flash "access 1 month"
-ExpiresByType image/x-icon "access 1 year"
-ExpiresDefault "access 1 month"
-</IfModule>
-## EXPIRES CACHING ##
-AddHandler application/x-httpd-php70 .php

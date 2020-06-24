@@ -78,7 +78,7 @@ function modChrome_standard($module, &$params, &$attribs)
         <div class="module-surround">
 	        <?php if ($module->showtitle != 0) : ?>
 			<div class="module-title">
-	     		<h2 class="title">
+	     		<h2 class="h2 title">
 	     			<?php if (preg_match("/title[5]{1,}/i", $params->get('moduleclass_sfx'))) : ?>
 	     			<span class="rt-bubble<?php echo getIconClass($params->get('moduleclass_sfx'));?>"></span>
 	     			<?php endif; ?>

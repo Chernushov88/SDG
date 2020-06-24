@@ -18,6 +18,8 @@ if ($postId == 287 || $postId == 280 || $postId == 253 || $postId == 292 || $pos
 	<link rel="canonical" href="https://sdg-trade.com/obuchenie">
 <?} elseif ($postId == 199){?>
 	<link rel="canonical" href="https://sdg-trade.com/market">
+<?} elseif ($postId == 37){?>
+
 <?} else {
 	$href = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 	$newHref = strtok($href, '?');

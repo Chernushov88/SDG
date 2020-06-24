@@ -1,7 +1,7 @@
 <?php
   $app = JFactory::getApplication();
   $menu = $app->getMenu()->getActive()->id;
-   // echo $menu.'<br>';
+    //echo $menu.'<br>';
   ?>
 <?php if($menu == '101') { ?>
 <!-- page main-->
@@ -176,29 +176,29 @@
   	}
   }]
   }
-    
+
 </script>
-<?php } else if($menu == '139' || $menu == '289' || $menu == '167' || $menu == '178' || $menu == '179' || $menu == '141') { 
+<?php } else if($menu == '203' || $menu == '139' || $menu == '289' || $menu == '167' || $menu == '178' || $menu == '179' || $menu == '141' || $menu == '294') {
   $categoryId=JRequest::getInt('id');
   // echo $categoryId;
   if ($categoryId == 26  || $categoryId == 22 || $categoryId == 23 || $categoryId == 24 || $categoryId == 37) {
-    
+
   }
   else{
       $params = JFactory::getApplication()->getParams();
       // echo $params->get('page_heading', '');
       // echo $params->get('page_title', '');
-      
+
       $app = JFactory::getApplication();
       $menuId =  $app->getMenu()->getActive()->id;
-      
-      
+
+
       // echo $categoryId.'<br>';
 
       // $dataAtr =  $app->getMenu()->getActive()->publish_up;
       // echo = $dataAtr;
-      $db = JFactory::getDbo(); 
-      
+      $db = JFactory::getDbo();
+
       $query = $db->getQuery(true)->select(
         $db->quoteName(
         array('id', 'publish_up')
@@ -209,7 +209,7 @@
       $articles = $db->loadObjectList();
       $arrsy = (array) $articles;
       // echo $arrsy[0]->publish_up;
-      
+
       $queryModified = $db->getQuery(true)->select(
         $db->quoteName(
         array('id', 'modified')
@@ -219,8 +219,8 @@
       $db->setQuery($queryModified);
       $artModified = $db->loadObjectList();
       $arrayModified = (array) $artModified;
-       
-      
+
+
       $queryImg = $db->getQuery(true)->select(
         $db->quoteName(
         array('id', 'fulltext','images','introtext')
@@ -234,10 +234,10 @@
       $arrImg10 = (array)$ima;
     if (!empty($arrImg10)) {
       $arrImg100 = (array)$arrImg10[0];
-      $js=json_decode($arrImg100[0]);      
+      $js=json_decode($arrImg100[0]);
       if (strlen($js->image_fulltext)>2){
-        $urlImg = $js->image_fulltext;  
-      }else{    
+        $urlImg = $js->image_fulltext;
+      }else{
         $fullTEXT = $Images[0]->fulltext;
         $arrImg0 = (array)$fullTEXT ;
         preg_match_all("/\s*src\s*=\s*[\"\']{0,1}([^\s\"\']+)[\"\'\s]+/ims",$arrImg0[0],$aResult5);
@@ -248,17 +248,17 @@
             $substr = "image";
             if (strstr($str, $substr)) {
               $imga[]=$prob;
-            }   
+            }
           }
           if (!empty($imga)) {
-           $urlImg =$imga[0]; 
-          }     
-        } 
+           $urlImg =$imga[0];
+          }
+        }
       }
     }else{
       $fullTEXT = $Images[0]->fulltext;
       $arrImg0 = (array)$fullTEXT ;
-      preg_match_all("/\s*src\s*=\s*[\"\']{0,1}([^\s\"\']+)[\"\'\s]+/ims",$arrImg0[0],$aResult5);    
+      preg_match_all("/\s*src\s*=\s*[\"\']{0,1}([^\s\"\']+)[\"\'\s]+/ims",$arrImg0[0],$aResult5);
       $imga=array();
       if (!empty($aResult5[1])) {
         foreach ($aResult5[1] as $prob) {
@@ -266,19 +266,19 @@
           $substr = "image";
           if (strstr($str, $substr)) {
             $imga[]=$prob;
-          }   
+          }
         }
         if (!empty($imga)) {
-          $urlImg =$imga[0];  
-        }    
-      }   
+          $urlImg =$imga[0];
+        }
+      }
     }?>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "NewsArticle",
         "mainEntityOfPage": {
-          "@type": "WebPage",
+          "@type": "https://schema.org/WebPage",
           "@id": "<?= 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?>"
         },
         "headline": "<?= $params->get('page_heading', '');?>",
@@ -289,11 +289,11 @@
         "dateModified": "<?=$arrayModified[0]->modified; ?>",
         "author": {
           "@type": "Person",
-          "name": "Super User"
+          "name": "SDG Trade"
         },
          "publisher": {
           "@type": "Organization",
-          "name": "Google",
+          "name": "SDG Trade",
           "logo": {
             "@type": "ImageObject",
             "url": "https://sdg-trade.com/images/banners/logo.png"
@@ -301,12 +301,12 @@
         },
         "description": "<?=$params->get('page_description', '');?>"
       }
-        
+
     </script><?
   }
-    
+
   // echo $urlImg;
-  
+
   ?>
 
 <?php }  ?>

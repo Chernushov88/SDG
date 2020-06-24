@@ -4334,7 +4334,7 @@ body.boxed {
   }
   .b-content_faq_tabs_answer {
     font: 300 1.25em/1.4 Robotobook, sans-serif;
-    min-height: 676px;
+    min-height: 200px;
   }
 }
 @media (min-width: 768px) {
@@ -4366,7 +4366,7 @@ body.boxed {
   }
   .b-content_faq_tabs_answer {
     font: 300 1em/1.4 Robotobook, sans-serif;
-    min-height: 690px;
+    min-height: 200px;
   }
   .container {
     padding: 0 30px;
@@ -4389,7 +4389,6 @@ body.boxed {
   }
   .b-content_faq_tabs_answer {
     font: 300 1.15em/1.4 Robotobook, sans-serif;
-    min-height: 700px;
     padding: 15px;
   }
   .b-content_faq .container {
@@ -4397,7 +4396,7 @@ body.boxed {
     width: 700px;
   }
   .b-content_faq_tabs_switcher li + li {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .b-content_faq_tabs {
     padding: 10px;
@@ -7600,8 +7599,13 @@ p.who {
     display: none;
   }
   .primeru__video-block .primeru__video:nth-child(1) {
-    display: none;
+    //display: none;
+    padding-left: 0;
   }
+  .section-title.reviews {
+    font-size: 28px;
+  }
+  .reviews>.section-title.text-center + .container .row.block{margin: 0;}
   .primeru__col-video {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -7618,6 +7622,9 @@ p.who {
   .get-in-touch .pull-left,
   .get-in-touch .pull-right {
     float: none !important;
+  }
+  #faq .container{
+    padding: 20px 0;
   }
 }
 .row.block span {
@@ -7736,4 +7743,10 @@ p.who {
   .header .logo img {
     max-width: 110px;
   }
+  body *{
+    //overflow: visible !important;
+    outline: 0px solid ;
+  }
+  #education h2{font-size: 28px;}
+  #education .row.block{margin: 0;}
 }

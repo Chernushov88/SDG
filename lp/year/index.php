@@ -34,7 +34,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS2B68K"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-   
+
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0"
         style="position:absolute">
         <symbol id="icon-play-btn" viewBox="0 0 70 70">
@@ -412,7 +412,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>
@@ -421,7 +421,7 @@
                 <div class="container ">
                     <div class="parallax-inner text-center">
                         <h2 class="section-title text-center">Кому подойдет данная программа?
-                           
+
                         </h2>
                         <div class="section-title text-center">
                     <span></span>
@@ -1106,7 +1106,7 @@
                     }
                     $link = curl_get_contents("https://sdg-trade.com/kalendar-sobyitij");
                     $start_teg = '<div id="jevents">'; // Начало тегов от которых парсить
-                    $stop_teg = '<!-- close #jevents //-->'; //До кудо парсить теги 
+                    $stop_teg = '<!-- close #jevents //-->'; //До кудо парсить теги
                     echo parse($link,$start_teg,$stop_teg);
                     ?>
                 </div>
@@ -1378,7 +1378,7 @@
                 <div class="container">
                     <h2 class="section-title text-center" data-animation="fadeInUp" data-animation-delay="0">Спикеры /
                         Наставники программы
-                        
+
                     </h2>
                     <div class="section-title text-center">
                     <span></span>
@@ -1545,7 +1545,7 @@
                                         <div class="col-md-12">
                                             <h2 class="section-title text-center" data-animation="fadeInUp"
                                                 style="padding-top:50px;" data-animation-delay="0">
-                                                Дополнительные гости программы 
+                                                Дополнительные гости программы
                                             </h2>
                                             <div class="section-title text-center">
                     <span></span>
@@ -1923,7 +1923,7 @@
 
                         <div class="row">
 
-                            <div class="col-xs-4 col-sm-7 col-md-7 col-md-7">
+                            <div class="col-xs-12 col-sm-7 col-md-7 col-md-7">
 
                                 <ul class="b-content_faq_tabs_switcher" data-faq-switcher>
                                     <li>
@@ -1964,7 +1964,7 @@
 
                             </div>
 
-                            <div class="col-xs-8 col-sm-5 col-md-5 col-md-5">
+                            <div class="col-xs-12 col-sm-5 col-md-5 col-md-5">
                                 <div class="b-content_faq_tabs_answer" id="question_00" data-faq-item>
                                     <p> Программа циклична, у нее нет даты начала или окончания. Подключиться можно в
                                         любое время при наличии свободного места и мы составим план развития конкретно
@@ -2127,6 +2127,7 @@
                             возможные риски. Ваша информация не будет передана
                             третьим лицам.
                         </p>
+                        <p style="margin: 0;padding: 10px 0 0 0;text-align: center;>На сайте SDG Trade и связанных сайтах компании SDG Consulting предоставляются исключительно обучающие и консалтинговые услуги. Компания не предоставляет услуги открытия счетов, торговли на финансовых рынках и прочих лицензионных услуг. Прохождение обучения не гарантирует получение прибыли на финансовых рынках.</p>
                     </div>
                 </div>
 
@@ -2188,8 +2189,8 @@
                 }
             }
 
-            document.getElementById("jevents_header").innerHTML =
-                '<h2 class="section-title text-center">Запланированные мероприятия на этот месяц<span></span></h2>';
+            /*document.getElementById("jevents_header").innerHTML =
+                '<h2 class="section-title text-center">Запланированные мероприятия на этот месяц<span></span></h2>';*/
 
             document.getElementsByClassName("__gc__internal__form__helper")[0].value = window.location.href;
             document.getElementsByClassName("__gc__internal__form__helper")[1].value = window.location.href;

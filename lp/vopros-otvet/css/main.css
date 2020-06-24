@@ -524,7 +524,9 @@ input:focus {
         font-weight: 700;
     }
 }
-
+.consulting{
+    margin: 0;padding: 50px 20px 0 ;text-align: center;font-size: 12px;color: #9e9a9a;
+}
 @media only screen and (max-width: 720px) {
     form.standart-form .part {
         min-width: 240px;
@@ -542,6 +544,10 @@ input:focus {
         font-size: 10px;
         margin-top: 31px;
     }
+    .sec6 .main-footer .polit-block a:first-child{width: 100%;}
+    .sec6 .container {padding-bottom: 90px !important;}
+    .consulting{padding: 10px;}
+    .sec6 .main-footer .polit-block {display: flex !important; justify-content: space-between;flex-wrap: wrap;}
 }
 
 
@@ -1312,7 +1318,7 @@ input:focus {
 .sec6 {
     position: relative;
     background: url(../img/sec6-bg.png) 50% 100% no-repeat;
-    padding-bottom: 140px;
+    padding-bottom: 20px;
     padding-top: 70px
 }
 

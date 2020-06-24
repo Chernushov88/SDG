@@ -19,7 +19,7 @@ $cparams = JComponentHelper::getParams('com_media');
 // It will be a separate class if the user starts it with a space
 ?>
 <section class="blog<?php echo $this->pageclass_sfx;?>">
-<?php if ($this->params->get('show_page_heading') != 0 or $this->params->get('show_category_title')): ?>
+<?/*php if ($this->params->get('show_page_heading') != 0 or $this->params->get('show_category_title')): ?>
 <h1>
 	<?php echo $this->escape($this->params->get('page_heading')); ?>
 	<?php if ($this->params->get('show_category_title'))
@@ -29,9 +29,17 @@ $cparams = JComponentHelper::getParams('com_media');
 	}
 	?>
 </h1>
-<?php endif; ?>
+<?php endif; */?>
+<h1>
+	<?php echo $this->escape($this->params->get('page_heading')); ?>
+	<?php if ($this->params->get('show_category_title'))
+	{
 
-<?php if ($this->params->get('show_description', 1) || $this->params->def('show_description_image', 1)) : ?>
+		// echo '<span class="subheading-category">'.$this->category->title.'</span>';
+	}
+	?>
+</h1>
+<?/*php if ($this->params->get('show_description', 1) || $this->params->def('show_description_image', 1)) : ?>
 	<div class="category-desc">
 	<?php if ($this->params->get('show_description_image') && $this->category->getParams()->get('image')) : ?>
 		<img src="<?php echo $this->category->getParams()->get('image'); ?>"/>
@@ -41,13 +49,20 @@ $cparams = JComponentHelper::getParams('com_media');
 	<?php endif; ?>
 	<div class="clr"></div>
 	</div>
-<?php endif; ?>
+<?php endif; */?>
 
 
 
 <?php $leadingcount = 0; ?>
 <?php if (!empty($this->lead_items)) : ?>
-<div class="items-leading">
+<?
+$idPosts = JRequest::getInt('id');
+$ClassNewStyle = '';
+if ($idPosts != 26 && $idPosts != 23): 
+	$itemClassNew = " items-leading-new";
+endif ?>
+
+<div class="items-leading <?=$itemClassNew;?>">
 	<?php foreach ($this->lead_items as &$item) : ?>
 		<article class="leading-<?php echo $leadingcount; ?><?php echo $item->state == 0 ? 'system-unpublished' : null; ?>">
 			<?php

@@ -32,7 +32,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS2B68K"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
+
 
     <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
         <div class="menu">
@@ -101,6 +101,7 @@
     <div id="footer">
         <div class="container clearfix">
             <div class="copyright">SDG Trade &copy; 2019</div>
+            <p style="margin: 0;padding: 10px 0 0 0;text-align: center;font-size: 12px;color: #ccc;">На сайте SDG Trade и связанных сайтах компании SDG Consulting предоставляются исключительно обучающие и консалтинговые услуги. Компания не предоставляет услуги открытия счетов, торговли на финансовых рынках и прочих лицензионных услуг. Прохождение обучения не гарантирует получение прибыли на финансовых рынках.</p>
         </div>
     </div>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
