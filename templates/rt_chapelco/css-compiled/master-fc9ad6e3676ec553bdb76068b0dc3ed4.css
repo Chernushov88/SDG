@@ -1670,6 +1670,24 @@ h6,
   z-index: 11000;
   position: relative;
 }
+#rt-top .rt-container {
+  display: flex;
+}
+#rt-top .rt-container p {
+  margin: 0;
+}
+#rt-top .rt-container .rt-grid-3 {
+  width: 20%;
+}
+#rt-top .rt-container .rt-grid-3 .custom img {
+  max-width: 100px;
+}
+#rt-top .rt-container .rt-grid-5 {
+  width: 40%;
+}
+#rt-top .rt-container .rt-grid-4 {
+  width: 40%;
+}
 #rt-showcase {
   padding: 20px 0;
 }
@@ -2623,9 +2641,6 @@ ul.menu li#current.active > .separator {
   border-top: 1px solid #C7C7C7;
   border-bottom: 1px solid #C7C7C7;
 }
-.title4 .module-title:before {
-  background: url(../images/patterns/horiz-lines.png);
-}
 .title4 .module-title .title {
   background: #f5f5f5;
 }
@@ -2768,9 +2783,6 @@ ul.menu li#current.active > .separator {
 .component-content .rt-article-title {
   border-top: 1px solid #C7C7C7;
   border-bottom: 1px solid #C7C7C7;
-}
-.component-content .rt-article-title:before {
-  background: url(../images/patterns/horiz-lines.png);
 }
 .button,
 .readon,
@@ -3871,12 +3883,17 @@ p.warning {
   border-color: #fbeed5;
   color: #c09853;
 }
+.modul-trading-course .container {
+  margin: 0;
+  padding: 0;
+}
 @font-face {
   font-family: 'FontAwesome';
   src: url('../../../libraries/gantry/assets/jui/fonts/fontawesome-webfont.eot?v=3.2.1');
   src: url('../../../libraries/gantry/assets/jui/fonts/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../../../libraries/gantry/assets/jui/fonts/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('../../../libraries/gantry/assets/jui/fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('../../../libraries/gantry/assets/jui/fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 [class^="icon-"],
 [class*=" icon-"] {

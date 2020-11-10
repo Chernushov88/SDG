@@ -1,5 +1,5 @@
 'use strict';
-document.addEventListener('DOMContentLoaded', function() {
+//document.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('form.contact_form')) {
         var formElement = document.querySelector('form.contact_form');
         var btn = formElement.querySelector('.btn');
@@ -24,4 +24,4 @@ document.addEventListener('DOMContentLoaded', function() {
             request.send(formData);
         }
     }
-})
+//})

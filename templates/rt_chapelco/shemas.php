@@ -1,7 +1,7 @@
 <?php
   $app = JFactory::getApplication();
   $menu = $app->getMenu()->getActive()->id;
-    //echo $menu.'<br>';
+   echo '<div class="hidden">'. $menu.'</div>';
   ?>
 <?php if($menu == '101') { ?>
 <!-- page main-->
@@ -109,7 +109,7 @@
 </script>
 <?php */} else if($menu == '181') { ?>
 <!-- page otkryt shchet -->
-<script type="application/ld+json">
+<?/*script type="application/ld+json">
   {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -143,7 +143,7 @@
   	}
   }]
   }>
-</script>
+</script*/?>
 <?php } else if($menu == '114') { ?>
 <!-- page obucheniye -->
 <script type="application/ld+json">

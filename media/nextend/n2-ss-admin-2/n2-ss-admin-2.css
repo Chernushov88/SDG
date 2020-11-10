@@ -70,21 +70,6 @@ div#n2-ss-0 .n2-ss-item-imagebox-container[data-layout="right"] .n2-ss-item-imag
 div#n2-ss-0 .n2-ss-item-imagebox-container .n2-ss-item-imagebox-content {
   flex: 1 1;
 }
-div#n2-ss-0 .n2-ss-item-transition {
-  position: relative;
-}
-div#n2-ss-0 .n2-ss-item-transition a {
-  display: block;
-}
-div#n2-ss-0 .n2-ss-item-transition img {
-  display: block;
-  width: 100%;
-}
-div#n2-ss-0 .n2-ss-item-transition .n2-ss-item-transition-image2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 div#n2-ss-0 .n2-ss-item-caption {
   position: relative;
   overflow: hidden;
@@ -114,6 +99,21 @@ div#n2-ss-0 .n2-ss-item-caption-content[data-verticalalign="flex-end"] {
 div#n2-ss-0 .n2-ss-item-caption-content .n2-div-h4,
 div#n2-ss-0 .n2-ss-item-caption-content p {
   margin: 10px;
+}
+div#n2-ss-0 .n2-ss-item-transition {
+  position: relative;
+}
+div#n2-ss-0 .n2-ss-item-transition a {
+  display: block;
+}
+div#n2-ss-0 .n2-ss-item-transition img {
+  display: block;
+  width: 100%;
+}
+div#n2-ss-0 .n2-ss-item-transition .n2-ss-item-transition-image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 div#n2-ss-0 .n2-ss-item-progressbar {
   width: 100%;

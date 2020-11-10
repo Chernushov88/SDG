@@ -10,7 +10,7 @@ defined('_JEXEC') or die;
 
 $params =& $this->item->params;
 $images = json_decode($this->item->images);
-$app = JFactory::getApplication(); 
+$app = JFactory::getApplication();
 $canEdit = $this->item->params->get('access-edit');
 
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
@@ -21,7 +21,7 @@ if ($idPosts != 26 && $idPosts != 23 ) {
 	if ($this->item->state == 0) : ?>
 	<div class="system-unpublished">
 	<?php endif; ?>
-	
+
 
 	<?php if ($params->get('show_print_icon') || $params->get('show_email_icon') || $canEdit) : ?>
 		<ul class="actions">
@@ -125,7 +125,7 @@ if ($idPosts != 26 && $idPosts != 23 ) {
 				endif; ?>
 				src="<?php echo htmlspecialchars($images->image_intro); ?>" alt="<?php echo htmlspecialchars($images->image_intro_alt); ?>"/>
 			</a>
-			
+
 		</div>
 	<?php endif; ?>
 	<div class="intro-right">
@@ -141,13 +141,13 @@ if ($idPosts != 26 && $idPosts != 23 ) {
 		</h2>
 	<?php endif; ?>
 	<div class="quote">
-		<?php 
-echo $this->item->introtext; 
-// $quote = $this->item->introtext;			
+		<?php
+echo $this->item->introtext;
+// $quote = $this->item->introtext;
 // echo mb_strimwidth($quote, 0, 250, "...");
 		?>
 	</div>
-		
+
 	<?php if ($params->get('show_readmore') && $this->item->readmore) :
 		if ($params->get('access-view')) :
 			$link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid));

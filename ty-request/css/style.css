@@ -98,7 +98,7 @@ footer img {
   max-width: 70% !important;
 }
 
-.social-items a {
+#logo .social-items a {
   text-decoration-color: #fff;
   text-decoration: underline;
 }

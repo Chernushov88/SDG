@@ -86,7 +86,7 @@ function modChrome_standard($module, &$params, &$attribs)
 	     		</h2>
 			</div>
 	        <?php endif; ?>
-        	<div class="module-content">
+        	<div class="module-content module-content1">
         		<?php echo $module->content; ?>
         	</div>
         </div>
@@ -109,7 +109,7 @@ function modChrome_popup($module, &$params, &$attribs)
 {
  	if (!empty ($module->content)) : ?>
 	<div class="rt-block basic">
-		<div class="module-content">
+		<div class="module-content module-content2">
 			<?php if ($module->showtitle != 0) : ?>
 			<h2 class="title"><?php echo $module->title; ?></h2>
 			<?php endif; ?>

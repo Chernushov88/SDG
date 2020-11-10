@@ -1,5 +1,21 @@
 <?php
 
+
+$cache_file = "h.cache";
+if($_SERVER["REQUEST_URI"] == "/")
+{
+	if (file_exists($cache_file) && (filemtime($cache_file) > (time() - 60 * 10 ))) {
+	   echo file_get_contents($cache_file);
+	} else {
+	   $file = file_get_contents("https://sdg-trade.com/?cache");
+	   file_put_contents($cache_file, $file, LOCK_EX);
+	   echo $file;
+	}
+	die;
+}
+
+
+
 function console_log( $data ){
 	echo '<script>';
 	echo 'console.log('. json_encode( $data ) .')';
@@ -25,12 +41,7 @@ $gpreset = str_replace(' ','',strtolower($gantry->get('name')));
 	<?php
 	$strServer =$_SERVER['REQUEST_URI'];
 	$kalendar = "kalendar-sobyitij";
-	/*
-	if (strstr($strServer, $kalendar)){?>
-		<meta name="robots" content="noindex, nofollow" />
-	<?}*/
 	?>
-	<!-- <meta name="yandex-verification" content="9a4d54d9a35e6872" /> -->
 	<meta name="google-site-verification" content="N9lJY3vbSbrurRirxvK8h2ofFK19COnNQgqp4y7tP3M" />
 	<meta name='wmail-verification' content='c8b16f7417c0e3455248f48ef291b296' />
 	<?php include 'canonical.php' ?>
@@ -49,6 +60,85 @@ $gpreset = str_replace(' ','',strtolower($gantry->get('name')));
 		<?php else : ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<?php endif; ?>
+
+		<link href="https://s.tradingview.com/widgetembed/?symbol=NASDAQ%3AAAPL&interval=60&symboledit=1&saveimage=0&toolbarbg=f1f3f6&studies=&hideideas=1&theme=white&style=1&timezone=Etc%2FUTC&showpopupbutton=1&studies_overrides=%7B%7D&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&showpopupbutton=1&locale=ru&utm_source=web-arhive.ru&utm_medium=widget&utm_campaign=chart&utm_term=NASDAQ%3AAAPL" rel="preload" as="document">
+		<link href="https://www.googletagmanager.com/ns.html?id=GTM-PS2B68K" rel="preload" as="document">
+		<link href="/img/home-img.png" rel="preload" as="image">
+		<link href="/templates/rt_chapelco/images/light/abstract.jpg" rel="preload" as="image">
+		<link href="/images/banners/logo.png" rel="preload" as="image">
+		<link href="/images/check.png" rel="preload" as="image">
+		<link href="/images/sdg-study-box-sdg-strategy.png" rel="preload" as="image">
+		<link href="/images/trans365.png" rel="preload" as="image">
+		<link href="/images/sdg-base-box.png" rel="preload" as="image">
+		<link href="/images/sdg-stil-box-tamplate.png" rel="preload" as="image">
+		<link href="/images/swing.png" rel="preload" as="image">
+		<link href="/images/supermono.png" rel="preload" as="image">
+		<link href="/templates/rt_chapelco/roksprocket/layouts/tabs/themes/default/tabs.css" rel="preload" as="style">
+		<link href="/templates/rt_chapelco/css-compiled/master-41d7e74dc0cf9f2f48df3b0edb5a046e.css" rel="preload" as="style">
+		<link href="/templates/rt_chapelco/css-compiled/master-41d7e74dc0cf9f2f48df3b0edb5a046e.css" rel="preload" as="style">
+		<link href="/media/modals/css/bootstrap.min.css" rel="preload" as="style">
+		<link href="/templates/rt_chapelco/css-compiled/menu-6ae96083a3cbe161d1663a8abe572bdc.css" rel="preload" as="style">
+		<link href="/libraries/gantry/css/grid-responsive.css" rel="preload" as="style">
+		<link href="/templates/rt_chapelco/css-compiled/mediaqueries.css" rel="preload" as="style">
+		<link href="/media/system/js/mootools-core.js?03165ba8d1d90a6c511a88ec2f68fa02" rel="preload" as="script">
+		<link href="/libraries/gantry/assets/jui/fonts/fontawesome-webfont.ttf?v=3.2.1" rel="preload" as="font" crossorigin="anonymous">
+		<link href="/libraries/gantry/assets/jui/fonts/fontawesome-webfont.woff?v=3.2.1" rel="preload" as="font" crossorigin="anonymous">
+		<link href="/templates/rt_chapelco/fonts/Roboto/Robotoblack.woff" rel="preload" as="font" crossorigin="anonymous">
+		<link href="/templates/rt_chapelco/fonts/Roboto/Robotobold.woff" rel="preload" as="font" crossorigin="anonymous">
+		<link href="/templates/rt_chapelco/fonts/Roboto/Robotomedium.woff" rel="preload" as="font" crossorigin="anonymous">
+		<link href="/templates/rt_chapelco/fonts/Roboto/Robotolight.woff" rel="preload" as="font" crossorigin="anonymous">
+		<link href="/templates/rt_chapelco/fonts/Roboto/Roboto.woff" rel="preload" as="font" crossorigin="anonymous">
+		
+		<link href="/modules/mod_xpertcontents/assets/css/xpertcontents.css" rel="preload" as="style">
+		<link href="/templates/rt_chapelco/roksprocket/layouts/mosaic/themes/default/mosaic.css" rel="preload" as="style">
+		<link href="/media/nextend/combined/4d1bb92edb34d350df77acbc39429dce.css" rel="preload" as="style">
+		<link href="/media/nextend/combined/4d1bb92edb34d350df77acbc39429dce.css" rel="preload" as="style">
+		<link href="/modules/mod_xpertcontents/assets/css/xpertcontents.css" rel="preload" as="style">
+		<link href="/templates/rt_chapelco/roksprocket/layouts/mosaic/themes/default/mosaic.css" rel="preload" as="style">
+		<link href="/media/system/js/core.js?03165ba8d1d90a6c511a88ec2f68fa02" rel="preload" as="script">
+		<link href="/components/com_roksprocket/assets/js/mootools-mobile.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/assets/js/rokmediaqueries.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/assets/js/roksprocket.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/layouts/tabs/themes/default/tabs.js" rel="preload" as="script">
+		<link href="/media/jui/js/jquery.min.js?03165ba8d1d90a6c511a88ec2f68fa02" rel="preload" as="script">
+		<link href="/media/jui/js/jquery-noconflict.js?03165ba8d1d90a6c511a88ec2f68fa02" rel="preload" as="script">
+		<link href="/media/jui/js/jquery-migrate.min.js?03165ba8d1d90a6c511a88ec2f68fa02" rel="preload" as="script">
+		<link href="/media/modals/js/jquery.touchSwipe.min.js" rel="preload" as="script">
+		<link href="/media/modals/js/jquery.colorbox-min.js" rel="preload" as="script">
+		<link href="/media/modals/js/script.min.js?v=9.8.2.p" rel="preload" as="script">
+		<link href="https://s.tradingview.com/static/bundles/embed/embed_advanced_chart_widget.15c016a8b9f14bddc7b8.js" rel="preload" as="script">
+		<link href="https://www.google-analytics.com/analytics.js" rel="preload" as="script">
+		<link href="/media/system/js/mootools-more.js?03165ba8d1d90a6c511a88ec2f68fa02" rel="preload" as="script">
+		<link href="/libraries/gantry/js/browser-engines.js" rel="preload" as="script">
+		<link href="/templates/rt_chapelco/js/rokmediaqueries.js" rel="preload" as="script">
+		<link href="/modules/mod_roknavmenu/themes/default/js/rokmediaqueries.js" rel="preload" as="script">
+		<link href="/modules/mod_roknavmenu/themes/default/js/responsive.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/assets/js/moofx.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/assets/js/roksprocket.request.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/layouts/mosaic/assets/js/mosaic.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/layouts/mosaic/themes/default/mosaic.js" rel="preload" as="script">
+		<link href="/media/system/js/core.js?03165ba8d1d90a6c511a88ec2f68fa02" rel="preload" as="script">
+		<link href="/components/com_roksprocket/assets/js/mootools-mobile.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/assets/js/rokmediaqueries.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/assets/js/roksprocket.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/layouts/tabs/themes/default/tabs.js" rel="preload" as="script">
+		<link href="/media/jui/js/jquery.min.js?03165ba8d1d90a6c511a88ec2f68fa02" rel="preload" as="script">
+		<link href="/media/jui/js/jquery-noconflict.js?03165ba8d1d90a6c511a88ec2f68fa02" rel="preload" as="script">
+		<link href="/media/jui/js/jquery-migrate.min.js?03165ba8d1d90a6c511a88ec2f68fa02" rel="preload" as="script">
+		<link href="/media/modals/js/jquery.touchSwipe.min.js" rel="preload" as="script">
+		<link href="/media/modals/js/jquery.colorbox-min.js" rel="preload" as="script">
+		<link href="/media/modals/js/script.min.js?v=9.8.2.p" rel="preload" as="script">
+		<link href="/media/system/js/mootools-more.js?03165ba8d1d90a6c511a88ec2f68fa02" rel="preload" as="script">
+		<link href="/libraries/gantry/js/browser-engines.js" rel="preload" as="script">
+		<link href="/templates/rt_chapelco/js/rokmediaqueries.js" rel="preload" as="script">
+		<link href="/modules/mod_roknavmenu/themes/default/js/rokmediaqueries.js" rel="preload" as="script">
+		<link href="/modules/mod_roknavmenu/themes/default/js/responsive.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/assets/js/moofx.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/assets/js/roksprocket.request.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/layouts/mosaic/assets/js/mosaic.js" rel="preload" as="script">
+		<link href="/components/com_roksprocket/layouts/mosaic/themes/default/mosaic.js" rel="preload" as="script">
+
+		
 		<?php
 			unset($this->_metaTags['name']['keywords']);
 	        $gantry->displayHead();
@@ -57,6 +147,7 @@ $gpreset = str_replace(' ','',strtolower($gantry->get('name')));
 
 	        $gantry->addLess('global.less', 'master.css', 8, array('main-accent'=>$gantry->get('main-accent','#519bda'), 'main-accent2'=>$gantry->get('main-accent2', '#e7714d'), 'main-body'=>$gantry->get('main-body', 'light'), 'main-showcasebg'=>$gantry->get('main-showcasebg', 'abstract')));
 
+			/*
 	        if ($gantry->browser->name == 'ie'){
 	        	if ($gantry->browser->shortversion == 9){
 	        		$gantry->addInlineScript("if (typeof RokMediaQueries !== 'undefined') window.addEvent('domready', function(){ RokMediaQueries._fireEvent(RokMediaQueries.getQuery()); });");
@@ -65,68 +156,28 @@ $gpreset = str_replace(' ','',strtolower($gantry->get('name')));
 					$gantry->addScript('html5shim.js');
 				}
 			}
+			*/
+			
 			if ($gantry->get('layout-mode', 'responsive') == 'responsive') $gantry->addScript('rokmediaqueries.js');
 			if ($gantry->get('loadtransition')) {
 			$gantry->addScript('load-transition.js');
 			$hidden = ' class="rt-hidden"';}
 
 				?>
-		<script src="/build/js/modernizr-custom.js"></script>
-		<link href="templates/rt_chapelco/css/mystyle_v1.7.css" rel="stylesheet">
-
-		<link href="templates/rt_chapelco/css/bootstrap.css" rel="stylesheet">
-		<link rel="stylesheet" href="./build/css/style.min.css">
-		<link href="templates/rt_chapelco/css/new_style_v1.3.css" rel="stylesheet">
-		<script>
-			dataLayer = [];
-		</script>
-
-	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "Organization",
-		"url": "https://sdg-trade.com",
-		"logo": "https://sdg-trade.com/images/banners/logo.png",
-		"sameAs": [
-	         "https://www.facebook.com/trade.sdg",
-	         "https://vk.com/clubsdg",
-	         "https://www.youtube.com/c/sdgtrade",
-	         "https://twitter.com/SDGTRADE",
-	         "https://telegram.me/sdgtrade"
-	       ],
-		"contactPoint" : [
-	        {
-	            "@type" : "ContactPoint",
-	            "telephone": "+7(499) 350-73-98",
-	            "contactType": "customer service"
-	        },
-	        {
-	            "@type" : "ContactPoint",
-	            "telephone": "+7(499) 350-75-98",
-	            "contactType": "customer service"
-	        }
-
-		]
-	}
-	</script>
-	<script src="//cdn.sendpulse.com/js/push/d1ce0b0494694053f34cc3c7d9073c9a_1.js" async></script>
-	<?php include 'shemas.php' ?>
-	<?php $this->setGenerator(''); ?>
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-PS2B68K');</script>
-	<!-- End Google Tag Manager -->
-    <style>
-        /*.background,
-        .background+.container{display: none;}*/
-    </style>
+	<!-- End Google Tag Manager --> 
 </head>
 
 <body <?php echo $gantry->displayBodyTag(); ?>  id="body_<?= JRequest::getInt('id')?>">
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS2B68K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <?php
     // $db = &JFactory::getDBO();
     // $id = JRequest::getString('id');
@@ -144,12 +195,7 @@ if ($idPosts == '883' || $idPosts == '891' || $idPosts == '893' ||  $idPosts == 
 	$ClassNewStyle = "body_NewStyle";
 endif ?>
 <div  class="<?=$ClassNewStyle . $IDmenu;?>" data-menu="<?= $menu;?>">
-<!-- beta-versoon -->
-<!-- beta-versoon -->
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS2B68K"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 	<div id="rt-page-surround">
 		<?php /** Begin Top Surround **/ if ($gantry->countModules('top') or $gantry->countModules('header')) : ?>
 		<header id="rt-top-surround">
@@ -162,16 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 			<?php /** End Top **/ endif; ?>
 			<div id="fb-root"></div>
-			<script>
-				(function (d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) return;
-					js = d.createElement(s);
-					js.id = id;
-					js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.5";
-					fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
-			</script>
+			
 			<?php /** Begin Header **/ if ($gantry->countModules('header')) : ?>
 			<div id="rt-header">
 				<div class="rt-container">
@@ -204,7 +241,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <?php
   $app = JFactory::getApplication();
   $menu = $app->getMenu()->getActive()->id;
-   // echo $menu.'<br>';
+   //echo ' <div class="hidden">' . $menu . '</div>';
   ?>
 <?php if($menu != '101') { ?>
 
@@ -215,6 +252,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 <?}?>
+
 			<div id="rt-mainbody-surround">
 				<?php /** Begin Feature **/ if ($gantry->countModules('feature')) : ?>
 				<div id="rt-feature">
@@ -367,15 +405,32 @@ if (!($idPosts == '891' || $postId == 893) ) {?>
   <span class="screen-reader-text">Back to top</span>
 </a>
 
-	<script src="templates/rt_chapelco/js/custom.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-	<script src="templates/rt_chapelco/js/jquery.min.js"></script>
-	<script src="templates/rt_chapelco/js/bootstrap.min.js"></script>
-	<script src="/build/js/main.js"></script>
-	<script src="templates/rt_chapelco/js/jsshare.js"></script>
+<!-- header scripts start-->
+		<script src="/build/js/modernizr-custom.js"></script>
+		<link href="templates/rt_chapelco/fonts/Roboto/roboto.css" rel="stylesheet">
+		<link href="templates/rt_chapelco/css/mystyle_v1.8.css" rel="stylesheet">
+
+		<link href="templates/rt_chapelco/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="./build/css/style.min.css">
+		<link href="templates/rt_chapelco/css/new_style_v1.5.css" rel="stylesheet">
+		<script>
+			dataLayer = [];
+		</script>
+
+	
+	<script src="//cdn.sendpulse.com/js/push/d1ce0b0494694053f34cc3c7d9073c9a_1.js" async></script>
+	<?php include 'shemas.php' ?>
+	<?php $this->setGenerator(''); ?>
+<!-- header scripts stop-->
+	<script defer src="templates/rt_chapelco/js/custom.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script defer src="templates/rt_chapelco/js/jquery.min.js"></script>
+	<script defer src="templates/rt_chapelco/js/bootstrap.min.js"></script>
+	<script defer src="/build/js/main.js"></script>
+	<script defer src="templates/rt_chapelco/js/jsshare.js"></script>
 
 	<script>
-		document.addEventListener("DOMContentLoaded", function (event) {
+		//document.addEventListener("DOMContentLoaded", function (event) {
 			var shareItems = document.querySelectorAll('.share-item');
 			for (var i = 0; i < shareItems.length; i += 1) {
 				shareItems[i].addEventListener('click', function share(e) {
@@ -383,12 +438,12 @@ if (!($idPosts == '891' || $postId == 893) ) {?>
 					return JSShare.go(this);
 				});
 			}
-		});
+		//});
 	</script>
 
 	<script>
-		jQuery(document).ready(function ($) {
-			if (!Cookies.get('online-intensive')) {
+		//jQuery(document).ready(function ($) {
+			/*if (!Cookies.get('online-intensive')) {
 				var isMobile = window.matchMedia("only screen and (min-width: 767px)").matches;
 				if (isMobile) {
 					setTimeout(function () {
@@ -397,7 +452,7 @@ if (!($idPosts == '891' || $postId == 893) ) {?>
 						Cookies.set('online-intensive', true, { expires: 1 });
 					}, 25000);
 				}
-			}
+			}*/
 			// if (!Cookies.get('webinar-stat')) {
 			// 	var isMobile = window.matchMedia("only screen and (min-width: 767px)").matches;
 			// 	if (isMobile) {
@@ -409,7 +464,7 @@ if (!($idPosts == '891' || $postId == 893) ) {?>
 			// 	}
 			// }
 			var input = document.querySelectorAll('input');
-
+            console.log(input);
 			input.forEach(element => {
 
 				if (element.getAttribute('name') == 'formParams[full_name]' || element.getAttribute('name') == 'name') {
@@ -418,28 +473,19 @@ if (!($idPosts == '891' || $postId == 893) ) {?>
 				}
 			});
 
-		});
-		function stopVideoPlay(){
+		//});
+		/*function stopVideoPlay(){
     		$("iframe").each(function() {
 		   		$(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
 		    });
-	    }
+	    }*/
 
-	</script>
-	<script>
-		$(document).on('click', '#videoTekaBtn', function() {
-		    var $video = $('#videoTekaIframe'),
-		        src = $video.attr('src');
-
-		    $video.attr('src', src + '&autoplay=1');
-		});
 	</script>
 	</div>
 
-
+<?/*
 	<div class="hidden">
-<div class="button-menu" style="text-align: right;"><span class="icon-desktop"> Личный кабинет: </span> <a class="sppb-btn  sppb-btn-success sppb-btn-rounded sppb-btn-gradient" href="free-online-education">Регистрация</a> <a class="sppb-btn  sppb-btn-primary sppb-btn-rounded" href="https://sdg-trade.info/cms/system/login" target="_blank" rel="noopener noreferrer">Вход</a></div>
-
+        <div class="button-menu" style="text-align: right;"><span class="icon-desktop"> Личный кабинет: </span> <a class="sppb-btn  sppb-btn-success sppb-btn-rounded sppb-btn-gradient" href="free-online-education">Регистрация</a> <a class="sppb-btn  sppb-btn-primary sppb-btn-rounded" href="https://sdg-trade.info/cms/system/login" target="_blank" rel="noopener noreferrer">Вход</a></div>
 		<form action="/?task=user.login" method="post" class="form-validate form-horizontal well">
 			<fieldset>
 
@@ -479,11 +525,49 @@ if (!($idPosts == '891' || $postId == 893) ) {?>
 			<input type="hidden" name="return" value="">
 			<input type="hidden" name="50c55faa9f6faafeb6b64ca6394d2c0f" value="1">		</fieldset>
 		</form>
-
 	</div>
+*/?>
 
+<script>
+				(function (d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s);
+					js.id = id;
+					js.async = true;
+					js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.5";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
 
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"url": "https://sdg-trade.com",
+		"logo": "https://sdg-trade.com/images/banners/logo.png",
+		"sameAs": [
+	         "https://www.facebook.com/trade.sdg",
+	         "https://vk.com/clubsdg",
+	         "https://www.youtube.com/c/sdgtrade",
+	         "https://twitter.com/SDGTRADE",
+	         "https://telegram.me/sdgtrade"
+	       ],
+		"contactPoint" : [
+	        {
+	            "@type" : "ContactPoint",
+	            "telephone": "+7(499) 350-73-98",
+	            "contactType": "customer service"
+	        },
+	        {
+	            "@type" : "ContactPoint",
+	            "telephone": "+7(499) 350-75-98",
+	            "contactType": "customer service"
+	        }
 
+		]
+	}
+	</script>
 
 </body>
 </html>
